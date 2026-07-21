@@ -7,6 +7,10 @@ navegables, con el mismo diseño para todas las sesiones.
 > Objetivo de diseño: que cualquier persona —técnica o no— pueda crear y editar
 > una presentación **sin tocar HTML, CSS ni JavaScript**. Solo Markdown.
 
+> 📘 **¿Vas a crear el contenido de una sesión?** Empezá por la guía para autores:
+> **[GUIA-CONTENIDOS.md](GUIA-CONTENIDOS.md)** (con vía rápida para no técnicos y vía
+> avanzada para desarrolladores). Este README es la referencia técnica del motor.
+
 ---
 
 ## 1. Cómo se ve la carpeta

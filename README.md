@@ -23,11 +23,14 @@ docs/            El sitio (lo que publica GitHub Pages)
 Los documentos de planificación del curso (syllabus, plan de estudios y el patrón
 de plantilla) se conservan en la raíz como material de referencia.
 
-## Cómo editar contenido
+## Cómo crear el contenido de las sesiones
 
-Toda la creación de contenido ocurre en `docs/sessions/*.md` (Markdown híbrido).
-No hace falta tocar HTML, CSS ni JavaScript. **Guía paso a paso:**
-[`docs/README.md`](docs/README.md).
+Toda la creación de contenido ocurre en `docs/sessions/*.md` (Markdown).
+No hace falta tocar HTML, CSS ni JavaScript.
+
+- 📘 **Guía para autores (técnicos y no técnicos):** [`docs/GUIA-CONTENIDOS.md`](docs/GUIA-CONTENIDOS.md)
+- 📄 **Plantilla lista para copiar:** [`docs/sessions/_plantilla.md`](docs/sessions/_plantilla.md)
+- 🔧 **Referencia técnica del motor:** [`docs/README.md`](docs/README.md)
 
 ## Ver el sitio localmente
 

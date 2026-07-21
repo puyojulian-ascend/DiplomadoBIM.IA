@@ -11,7 +11,7 @@
   // Vercel, GitHub Pages) puede descartarlo. Se acepta ?query como respaldo.
   var hp = new URLSearchParams((location.hash || '').replace(/^#/, ''));
   var qp = new URLSearchParams(location.search);
-  var slug = (hp.get('s') || qp.get('s') || '').replace(/[^a-z0-9-]/gi, '');
+  var slug = (hp.get('s') || qp.get('s') || '').replace(/[^a-z0-9_-]/gi, '');
   var preview = hp.has('preview') || qp.has('preview'); // #s=...&preview=1 → ver borradores bloqueados
   var deck = document.getElementById('deck');
 
