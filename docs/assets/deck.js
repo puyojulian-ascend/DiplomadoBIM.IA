@@ -38,7 +38,7 @@
   }).catch(function () {
     showMsg('No se pudo cargar la sesión',
       'Verificá que exista <code>sessions/' + slug + '.md</code>.<br>' +
-      'Si abriste el archivo con doble clic, servilo con <code>npx serve</code> desde la carpeta <code>site/</code> (el navegador bloquea <code>fetch</code> sobre <code>file://</code>).');
+      'Si abriste el archivo con doble clic, servilo con <code>npx serve</code> desde la carpeta <code>docs/</code> (el navegador bloquea <code>fetch</code> sobre <code>file://</code>).');
   });
 
   function showLocked(entry) {

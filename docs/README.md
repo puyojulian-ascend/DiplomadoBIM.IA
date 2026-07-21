@@ -12,7 +12,7 @@ navegables, con el mismo diseño para todas las sesiones.
 ## 1. Cómo se ve la carpeta
 
 ```
-site/
+docs/
 ├── index.html          Portada + índice de las 12 sesiones (no se toca)
 ├── deck.html           Reproductor de un deck        (no se toca)
 ├── assets/
@@ -39,11 +39,11 @@ El navegador bloquea la carga de archivos `.md` si abrís el HTML con doble clic
 
 ```bash
 # Opción A — Node (no instala nada permanente)
-cd site
+cd docs
 npx serve
 
 # Opción B — Python
-cd site
+cd docs
 python -m http.server 8000
 
 # Opción C — VS Code
@@ -222,15 +222,16 @@ Editá las variables al inicio de `assets/deck.css` (bloque `:root`). Cambiando
 
 ---
 
-## 7. Publicar en Vercel
+## 7. Publicar
 
-1. Subí la carpeta `site/` a un repositorio Git (GitHub / GitLab).
-2. En [vercel.com](https://vercel.com) → *New Project* → importá el repositorio.
-3. En **Root Directory** elegí `site/`. No hay build: es un sitio estático.
-4. *Deploy*. Cada cambio que subas al repo se publica solo.
+**GitHub Pages (recomendado):** en el repositorio, **Settings → Pages → Source:
+*Deploy from a branch* → rama `main`, carpeta `/docs` → Save**. Cada push a `main`
+que toque `docs/` se publica solo. (El archivo `.nojekyll` ya está incluido.)
 
-También funciona igual en **GitHub Pages** o cualquier hosting estático:
-subí el contenido de `site/` tal cual.
+**Vercel (alternativa):** *New Project* → importá el repositorio → **Root Directory
+= `docs`** → *Deploy*. Útil si el repositorio es privado.
+
+Cualquier hosting estático sirve: subí el contenido de `docs/` tal cual.
 
 ---
 

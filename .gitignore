@@ -5,7 +5,7 @@ node_modules/
 Thumbs.db
 
 # Correo fuente: hilo interno con datos de contacto — no se publica.
-# (El cronograma ya está reflejado en site/sessions/manifest.json.)
+# (El cronograma ya está reflejado en docs/sessions/manifest.json.)
 *.eml
 
 # Editores
