@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión — Diplomado BIM + IA</title>
+  <meta name="description" content="Presentación del Diplomado BIM + IA — Ascend / IDU.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/deck.css">
+</head>
+
+<body>
+  <!-- Fondo: grilla + curvas de nivel (idéntico al patrón de referencia) -->
+  <div class="backdrop">
+    <div class="glow"></div>
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 1440 900">
+      <g class="grid-line" opacity=".5">
+        <line x1="0" y1="150" x2="1440" y2="150" />
+        <line x1="0" y1="300" x2="1440" y2="300" />
+        <line x1="0" y1="450" x2="1440" y2="450" />
+        <line x1="0" y1="600" x2="1440" y2="600" />
+        <line x1="0" y1="750" x2="1440" y2="750" />
+        <line x1="240" y1="0" x2="240" y2="900" />
+        <line x1="480" y1="0" x2="480" y2="900" />
+        <line x1="720" y1="0" x2="720" y2="900" />
+        <line x1="960" y1="0" x2="960" y2="900" />
+        <line x1="1200" y1="0" x2="1200" y2="900" />
+      </g>
+      <g class="contours">
+        <path d="M-50 760 C 240 700, 420 820, 700 740 S 1180 640, 1500 720" />
+        <path d="M-50 800 C 260 760, 440 870, 720 790 S 1200 700, 1500 770" />
+        <path d="M-50 700 C 220 640, 460 760, 760 680 S 1160 580, 1500 660" />
+        <path d="M-50 620 C 280 580, 420 680, 740 600 S 1140 520, 1500 590" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- El motor inyecta las diapositivas y el chrome aquí -->
+  <div class="deck" id="deck"></div>
+
+  <script src="assets/marked.min.js"></script>
+  <script src="assets/deck.js"></script>
+</body>
+
+</html>

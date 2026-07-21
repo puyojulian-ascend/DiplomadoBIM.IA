@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentation Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 
+  ========================================
+  DESIGN TOKENS (COLORS & TYPOGRAPHY)
+  ========================================
+*/
+:root {
+  /* Background / Dark themes */
+  --bg-deep: #0D262C;
+  --bg-mid: #16414B;
+  
+  /* Brand accents */
+  --accent-1: #FB8000; /* Primary Accent (e.g. Orange) */
+  --accent-2: #FF9E40; /* Secondary Accent (e.g. Amber) */
+  --accent-3: #62BFD0; /* Tertiary/Highlight (e.g. Cyan) */
+  
+  /* Text / Neutral */
+  --text-primary: #EAF2F4;
+  --text-dim: rgba(234, 242, 244, 0.60);
+  --text-faint: rgba(234, 242, 244, 0.30);
+  
+  /* Glassmorphism borders & backgrounds */
+  --glass: rgba(234, 242, 244, 0.055);
+  --glass-strong: rgba(234, 242, 244, 0.085);
+  --glass-line: rgba(234, 242, 244, 0.14);
+  
+  /* Fonts */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;width:100%;overflow:hidden;background:var(--bg-deep)}
+body{
+  font-family:var(--font-body);
+  color:var(--text-primary);
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+}
+
+/* ---------- Backdrop ---------- */
+.backdrop{position:fixed;inset:0;z-index:0;overflow:hidden}
+.backdrop .glow{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 90% at 78% 8%, rgba(251,128,0,.20), transparent 52%),
+    radial-gradient(90% 80% at 12% 100%, rgba(47,108,124,.42), transparent 55%),
+    linear-gradient(165deg, var(--bg-mid) 0%, var(--bg-deep) 60%, #091C21 100%);
+}
+.backdrop svg{position:absolute;inset:0;width:100%;height:100%}
+.contours{stroke:rgba(98,191,208,.12);fill:none;stroke-width:1}
+.grid-line{stroke:rgba(234,242,244,.045);stroke-width:1}
+
+/* ---------- Deck & Slides ---------- */
+.deck{position:relative;z-index:1;height:100%;width:100%}
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(28px,6vw,96px);
+  padding-bottom:clamp(64px,9vh,110px);
+  opacity:0;visibility:hidden;
+  transform:translateY(14px);
+  transition:opacity .5s ease, transform .6s cubic-bezier(.2,.7,.2,1), visibility .5s;
+  pointer-events:none;
+}
+.slide.active{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.wrap{width:100%;max-width:1120px;margin:0 auto}
+
+/* Stagger Animations */
+.slide .stagger{opacity:0;transform:translateY(16px);transition:opacity .55s ease, transform .65s cubic-bezier(.2,.7,.2,1)}
+.slide.active .stagger{opacity:1;transform:none}
+.slide.active .stagger:nth-child(1){transition-delay:.10s}
+.slide.active .stagger:nth-child(2){transition-delay:.18s}
+.slide.active .stagger:nth-child(3){transition-delay:.26s}
+.slide.active .stagger:nth-child(4){transition-delay:.34s}
+.slide.active .stagger:nth-child(5){transition-delay:.42s}
+.slide.active .stagger:nth-child(6){transition-delay:.50s}
+
+/* ---------- Typography ---------- */
+.eyebrow{
+  font-family:var(--font-mono);font-size:clamp(11px,1.1vw,13px);
+  letter-spacing:.22em;text-transform:uppercase;color:var(--accent-3);
+  display:inline-flex;align-items:center;gap:.7em;margin-bottom:clamp(16px,2.6vh,28px);
+}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 10px var(--accent-3)}
+.eyebrow .idx{color:var(--text-dim)}
+
+h1.title{font-family:var(--font-display);font-weight:700;line-height:1.02;letter-spacing:-.02em;font-size:clamp(40px,8vw,104px);margin:clamp(20px,4vh,40px) 0 0}
+h2.title{font-family:var(--font-display);font-weight:700;line-height:1.04;letter-spacing:-.02em;font-size:clamp(28px,5vw,60px)}
+
+.lede{font-size:clamp(15px,1.65vw,20px);line-height:1.5;color:var(--text-dim);max-width:64ch;margin-top:clamp(14px,2.2vh,24px)}
+.lede strong{color:var(--text-primary);font-weight:600}
+
+.accent{color:var(--accent-1)}
+.accent-c{color:var(--accent-3)}
+
+/* ---------- Layouts & Components ---------- */
+.split{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(16px,2.4vw,32px);margin-top:clamp(16px,2.6vh,28px);align-items:start}
+
+.card{
+  background:var(--glass);
+  border:1px solid var(--glass-line);
+  border-radius:18px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  padding:clamp(18px,2.4vw,28px);
+  position:relative;overflow:hidden;
+}
+.card::before{content:"";position:absolute;inset:0;border-radius:18px;background:linear-gradient(135deg,rgba(234,242,244,.06),transparent 42%);pointer-events:none}
+.card .ctag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-3);display:block;margin-bottom:14px}
+.card h3{font-family:var(--font-display);font-weight:500;font-size:clamp(16px,1.6vw,20px);margin-bottom:10px;letter-spacing:-.01em}
+.card p{font-size:clamp(13px,1.3vw,15px);line-height:1.55;color:var(--text-dim)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(12px,1.6vh,16px)}
+.chip{font-family:var(--font-mono);font-size:clamp(11px,1.15vw,12.5px);letter-spacing:.02em;color:var(--text-primary);border:1px solid var(--glass-line);background:var(--glass);border-radius:8px;padding:7px 12px}
+
+/* Cover specific */
+.cover .sub{font-size:clamp(16px,1.9vw,23px);color:var(--text-dim);margin-top:clamp(16px,2.6vh,28px);max-width:54ch;line-height:1.45}
+.pill{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;color:var(--text-primary);border:1px solid var(--glass-line);background:var(--glass);border-radius:999px;padding:8px 16px;display:inline-block;margin-right:8px;margin-top:30px}
+.pill.solid{background:linear-gradient(120deg,var(--accent-1),var(--accent-2));color:var(--bg-deep);border:none;font-weight:500}
+
+/* ---------- Chrome: Footer + Nav ---------- */
+.footer{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;align-items:center;justify-content:space-between;
+  padding:clamp(14px,2vw,22px) clamp(24px,5vw,64px);pointer-events:none}
+.footer .fl{display:flex;align-items:center}
+/* Placeholder Logo */
+.logo-sm{height:clamp(14px,1.6vw,17px);width:auto;display:block;opacity:.92;fill:var(--text-primary)}
+.footer .fc{font-family:var(--font-mono);font-size:12px;color:var(--text-dim);letter-spacing:.08em}
+.footer .fc b{color:var(--text-primary)}
+.progress{position:fixed;left:0;right:0;bottom:0;height:3px;background:rgba(234,242,244,.07);z-index:6}
+.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--accent-1),var(--accent-2));width:0;transition:width .5s cubic-bezier(.3,.7,.2,1)}
+.nav{position:fixed;right:clamp(20px,4vw,48px);bottom:clamp(46px,8vh,70px);z-index:7;display:flex;gap:10px;pointer-events:auto}
+.nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--glass-line);background:var(--glass);color:var(--text-primary);
+  font-size:18px;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,transform .15s}
+.nav button:hover{background:var(--glass-strong);border-color:var(--accent-1)}
+.nav button:active{transform:scale(.92)}
+.nav button:focus-visible{outline:2px solid var(--accent-3);outline-offset:3px}
+.dots{position:fixed;left:50%;transform:translateX(-50%);bottom:clamp(46px,8vh,70px);z-index:7;display:flex;gap:9px;pointer-events:auto}
+.dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(234,242,244,.2);cursor:pointer;padding:0;transition:background .25s,transform .25s}
+.dots button.on{background:var(--accent-1);transform:scale(1.35)}
+.dots button:focus-visible{outline:2px solid var(--accent-3);outline-offset:3px}
+.hint{position:fixed;left:50%;bottom:clamp(14px,2.2vh,24px);transform:translateX(-50%);z-index:7;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;color:var(--text-faint);text-transform:uppercase;pointer-events:none;transition:opacity .5s}
+
+/* ---------- Responsive ---------- */
+@media (max-width:820px){
+  .split{grid-template-columns:1fr}
+  .dots{display:none}
+  .nav{right:50%;transform:translateX(50%)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- BACKDROP (Grid & Topography) -->
+<div class="backdrop">
+  <div class="glow"></div>
+  <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 1440 900">
+    <g class="grid-line" opacity=".5">
+      <line x1="0" y1="150" x2="1440" y2="150"/><line x1="0" y1="300" x2="1440" y2="300"/>
+      <line x1="0" y1="450" x2="1440" y2="450"/><line x1="0" y1="600" x2="1440" y2="600"/>
+      <line x1="0" y1="750" x2="1440" y2="750"/>
+      <line x1="240" y1="0" x2="240" y2="900"/><line x1="480" y1="0" x2="480" y2="900"/>
+      <line x1="720" y1="0" x2="720" y2="900"/><line x1="960" y1="0" x2="960" y2="900"/>
+      <line x1="1200" y1="0" x2="1200" y2="900"/>
+    </g>
+    <g class="contours">
+      <path d="M-50 760 C 240 700, 420 820, 700 740 S 1180 640, 1500 720"/>
+      <path d="M-50 800 C 260 760, 440 870, 720 790 S 1200 700, 1500 770"/>
+      <path d="M-50 700 C 220 640, 460 760, 760 680 S 1160 580, 1500 660"/>
+      <path d="M-50 620 C 280 580, 420 680, 740 600 S 1140 520, 1500 590"/>
+    </g>
+  </svg>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1: COVER -->
+  <section class="slide cover active">
+    <div class="wrap">
+      <div class="stagger">
+        <!-- Generic Logo Placeholder -->
+        <svg class="logo-sm" viewBox="0 0 100 24" style="height:clamp(38px,6.8vw,78px);"><text x="0" y="20" font-family="var(--font-display)" font-size="24" fill="var(--text-primary)">BRAND</text></svg>
+      </div>
+      <h1 class="title stagger">Main Presentation<br>Title Goes Here</h1>
+      <p class="sub stagger">Subtitle or brief description explaining the core message of this presentation deck.</p>
+      <div class="stagger">
+        <span class="pill">Category Label</span>
+        <span class="pill solid">Action Item</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: STANDARD CONTENT WITH SPLIT LAYOUT -->
+  <section class="slide">
+    <div class="wrap">
+      <span class="eyebrow stagger"><span class="dot"></span><span class="idx">Section 01 /</span> Descriptive Eyebrow</span>
+      <h2 class="title stagger">Slide Heading With <span class="accent-c">Accent Color</span></h2>
+      <p class="lede stagger">This is the lead paragraph (lede) which summarizes the key takeaway of the slide in a readable, slightly larger font. Use <strong>bolding</strong> to emphasize important terms.</p>
+      
+      <div class="split stagger">
+        <div>
+          <div class="card" style="margin-bottom: 16px;">
+            <span class="ctag">Component Label</span>
+            <h3>Feature highlight</h3>
+            <p>Use cards to containerize distinct ideas or pieces of data. They use a glassmorphism effect.</p>
+          </div>
+          <div class="chips">
+            <span class="chip">Tag 1</span>
+            <span class="chip">Tag 2</span>
+            <span class="chip">Tag 3</span>
+            <span class="chip">Tag 4</span>
+          </div>
+        </div>
+        <div class="card">
+          <span class="ctag">Detailed breakdown</span>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="padding:12px;border:1px solid var(--glass-line);border-radius:8px;">
+               <h4 style="font-family:var(--font-display);margin-bottom:4px;font-size:16px;">Item One</h4>
+               <p style="font-size:13px;color:var(--text-dim)">Description of the first item.</p>
+            </div>
+            <div style="padding:12px;border:1px solid var(--glass-line);border-radius:8px;">
+               <h4 style="font-family:var(--font-display);margin-bottom:4px;font-size:16px;">Item Two</h4>
+               <p style="font-size:13px;color:var(--text-dim)">Description of the second item.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: DATA / CONCLUSION -->
+  <section class="slide">
+    <div class="wrap">
+      <span class="eyebrow stagger"><span class="dot"></span> Final Takeaways</span>
+      <h2 class="title stagger">Bringing it all together</h2>
+      <p class="lede stagger">Use this layout to summarize closing thoughts or display final metrics.</p>
+      
+      <div class="stagger" style="margin-top: 32px; padding: 24px; border: 1px solid var(--glass-line); border-radius: 16px; background: var(--glass);">
+         <h3 style="font-family:var(--font-display); font-size: 24px; margin-bottom: 8px;">Closing Note</h3>
+         <p style="color:var(--text-dim); line-height: 1.6;">The structure is fully flexible. You can create multiple sections, duplicate slides, and utilize the built-in animation staggering simply by adding the <code>stagger</code> class to child elements.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- CHROME (Footer & Navigation) -->
+<div class="footer">
+  <span class="fl">
+    <svg class="logo-sm" viewBox="0 0 100 24"><text x="0" y="20" font-family="var(--font-display)" font-size="20" fill="var(--text-primary)">BRAND</text></svg>
+  </span>
+  <span class="fc"><b id="cur">01</b> / <span id="tot">00</span></span>
+</div>
+<div class="nav">
+  <button id="prev" aria-label="Anterior">‹</button>
+  <button id="next" aria-label="Siguiente">›</button>
+</div>
+<div class="dots" id="dots"></div>
+<div class="progress"><i id="bar"></i></div>
+<div class="hint" id="hint">← → to navigate · swipe on mobile</div>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')];
+  const total=slides.length;
+  let i=0;
+  const cur=document.getElementById('cur');
+  const tot=document.getElementById('tot');
+  const bar=document.getElementById('bar');
+  const dotsWrap=document.getElementById('dots');
+  const hint=document.getElementById('hint');
+  tot.textContent=String(total).padStart(2,'0');
+
+  slides.forEach((_,idx)=>{
+    const b=document.createElement('button');
+    b.setAttribute('aria-label','Go to slide '+(idx+1));
+    b.addEventListener('click',()=>go(idx));
+    dotsWrap.appendChild(b);
+  });
+  const dots=[...dotsWrap.children];
+
+  function go(n){
+    n=Math.max(0,Math.min(total-1,n));
+    if(n===i && slides[i].classList.contains('active')) return;
+    slides[i].classList.remove('active');
+    i=n;
+    const s=slides[i]; void s.offsetWidth;
+    s.classList.add('active');
+    cur.textContent=String(i+1).padStart(2,'0');
+    bar.style.width=((i)/(total-1)*100)+'%';
+    dots.forEach((d,k)=>d.classList.toggle('on',k===i));
+    if(i>0 && hint){hint.style.opacity='0';}
+  }
+
+  document.getElementById('next').addEventListener('click',()=>go(i+1));
+  document.getElementById('prev').addEventListener('click',()=>go(i-1));
+  window.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(i+1);}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1);}
+    else if(e.key==='Home'){go(0);}
+    else if(e.key==='End'){go(total-1);}
+  });
+
+  let x0=null,y0=null;
+  const deck=document.getElementById('deck');
+  deck.addEventListener('touchstart',e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY;},{passive:true});
+  deck.addEventListener('touchend',e=>{
+    if(x0===null)return;
+    const dx=e.changedTouches[0].clientX-x0;
+    const dy=e.changedTouches[0].clientY-y0;
+    if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)){ go(dx<0?i+1:i-1); }
+    x0=y0=null;
+  },{passive:true});
+
+  dots[0].classList.add('on');
+  bar.style.width='0%';
+})();
+</script>
+</body>
+</html>

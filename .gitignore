@@ -1,0 +1,12 @@
+# Dependencias / temporales
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Correo fuente: hilo interno con datos de contacto — no se publica.
+# (El cronograma ya está reflejado en site/sessions/manifest.json.)
+*.eml
+
+# Editores
+.idea/
