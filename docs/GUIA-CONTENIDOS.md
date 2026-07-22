@@ -158,7 +158,27 @@ Objetivo -> *Planifica -> Ejecuta -> Resultado
       B -- No --> D[Ejecuta]
   ```
   ````
-- **Imágenes** — `![texto alternativo](ruta-o-URL)`.
+- **Imágenes** — `![texto alternativo](ruta-o-URL)`. Se ajustan solas al ancho
+  (responsivas, con bordes redondeados). Funcionan también dentro de tarjetas.
+
+### Imágenes: dónde van los archivos
+
+Tenés dos opciones:
+
+1. **Archivo local (recomendado):** guardá la imagen en `docs/assets/img/` y
+   referenciala con ruta relativa desde la raíz del sitio:
+   ```markdown
+   ![Diagrama del proceso](assets/img/mi-diagrama.png)
+   ```
+   Podés agrupar por sesión: `assets/img/05/portada.png`.
+2. **URL externa:** pegá un enlace directo a la imagen:
+   ```markdown
+   ![Render de referencia](https://ejemplo.com/render.jpg)
+   ```
+
+Consejos: nombres en minúsculas sin espacios ni tildes (`diagrama-flujo.png`),
+peso idealmente menor a 500 KB, y siempre completá el *texto alternativo* (lo de
+entre `[ ]`) para accesibilidad. Ver también `docs/assets/img/README.md`.
 
 ### Detalles finos
 
