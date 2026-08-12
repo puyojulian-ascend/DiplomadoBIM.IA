@@ -1325,3 +1325,808 @@ Si BIM puede convertirse en el contexto institucional de nuestros activos:
 
 **¿qué es realmente la Inteligencia Artificial y qué nuevas capacidades introduce sobre ese contexto?**
 :::
+
+# Sesión 01B — Fundamentos de Inteligencia Artificial aplicados al sector AECO
+
+## Objetivo de la sesión
+
+Al finalizar, el estudiante debe poder distinguir los principales tipos de inteligencia artificial, comprender conceptualmente cómo funcionan los modelos generativos actuales y determinar qué capacidades pueden utilizarse de manera responsable sobre información BIM, documental y de obra.
+
+La sesión parte de una idea central:
+
+> **BIM estructura la realidad construida; la IA permite interpretar esa estructura, relacionarla con información no estructurada y asistir decisiones. Pero la IA no reemplaza la fuente de verdad, las reglas del proyecto ni la responsabilidad profesional.**
+
+Además, debe quedar clara una distinción fundamental:
+
+> **Modelo de IA ≠ aplicación de IA ≠ sistema de IA.**
+
+Un modelo puede razonar sobre información; un sistema completo necesita además contexto, fuentes de datos, herramientas, permisos, reglas y validaciones.
+
+---
+
+## 1. De BIM a Inteligencia Artificial
+
+En BIM tenemos:
+
+- objetos;
+- propiedades;
+- relaciones;
+- clasificación;
+- documentos;
+- versiones;
+- incidencias;
+- actividades;
+- costos;
+- programación;
+- ubicación;
+- evidencia de obra.
+
+La pregunta ahora es:
+
+> **¿Qué puede hacer una máquina con toda esa información?**
+
+Antes del auge de la IA generativa, principalmente programábamos reglas:
+
+```text
+SI parámetro X está vacío → generar incidencia
+```
+
+Con IA podemos trabajar con situaciones mucho menos estructuradas:
+
+```text
+Analiza este modelo, estas especificaciones, estas actas y estas fotografías e identifica posibles inconsistencias.
+```
+
+Este cambio es fundamental.
+
+**Software tradicional:** le decimos exactamente cómo resolver el problema.
+
+**Machine Learning:** aprende patrones a partir de datos.
+
+**IA generativa:** utiliza patrones aprendidos para producir o transformar nueva información.
+
+---
+
+## 2. ¿Qué es Inteligencia Artificial?
+
+La inteligencia artificial es el concepto amplio: sistemas capaces de realizar tareas que normalmente requieren capacidades cognitivas humanas.
+
+```text
+INTELIGENCIA ARTIFICIAL
+│
+├── Sistemas basados en reglas
+│
+├── Machine Learning
+│   │
+│   └── Deep Learning
+│       │
+│       ├── Modelos de lenguaje
+│       ├── Modelos de visión
+│       ├── Modelos multimodales
+│       └── Modelos generativos
+```
+
+### Inteligencia Artificial
+
+En AECO puede utilizarse para:
+
+- clasificación documental;
+- reconocimiento de elementos;
+- análisis de riesgos;
+- predicción;
+- optimización;
+- interpretación de lenguaje;
+- generación de información.
+
+### Machine Learning
+
+En lugar de programar todas las reglas, el sistema aprende patrones utilizando datos.
+
+Ejemplo AECO:
+
+Tenemos cientos de proyectos históricos con:
+
+- presupuesto inicial;
+- avance;
+- cambios;
+- contratistas;
+- duración;
+- sobrecostos.
+
+Un modelo podría aprender relaciones entre esas variables y estimar riesgo de desviación.
+
+### Deep Learning
+
+Utiliza redes neuronales profundas capaces de aprender relaciones mucho más complejas.
+
+Permite muchas de las tecnologías actuales de:
+
+- visión artificial;
+- reconocimiento de voz;
+- modelos de lenguaje;
+- IA generativa.
+
+### IA generativa
+
+No solamente clasifica o predice.
+
+Puede generar:
+
+- texto;
+- código;
+- imágenes;
+- audio;
+- video;
+- estructuras de datos.
+
+Aquí aparece el cambio que hizo que la IA pudiera utilizarse directamente por profesionales BIM sin necesidad de desarrollar previamente un modelo de Machine Learning.
+
+---
+
+## 3. Tres familias que deben conocer
+
+### Modelos de lenguaje
+
+Los LLM —Large Language Models— trabajan principalmente con lenguaje y representaciones de información.
+
+Pueden:
+
+- interpretar documentos;
+- resumir;
+- comparar;
+- clasificar;
+- extraer información;
+- escribir;
+- generar código;
+- transformar información no estructurada en información estructurada.
+
+Ejemplo:
+
+```text
+Entrada:
+Acta de comité de obra de 14 páginas.
+
+Salida:
+[
+  {
+    "actividad": "Actualizar diseño de drenaje",
+    "responsable": "Contratista",
+    "fecha_limite": "2026-08-20"
+  }
+]
+```
+
+Para AECO esto es especialmente poderoso porque una gran cantidad de conocimiento del proyecto sigue viviendo en lenguaje natural.
+
+---
+
+## 4. Modelos multimodales
+
+Un modelo multimodal puede trabajar simultáneamente con diferentes tipos de información.
+
+```text
+Texto
++
+Imagen
++
+Documento
++
+Plano
++
+Tabla
++
+Audio
+```
+
+Esto tiene una implicación enorme en AECO.
+
+Una IA podría recibir simultáneamente:
+
+- una fotografía de obra;
+- un detalle constructivo;
+- una especificación técnica;
+- información del elemento BIM;
+- una incidencia;
+- un acta.
+
+Y razonar utilizando todas esas fuentes.
+
+---
+
+## 5. Modelos de generación de imágenes
+
+Los modelos de generación de imágenes no solamente interpretan imágenes.
+
+También pueden producirlas o modificarlas.
+
+Aplicaciones AECO:
+
+- visualización conceptual;
+- exploración arquitectónica;
+- modificación de acabados;
+- generación de alternativas;
+- comunicación urbana;
+- diagramas;
+- infografías;
+- presentación de proyectos.
+
+Pero debe quedar clara una advertencia:
+
+> **Una imagen visualmente convincente no constituye evidencia técnica.**
+
+Una IA puede generar una imagen plausible de una estructura completamente incorrecta desde el punto de vista constructivo.
+
+---
+
+## 6. Una distinción fundamental: modelo ≠ ChatGPT
+
+Cuando alguien dice:
+
+> “ChatGPT hizo esto”
+
+puede haber sucedido realmente algo mucho más complejo.
+
+```text
+MODELO
+GPT / Claude / Gemini / Llama / Qwen
+          ↓
+APLICACIÓN
+ChatGPT / Claude / Gemini
+          ↓
+HERRAMIENTAS
+Web / Python / archivos / APIs / bases de datos
+          ↓
+DATOS DE LA ORGANIZACIÓN
+BIM / CDE / GIS / ERP / documentos
+```
+
+El modelo pudo:
+
+1. interpretar la solicitud;
+2. consultar información;
+3. ejecutar código;
+4. utilizar una herramienta;
+5. procesar un archivo;
+6. generar una respuesta.
+
+Esto prepara el terreno para sesiones posteriores sobre agentes, herramientas y MCP.
+
+---
+
+## 7. ¿Qué significa entrenar un modelo?
+
+No debemos imaginar el modelo como una gigantesca base de datos que almacena documentos.
+
+Durante el entrenamiento, el modelo analiza enormes cantidades de información para aprender patrones.
+
+```text
+DATOS
+↓
+ENTRENAMIENTO
+↓
+MODELO
+```
+
+El resultado del entrenamiento son millones o miles de millones de parámetros numéricos.
+
+El modelo aprende **representaciones estadísticas y relaciones**.
+
+---
+
+## 8. Inferencia: lo que ocurre cuando usamos la IA
+
+Cuando escribimos una solicitud ya no estamos entrenando el modelo.
+
+Estamos realizando una:
+
+> **inferencia**
+
+```text
+MODELO ENTRENADO
+        +
+SOLICITUD
+        +
+CONTEXTO
+        ↓
+    INFERENCIA
+        ↓
+    RESPUESTA
+```
+
+Ejemplo AECO:
+
+El modelo no necesita haber sido entrenado específicamente con nuestro proyecto.
+
+Podemos proporcionarle durante la inferencia:
+
+- BEP;
+- especificaciones;
+- tablas;
+- información BIM;
+- contrato;
+- actas.
+
+Y pedirle que razone sobre esa información.
+
+---
+
+## 9. Contexto: el escritorio de trabajo de la IA
+
+Una analogía útil:
+
+> **Los parámetros del modelo son lo aprendido durante su formación. El contexto es la información que tiene encima del escritorio mientras resuelve el problema.**
+
+Por ejemplo:
+
+```text
+MODELO GENERAL
++
+BEP
++
+Contrato
++
+Modelo BIM
++
+Actas
++
+Normativa
+=
+MODELO TRABAJANDO EN EL CONTEXTO DEL PROYECTO
+```
+
+Esta distinción es especialmente importante para organizaciones públicas.
+
+No siempre necesitamos entrenar nuestra propia IA.
+
+Muchas veces necesitamos construir correctamente su **contexto**.
+
+---
+
+## 10. Tokens
+
+Los modelos no leen exactamente palabras.
+
+Procesan unidades llamadas:
+
+> **tokens**
+
+Un token puede representar:
+
+- una palabra;
+- parte de una palabra;
+- puntuación;
+- fragmentos de código;
+- otros componentes.
+
+Lo importante para esta clase no es calcular tokens.
+
+Lo importante es entender:
+
+```text
+Más información
+      ↓
+Más tokens
+      ↓
+Mayor contexto
+      ↓
+Mayor costo computacional
+```
+
+Por eso no necesariamente es buena estrategia enviar:
+
+> “Todo el CDE del proyecto a la IA.”
+
+Hay que seleccionar la información pertinente.
+
+---
+
+## 11. Ventana de contexto
+
+Todo modelo tiene una capacidad limitada de información que puede procesar en una interacción.
+
+Ese espacio es la:
+
+> **ventana de contexto**
+
+Una ventana grande permite analizar grandes cantidades de información.
+
+Pero:
+
+> **Que algo quepa en la ventana de contexto no significa que sea conveniente introducirlo todo.**
+
+Para sistemas AECO importa:
+
+- seleccionar;
+- filtrar;
+- clasificar;
+- consultar;
+- relacionar.
+
+Esto conecta posteriormente con RAG, bases de datos y agentes.
+
+---
+
+## 12. Modelos generales vs. soluciones especializadas
+
+### Modelo general
+
+Ejemplos:
+
+- ChatGPT;
+- Claude;
+- Gemini.
+
+Son capaces de resolver problemas de dominios muy diferentes.
+
+### Solución especializada
+
+Puede construirse combinando:
+
+```text
+Modelo general
++
+datos propios
++
+reglas
++
+herramientas
++
+procesos
++
+validaciones
+```
+
+Ejemplo:
+
+Un modelo general probablemente puede explicar qué significa un parámetro BIM.
+
+Pero una solución especializada podría:
+
+1. conectarse al CDE;
+2. consultar el estándar BIM institucional;
+3. consultar el modelo;
+4. identificar parámetros faltantes;
+5. generar incidencias;
+6. presentar evidencia.
+
+La especialización no necesariamente significa:
+
+> “Entrenar nuestra propia IA.”
+
+---
+
+## 13. Entonces, ¿cuándo entrenamos?
+
+Podemos pensar en tres niveles:
+
+```text
+NIVEL 1
+Modelo general + Prompt
+
+NIVEL 2
+Modelo general + Contexto + Datos de la organización
+
+NIVEL 3
+Modelo especializado / Fine-tuning / ML propio
+```
+
+La pregunta es:
+
+> **¿En cuál deberíamos empezar?**
+
+Normalmente no en el nivel 3.
+
+Para muchas instituciones, el mayor valor inicial está en conectar correctamente los modelos generales con información institucional gobernada.
+
+---
+
+## 14. ChatGPT, Claude y Gemini
+
+No deben entenderse únicamente como “chats”.
+
+Representan ecosistemas tecnológicos completos.
+
+### ChatGPT
+
+Aplicación construida sobre modelos de OpenAI, con capacidades de razonamiento, procesamiento de archivos, visión, generación de imágenes y uso de herramientas.
+
+### Claude
+
+Ecosistema desarrollado por Anthropic, con modelos orientados a lenguaje, visión, razonamiento y procesamiento de contextos extensos.
+
+### Gemini
+
+Ecosistema de Google, fuertemente orientado a capacidades multimodales sobre texto, imágenes, documentos, audio y video.
+
+Mensaje importante:
+
+> **La arquitectura de una solución institucional no debería depender conceptualmente de una sola interfaz de chat.**
+
+---
+
+## 15. ¿Y ejecutar IA localmente?
+
+Existen familias de modelos cuyos pesos pueden descargarse y ejecutarse en infraestructura propia.
+
+Ejemplos:
+
+- Llama;
+- Qwen;
+- otros modelos abiertos o con pesos disponibles.
+
+Esto abre otro esquema:
+
+```text
+Cloud
+ChatGPT / Claude / Gemini
+
+vs.
+
+Infraestructura propia
+Servidor / GPU institucional
+        ↓
+Llama / Qwen / otros modelos
+```
+
+### Ventajas potenciales del modelo local
+
+- mayor control;
+- residencia de datos;
+- operación en redes privadas;
+- personalización;
+- independencia de determinados proveedores.
+
+### Desventajas
+
+- infraestructura;
+- GPU;
+- mantenimiento;
+- actualización;
+- seguridad;
+- MLOps;
+- normalmente menor capacidad que los modelos frontera para determinadas tareas.
+
+La discusión correcta no es:
+
+> Cloud bueno vs. local malo.
+
+Es:
+
+> **¿Qué arquitectura corresponde al nivel de sensibilidad y al caso de uso?**
+
+---
+
+## 16. Capacidades reales de la IA en AECO
+
+### Interpretar
+
+- especificaciones;
+- contratos;
+- actas;
+- informes;
+- planos;
+- fotografías.
+
+### Extraer
+
+```text
+PDF → tabla
+Acta → compromisos
+Informe → riesgos
+Plano → información
+```
+
+### Clasificar
+
+- incidencias;
+- documentos;
+- fotografías;
+- consultas;
+- solicitudes.
+
+### Comparar
+
+```text
+Modelo BIM
+vs.
+Requisitos BIM
+
+Especificación
+vs.
+Ficha técnica
+
+Contrato
+vs.
+Informe de interventoría
+```
+
+### Generar
+
+- informes;
+- consultas;
+- código;
+- formularios;
+- estructuras JSON;
+- gráficos;
+- imágenes.
+
+### Razonar
+
+Puede relacionar múltiples fuentes y proponer explicaciones o acciones.
+
+---
+
+## 17. Lo que la IA NO debe confundirse con hacer
+
+### La IA puede equivocarse con absoluta seguridad
+
+Los modelos generativos producen respuestas plausibles.
+
+No producen automáticamente respuestas verdaderas.
+
+### Puede inventar información
+
+Esto suele denominarse:
+
+> **alucinación**
+
+Ejemplo:
+
+> “Según la normativa, el artículo 8.4.17 establece…”
+
+Puede inventar perfectamente un artículo que nunca existió.
+
+### No conoce automáticamente nuestros proyectos
+
+Necesita acceso autorizado a la información.
+
+### No reemplaza cálculos especializados
+
+Para cálculos críticos:
+
+```text
+IA
+↓
+selecciona / interpreta
+↓
+software especializado
+↓
+calcula
+↓
+IA
+↓
+explica
+```
+
+No:
+
+```text
+IA → inventa el resultado
+```
+
+---
+
+## 18. IA probabilística vs. BIM determinístico
+
+Esta distinción es fundamental.
+
+```text
+BIM / BASE DE DATOS / SOFTWARE
+
+ID elemento = 45783
+Área = 34.72 m²
+Nivel = N03
+
+DETERMINÍSTICO
+```
+
+Frente a:
+
+```text
+IA
+
+“Este elemento probablemente corresponde
+a un muro estructural que debería revisarse…”
+
+PROBABILÍSTICO
+```
+
+Por eso la arquitectura correcta es:
+
+```text
+DATOS CONFIABLES
+        ↓
+       IA
+        ↓
+INTERPRETACIÓN
+        ↓
+REGLAS / HERRAMIENTAS
+        ↓
+VALIDACIÓN
+```
+
+No:
+
+```text
+IA = BASE DE DATOS
+```
+
+---
+
+## 19. Una arquitectura responsable para una institución pública
+
+```text
+          FUENTES OFICIALES
+               │
+     ┌─────────┼──────────┐
+     │         │          │
+    BIM       CDE        GIS
+     │         │          │
+     └─────────┼──────────┘
+               ↓
+        DATOS GOBERNADOS
+               ↓
+          CONTEXTO IA
+               ↓
+         MODELO DE IA
+               ↓
+          HERRAMIENTAS
+               ↓
+          RESULTADO IA
+               ↓
+     VALIDACIÓN / TRAZABILIDAD
+               ↓
+        DECISIÓN HUMANA
+```
+
+Aquí se conectan directamente las sesiones 01A y 01B.
+
+La sesión 01A planteaba:
+
+> **Sin datos BIM gobernados, la IA no tiene una fuente confiable sobre la cual trabajar.**
+
+La sesión 01B responde:
+
+> **Tener buenos datos tampoco es suficiente: debemos comprender qué hace el modelo, qué información recibe, con qué herramientas trabaja y qué resultados requieren validación.**
+
+---
+
+## 20. Ejercicio final — ¿Qué IA utilizarías?
+
+| Situación | Tecnología dominante |
+|---|---|
+| Detectar probabilidad de retraso usando 500 proyectos históricos | Machine Learning |
+| Analizar una fotografía de obra | Modelo multimodal |
+| Resumir un informe de interventoría | LLM |
+| Generar una imagen conceptual de espacio público | Modelo generativo de imágenes |
+| Consultar información de un modelo BIM mediante lenguaje natural | LLM + datos BIM + herramientas |
+| Verificar automáticamente reglas geométricas del modelo | Software determinístico + IA como apoyo |
+
+La última respuesta es intencionalmente importante.
+
+La respuesta no siempre debe ser:
+
+> “usar IA”.
+
+A veces la mejor arquitectura sigue siendo una regla determinística.
+
+---
+
+## Mensaje de cierre de la sesión
+
+### 1. La IA no es una base de datos
+
+Es un sistema de inferencia.
+
+### 2. El contexto importa tanto como el modelo
+
+Un buen modelo con datos incorrectos sigue produciendo resultados incorrectos.
+
+### 3. La IA y el software tradicional se complementan
+
+La IA interpreta; los sistemas determinísticos calculan, validan y ejecutan reglas.
+
+### 4. En AECO, BIM convierte la IA genérica en IA contextualizada
+
+> **El verdadero potencial no está en preguntarle cosas a ChatGPT. Está en conectar modelos de inteligencia artificial con los datos, herramientas, reglas y procesos que representan digitalmente nuestros proyectos y ciudades.**
+
