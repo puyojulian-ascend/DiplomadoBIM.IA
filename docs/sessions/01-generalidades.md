@@ -1125,23 +1125,46 @@ Ejecutar procesos sobre sistemas institucionales.
 ## De copilotos a agentes
 
 Hoy muchas aplicaciones de IA funcionan como parlantes.
-```mermaid
+``mermaid
 flowchart LR
-    A[PERSONA] --> B[PREGUNTA]
-    B --> C[IA]
-    C --> D[RESPUESTA]
+    A((PERSONA))
+    B[PREGUNTA]
+    C((IA))
+    D[RESPUESTA]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> A
 ```
 
 Pero los sistemas hoy ya pueden funcionar como agentes.
 ```mermaid
 flowchart LR
-    A[OBJETIVO] --> B[IA]
-    B --> C[CONSULTA BIM]
-    C --> D[CONSULTA DOCUMENTOS]
-    D --> E[CONSULTA BASE DE DATOS]
-    E --> F[VALIDA]
-    F --> G[TOMA ACCIONES]
-    G --> H[REPORTA]
+    A[OBJETIVO]
+    B((IA))
+    C[CONSULTA Y USA HERRAMIENTAS]
+    D[VALIDA]
+    E[TOMA ACCIONES]
+    F[REPORTA]
+
+    G[(BIM)]
+    H[(DOCUMENTOS)]
+    I[(BASES DE DATOS)]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    C -.-> G
+    C -.-> H
+    C -.-> I
+
+    G -.-> C
+    H -.-> C
+    I -.-> C
 ```
 
 ---
