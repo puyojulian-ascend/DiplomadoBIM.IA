@@ -1206,22 +1206,23 @@ flowchart LR
 ^^ Sesión 01 / Marco del diplomado
 ## Una ecuación para el curso
 
-```text
-IA
-+
-DATOS
-+
-CONTEXTO
-+
-HERRAMIENTAS
-+
-GOBERNANZA
 
-=
+```mermaid
+flowchart TB
+    A[IA]
+    B[DATOS]
+    C[CONTEXTO]
+    D[HERRAMIENTAS]
+    E[GOBERNANZA]
 
-CAPACIDAD INSTITUCIONAL
+    A --> F
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+
+    F[CAPACIDAD INSTITUCIONAL]
 ```
-
 ---
 
 ^^ Sesión 01 / Riesgos
