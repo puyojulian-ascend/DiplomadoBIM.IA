@@ -1125,7 +1125,7 @@ Ejecutar procesos sobre sistemas institucionales.
 ## De copilotos a agentes
 
 Hoy muchas aplicaciones de IA funcionan como parlantes.
-``mermaid
+```mermaid
 flowchart LR
     A((PERSONA))
     B[PREGUNTA]
