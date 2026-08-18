@@ -1253,20 +1253,22 @@ flowchart TB
 ^^ Sesión 01 / Estrategia
 ## Lo que sí debemos construir
 
-```text
-ESTÁNDARES
-    ↓
-DATOS ESTRUCTURADOS
-    ↓
-INTEROPERABILIDAD
-    ↓
-GOBERNANZA
-    ↓
-TRAZABILIDAD
-    ↓
-CONTEXTO
-    ↓
-INTELIGENCIA ARTIFICIAL
+```mermaid
+flowchart TB
+    A[ESTÁNDARES]
+    B[DATOS ESTRUCTURADOS]
+    C[INTEROPERABILIDAD]
+    D[GOBERNANZA]
+    E[TRAZABILIDAD]
+    F[CONTEXTO]
+    G[INTELIGENCIA ARTIFICIAL]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
 ```
 
 ---
@@ -1308,17 +1310,29 @@ Ese es uno de los principales aportes que BIM puede hacer a una estrategia insti
 
 En BIM hemos dedicado años a construir:
 
-```text
-REPRESENTACIONES DIGITALES
-        ↓
-DATOS ESTRUCTURADOS
-        ↓
-RELACIONES
-        ↓
-CONTEXTO DEL ACTIVO
+```mermaid
+flowchart TB
+    A[REPRESENTACIONES DIGITALES]
+    B[DATOS ESTRUCTURADOS]
+    C[RELACIONES]
+    D[CONTEXTO DEL ACTIVO]
+    E[INTELIGENCIA ARTIFICIAL]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    E --> F[CONSULTA]
+    E --> G[ANÁLISIS]
+    E --> H[RAZONAMIENTO]
+    E --> I[AUTOMATIZACIÓN]
+    E --> J[AGENTES]
 ```
 
-Ahora aparece una nueva capa:
+:::card [Ahora aparece una nueva capa:] 
+la Inteligencia Artificial utiliza ese contexto para consultar, analizar, razonar, automatizar y actuar mediante agentes.
+:::
 
 ```text
 INTELIGENCIA ARTIFICIAL
@@ -1347,11 +1361,7 @@ Si BIM puede convertirse en el contexto institucional de nuestros activos:
 ---
 
 ^^ Sesión 01 / Propósito
-## Objetivo de la sesión
-
-Al finalizar, el estudiante debe poder distinguir los principales tipos de inteligencia artificial, comprender conceptualmente cómo funcionan los modelos generativos actuales y determinar qué capacidades pueden utilizarse de manera responsable sobre información BIM, documental y de obra.
-
-La sesión parte de una idea central:
+## Implementar IA NO es el objetivo
 
 > **BIM estructura la realidad construida; la IA permite interpretar esa estructura, relacionarla con información no estructurada y asistir decisiones. Pero la IA no reemplaza la fuente de verdad, las reglas del proyecto ni la responsabilidad profesional.**
 
