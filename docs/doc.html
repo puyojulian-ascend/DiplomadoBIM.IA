@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos — Diplomado BIM + IA</title>
+  <meta name="description" content="Fichas, talleres y expediente del caso del curso BIM + Inteligencia Artificial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/deck.css">
+  <style>
+    /* El lector tiene scroll vertical propio (a diferencia de un deck) */
+    html, body { overflow: auto }
+
+    .doc { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: clamp(28px, 5vh, 64px) clamp(20px, 5vw, 48px) 96px }
+    .doc-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: clamp(20px, 4vh, 40px) }
+    .doc-nav a.back { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; display: inline-flex; align-items: center; gap: .6em; padding: 8px 14px; border: 1px solid var(--glass-line); border-radius: 999px; transition: color .2s, border-color .2s }
+    .doc-nav a.back:hover { color: var(--accent-1); border-color: var(--accent-1) }
+    .doc-nav .tools { display: flex; gap: 8px }
+    .doc-nav button { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-dim); background: transparent; border: 1px solid var(--glass-line); border-radius: 999px; padding: 8px 14px; cursor: pointer; transition: color .2s, border-color .2s }
+    .doc-nav button:hover { color: var(--accent-3); border-color: var(--accent-3) }
+
+    /* ---- Índice de recursos ---- */
+    .rgroup { margin-bottom: clamp(28px, 5vh, 48px) }
+    .rgroup > h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(17px, 2vw, 22px); letter-spacing: -.01em; margin-bottom: 16px; color: var(--text-primary) }
+    .rlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px }
+    .ritem { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: inherit; background: var(--glass); border: 1px solid var(--glass-line); border-radius: 14px; padding: 16px 18px; transition: border-color .2s, transform .2s, background .2s }
+    a.ritem:hover { transform: translateY(-2px); border-color: var(--accent-1); background: var(--glass-strong) }
+    a.ritem:focus-visible { outline: 2px solid var(--accent-3); outline-offset: 3px }
+    .ritem.locked { opacity: .45; cursor: not-allowed }
+    .ritem .rtop { display: flex; align-items: center; justify-content: space-between; gap: 10px }
+    .ritem .rtitle { font-family: var(--font-display); font-weight: 500; font-size: 15.5px; line-height: 1.25 }
+    .ritem .rdesc { font-size: 13px; color: var(--text-dim); line-height: 1.45 }
+    .rtags { display: flex; gap: 5px; flex: none }
+    .rtag { font-family: var(--font-mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--glass-line); color: var(--text-dim); white-space: nowrap }
+    .rtag.dl { color: var(--accent-3); border-color: rgba(98, 191, 208, .4) }
+    .rtag.fill { color: var(--accent-1); border-color: rgba(251, 128, 0, .4) }
+
+    /* ---- Cuerpo del documento ---- */
+    .doc-body { font-size: clamp(14.5px, 1.15vw, 16.5px); line-height: 1.68; color: var(--text-primary) }
+    .doc-body > *:first-child { margin-top: 0 }
+    .doc-body h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.08; letter-spacing: -.02em; margin: 40px 0 18px }
+    .doc-body h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(21px, 2.6vw, 28px); line-height: 1.2; letter-spacing: -.01em; margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--glass-line) }
+    .doc-body h3 { font-family: var(--font-display); font-weight: 500; font-size: clamp(16px, 1.7vw, 19px); margin: 28px 0 10px; color: var(--accent-2) }
+    .doc-body p { margin: 0 0 16px }
+    .doc-body ul, .doc-body ol { margin: 0 0 16px; padding-left: 1.4em }
+    .doc-body li { margin-bottom: 7px }
+    .doc-body li::marker { color: var(--accent-1) }
+    .doc-body strong { color: #fff; font-weight: 600 }
+    .doc-body em { color: var(--text-dim) }
+    .doc-body a { color: var(--accent-3) }
+    .doc-body hr { border: none; border-top: 1px solid var(--glass-line); margin: 36px 0 }
+    .doc-body blockquote { margin: 0 0 20px; padding: 14px 20px; border-left: 3px solid var(--accent-1); background: var(--glass); border-radius: 0 12px 12px 0 }
+    .doc-body blockquote > *:last-child { margin-bottom: 0 }
+    .doc-body blockquote h1, .doc-body blockquote h2, .doc-body blockquote h3 { margin-top: 6px; border: none; padding: 0 }
+    .doc-body code { font-family: var(--font-mono); font-size: .87em; background: rgba(0, 0, 0, .28); border: 1px solid var(--glass-line); border-radius: 6px; padding: .12em .42em }
+    .doc-body pre { background: rgba(0, 0, 0, .32); border: 1px solid var(--glass-line); border-radius: 12px; padding: 16px 18px; overflow-x: auto; margin: 0 0 20px }
+    .doc-body pre code { background: none; border: none; padding: 0; font-size: .84em; line-height: 1.55 }
+    .doc-body table { width: 100%; border-collapse: collapse; margin: 0 0 22px; font-size: .93em; display: block; overflow-x: auto }
+    .doc-body th, .doc-body td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--glass-line); vertical-align: top }
+    .doc-body th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-3); font-weight: 500; white-space: nowrap }
+    .doc-body input[type=checkbox] { accent-color: var(--accent-1); margin-right: .5em }
+    .doc-body ul:has(input[type=checkbox]) { list-style: none; padding-left: .2em }
+
+    .doc-foot { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--glass-line); font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); letter-spacing: .08em }
+
+    /* ---- Hojas de taller rellenables ---- */
+    .fill-note { display: flex; gap: 14px; align-items: flex-start; background: var(--glass); border: 1px solid var(--glass-line); border-left: 3px solid var(--accent-3); border-radius: 0 14px 14px 0; padding: 14px 18px; margin-bottom: 28px; font-size: 13.5px; line-height: 1.5; color: var(--text-dim) }
+    .fill-note b { color: var(--text-primary); font-weight: 600 }
+    .fill-note .fn-icon { font-size: 18px; line-height: 1.2; flex: none }
+    .fill-status { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-faint); align-self: center; white-space: nowrap }
+    .fill-status.ok { color: var(--green) }
+
+    .doc-body code[data-fill] { display: block; min-height: 4.2em; outline: none; white-space: pre-wrap; word-break: break-word }
+    .doc-body pre:has(code[data-fill]) { background: rgba(0, 0, 0, .18); border: 1px dashed var(--glass-line); transition: border-color .2s, background .2s }
+    .doc-body pre:has(code[data-fill]:focus) { border-color: var(--accent-1); border-style: solid; background: rgba(0, 0, 0, .3) }
+    .doc-body td[data-fill] { min-width: 8em; outline: none; border-bottom: 1px solid var(--glass-line); background: rgba(251, 128, 0, .05); cursor: text }
+    .doc-body td[data-fill]:empty::before { content: "—"; color: var(--text-faint) }
+    .doc-body td[data-fill]:focus { background: rgba(251, 128, 0, .12); box-shadow: inset 0 -2px 0 var(--accent-1) }
+    .doc-body input[type=checkbox]:not([disabled]) { cursor: pointer; width: 15px; height: 15px; vertical-align: -2px }
+
+    @media print {
+      .fill-note { display: none !important }
+      .doc-body pre:has(code[data-fill]) { background: #fff; border: 1px solid #bbb }
+      .doc-body code[data-fill] { min-height: 3.4em; color: #111 }
+      .doc-body td[data-fill] { background: none; border-bottom: 1px solid #999; color: #111 }
+      .doc-body td[data-fill]:empty::before { content: "" }
+    }
+
+    /* ---- Impresión: las fichas están hechas para imprimirse ---- */
+    @media print {
+      .backdrop, .doc-nav, .doc-foot { display: none !important }
+      html, body { background: #fff !important; color: #111 !important }
+      .doc { max-width: none; padding: 0 }
+      .doc-body { color: #111; font-size: 11pt; line-height: 1.5 }
+      .doc-body strong { color: #000 }
+      .doc-body h1, .doc-body h2, .doc-body h3 { color: #000; page-break-after: avoid }
+      .doc-body h2 { border-bottom: 1px solid #bbb }
+      .doc-body em, .doc-body .rdesc { color: #444 }
+      .doc-body a { color: #111; text-decoration: underline }
+      .doc-body hr { border-top: 1px solid #bbb; page-break-after: always; margin: 0 }
+      .doc-body blockquote { background: #f4f4f4; border-left: 3px solid #666; page-break-inside: avoid }
+      .doc-body code, .doc-body pre { background: #f4f4f4; border: 1px solid #ddd; color: #111 }
+      .doc-body th { color: #000; border-bottom: 1px solid #999 }
+      .doc-body td { border-bottom: 1px solid #ddd }
+      .doc-body table, .doc-body pre { page-break-inside: avoid }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="backdrop">
+    <div class="glow"></div>
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 1440 900">
+      <g class="grid-line" opacity=".5">
+        <line x1="0" y1="150" x2="1440" y2="150" /><line x1="0" y1="300" x2="1440" y2="300" />
+        <line x1="0" y1="450" x2="1440" y2="450" /><line x1="0" y1="600" x2="1440" y2="600" />
+        <line x1="0" y1="750" x2="1440" y2="750" /><line x1="240" y1="0" x2="240" y2="900" />
+        <line x1="480" y1="0" x2="480" y2="900" /><line x1="720" y1="0" x2="720" y2="900" />
+        <line x1="960" y1="0" x2="960" y2="900" /><line x1="1200" y1="0" x2="1200" y2="900" />
+      </g>
+      <g class="contours">
+        <path d="M-50 760 C 240 700, 420 820, 700 740 S 1180 640, 1500 720" />
+        <path d="M-50 800 C 260 760, 440 870, 720 790 S 1200 700, 1500 770" />
+        <path d="M-50 700 C 220 640, 460 760, 760 680 S 1160 580, 1500 660" />
+      </g>
+    </svg>
+  </div>
+
+  <main class="doc">
+    <nav class="doc-nav">
+      <a class="back" href="index.html">← Índice del diplomado</a>
+      <span class="tools" id="tools"></span>
+    </nav>
+    <div class="doc-body" id="body"></div>
+    <footer class="doc-foot">Diplomado BIM + IA · Ascend para el IDU — 2026</footer>
+  </main>
+
+  <script src="assets/marked.min.js"></script>
+  <script src="assets/fill.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      // Mismo enrutado por hash que el reproductor de sesiones: #d=<ruta sin .md>.
+      // Se permite "/" (los recursos están en subcarpetas) pero no "." — así ninguna
+      // ruta puede escaparse de recursos/ con "..".
+      var hp = new URLSearchParams((location.hash || '').replace(/^#/, ''));
+      var qp = new URLSearchParams(location.search);
+      var raw = hp.get('d') || qp.get('d') || '';
+      var doc = raw.replace(/[^a-z0-9_/-]/gi, '');
+      var preview = hp.has('preview') || qp.has('preview');
+      var body = document.getElementById('body');
+      var tools = document.getElementById('tools');
+
+      // El manifiesto de sesiones decide qué está habilitado: un recurso se abre
+      // cuando su sesión pasa a "listo". Así las fichas no destapan los giros antes.
+      Promise.all([
+        fetch('recursos/manifest.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }),
+        fetch('sessions/manifest.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+      ]).then(function (res) {
+        var rman = res[0], sman = res[1];
+        if (!rman) { return msg('No se pudieron cargar los recursos', 'Falta <code>recursos/manifest.json</code>. Si abriste el archivo con doble clic, hay que servir la carpeta <code>docs/</code> con <code>npx serve</code>.'); }
+        if (!doc) { return renderIndex(rman, sman); }
+        renderDoc(rman, sman);
+      });
+
+      function abierta(sman, num) {
+        if (preview) return true;
+        if (!sman) return true;                       // sin manifiesto no se bloquea nada
+        var e = (sman.sesiones || []).filter(function (s) { return s.num === num; })[0];
+        return !e || e.estado === 'listo';
+      }
+
+      function findItem(rman, ruta) {
+        var hit = null;
+        (rman.grupos || []).forEach(function (g) {
+          (g.items || []).forEach(function (it) {
+            if (it.archivo.replace(/\.[a-z]+$/i, '') === ruta) hit = it;
+          });
+        });
+        return hit;
+      }
+
+      /* ---------------- Índice ---------------- */
+      function renderIndex(rman, sman) {
+        document.title = 'Recursos — Diplomado BIM + IA';
+        var html = '<h1>' + esc(rman.titulo || 'Recursos') + '</h1>';
+        if (rman.descripcion) html += '<p>' + esc(rman.descripcion) + '</p>';
+
+        (rman.grupos || []).forEach(function (g) {
+          html += '<section class="rgroup"><h2>' + esc(g.nombre) + '</h2><div class="rlist">';
+          (g.items || []).forEach(function (it) {
+            var ok = abierta(sman, it.sesion);
+            var inner =
+              '<span class="rtop"><span class="rtitle">' + esc(it.titulo) + '</span><span class="rtags">' +
+              (it.editable ? '<span class="rtag fill">✍️ rellenable</span>' : '') +
+              (it.tipo === 'descarga' ? '<span class="rtag dl">CSV</span>' : '<span class="rtag">S' + String(it.sesion).padStart(2, '0') + '</span>') +
+              '</span></span><span class="rdesc">' + esc(ok ? it.desc : 'Se habilita con la sesión ' + String(it.sesion).padStart(2, '0') + '.') + '</span>';
+            if (!ok) { html += '<div class="ritem locked" aria-disabled="true">' + inner + '</div>'; return; }
+            var href = it.tipo === 'descarga'
+              ? 'recursos/' + it.archivo
+              : 'doc.html#d=' + it.archivo.replace(/\.md$/i, '') + (preview ? '&preview=1' : '');
+            var attrs = it.tipo === 'descarga' ? ' download' : '';
+            html += '<a class="ritem" href="' + href + '"' + attrs + '>' + inner + '</a>';
+          });
+          html += '</div></section>';
+        });
+        body.innerHTML = html;
+      }
+
+      /* ---------------- Documento ---------------- */
+      function renderDoc(rman, sman) {
+        var item = findItem(rman, doc);
+        if (item && !abierta(sman, item.sesion)) {
+          return msg('Recurso en preparación',
+            'Este material se habilita junto con la <b>sesión ' + String(item.sesion).padStart(2, '0') + '</b>.<br>' +
+            'Volver a los <a href="doc.html">recursos del curso</a>.');
+        }
+        fetch('recursos/' + doc + '.md', { cache: 'no-cache' })
+          .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+          .then(function (md) {
+            body.innerHTML = marked.parse(md);
+            var h1 = body.querySelector('h1');
+            document.title = (h1 ? h1.textContent : 'Recurso') + ' — Diplomado BIM + IA';
+            if (item && item.editable) montarTaller(md);
+            else mountTools();
+          })
+          .catch(function () {
+            msg('No se pudo cargar el recurso',
+              'No existe <code>recursos/' + esc(doc) + '.md</code>.<br>' +
+              'Volver a los <a href="doc.html">recursos del curso</a>.');
+          });
+      }
+
+      /* ---------------- Taller rellenable ---------------- */
+      function montarTaller(md) {
+        var clave = 'taller:' + doc;
+        var form = Fill.hydrate(body, leer(clave), function () { agendarGuardado(); });
+
+        var nota = document.createElement('div');
+        nota.className = 'fill-note';
+        nota.innerHTML = '<span class="fn-icon" aria-hidden="true">✍️</span><span>' +
+          '<b>Esta hoja se llena aquí mismo.</b> Lo que escriba se guarda solo, en este navegador y en este equipo. ' +
+          'Para conservarla de verdad —o llevarla a otro computador— descárguela en <b>PDF</b> o en <b>.md</b> antes de cerrar.' +
+          '</span>';
+        body.insertBefore(nota, body.firstChild);
+
+        var estado = document.createElement('span');
+        estado.className = 'fill-status';
+        tools.appendChild(estado);
+        boton('⎙ PDF', function () { window.print(); });
+        boton('⬇ .md', descargar);
+        boton('Limpiar', function () {
+          if (!confirm('Se borran todas las respuestas de esta hoja. ¿Continuar?')) return;
+          form.clear(); guardar();
+        });
+        var volver = document.createElement('a');
+        volver.className = 'back';
+        volver.href = 'doc.html' + (preview ? '#preview=1' : '');
+        volver.textContent = 'Todos los recursos';
+        tools.appendChild(volver);
+
+        pintarEstado();
+
+        function boton(txt, fn) {
+          var b = document.createElement('button');
+          b.textContent = txt;
+          b.addEventListener('click', fn);
+          tools.appendChild(b);
+          return b;
+        }
+        function pintarEstado(guardado) {
+          var c = form.count();
+          estado.textContent = (guardado ? '✓ guardado · ' : '') + c.llenos + ' de ' + c.total + ' campos';
+          estado.className = 'fill-status' + (guardado ? ' ok' : '');
+        }
+        var t = null;
+        function agendarGuardado() { clearTimeout(t); t = setTimeout(guardar, 400); }
+        function guardar() {
+          escribir(clave, form.read());
+          pintarEstado(true);
+          setTimeout(function () { pintarEstado(false); }, 1800);
+        }
+        function descargar() {
+          var texto = Fill.apply(md, form.read());
+          var nombre = doc.split('/').pop() + '-respuestas.md';
+          var url = URL.createObjectURL(new Blob([texto], { type: 'text/markdown;charset=utf-8' }));
+          var a = document.createElement('a');
+          a.href = url; a.download = nombre;
+          document.body.appendChild(a); a.click(); document.body.removeChild(a);
+          setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+        }
+        // Red de seguridad: si cierran la pestaña sin esperar el autoguardado.
+        window.addEventListener('beforeunload', function () { escribir(clave, form.read()); });
+      }
+
+      // El almacenamiento local puede estar bloqueado (modo privado, políticas).
+      function leer(k) { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } }
+      function escribir(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } }
+
+      function mountTools() {
+        var b = document.createElement('button');
+        b.textContent = '⎙ Imprimir';
+        b.addEventListener('click', function () { window.print(); });
+        tools.appendChild(b);
+        var a = document.createElement('a');
+        a.className = 'back';
+        a.href = 'doc.html' + (preview ? '#preview=1' : '');
+        a.textContent = 'Todos los recursos';
+        tools.appendChild(a);
+      }
+
+      function msg(title, html) {
+        body.innerHTML = '<h1>' + esc(title) + '</h1><p>' + html + '</p>';
+      }
+      function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+      // Navegar entre recursos sin recargar la página completa.
+      window.addEventListener('hashchange', function () { location.reload(); });
+    })();
+  </script>
+</body>
+
+</html>

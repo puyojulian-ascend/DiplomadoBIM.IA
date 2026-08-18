@@ -4,25 +4,42 @@ titulo: Consulta conversacional, no-code, **MCP** y loops
 docente: Julián Puyo
 fecha: 04/09/2026
 eyebrow: Curso BIM + IA
-subtitulo: Preguntarle a tus proyectos en lenguaje natural y conectar herramientas sin escribir aplicaciones completas — con Revit como plataforma de ejemplo.
+subtitulo: Preguntarle al proyecto en lenguaje natural y conectar herramientas sin escribir aplicaciones completas — para que la respuesta salga de la fuente viva y no de una copia vieja.
 ---
 
-^^ Sesión 06 / Propósito
-## Conectar la IA con tus herramientas reales
-
-> Hasta ahora conversamos con la IA. Hoy la **conectamos**: que consulte tus documentos, dispare acciones en otras plataformas y opere sobre Revit — resolviendo con IA lo que normalmente exigiría código.
+^^ Sesión 06 / Antes
+## En el capítulo anterior
 
 :::split
-:::card [Ruta de la sesión] Cuatro paradas
-- **RAG** — consulta conversacional de tus datos.
-- **No-code** — automatización visual (n8n, Power Automate).
-- **MCP** — el "puerto USB" entre IA y herramientas.
-- **Loops** — ejecuciones periódicas y agentes que actúan.
+:::card [Quedó claro] El Semáforo del Dato
+Verde sale, ámbar solo en casa, rojo no sale. Y la matriz de requisitos ya tiene columna de fuente, con las actas incluidas.
 :::
-:::card [Enfoque] Conceptual y aplicado
-No vamos a programar. Vamos a entender **cuándo** usar cada pieza y cómo formular la solución.
+:::card [!Quedó abierto] La pregunta de hoy
+Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva?**
 :::
 :::
+
+---
+
+^^ Sesión 06 / El caso
+## La matriz que envejeció en cuatro días
+
+> **Corredor Av. Guayacanes.** El jueves Marcela llevó su matriz al comité. Salió impecable.
+
+:::split
+:::card [Lunes] El Consorcio radicó la corrección
+Compromiso **16-2**: se corrigió el código de clasificación de los elementos que lo tenían vacío. Modelo nuevo en el CDE.
+:::
+:::card [!Martes] Nadie avisó
+La matriz de Marcela sigue diciendo lo que decía el jueves. La copia que usó la IA es de la semana pasada. **Y nadie lo sabe.**
+:::
+:::
+
+:::warn
+Volver a exportar todo cada lunes no es un método: es una tarea que alguien va a olvidar. Y el día que la olvide, nadie se va a enterar.
+:::
+
+**La pregunta de hoy:** ¿cómo se conecta la IA a la fuente — de manera que la respuesta esté viva y no haya que acordarse de nada?
 
 ---
 
@@ -31,55 +48,55 @@ No vamos a programar. Vamos a entender **cuándo** usar cada pieza y cómo formu
 
 :::split
 :::card [!Buscador tradicional] Coincidencia exacta
-Buscás "muro cortafuego" y solo encuentra documentos con **esas palabras**. Si el pliego dice "muro RF-120", no aparece.
+Buscar "elementos de drenaje" encuentra solo los documentos con **esas palabras**. Si el anexo dice "estructura de captación", no aparece.
 :::
 :::card [Buscador semántico] Coincidencia por sentido
-Buscás "protección contra incendios" y encuentra "RF-120", "resistencia al fuego" y "cortafuego" — porque entiende que **significan lo mismo**.
+Buscar "elementos de drenaje" encuentra "sumidero", "colector", "pozo de inspección" y "estructura de captación" — porque **significan lo mismo**.
 :::
 :::
 
 :::note
-La magia detrás son los **embeddings**: convertir texto en vectores donde lo que significa parecido queda cerca.
+Lo que hay detrás son los **embeddings**: convertir texto en vectores donde lo que significa parecido queda cerca. No hace falta entender la matemática; sí hace falta saber que la búsqueda dejó de depender de acertar la palabra exacta.
 :::
 
 ---
 
 ^^ Sesión 06 / RAG
-## RAG: preguntarle a tus propios documentos
+## RAG: preguntarle a los documentos propios
 
-> **RAG** (Generación Aumentada por Recuperación): en vez de confiar en la memoria del modelo, primero **recupera** los fragmentos relevantes de *tus* fuentes y luego **responde citándolos**.
+> **RAG** (Generación Aumentada por Recuperación): en vez de confiar en la memoria del modelo, primero **recupera** los fragmentos relevantes de las fuentes propias y luego **responde citándolos**.
 
 ```mermaid
 flowchart LR
     A[Pregunta] --> B[Busca fragmentos relevantes]
-    B --> C[(Tus documentos<br/>PEB, pliegos, incidencias)]
+    B --> C[(Anexo tecnico, actas,<br/>informes, incidencias)]
     C --> D[Modelo redacta respuesta]
     D --> E[Respuesta + fuente citada]
 ```
 
 :::ok
-Esto resuelve el problema de las alucinaciones: la respuesta se ancla en **tus** documentos, no en lo que el modelo "recuerda".
+Esto ataca de raíz el problema de la sesión 02: la respuesta se ancla en **documentos reales**, no en lo que el modelo "recuerda". Y trae la fuente, que es exactamente la columna que la matriz necesitaba.
 :::
 
 ---
 
-^^ Sesión 06 / RAG en BIM
-## Qué podés consultar conversacionalmente
+^^ Sesión 06 / RAG en el corredor
+## Qué se puede consultar conversacionalmente
 
 :::split-3
 :::card [Modelo] Parámetros
-"¿Qué elementos del nivel 3 no tienen código de clasificación?"
+"¿Qué elementos de drenaje siguen sin código de clasificación?"
 :::
 :::card [Documentos] Requisitos
-"¿Qué exige el PEB sobre entregables IFC?"
+"¿Qué nivel de información exige el anexo para los sumideros, contando las actas?"
 :::
 :::card [Proyecto] Compromisos
-"¿Qué incidencias de coordinación siguen abiertas y de quién dependen?"
+"¿Qué compromisos de comité siguen abiertos y de quién dependen?"
 :::
 :::
 
 :::warn
-Límite clave: RAG responde bien sobre lo que está en sus fuentes. Distinguí siempre **conocimiento general** del modelo vs. **conocimiento corporativo** de tus documentos.
+Límite clave: RAG responde bien sobre lo que está en sus fuentes. Conviene distinguir siempre el **conocimiento general** del modelo del **conocimiento del proyecto** que vive en los documentos.
 :::
 
 ---
@@ -87,73 +104,55 @@ Límite clave: RAG responde bien sobre lo que está en sus fuentes. Distinguí s
 ^^ Sesión 06 / No-code
 ## Automatización sin escribir aplicaciones
 
-> Plataformas **no-code / low-code** conectan servicios con bloques visuales: cuando pasa X, hacé Y. Sin desarrollar software desde cero.
-
-:::split
-:::card [La anatomía] Tres piezas
-- **Disparador** (trigger): qué inicia el flujo — un correo, un formulario, un horario.
-- **Acción**: qué se ejecuta — llamar a la IA, guardar, notificar.
-- **Condición**: bifurcaciones y filtros.
-:::
-:::card [Plataformas] El panorama
-:::chips
-n8n, Power Automate, Make, Zapier
-:::
-Ideales para orquestar tareas entre correo, almacenamiento, formularios y modelos de IA.
-:::
-:::
-
----
-
-^^ Sesión 06 / No-code
-## Un flujo típico: entrada → IA → plataforma
+> Plataformas **no-code / low-code** conectan servicios con bloques visuales: cuando pasa X, se hace Y. Tres piezas y nada más: **disparador**, **acción** y **condición**.
 
 ```mermaid
 flowchart LR
-    A[Formulario / correo] --> B[Webhook n8n]
+    A[Radicacion en el CDE] --> B[Disparador]
     B --> C[IA procesa y estructura]
-    C --> D{¿Válido?}
-    D -- Sí --> E[Guarda en el CDE / Excel]
-    D -- No --> F[Notifica para revisión]
+    C --> D{Cambio relevante?}
+    D -- Si --> E[Actualiza la matriz y avisa]
+    D -- No --> F[Registra y no molesta]
 ```
 
 :::note
-Un **webhook** es simplemente una URL que dispara el flujo cuando algo la llama. Es el pegamento entre plataformas.
+La elección de plataforma **no es de gusto: es de semáforo**. Si la información es ámbar, la plataforma tiene que poder autohospedarse dentro de la entidad. Herramientas como n8n permiten eso; las de catálogo cerrado, no.
 :::
 
 ---
 
-^^ Sesión 06 / APIs
+^^ Sesión 06 / Extra
 ## APIs, en versión funcional
 
-> No necesitás programar una API para entender qué hace: es la **puerta de entrada** por la que dos sistemas se piden cosas entre sí, con reglas claras.
+> No hace falta programar una API para entender qué hace: es la **puerta de entrada** por la que dos sistemas se piden cosas entre sí, con reglas claras.
 
 :::split
 :::card [Analogía] El mesero del restaurante
-Vos (una app) pedís al mesero (la API), que va a la cocina (el sistema) y trae el plato (los datos). No entrás a la cocina; usás la puerta.
+Una aplicación le pide al mesero (la API), que va a la cocina (el sistema) y trae el plato (los datos). Nadie entra a la cocina; se usa la puerta.
 :::
 :::card [Por qué importa] Para el profesional BIM
-Saber que "existe una API" te permite **formular el requerimiento** correcto a un equipo técnico: qué datos necesitás, en qué formato, con qué frecuencia.
+Saber que "existe una API" permite **formular el requerimiento** correcto a un equipo técnico: qué datos, en qué formato, con qué frecuencia y con qué permisos.
 :::
 :::
 
 ---
 
-^^ Sesión 06 / MCP
-## MCP: el puerto estándar entre IA y herramientas
+^^ Sesión 06 / El objeto
+## El Enchufe: un puerto estándar entre la IA y las herramientas
 
-> **Model Context Protocol** es un estándar para que un agente descubra y use herramientas y fuentes de datos — sin integración a medida para cada una. Pensalo como el **USB-C de la IA**.
+> **MCP** (Model Context Protocol) es un estándar para que un agente descubra y use herramientas y fuentes de datos, **sin una integración a medida para cada una**. El USB-C de la IA: se expone una vez, sirve para siempre.
 
 :::split
-:::card [Arquitectura] Cliente y servidor
-- **Servidor MCP**: expone herramientas ("consultar modelo", "leer CDE").
-- **Cliente MCP**: el agente que las descubre y las usa.
-- **Herramientas**: las funciones disponibles, con permisos.
+:::card [Arquitectura] Tres piezas
+- **Servidor**: expone herramientas — "consultar el modelo", "leer el CDE".
+- **Cliente**: el agente que las descubre y las usa.
+- **Herramientas**: las funciones disponibles, cada una con sus permisos.
 :::
-:::card [MCP vs. lo anterior] Cuándo cada uno
-- **No-code**: flujos fijos entre apps conocidas.
-- **API**: integración a medida, requiere desarrollo.
-- **MCP**: el agente **elige** qué herramienta usar según el objetivo.
+:::card [Ya no es una promesa] Dónde está hoy
+Durante 2026 el protocolo pasó a tener soporte nativo en las plataformas grandes de IA, y existe un ecosistema —todavía joven— de servidores para el mundo BIM y openBIM:
+:::chips
+IfcOpenShell, Bonsai, web-ifc / Fragments, servidores propietarios en desarrollo
+:::
 :::
 :::
 
@@ -164,13 +163,13 @@ Saber que "existe una API" te permite **formular el requerimiento** correcto a u
 
 | Criterio | No-code | API | MCP |
 |---|---|---|---|
-| **Quién decide el paso** | Vos (flujo fijo) | El programa | **El agente** |
+| **Quién decide el paso** | La persona (flujo fijo) | El programa | **El agente** |
 | **Flexibilidad** | Media | Alta (con código) | Alta (con lenguaje natural) |
 | **Esfuerzo técnico** | Bajo | Alto | Medio |
 | **Ideal para** | Tareas repetibles | Integración robusta | Agentes que razonan sobre herramientas |
 
 :::ok
-MCP **simplifica drásticamente** conectar un agente a Revit, a un CDE o a una base de datos: se expone una vez y el agente la usa cuando la necesita.
+No son competidores: son capas. Un flujo no-code puede llamar a un agente, y el agente puede usar herramientas por MCP. La pregunta no es cuál es mejor, sino **quién decide el siguiente paso** en cada caso.
 :::
 
 ---
@@ -178,39 +177,61 @@ MCP **simplifica drásticamente** conectar un agente a Revit, a un CDE o a una b
 ^^ Sesión 06 / Loops
 ## Loops: de responder a operar en el tiempo
 
-> Un **loop** (pulso o ejecución periódica) hace que un agente no espere a que le preguntes: revisa, actúa y reporta **por su cuenta**, según un disparador de tiempo o evento.
+> Un **loop** hace que un agente no espere a que le pregunten: revisa, actúa y reporta por su cuenta, según un disparador de tiempo o de evento.
 
 :::split
 :::card [Por evento] Reactivo
-"Cuando se suba un modelo nuevo al CDE, valida los parámetros obligatorios y avisa qué falta."
+"Cuando se radique un modelo nuevo en el CDE, verifica qué filas de la matriz cambian y avisa a quién corresponde."
 :::
 :::card [Por tiempo] Programado
-"Cada lunes a las 7:00, genera el reporte de incidencias abiertas y envíalo al coordinador."
+"Cada lunes a las 7:00, genera el reporte de compromisos de comité vencidos."
 :::
 :::
 
 :::warn
-Con autonomía viene responsabilidad: los loops que **modifican** algo necesitan confirmación humana y trazabilidad. Los que solo **consultan** son seguros.
+Con autonomía viene responsabilidad. Los loops que solo **consultan** son seguros. Los que **modifican** algo necesitan confirmación humana y trazabilidad — y un límite de cuántas veces pueden actuar sin que alguien mire.
 :::
 
 ---
 
 ^^ Sesión 06 / Ejemplo integrador
-## Revit como plataforma de ejemplo
+## De escribir la solución a dirigirla
 
 > Muchas tareas que hoy exigen un plugin o un script pueden resolverse describiéndolas en lenguaje natural a un agente conectado.
 
 :::split
 :::card [!Antes] Con código
-Escribir un script de Dynamo o un add-in en C# para: seleccionar muros, leer un parámetro, escribir otro y exportar un reporte.
+Escribir un script o un complemento para: seleccionar los sumideros, leer un parámetro, escribir otro y exportar un reporte. Cada variación, un desarrollo nuevo.
 :::
-:::card [Ahora] Con un agente + herramientas
-"Seleccioná los muros portantes sin resistencia al fuego, proponé el valor según el tipo y generá un reporte." El agente lo hace vía herramientas, **pide confirmación** y deja historial.
+:::card [Ahora] Con un agente y sus herramientas
+*"Identifica los sumideros sin ficha de mantenimiento, contrasta contra el Acta 14 y prepara el listado del compromiso 16-1."* El agente lo hace con sus herramientas, **pide confirmación** y deja historial.
 :::
 :::
 
 :::note
-El profesional BIM no deja de existir: pasa de *escribir* la solución a **dirigir y validar** la solución.
+El profesional BIM no desaparece: pasa de **escribir** la solución a **dirigir y validar** la solución. Que es exactamente lo que se practicó en la sesión 02.
+:::
+
+---
+
+^^ Sesión 06 / El giro
+## Funcionó. Y ahí empezó el problema nuevo
+
+> Marcela conectó el agente al CDE. Funciona perfecto. Lo conectó **con su usuario**.
+
+:::split
+:::card [!Lo que nadie preguntó] ¿Con qué permisos entra?
+El agente ve **todo lo que ve Marcela**: contratos, correspondencia, información económica del proceso.
+
+Y el agente le responde a cualquiera que le escriba.
+:::
+:::card [La regla] Permisos heredados
+Un agente conectado **no tiene permisos propios: hereda los de quien lo conectó**. Si se conecta con una cuenta de coordinación, es una cuenta de coordinación la que queda expuesta a quien converse con él.
+:::
+:::
+
+:::warn
+El Semáforo de la sesión 04 no desaparece: **cambia de lugar**. Antes controlaba lo que salía de la entidad. Al conectar, ya no sale nada — la herramienta entra. El control pasa del dato al **permiso**.
 :::
 
 ---
@@ -219,30 +240,73 @@ El profesional BIM no deja de existir: pasa de *escribir* la solución a **dirig
 ## Actividad práctica (15 min)
 
 :::split
-:::card [Diseñá un flujo] Entrada → IA → plataforma
-Elegí una tarea real de tu proceso y dibujá su flujo no-code:
+:::card [Parte A] Diseñe un flujo
+Elija una tarea real de su proceso y dibuje su flujo:
 - **Disparador**: ¿qué lo inicia?
 - **Procesamiento IA**: ¿qué transforma?
 - **Salida**: ¿a qué plataforma llega?
-- **Validación**: ¿dónde interviene un humano?
+- **Validación**: ¿dónde interviene una persona?
 :::
-:::card [Bonus] ¿MCP o no-code?
-Para tu caso, decidí: ¿basta un flujo fijo (no-code) o conviene un agente con herramientas (MCP)?
+:::card [Parte B] Las dos decisiones
+1. ¿Basta un flujo fijo (no-code) o conviene un agente con herramientas (MCP)?
+2. **¿Con qué usuario se conecta** — y qué es lo peor que podría hacer con esos permisos?
+:::
+:::
+
+:::note
+**Material del taller** — se llena en pantalla y se descarga en PDF o `.md`:
+<a href="doc.html#d=talleres/taller-06" target="_blank" rel="noopener">Hoja de trabajo</a> ·
+<a href="doc.html#d=caso/actas-comite-fragmento" target="_blank" rel="noopener">Actas 14 y 16</a>
+:::
+
+---
+
+^^ Sesión 06 / Resolución
+## La matriz que ya no envejece
+
+| El problema del lunes | Cómo queda resuelto |
+|---|---|
+| La copia envejece y nadie avisa | El agente consulta **la fuente**, no una copia. No hay copia que envejezca. |
+| Alguien tiene que acordarse de exportar | Un **loop por evento**: cuando se radica algo, se verifica qué filas cambian |
+| Cada integración era un desarrollo | **Un enchufe** expuesto una vez, que el agente usa cuando lo necesita |
+| El agente veía todo lo de Marcela | Entra con una **cuenta de servicio de solo lectura**, con alcance limitado al proyecto |
+
+:::ok
+Y la matriz del jueves ya se habría corregido sola el lunes a las 7:03 — avisando que la fila del código de clasificación cambió, y **por qué**.
+:::
+
+---
+
+^^ Sesión 06 / La frase
+## Lo que hay que llevarse de hoy
+
+> **El Enchufe.** Conectar una vez y usar siempre — y entrar con el permiso correcto, no con el propio.
+
+:::split
+:::card [Resultado] Lo que sale de esta sesión
+El **diagrama de una automatización** conectada con IA, con su decisión de plataforma según el semáforo y su cuenta de acceso definida.
+:::
+:::card [!Idea fuerza] Una sola frase
+No se trata de programar más, sino de **conectar mejor**. La IA se vuelve útil cuando toca los datos y las herramientas reales — con permisos, límites y validación.
 :::
 :::
 
 ---
 
-^^ Sesión 06 / Cierre
-## Para llevar
+^^ Sesión 06 / Próximo capítulo
+## Todo lo que hace, hasta ahora, es leer
+
+> El agente consulta la fuente viva y responde con evidencia. Pero **no ha propuesto nada**: solo ordena lo que ya estaba escrito.
 
 :::split
-:::card [Resultado] Lo que sale de hoy
-El **diagrama de una automatización** conectada con IA, y criterio para elegir entre RAG, no-code, API y MCP según el problema.
+:::card [Lo que resolvimos] La conexión
+La IA ya llega a la fuente, con el permiso correcto, y avisa cuando algo cambia.
 :::
-:::card [!Idea fuerza] Una sola frase
-No se trata de programar más, sino de **conectar mejor**. La IA se vuelve útil cuando toca tus datos y tus herramientas — con permisos y validación.
+:::card [!Lo que queda abierto] La propuesta
+Interventoría observó que **seis sumideros chocan** con el trazado de la ciclorruta. Reubicarlos toca la pendiente del pluvial, el arbolado y el ancho del andén. Cuatro restricciones que no se pueden cumplir todas.
+
+**La respuesta no está escrita en ningún documento. ¿Puede la IA proponerla?**
 :::
 :::
 
-> Próxima sesión de Julián: **Diseño generativo e integración de modelos BIM con IA** — 11/09.
+> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Viernes 11/09.

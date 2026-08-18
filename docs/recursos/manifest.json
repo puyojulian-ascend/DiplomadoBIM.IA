@@ -1,0 +1,42 @@
+{
+  "titulo": "Recursos del curso",
+  "descripcion": "Fichas de bolsillo, hojas de taller y el expediente del caso. Cada recurso se habilita junto con su sesión.",
+  "grupos": [
+    {
+      "nombre": "Mapa del diplomado",
+      "items": [
+        { "archivo": "00-mapa-del-diplomado.md", "titulo": "Mapa del diplomado", "desc": "Las 12 sesiones, el arco del curso y los cinco objetos.", "sesion": 2, "tipo": "doc" }
+      ]
+    },
+    {
+      "nombre": "Fichas de bolsillo",
+      "items": [
+        { "archivo": "fichas/ficha-02-agente.md",   "titulo": "La Ficha del Agente",   "desc": "R·O·I·R·F y las cinco casillas de un agente.",            "sesion": 2, "tipo": "doc" },
+        { "archivo": "fichas/ficha-04-semaforo.md", "titulo": "El Semáforo del Dato",  "desc": "Verde, ámbar y rojo: qué puede salir de la entidad.",     "sesion": 4, "tipo": "doc" },
+        { "archivo": "fichas/ficha-06-enchufe.md",  "titulo": "El Enchufe",            "desc": "RAG, no-code, API y MCP — y los permisos heredados.",     "sesion": 6, "tipo": "doc" },
+        { "archivo": "fichas/ficha-08-abanico.md",  "titulo": "El Abanico",            "desc": "Variables, restricciones y objetivos. El frente de Pareto.", "sesion": 8, "tipo": "doc" },
+        { "archivo": "fichas/ficha-09-banda.md",    "titulo": "La Banda",              "desc": "Predicción con incertidumbre y la fuga de información.",  "sesion": 9, "tipo": "doc" }
+      ]
+    },
+    {
+      "nombre": "Hojas de taller",
+      "items": [
+        { "archivo": "talleres/taller-02.md", "titulo": "Taller 02 · Comunicación y agentes",   "desc": "De ambiguo a estructurado, y la ficha de un agente.",   "sesion": 2, "tipo": "doc", "editable": true },
+        { "archivo": "talleres/taller-04.md", "titulo": "Taller 04 · Extracción y gobierno",    "desc": "La matriz trazable y el semáforo aplicado.",           "sesion": 4, "tipo": "doc", "editable": true },
+        { "archivo": "talleres/taller-06.md", "titulo": "Taller 06 · Conexión y automatización","desc": "Diseñar un flujo y decidir con qué usuario se conecta.", "sesion": 6, "tipo": "doc", "editable": true },
+        { "archivo": "talleres/taller-08.md", "titulo": "Taller 08 · Diseño generativo",        "desc": "Formular un problema y cazar la restricción tácita.",  "sesion": 8, "tipo": "doc", "editable": true },
+        { "archivo": "talleres/taller-09.md", "titulo": "Taller 09 · Predicción y decisiones",  "desc": "La ficha de un modelo y la caza de la fuga.",          "sesion": 9, "tipo": "doc", "editable": true }
+      ]
+    },
+    {
+      "nombre": "Expediente del caso · Corredor Av. Guayacanes",
+      "items": [
+        { "archivo": "caso/caso-corredor-guayacanes.md",        "titulo": "El caso",                 "desc": "Brief del corredor ficticio que atraviesa todo el curso.", "sesion": 2, "tipo": "doc" },
+        { "archivo": "caso/elementos-tramo2.csv",               "titulo": "Elementos del Tramo 2",   "desc": "Export del modelo, subtramo K0+000 – K0+800. 63 registros.", "sesion": 2, "tipo": "descarga" },
+        { "archivo": "caso/pliego-anexo-tecnico-fragmento.md",  "titulo": "Anexo Técnico 7",         "desc": "Fragmento del capítulo 4: requisitos de entrega BIM.",     "sesion": 4, "tipo": "doc" },
+        { "archivo": "caso/actas-comite-fragmento.md",          "titulo": "Actas de comité 14 y 16", "desc": "Las decisiones que modificaron el anexo.",                 "sesion": 4, "tipo": "doc" },
+        { "archivo": "caso/historico-costos-corredores.csv",    "titulo": "Histórico de 40 corredores", "desc": "Presupuesto y ejecución real de proyectos anteriores.",  "sesion": 9, "tipo": "descarga" }
+      ]
+    }
+  ]
+}

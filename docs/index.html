@@ -45,6 +45,19 @@
     .badge.stub { color: var(--text-dim) }
     .hub-foot { margin-top: 48px; font-family: var(--font-mono); font-size: 11px; color: var(--text-faint); letter-spacing: .08em; display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
     .hub-foot b { color: var(--text-dim) }
+    /* Acceso al material de apoyo (fichas, talleres, expediente del caso) */
+    a.resource-link {
+      display: flex; align-items: center; gap: 18px; margin-top: clamp(16px, 2.5vw, 24px);
+      text-decoration: none; color: inherit; background: var(--glass); border: 1px solid var(--glass-line);
+      border-radius: 18px; padding: 20px 24px; transition: border-color .2s, transform .2s, background .2s;
+    }
+    a.resource-link:hover { transform: translateY(-3px); border-color: var(--accent-3); background: var(--glass-strong) }
+    a.resource-link:focus-visible { outline: 2px solid var(--accent-3); outline-offset: 3px }
+    .resource-link .rl-icon { font-size: 26px; line-height: 1; flex: none }
+    .resource-link .rl-text { display: flex; flex-direction: column; gap: 5px; min-width: 0 }
+    .resource-link .rl-text b { font-family: var(--font-display); font-weight: 500; font-size: 17px; letter-spacing: -.01em }
+    .resource-link .rl-text span { font-size: 13.5px; color: var(--text-dim); line-height: 1.45 }
+    .resource-link .rl-go { margin-left: auto; flex: none; font-size: 20px; color: var(--accent-3) }
   </style>
 </head>
 
@@ -81,6 +94,15 @@
     </header>
 
     <section class="grid" id="grid" aria-label="Sesiones del curso"></section>
+
+    <a class="resource-link" href="doc.html" aria-label="Recursos del curso">
+      <span class="rl-icon" aria-hidden="true">📎</span>
+      <span class="rl-text">
+        <b>Recursos del curso</b>
+        <span>Fichas de bolsillo, hojas de taller y el expediente del caso. Cada recurso se habilita junto con su sesión.</span>
+      </span>
+      <span class="rl-go" aria-hidden="true">→</span>
+    </a>
 
     <footer class="hub-foot">
       <b>Diplomado BIM + IA</b> · Material de sesiones · Ascend para el IDU — 2026
