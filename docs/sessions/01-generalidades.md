@@ -1124,36 +1124,24 @@ Ejecutar procesos sobre sistemas institucionales.
 ^^ Sesión 01 / Transición
 ## De copilotos a agentes
 
-Hoy muchas aplicaciones de IA funcionan como copilotos.
-
-```text
-PERSONA
-  ↓
-PREGUNTA
-  ↓
-IA
-  ↓
-RESPUESTA
+Hoy muchas aplicaciones de IA funcionan como parlantes.
+```mermaid
+flowchart LR
+    A[PERSONA] --> B[PREGUNTA]
+    B --> C[IA]
+    C --> D[RESPUESTA]
 ```
 
-Pero los sistemas futuros pueden funcionar como agentes.
-
-```text
-OBJETIVO
-   ↓
-IA
-   ↓
-CONSULTA BIM
-   ↓
-CONSULTA DOCUMENTOS
-   ↓
-CONSULTA BASE DE DATOS
-   ↓
-VALIDA
-   ↓
-TOMA ACCIONES
-   ↓
-REPORTA
+Pero los sistemas hoy ya pueden funcionar como agentes.
+```mermaid
+flowchart LR
+    A[OBJETIVO] --> B[IA]
+    B --> C[CONSULTA BIM]
+    C --> D[CONSULTA DOCUMENTOS]
+    D --> E[CONSULTA BASE DE DATOS]
+    E --> F[VALIDA]
+    F --> G[TOMA ACCIONES]
+    G --> H[REPORTA]
 ```
 
 ---
