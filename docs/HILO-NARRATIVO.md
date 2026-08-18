@@ -146,6 +146,20 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 11 · Daniel | *(por completar)* | *(por completar)* |
 | 12 · Los tres | *(cierre)* | — |
 
+### Acuerdos de reparto entre sesiones
+
+Cuando dos sesiones rozan el mismo tema, **lo desarrolla la que llega primero** y la siguiente
+lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos docentes.
+
+| Tema | Lo desarrolla | Lo hereda |
+|---|---|---|
+| El modelo BIM como estructura de datos · los tres grados de estructura · IFC · nomenclaturas | **03 · Hugo** | 04 · Julián, que abre reconociéndolo y arranca donde eso termina: el anexo, las actas y los correos **no** están estructurados |
+
+En la 04 esas dos láminas quedan marcadas `Extra`: se dictan solo si la 03 no alcanzó a
+cubrirlas. La sesión funciona en los dos escenarios.
+
+Si aparecen más cruces, se anotan acá antes de que los decks se escriban.
+
 ---
 
 ## 8. Registro del lenguaje

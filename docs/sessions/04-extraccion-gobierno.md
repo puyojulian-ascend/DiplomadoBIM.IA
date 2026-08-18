@@ -20,7 +20,7 @@ El agente ya sabe qué hacer. Pero **¿de dónde saca los datos — y quién los
 :::
 
 :::note
-El miércoles, con Hugo, el modelo BIM apareció como una estructura de datos. Hoy toca sacarlos de ahí, y decidir qué puede salir de la entidad y qué no.
+**Y el miércoles, con Hugo:** el modelo BIM como estructura de datos, los tres grados de estructura y el IFC como formato de intercambio. Hoy se parte de ahí — y el problema empieza justo donde esa clase termina: **el anexo técnico, las actas y los correos no están estructurados**. Antes de gobernar esa información hay que extraerla.
 :::
 
 ---
@@ -49,7 +49,9 @@ Andrés, el coordinador BIM del Consorcio, pegó el anexo completo en una herram
 ^^ Sesión 04 / Extra
 ## Un modelo BIM es un modelo de datos
 
-> Cada elemento no es un dibujo: es un **objeto** con propiedades, relaciones y clasificaciones. Eso es exactamente lo que una IA puede consultar y transformar.
+> Repaso, por si hace falta. Si la sesión 03 ya lo cubrió, esta lámina se salta.
+
+Cada elemento no es un dibujo: es un **objeto** con propiedades, relaciones y clasificaciones. Eso es exactamente lo que una IA puede consultar y transformar.
 
 :::split
 :::card [Anatomía de un elemento] Qué contiene
@@ -69,8 +71,10 @@ La IA traduce entre estas tres representaciones.
 
 ---
 
-^^ Sesión 04 / Formatos
+^^ Sesión 04 / Extra
 ## Estructurado, semiestructurado y no estructurado
+
+> Repaso, por si hace falta. Si la sesión 03 ya lo cubrió, esta lámina se salta.
 
 | Tipo | Ejemplos en el corredor | Qué tan "lista para IA" está |
 |---|---|---|

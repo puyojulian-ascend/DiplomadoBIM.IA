@@ -22,7 +22,8 @@ modificó el pliego.
 
 ## Minutado
 
-Contenido: ~103 min sin la lámina `Extra`, ~108 con ella. Holgura: 12–17 min.
+Contenido: ~97 min si se saltan **las dos** láminas `Extra`, ~108 si se dictan ambas.
+Holgura: entre 12 y 23 min según lo que haya cubierto Hugo el miércoles.
 
 | Min | Lámina | Tiempo |
 |---|---|---|
@@ -30,7 +31,7 @@ Contenido: ~103 min sin la lámina `Extra`, ~108 con ella. Holgura: 12–17 min.
 | 0:03 | **Antes** — En el capítulo anterior | 2 |
 | 0:05 | **El caso** — Tres cosas pasaron esta semana | 5 |
 | 0:10 | *Extra — Un modelo BIM es un modelo de datos* | *5 (opcional)* |
-| 0:15 | Formatos — Estructurado / semi / no estructurado | 6 |
+| 0:15 | *Extra — Estructurado / semi / no estructurado* | *6 (opcional)* |
 | 0:21 | Riesgo silencioso — Pérdida de contexto al exportar | 8 |
 | 0:29 | Técnica — Lectura asistida de documentos | 7 |
 | 0:36 | **Demostración en vivo** | 10 |
@@ -44,11 +45,41 @@ Contenido: ~103 min sin la lámina `Extra`, ~108 con ella. Holgura: 12–17 min.
 | 1:45 | **La frase** + Próximo capítulo | 3 |
 | 1:48 | *Holgura / preguntas* | *12* |
 
-### Sobre la lámina `Extra`
+### Sobre las dos láminas `Extra`
 
-La sesión 03 de Hugo se titula *"Flujos inteligentes y BIM como modelos de datos"*. **Si Hugo
-ya cubrió el modelo BIM como estructura de datos el miércoles, sáltela.** Repetirlo dos días
-después le resta autoridad a los dos. Confirmar con él antes de la sesión.
+La sesión 03 de Hugo se llama *"Flujos inteligentes y BIM como modelos de datos"*, y su temario
+propuesto incluye los tres grados de estructura, IFC y nomenclaturas. **Ese territorio es de él:
+la 04 no lo re-enseña, lo hereda.**
+
+| Lámina | Cuándo saltarla |
+|---|---|
+| *Un modelo BIM es un modelo de datos* | Si Hugo trató el modelo como estructura de datos |
+| *Estructurado / semi / no estructurado* | Si Hugo trató los tres grados de estructura y el IFC |
+
+**Acuerdo con Hugo:** él desarrolla el concepto el miércoles y deja su fila en la tabla de
+traspaso del [hilo narrativo](../docs/HILO-NARRATIVO.md). El viernes se abre reconociéndolo en
+voz alta, que es lo que hace la nota de la lámina *Antes*:
+
+> *"El miércoles quedó claro que un PDF muestra pero no estructura. Hoy hay que sacarle datos a
+> 180 páginas de PDF."*
+
+Eso convierte la dependencia en enganche, en vez de en repetición.
+
+**Si Hugo no alcanzó a cubrirlo:** las dos láminas están completas y se dictan sin cambios. La
+sesión funciona igual; solo se gastan 11 minutos más.
+
+**Dónde va el tiempo que se libera** (hasta 11 min si se saltan las dos). En orden de prioridad:
+
+1. **+4 min al giro.** Es el corazón de la sesión y siempre queda corto. Dar tiempo a que
+   alguien reaccione a la frase del acta antes de seguir.
+2. **+4 min al taller**, de 15 a 19. La parte B —pintar el semáforo sobre documentos propios— es
+   la que más conversación genera y la que más se recorta.
+3. **+3 min al semáforo.** Sirve para hacer la ronda de "¿de qué color es esto?" con dos o tres
+   ejemplos que traiga el auditorio, en vez de solo los de la lámina.
+
+**Lo que NO se hace con ese tiempo:** agregar contenido nuevo. La sesión está calibrada en 15
+láminas efectivas por diseño; el tiempo recuperado es para respirar, no para llenar.
+
 
 ---
 
