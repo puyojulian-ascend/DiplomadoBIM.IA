@@ -1368,7 +1368,7 @@ Un modelo puede razonar sobre información; un sistema completo necesita además
 
 En BIM tenemos:
 
-:::split-3
+:::split-6
 :::card
 **Objetos**
 :::
@@ -1378,7 +1378,6 @@ En BIM tenemos:
 :::card
 **Relaciones**
 :::
-
 :::card
 **Clasificación**
 :::
@@ -1388,7 +1387,9 @@ En BIM tenemos:
 :::card
 **Versiones**
 :::
+:::
 
+:::split-6
 :::card
 **Incidencias**
 :::
@@ -1398,7 +1399,6 @@ En BIM tenemos:
 :::card
 **Costos**
 :::
-
 :::card
 **Programación**
 :::
@@ -1441,75 +1441,75 @@ Este cambio es fundamental.
 
 La inteligencia artificial es el concepto amplio: sistemas capaces de realizar tareas que normalmente requieren capacidades cognitivas humanas.
 
-```text
-INTELIGENCIA ARTIFICIAL
-│
-├── Sistemas basados en reglas
-│
-├── Machine Learning
-│   │
-│   └── Deep Learning
-│       │
-│       ├── Modelos de lenguaje
-│       ├── Modelos de visión
-│       ├── Modelos multimodales
-│       └── Modelos generativos
+```mermaid
+flowchart TB
+    A[INTELIGENCIA ARTIFICIAL]
+    A --> B[Sistemas basados en reglas]
+    A --> C[Machine Learning]
+    C --> D[Deep Learning]
+    D --> E[Modelos de lenguaje]
+    D --> F[Modelos de visión]
+    D --> G[Modelos multimodales]
+    D --> H[Modelos generativos]
 ```
 
-### Inteligencia Artificial
+---
 
+^^ Sesión 01 / Fundamentos de IA
+## Inteligencia Artificial y Machine Learning
+
+:::split
+:::card [IA] Inteligencia Artificial
 En AECO puede utilizarse para:
 
-- clasificación documental;
-- reconocimiento de elementos;
-- análisis de riesgos;
-- predicción;
-- optimización;
-- interpretación de lenguaje;
-- generación de información.
+:::chips
+Clasificación documental, Reconocimiento de elementos, Análisis de riesgos, Predicción, Optimización, Interpretación de lenguaje, Generación de información
+:::
+:::
 
-### Machine Learning
-
+:::card [ML] Machine Learning
 En lugar de programar todas las reglas, el sistema aprende patrones utilizando datos.
 
-Ejemplo AECO:
+**Ejemplo AECO**
 
 Tenemos cientos de proyectos históricos con:
 
-- presupuesto inicial;
-- avance;
-- cambios;
-- contratistas;
-- duración;
-- sobrecostos.
+:::chips
+Presupuesto inicial, Avance, Cambios, Contratistas, Duración, Sobrecostos
+:::
 
 Un modelo podría aprender relaciones entre esas variables y estimar riesgo de desviación.
+:::
+:::
 
-### Deep Learning
+---
 
+^^ Sesión 01 / Fundamentos de IA
+## Deep Learning e IA generativa
+
+:::split
+:::card [DL] Deep Learning
 Utiliza redes neuronales profundas capaces de aprender relaciones mucho más complejas.
 
 Permite muchas de las tecnologías actuales de:
 
-- visión artificial;
-- reconocimiento de voz;
-- modelos de lenguaje;
-- IA generativa.
+:::chips
+Visión artificial, Reconocimiento de voz, Modelos de lenguaje, IA generativa
+:::
+:::
 
-### IA generativa
-
+:::card [GenAI] IA generativa
 No solamente clasifica o predice.
 
 Puede generar:
 
-- texto;
-- código;
-- imágenes;
-- audio;
-- video;
-- estructuras de datos.
+:::chips
+Texto, Código, Imágenes, Audio, Video, Estructuras de datos
+:::
 
 Aquí aparece el cambio que hizo que la IA pudiera utilizarse directamente por profesionales BIM sin necesidad de desarrollar previamente un modelo de Machine Learning.
+:::
+:::
 
 ---
 
