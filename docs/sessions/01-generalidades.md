@@ -1311,16 +1311,20 @@ Ese es uno de los principales aportes que BIM puede hacer a una estrategia insti
 En BIM hemos dedicado años a construir:
 
 ```mermaid
+flowchart LR
+    A[REPRESENTACIONES DIGITALES] --> B[DATOS ESTRUCTURADOS]
+    B --> C[RELACIONES]
+```
+
+:::card [Ahora aparece una nueva capa:] 
+la Inteligencia Artificial utiliza ese contexto para consultar, analizar, razonar, automatizar y actuar mediante agentes.
+:::
+
+```mermaid
 flowchart TB
-    A[REPRESENTACIONES DIGITALES]
-    B[DATOS ESTRUCTURADOS]
-    C[RELACIONES]
     D[CONTEXTO DEL ACTIVO]
     E[INTELIGENCIA ARTIFICIAL]
 
-    A --> B
-    B --> C
-    C --> D
     D --> E
 
     E --> F[CONSULTA]
@@ -1328,20 +1332,6 @@ flowchart TB
     E --> H[RAZONAMIENTO]
     E --> I[AUTOMATIZACIÓN]
     E --> J[AGENTES]
-```
-
-:::card [Ahora aparece una nueva capa:] 
-la Inteligencia Artificial utiliza ese contexto para consultar, analizar, razonar, automatizar y actuar mediante agentes.
-:::
-
-```text
-INTELIGENCIA ARTIFICIAL
-        ↓
-CONSULTA
-ANÁLISIS
-RAZONAMIENTO
-AUTOMATIZACIÓN
-AGENTES
 ```
 
 :::ok
@@ -1378,18 +1368,47 @@ Un modelo puede razonar sobre información; un sistema completo necesita además
 
 En BIM tenemos:
 
-- objetos;
-- propiedades;
-- relaciones;
-- clasificación;
-- documentos;
-- versiones;
-- incidencias;
-- actividades;
-- costos;
-- programación;
-- ubicación;
-- evidencia de obra.
+:::split-3
+:::card
+**Objetos**
+:::
+:::card
+**Propiedades**
+:::
+:::card
+**Relaciones**
+:::
+
+:::card
+**Clasificación**
+:::
+:::card
+**Documentos**
+:::
+:::card
+**Versiones**
+:::
+
+:::card
+**Incidencias**
+:::
+:::card
+**Actividades**
+:::
+:::card
+**Costos**
+:::
+
+:::card
+**Programación**
+:::
+:::card
+**Ubicación**
+:::
+:::card
+**Evidencia de obra**
+:::
+:::
 
 La pregunta ahora es:
 
