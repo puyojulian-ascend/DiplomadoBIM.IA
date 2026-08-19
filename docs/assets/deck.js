@@ -118,17 +118,30 @@
     switch (name) {
       case 'split': return '<div class="split">' + inner + '</div>';
       case 'split-3': return '<div class="split-3">' + inner + '</div>';
+      case 'split-6': return '<div class="split-6">' + inner + '</div>';
       case 'stack': return '<div class="stack">' + inner + '</div>';
       case 'note': case 'warn': case 'ok': return '<div class="callout ' + name + '">' + inner + '</div>';
+      case 'diagram': return '<div class="card-diagram">' + inner + '</div>';
       case 'card': {
         var tag = '', title = arg;
         var tm = /^\[([^\]]*)\]\s*(.*)$/.exec(arg);
         if (tm) { tag = tm[1].trim(); title = tm[2].trim(); }
         var accent = /^!/.test(title); if (accent) title = title.slice(1).trim();
-        var h = '<div class="card' + (accent ? ' accent-border' : '') + '">';
-        if (tag) h += '<span class="ctag">' + esc(tag) + '</span>';
-        if (title) h += '<h3>' + inlineMd(title) + '</h3>';
-        return h + inner + '</div>';
+        var cls = 'card' + (accent ? ' accent-border' : '');
+        var head = '';
+        if (tag) head += '<span class="ctag">' + esc(tag) + '</span>';
+        if (title) head += '<h3>' + inlineMd(title) + '</h3>';
+        // Si la tarjeta contiene un bloque :::diagram, se vuelve revelable con <details>:
+        // todo lo previo al diagrama queda en <summary> (siempre visible); el diagrama
+        // queda fuera de <summary>, que el navegador muestra/oculta nativamente.
+        var dIdx = inner.indexOf('<div class="card-diagram">');
+        if (dIdx !== -1) {
+          var before = inner.slice(0, dIdx);
+          var after = inner.slice(dIdx);
+          return '<details class="' + cls + '"><summary>' + head + before +
+            '<span class="card-diagram-hint">Ver gráfico</span></summary>' + after + '</details>';
+        }
+        return '<div class="' + cls + '">' + head + inner + '</div>';
       }
       default: return '<div class="card">' + inner + '</div>';
     }

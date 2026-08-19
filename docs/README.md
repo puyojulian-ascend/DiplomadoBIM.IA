@@ -149,6 +149,35 @@ Idea clave o conclusión.
 :::
 ```
 
+### Tarjeta con gráfico revelable
+
+Si dentro de una `:::card` agregás un bloque `:::diagram`, la tarjeta se vuelve
+"tocable": el texto queda siempre visible y, al hacer clic o tap, se despliega el
+contenido de `:::diagram` debajo (y se vuelve a ocultar al tocar de nuevo). Útil para
+no saturar la diapositiva y mostrar el gráfico solo cuando lo pedís en vivo.
+
+```markdown
+:::card [Regresión] Predice un número
+Estima un valor continuo a partir de variables conocidas.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="85" r="4" fill="var(--accent-3)"/>
+  <!-- ...resto del SVG... -->
+</svg>
+
+:::
+:::
+```
+
+- Dentro de `:::diagram` podés pegar un SVG completo (`<svg>...</svg>`) o cualquier
+  Markdown/imagen (`![alt](assets/img/...)`).
+- Dejá una línea en blanco antes y después del `<svg>` para que se interprete como un
+  bloque, no como texto.
+- Si un `:::card` no tiene `:::diagram`, se comporta exactamente igual que antes (no
+  es "tocable").
+
 ### Métricas, chips y flujos
 
 ```markdown

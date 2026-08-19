@@ -21,6 +21,7 @@
     {
       "nombre": "Hojas de taller",
       "items": [
+        { "archivo": "talleres/taller-01.md", "titulo": "Taller 01 · Generalidades BIM + IA",   "desc": "Certeza, inferencia y lo que no se puede relacionar, hoy.", "sesion": 1, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-02.md", "titulo": "Taller 02 · Comunicación y agentes",   "desc": "De ambiguo a estructurado, y la ficha de un agente.",   "sesion": 2, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-04.md", "titulo": "Taller 04 · Extracción y gobierno",    "desc": "La matriz trazable y el semáforo aplicado.",           "sesion": 4, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-06.md", "titulo": "Taller 06 · Conexión y automatización","desc": "Diseñar un flujo y decidir con qué usuario se conecta.", "sesion": 6, "tipo": "doc", "editable": true },

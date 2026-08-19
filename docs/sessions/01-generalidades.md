@@ -29,6 +29,44 @@ Entender cómo modelos, documentos, actividades, incidencias, ensayos y evidenci
 
 Una institución pública acumula más de diez años de proyectos.
 
+<svg viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin:10px 0 18px">
+  <circle cx="73" cy="10" r="7" fill="var(--accent-3)" opacity="0.8"/>
+  <rect x="215" y="14.2" width="12" height="9.6" rx="2" fill="var(--accent-3)" opacity="0.6"/>
+  <circle cx="357" cy="8" r="6" fill="var(--accent-2)" opacity="0.7"/>
+  <rect x="430" y="10.2" width="12" height="9.6" rx="2" fill="var(--accent-1)" opacity="0.8"/>
+  <circle cx="549" cy="13" r="7" fill="var(--accent-1)" opacity="0.7"/>
+  <circle cx="744" cy="19" r="7" fill="var(--accent-3)" opacity="0.6"/>
+  <rect x="800" y="6" width="10" height="8" rx="2" fill="var(--accent-2)" opacity="0.9"/>
+  <rect x="74" y="43.8" width="8" height="6.4" rx="2" fill="var(--accent-2)" opacity="0.8"/>
+  <circle cx="180" cy="39" r="5" fill="var(--accent-1)" opacity="0.8"/>
+  <circle cx="300" cy="42" r="4" fill="var(--accent-1)" opacity="0.8"/>
+  <circle cx="412" cy="45" r="4" fill="var(--accent-2)" opacity="0.8"/>
+  <rect x="559" y="33" width="10" height="8" rx="2" fill="var(--accent-1)" opacity="0.8"/>
+  <circle cx="685" cy="47" r="3" fill="var(--accent-1)" opacity="0.8"/>
+  <circle cx="795" cy="43" r="3" fill="var(--accent-2)" opacity="0.6"/>
+  <rect x="31" y="70.8" width="8" height="6.4" rx="2" fill="var(--accent-3)" opacity="0.9"/>
+  <circle cx="187" cy="72" r="4" fill="var(--accent-2)" opacity="0.8"/>
+  <circle cx="352" cy="68" r="4" fill="var(--accent-1)" opacity="0.7"/>
+  <circle cx="463" cy="74" r="6" fill="var(--accent-2)" opacity="0.9"/>
+  <circle cx="602" cy="64" r="6" fill="var(--accent-2)" opacity="0.8"/>
+  <rect x="666" y="60.4" width="14" height="11.2" rx="2" fill="var(--accent-3)" opacity="0.9"/>
+  <circle cx="860" cy="67" r="3" fill="var(--accent-1)" opacity="0.8"/>
+  <rect x="46" y="86.8" width="8" height="6.4" rx="2" fill="var(--accent-3)" opacity="0.6"/>
+  <circle cx="162" cy="90" r="5" fill="var(--accent-2)" opacity="0.8"/>
+  <circle cx="334" cy="98" r="5" fill="var(--accent-2)" opacity="0.8"/>
+  <rect x="476" y="86.2" width="12" height="9.6" rx="2" fill="var(--accent-3)" opacity="0.8"/>
+  <circle cx="549" cy="92" r="6" fill="var(--accent-2)" opacity="0.9"/>
+  <circle cx="670" cy="105" r="4" fill="var(--accent-1)" opacity="0.9"/>
+  <rect x="817" y="96.2" width="12" height="9.6" rx="2" fill="var(--accent-1)" opacity="0.9"/>
+  <rect x="74" y="116" width="10" height="8" rx="2" fill="var(--accent-3)" opacity="0.9"/>
+  <circle cx="174" cy="122" r="4" fill="var(--accent-2)" opacity="0.7"/>
+  <circle cx="337" cy="125" r="4" fill="var(--accent-1)" opacity="0.9"/>
+  <circle cx="463" cy="133" r="7" fill="var(--accent-3)" opacity="0.9"/>
+  <circle cx="608" cy="119" r="4" fill="var(--accent-3)" opacity="0.6"/>
+  <rect x="741" y="119.2" width="12" height="9.6" rx="2" fill="var(--accent-3)" opacity="0.7"/>
+  <circle cx="825" cy="123" r="4" fill="var(--accent-1)" opacity="0.8"/>
+</svg>
+
 :::split-3
 :::card [Modelos] Información BIM
 - RVT
@@ -168,29 +206,24 @@ Para una persona puede ser suficiente decir:
 
 > "El muro que revisamos ayer."
 
-Una máquina necesita mayor contexto.
+:::note
+En un proyecto con cientos de muros, "el muro que revisamos ayer" no identifica nada por sí solo. Una persona lo resuelve por memoria compartida —sabe de qué obra habla, con quién, cuándo—. Una máquina no tiene ese atajo: necesita que la posición del muro dentro del proyecto esté explícita.
+:::
 
-```text
-Proyecto
-    ↓
-Contrato
-    ↓
-Tramo
-    ↓
-Zona
-    ↓
-Muro MC-027
-    ↓
-GUID
-    ↓
-Versión
-    ↓
-Estado
-    ↓
-Inspección
-    ↓
-Resultado
-```
+<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:420px; height:auto; display:block; margin:14px auto">
+  <rect x="10" y="10" width="480" height="230" rx="12" fill="none" stroke="var(--accent-3)" stroke-width="1.5" opacity="0.9"/>
+  <text x="24" y="28" font-size="12" letter-spacing="1" fill="var(--accent-3)" font-family="Inter, sans-serif">PROYECTO</text>
+  <rect x="32" y="38" width="436" height="188" rx="10" fill="none" stroke="var(--accent-3)" stroke-width="1.5" opacity="0.7"/>
+  <text x="46" y="56" font-size="12" letter-spacing="1" fill="var(--accent-3)" font-family="Inter, sans-serif">CONTRATO</text>
+  <rect x="54" y="66" width="392" height="146" rx="9" fill="none" stroke="var(--accent-2)" stroke-width="1.5" opacity="0.8"/>
+  <text x="68" y="84" font-size="12" letter-spacing="1" fill="var(--accent-2)" font-family="Inter, sans-serif">TRAMO</text>
+  <rect x="76" y="94" width="348" height="104" rx="8" fill="none" stroke="var(--accent-2)" stroke-width="1.5"/>
+  <text x="90" y="112" font-size="12" letter-spacing="1" fill="var(--accent-2)" font-family="Inter, sans-serif">ZONA</text>
+  <rect x="98" y="122" width="304" height="60" rx="7" fill="var(--accent-1)" opacity="0.16" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="250" y="157" text-anchor="middle" font-size="15" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MURO MC-027</text>
+</svg>
+
+<p style="text-align:center; font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; color:var(--text-dim); margin-top:-4px">GUID → Versión → Estado → Inspección → Resultado</p>
 
 :::ok
 **BIM convierte elementos físicos del proyecto en entidades digitales identificables.**
@@ -201,98 +234,92 @@ Resultado
 ^^ Sesión 01 / Datos
 ## ¿Qué sabe BIM de un objeto?
 
-Un elemento BIM puede contener mucho más que geometría.
+Un elemento BIM puede contener mucho más que geometría — y esas propiedades no son una lista suelta: son datos que se conectan entre sí, igual que el grafo de notas vinculadas de una app como Obsidian.
 
-:::split
-:::card [Identidad] ¿Qué es?
-- identificador
-- GUID
-- tipo
-- clasificación
-- sistema
-- código
-:::
-:::card [Características] ¿Cómo es?
-- dimensiones
-- material
-- especificaciones
-- propiedades técnicas
-- cantidades
-:::
-:::
-
-:::split
-:::card [Contexto] ¿Dónde está?
-- proyecto
-- estructura
-- zona
-- nivel
-- tramo
-- coordenadas
-:::
-:::card [Gestión] ¿Qué ocurre con él?
-- estado
-- responsable
-- versión
-- aprobación
-- actividad
-- incidencia
-- inspección
-:::
-:::
-
----
-
-^^ Sesión 01 / Datos
-## Datos + contexto
-
-Un dato aislado puede decir:
-
-```text
-Resistencia = 28 MPa
-```
-
-Pero una institución necesita saber:
-
-```text
-Proyecto: Corredor Norte
-Contrato: 045-2026
-Estructura: Puente 03
-Elemento: Pilar P-04
-Material: Concreto
-Resistencia especificada: 28 MPa
-Resistencia ensayo: 24 MPa
-Fecha: 2026-06-18
-Responsable: Contratista X
-Estado: En revisión
-```
-
-:::note
-La diferencia no es tener más datos.
-
-La diferencia es tener **datos contextualizados**.
-:::
-
----
-
-^^ Sesión 01 / Conocimiento
-## De datos a información interpretable
-
-```text
-DATO
-  +
-ESTRUCTURA
-  +
-RELACIONES
-  +
-CONTEXTO
-  +
-TRAZABILIDAD
-  ↓
-INFORMACIÓN INTERPRETABLE
-  ↓
-INTELIGENCIA ARTIFICIAL
-```
+<svg viewBox="110 85 640 480" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:700px; height:auto; display:block; margin:14px auto">
+  <ellipse cx="287" cy="205" rx="123" ry="112" fill="none" stroke="var(--accent-3)" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+  <ellipse cx="515" cy="205" rx="114" ry="98" fill="none" stroke="var(--accent-1)" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+  <ellipse cx="285" cy="433" rx="128" ry="107" fill="none" stroke="var(--accent-2)" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+  <ellipse cx="514" cy="434" rx="127" ry="111" fill="none" stroke="var(--accent-3)" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.5"/>
+  <line x1="400" y1="320" x2="236" y2="291" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="231" y2="245" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="268" y2="217" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="286" y2="174" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="332" y2="167" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="368" y2="138" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="443" y2="159" stroke="var(--accent-1)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="493" y2="160" stroke="var(--accent-1)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="518" y2="202" stroke="var(--accent-1)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="560" y2="227" stroke="var(--accent-1)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="561" y2="277" stroke="var(--accent-1)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="371" y2="484" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="325" y2="489" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="297" y2="452" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="254" y2="434" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="247" y2="388" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="218" y2="352" stroke="var(--accent-2)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="564" y2="349" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="572" y2="388" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="540" y2="412" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="531" y2="451" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="492" y2="460" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="468" y2="492" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <line x1="400" y1="320" x2="429" y2="484" stroke="var(--accent-3)" stroke-width="1" opacity="0.35"/>
+  <circle cx="236" cy="291" r="5" fill="var(--accent-3)"/>
+  <circle cx="231" cy="245" r="5" fill="var(--accent-3)"/>
+  <circle cx="268" cy="217" r="5" fill="var(--accent-3)"/>
+  <circle cx="286" cy="174" r="5" fill="var(--accent-3)"/>
+  <circle cx="332" cy="167" r="5" fill="var(--accent-3)"/>
+  <circle cx="368" cy="138" r="5" fill="var(--accent-3)"/>
+  <circle cx="443" cy="159" r="5" fill="var(--accent-1)"/>
+  <circle cx="493" cy="160" r="5" fill="var(--accent-1)"/>
+  <circle cx="518" cy="202" r="5" fill="var(--accent-1)"/>
+  <circle cx="560" cy="227" r="5" fill="var(--accent-1)"/>
+  <circle cx="561" cy="277" r="5" fill="var(--accent-1)"/>
+  <circle cx="371" cy="484" r="5" fill="var(--accent-2)"/>
+  <circle cx="325" cy="489" r="5" fill="var(--accent-2)"/>
+  <circle cx="297" cy="452" r="5" fill="var(--accent-2)"/>
+  <circle cx="254" cy="434" r="5" fill="var(--accent-2)"/>
+  <circle cx="247" cy="388" r="5" fill="var(--accent-2)"/>
+  <circle cx="218" cy="352" r="5" fill="var(--accent-2)"/>
+  <circle cx="564" cy="349" r="5" fill="var(--accent-3)"/>
+  <circle cx="572" cy="388" r="5" fill="var(--accent-3)"/>
+  <circle cx="540" cy="412" r="5" fill="var(--accent-3)"/>
+  <circle cx="531" cy="451" r="5" fill="var(--accent-3)"/>
+  <circle cx="492" cy="460" r="5" fill="var(--accent-3)"/>
+  <circle cx="468" cy="492" r="5" fill="var(--accent-3)"/>
+  <circle cx="429" cy="484" r="5" fill="var(--accent-3)"/>
+  <text x="228" y="295" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">identificador</text>
+  <text x="223" y="249" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">GUID</text>
+  <text x="260" y="209" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">tipo</text>
+  <text x="278" y="166" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">clasificación</text>
+  <text x="324" y="159" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">sistema</text>
+  <text x="360" y="130" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">código</text>
+  <text x="451" y="151" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">dimensiones</text>
+  <text x="501" y="152" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">material</text>
+  <text x="526" y="194" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">especificaciones</text>
+  <text x="568" y="219" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">propiedades técnicas</text>
+  <text x="569" y="281" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">cantidades</text>
+  <text x="363" y="497" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">proyecto</text>
+  <text x="317" y="502" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">estructura</text>
+  <text x="289" y="465" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">zona</text>
+  <text x="246" y="447" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">nivel</text>
+  <text x="239" y="392" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">tramo</text>
+  <text x="210" y="356" text-anchor="end" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">coordenadas</text>
+  <text x="572" y="353" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">estado</text>
+  <text x="580" y="392" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">responsable</text>
+  <text x="548" y="425" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">versión</text>
+  <text x="539" y="464" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">aprobación</text>
+  <text x="500" y="473" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">actividad</text>
+  <text x="476" y="505" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">incidencia</text>
+  <text x="437" y="497" text-anchor="start" font-size="10.5" fill="var(--text-dim)" font-family="Inter, sans-serif">inspección</text>
+  <text x="198" y="125" text-anchor="end" font-size="11" letter-spacing="1" fill="var(--accent-3)" font-family="Inter, sans-serif">IDENTIDAD</text>
+  <text x="597" y="134" text-anchor="start" font-size="11" letter-spacing="1" fill="var(--accent-1)" font-family="Inter, sans-serif">CARACTERÍSTICAS</text>
+  <text x="194" y="510" text-anchor="end" font-size="11" letter-spacing="1" fill="var(--accent-2)" font-family="Inter, sans-serif">CONTEXTO</text>
+  <text x="605" y="513" text-anchor="start" font-size="11" letter-spacing="1" fill="var(--accent-3)" font-family="Inter, sans-serif">GESTIÓN</text>
+  <circle cx="400" cy="320" r="18" fill="var(--accent-1)"/>
+  <text x="400" y="350" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">Elemento BIM</text>
+</svg>
 
 ---
 
@@ -301,37 +328,61 @@ INTELIGENCIA ARTIFICIAL
 
 :::split
 :::card [Proyecto A] Digitalizado
-La organización tiene:
+<svg viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin-bottom:10px">
+  <circle cx="44" cy="24" r="7" fill="var(--accent-1)" opacity="0.74"/>
+  <circle cx="85" cy="30" r="6" fill="var(--accent-2)" opacity="0.79"/>
+  <rect x="158" y="16" width="12" height="10" rx="2" fill="var(--accent-1)" opacity="0.79"/>
+  <circle cx="220" cy="26" r="8" fill="var(--accent-2)" opacity="0.67"/>
+  <circle cx="304" cy="12" r="5" fill="var(--accent-3)" opacity="0.68"/>
+  <rect x="32" y="59.5" width="14" height="11" rx="2" fill="var(--accent-2)" opacity="0.63"/>
+  <rect x="89" y="66" width="10" height="8" rx="2" fill="var(--accent-1)" opacity="0.63"/>
+  <circle cx="146" cy="63" r="7" fill="var(--accent-2)" opacity="0.93"/>
+  <rect x="213" y="50.5" width="16" height="13" rx="2" fill="var(--accent-1)" opacity="0.64"/>
+  <rect x="291" y="54" width="10" height="8" rx="2" fill="var(--accent-2)" opacity="0.91"/>
+  <circle cx="28" cy="103" r="7" fill="var(--accent-1)" opacity="0.62"/>
+  <rect x="78" y="97.5" width="14" height="11" rx="2" fill="var(--accent-3)" opacity="0.92"/>
+  <circle cx="170" cy="100" r="8" fill="var(--accent-1)" opacity="0.81"/>
+  <rect x="209" y="111" width="10" height="8" rx="2" fill="var(--accent-2)" opacity="0.63"/>
+  <rect x="297" y="101.5" width="14" height="11" rx="2" fill="var(--accent-2)" opacity="0.65"/>
+</svg>
 
-- 12.000 PDF
-- 3.000 planos
-- 80.000 fotografías
-- 250 archivos Excel
-- correos
-- informes
-- modelos BIM
+**12.000 PDF · 3.000 planos · 80.000 fotografías · 250 Excel · correos · informes · modelos BIM**
 
-La información existe.
-
-Pero no necesariamente está conectada.
+La información existe. Pero no necesariamente está conectada.
 :::
 
 :::card [Proyecto B] Estructurado
-```text
-PROYECTO
-    ↓
-CONTRATO
-    ↓
-TRAMO
-    ↓
-ELEMENTO
-   ↙ ↓ ↘
-ACTIVIDAD ENSAYO INCIDENCIA
-    ↓                ↓
-FOTOGRAFÍA       DOCUMENTO
-    ↓
-RESPONSABLE
-```
+<svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin-bottom:10px">
+  <line x1="160" y1="20" x2="160" y2="55" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="160" y1="55" x2="160" y2="90" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="160" y1="90" x2="160" y2="125" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="160" y1="125" x2="70" y2="165" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="160" y1="125" x2="160" y2="165" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="160" y1="125" x2="250" y2="165" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="70" y1="165" x2="70" y2="205" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="250" y1="165" x2="250" y2="205" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="70" y1="205" x2="70" y2="240" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <circle cx="160" cy="20" r="6" fill="var(--accent-3)"/>
+  <circle cx="160" cy="55" r="6" fill="var(--accent-3)"/>
+  <circle cx="160" cy="90" r="6" fill="var(--accent-3)"/>
+  <circle cx="160" cy="125" r="7" fill="var(--accent-1)"/>
+  <circle cx="70" cy="165" r="5" fill="var(--accent-2)"/>
+  <circle cx="160" cy="165" r="5" fill="var(--accent-2)"/>
+  <circle cx="250" cy="165" r="5" fill="var(--accent-2)"/>
+  <circle cx="70" cy="205" r="5" fill="var(--accent-2)"/>
+  <circle cx="250" cy="205" r="5" fill="var(--accent-2)"/>
+  <circle cx="70" cy="240" r="5" fill="var(--accent-1)"/>
+  <text x="172" y="24" font-size="10" fill="var(--text-dim)" font-family="Inter, sans-serif">PROYECTO</text>
+  <text x="172" y="59" font-size="10" fill="var(--text-dim)" font-family="Inter, sans-serif">CONTRATO</text>
+  <text x="172" y="94" font-size="10" fill="var(--text-dim)" font-family="Inter, sans-serif">TRAMO</text>
+  <text x="172" y="129" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">ELEMENTO</text>
+  <text x="70" y="152" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">ACTIVIDAD</text>
+  <text x="160" y="152" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">ENSAYO</text>
+  <text x="250" y="152" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">INCIDENCIA</text>
+  <text x="70" y="220" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">FOTOGRAFÍA</text>
+  <text x="250" y="220" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">DOCUMENTO</text>
+  <text x="70" y="255" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">RESPONSABLE</text>
+</svg>
 
 Existen relaciones explícitas entre la información.
 :::
@@ -342,11 +393,11 @@ Existen relaciones explícitas entre la información.
 ^^ Sesión 01 / IA
 ## ¿Qué cambia para una IA?
 
-En el primer escenario podemos preguntar:
+En **Proyecto A** podemos preguntar:
 
 > Busca documentos donde aparezca "muro".
 
-En el segundo podemos preguntar:
+En **Proyecto B** podemos preguntar:
 
 > ¿Cuáles muros ejecutados durante junio presentan ensayos pendientes y además tienen incidencias abiertas de calidad?
 
@@ -358,41 +409,6 @@ Es una **consulta sobre relaciones dentro de un sistema de información**.
 
 ---
 
-^^ Sesión 01 / Concepto
-## ¿Dónde está BIM?
-
-No solamente aquí:
-
-```text
-████████████
-██ MODELO ██
-████████████
-```
-
-También aquí:
-
-```text
-ELEMENTO ───── pertenece a ───── ZONA
-    │
-    ├──── tiene ──────────────── MATERIAL
-    │
-    ├──── participa en ───────── ACTIVIDAD
-    │
-    ├──── tiene ──────────────── INSPECCIÓN
-    │
-    ├──── genera ─────────────── INCIDENCIA
-    │
-    └──── está asociado a ────── DOCUMENTO
-```
-
-:::card [Idea clave] !BIM está también en las relaciones
-La geometría representa al activo.
-
-Las relaciones permiten **entenderlo**.
-:::
-
----
-
 ^^ Sesión 01 / Sector público
 ## BIM en una institución pública
 
@@ -400,27 +416,41 @@ En una empresa, un proyecto puede terminar.
 
 Para una institución pública, la información puede necesitar mantenerse durante décadas.
 
-```text
-PLANEACIÓN
-    ↓
-ESTUDIOS
-    ↓
-DISEÑO
-    ↓
-CONTRATACIÓN
-    ↓
-CONSTRUCCIÓN
-    ↓
-INTERVENTORÍA
-    ↓
-RECIBO
-    ↓
-OPERACIÓN
-    ↓
-MANTENIMIENTO
-    ↓
-REHABILITACIÓN
-```
+<svg viewBox="0 0 1000 140" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin:14px 0">
+  <rect x="17" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="115" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="213" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="311" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="409" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="507" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="605" y="35" width="84" height="50" rx="8" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="703" y="35" width="84" height="50" rx="8" fill="var(--accent-1)" fill-opacity="0.10" stroke="var(--accent-1)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="801" y="35" width="84" height="50" rx="8" fill="var(--accent-1)" fill-opacity="0.10" stroke="var(--accent-1)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <rect x="899" y="35" width="84" height="50" rx="8" fill="var(--accent-1)" fill-opacity="0.10" stroke="var(--accent-1)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="101" y1="60" x2="115" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="199" y1="60" x2="213" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="297" y1="60" x2="311" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="395" y1="60" x2="409" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="493" y1="60" x2="507" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="591" y1="60" x2="605" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="689" y1="60" x2="703" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="787" y1="60" x2="801" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="885" y1="60" x2="899" y2="60" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <text x="59" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">PLANEACIÓN</text>
+  <text x="157" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">ESTUDIOS</text>
+  <text x="255" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">DISEÑO</text>
+  <text x="353" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">CONTRATACIÓN</text>
+  <text x="451" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">CONSTRUCCIÓN</text>
+  <text x="549" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">INTERVENTORÍA</text>
+  <text x="647" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">RECIBO</text>
+  <text x="745" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">OPERACIÓN</text>
+  <text x="843" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">MANTENIMIENTO</text>
+  <text x="941" y="64" text-anchor="middle" font-size="8" fill="var(--text-primary)" font-family="Inter, sans-serif">REHABILITACIÓN</text>
+  <line x1="703" y1="100" x2="983" y2="100" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <line x1="703" y1="96" x2="703" y2="100" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <line x1="983" y1="96" x2="983" y2="100" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="843" y="118" text-anchor="middle" font-size="10.5" fill="var(--accent-1)" font-family="Inter, sans-serif">Mayor riesgo de continuidad de datos</text>
+</svg>
 
 ---
 
@@ -471,63 +501,45 @@ Necesita construir:
 
 Información:
 
-- identificable
-- estructurada
-- interoperable
-- documentada
-- trazable
-- consultable
-- preservable
+:::chips
+Identificable, Estructurada, Interoperable, Documentada, Trazable, Consultable, Preservable
 :::
-
----
-
-^^ Sesión 01 / Continuidad
-## BIM como memoria institucional
-
-```text
-PERSONAS        cambian
-SOFTWARE        cambia
-CONTRATISTAS    cambian
-GOBIERNOS       cambian
-PLATAFORMAS     cambian
-
-        ↓
-
-EL ACTIVO PERMANECE
-
-        ↓
-
-SU INFORMACIÓN DEBE PERMANECER
-```
+:::
 
 ---
 
 ^^ Sesión 01 / Interoperabilidad
 ## La información no debería depender de una aplicación
 
-Si la información institucional depende completamente de una aplicación:
+Si la información institucional depende completamente de una aplicación, la institución genera dependencia tecnológica. Una estrategia de interoperabilidad busca lo contrario:
 
-```text
-INFORMACIÓN
-    ↓
-SOFTWARE
-    ↓
-PROVEEDOR
-```
-
-la institución genera dependencia tecnológica.
-
-Una estrategia de interoperabilidad busca:
-
-```text
-INFORMACIÓN
-   ↙ ↓ ↘
-Sistema A
-Sistema B
-Sistema C
-Sistema futuro
-```
+<svg viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin:14px 0">
+  <text x="225" y="12" text-anchor="middle" font-size="11" letter-spacing="1" fill="var(--accent-1)" font-family="Inter, sans-serif">DEPENDENCIA</text>
+  <line x1="430" y1="18" x2="430" y2="200" stroke="var(--glass-line)" stroke-width="1"/>
+  <rect x="155" y="23" width="140" height="34" rx="8" fill="var(--accent-1)" fill-opacity="0.08" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="225" y="44" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">INFORMACIÓN</text>
+  <line x1="225" y1="57" x2="225" y2="93" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <rect x="155" y="93" width="140" height="34" rx="8" fill="var(--accent-1)" fill-opacity="0.08" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="225" y="114" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">SOFTWARE</text>
+  <line x1="225" y1="127" x2="225" y2="163" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <rect x="155" y="163" width="140" height="34" rx="8" fill="var(--accent-1)" fill-opacity="0.14" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="225" y="184" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">PROVEEDOR</text>
+  <text x="675" y="12" text-anchor="middle" font-size="11" letter-spacing="1" fill="var(--accent-3)" font-family="Inter, sans-serif">INTEROPERABILIDAD</text>
+  <rect x="605" y="23" width="140" height="34" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="675" y="44" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">INFORMACIÓN</text>
+  <line x1="675" y1="57" x2="520" y2="134" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <line x1="675" y1="57" x2="620" y2="134" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <line x1="675" y1="57" x2="720" y2="134" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <line x1="675" y1="57" x2="825" y2="134" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <rect x="475" y="134" width="90" height="32" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="520" y="154" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">Sistema A</text>
+  <rect x="575" y="134" width="90" height="32" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="620" y="154" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">Sistema B</text>
+  <rect x="675" y="134" width="90" height="32" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="720" y="154" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">Sistema C</text>
+  <rect x="775" y="134" width="100" height="32" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="825" y="154" text-anchor="middle" font-size="9.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Sistema futuro</text>
+</svg>
 
 ---
 
@@ -541,6 +553,18 @@ Los estándares abiertos permiten separar:
 de
 
 **la aplicación utilizada para crearla o consumirla.**
+
+<svg viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:560px; height:auto; display:block; margin:14px auto">
+  <rect x="35" y="45" width="150" height="50" rx="10" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="110" y="75" text-anchor="middle" font-size="12" fill="var(--text-primary)" font-family="Inter, sans-serif">INFORMACIÓN</text>
+  <rect x="455" y="45" width="150" height="50" rx="10" fill="var(--glass-line)" fill-opacity="0.12" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <text x="530" y="75" text-anchor="middle" font-size="12" fill="var(--text-dim)" font-family="Inter, sans-serif">APLICACIÓN</text>
+  <rect x="230" y="50" width="180" height="40" rx="20" fill="var(--accent-1)" fill-opacity="0.1" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="320" y="66" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent-1)" font-family="Inter, sans-serif">ESTÁNDAR ABIERTO</text>
+  <text x="320" y="80" text-anchor="middle" font-size="9.5" fill="var(--text-dim)" font-family="Inter, sans-serif">IFC · BCF · IDS</text>
+  <line x1="185" y1="70" x2="230" y2="70" stroke="var(--accent-3)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="410" y1="70" x2="455" y2="70" stroke="var(--glass-line)" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>
 
 Algunos componentes del ecosistema BIM:
 
@@ -556,66 +580,23 @@ También es un problema de **continuidad, independencia y gobernanza del dato**.
 
 ---
 
-^^ Sesión 01 / Interventoría
-## De documentos a relaciones verificables
-
-Una interventoría tradicional trabaja principalmente con documentos.
-
-```text
-RECIBIR
-   ↓
-REVISAR
-   ↓
-DOCUMENTAR
-   ↓
-REPORTAR
-```
-
-Una interventoría orientada a datos puede estructurar el proceso.
-
-```text
-QUÉ DEBÍA OCURRIR
-        ↓
-QUÉ SE REPORTÓ
-        ↓
-QUÉ EVIDENCIA EXISTE
-        ↓
-QUÉ SE VERIFICÓ
-        ↓
-QUIÉN LO APROBÓ
-        ↓
-QUÉ CAMBIÓ
-```
-
----
-
-^^ Sesión 01 / Interventoría
-## Un elemento como centro de información
-
-```text
-                    CONTRATO
-                       │
-                       │
-FOTOGRAFÍA ─────── ELEMENTO ─────── ACTIVIDAD
-                       │
-                       │
-ENSAYO ────────────────┼──────────── COSTO
-                       │
-                       │
-INCIDENCIA ────────────┼──────────── DOCUMENTO
-                       │
-                       │
-                 RESPONSABLE
-```
-
-Esto genera un contexto especialmente útil para IA.
-
----
-
 ^^ Sesión 01 / Aplicación
 ## ¿Qué podría hacer una IA?
 
 Con información estructurada puede comenzar a responder preguntas como:
+
+<svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:620px; height:auto; display:block; margin:14px auto">
+  <text x="350" y="15" text-anchor="middle" font-size="10" letter-spacing="0.5" fill="var(--text-dim)" font-family="Inter, sans-serif">descriptivo → diagnóstico → predictivo</text>
+  <line x1="45" y1="150" x2="655" y2="150" stroke="var(--glass-line)" stroke-width="1"/>
+  <rect x="60" y="110" width="130" height="40" rx="6" fill="var(--accent-3)" fill-opacity="0.12" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="125" y="165" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">Consulta</text>
+  <rect x="210" y="85" width="130" height="65" rx="6" fill="var(--accent-3)" fill-opacity="0.12" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="275" y="165" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">Control</text>
+  <rect x="360" y="60" width="130" height="90" rx="6" fill="var(--accent-2)" fill-opacity="0.14" stroke="var(--accent-2)" stroke-width="1.5"/>
+  <text x="425" y="165" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">Análisis</text>
+  <rect x="510" y="35" width="130" height="115" rx="6" fill="var(--accent-1)" fill-opacity="0.16" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="575" y="165" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">Predicción</text>
+</svg>
 
 :::split
 :::card [Consulta]
@@ -712,17 +693,25 @@ La Inteligencia Artificial no elimina los problemas tradicionales de calidad de 
 
 Puede incluso amplificarlos.
 
-```text
-DATOS INCONSISTENTES
-        ↓
-CONTEXTO INCORRECTO
-        ↓
-INTERPRETACIÓN INCORRECTA
-        ↓
-RESPUESTA CONVINCENTE
-        ↓
-DECISIÓN INCORRECTA
-```
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:520px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="gg-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-1)"/></marker>
+  </defs>
+  <rect x="240" y="10" width="220" height="36" rx="6" fill="var(--accent-1)" fill-opacity="0.06" stroke="var(--accent-1)" stroke-width="1.2"/>
+  <text x="350" y="33" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">DATOS INCONSISTENTES</text>
+  <line x1="350" y1="46" x2="350" y2="58" stroke="var(--accent-1)" stroke-width="1.4" marker-end="url(#gg-arrow)"/>
+  <rect x="220" y="60" width="260" height="40" rx="6" fill="var(--accent-1)" fill-opacity="0.10" stroke="var(--accent-1)" stroke-width="1.4"/>
+  <text x="350" y="85" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">CONTEXTO INCORRECTO</text>
+  <line x1="350" y1="100" x2="350" y2="112" stroke="var(--accent-1)" stroke-width="1.6" marker-end="url(#gg-arrow)"/>
+  <rect x="200" y="114" width="300" height="44" rx="6" fill="var(--accent-1)" fill-opacity="0.14" stroke="var(--accent-1)" stroke-width="1.6"/>
+  <text x="350" y="141" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">INTERPRETACIÓN INCORRECTA</text>
+  <line x1="350" y1="158" x2="350" y2="170" stroke="var(--accent-1)" stroke-width="1.9" marker-end="url(#gg-arrow)"/>
+  <rect x="180" y="172" width="340" height="48" rx="6" fill="var(--accent-1)" fill-opacity="0.19" stroke="var(--accent-1)" stroke-width="1.9"/>
+  <text x="350" y="200" text-anchor="middle" font-size="11.5" fill="var(--text-primary)" font-family="Inter, sans-serif">RESPUESTA CONVINCENTE</text>
+  <line x1="350" y1="220" x2="350" y2="232" stroke="var(--accent-1)" stroke-width="2.2" marker-end="url(#gg-arrow)"/>
+  <rect x="160" y="234" width="380" height="52" rx="6" fill="var(--accent-1)" fill-opacity="0.25" stroke="var(--accent-1)" stroke-width="2.2"/>
+  <text x="350" y="264" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">DECISIÓN INCORRECTA</text>
+</svg>
 
 ---
 
@@ -760,42 +749,32 @@ Para utilizar IA de manera confiable debemos definir:
 ^^ Sesión 01 / Marco
 ## Las seis capas BIM que preparan la IA
 
-```text
-                 ┌─────────────────────┐
-                 │ INTELIGENCIA        │
-                 │ ARTIFICIAL          │
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 6. CONOCIMIENTO     │
-                 │ relaciones/contexto │
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 5. TRAZABILIDAD     │
-                 │ estados/versiones   │
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 4. INTEROPERABILIDAD│
-                 │ IFC / APIs / OpenBIM│
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 3. ESTANDARIZACIÓN  │
-                 │ nombres/clasificación│
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 2. ESTRUCTURACIÓN   │
-                 │ entidades/propiedades│
-                 └─────────▲───────────┘
-                           │
-                 ┌─────────┴───────────┐
-                 │ 1. DIGITALIZACIÓN   │
-                 │ archivos/modelos    │
-                 └─────────────────────┘
-```
+<svg viewBox="0 0 600 410" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:520px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="layers-arrow" markerWidth="9" markerHeight="9" refX="4" refY="6" orient="auto"><path d="M0,6 L4,0 L8,6 Z" fill="var(--accent-1)"/></marker>
+  </defs>
+  <line x1="300" y1="92" x2="300" y2="66" stroke="var(--accent-1)" stroke-width="1.5" marker-end="url(#layers-arrow)"/>
+  <rect x="200" y="20" width="200" height="44" rx="8" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="300" y="46" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">INTELIGENCIA ARTIFICIAL</text>
+  <rect x="160" y="92" width="280" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.20" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="112" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">6. CONOCIMIENTO</text>
+  <text x="300" y="127" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">relaciones / contexto</text>
+  <rect x="140" y="144" width="320" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.17" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="164" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">5. TRAZABILIDAD</text>
+  <text x="300" y="179" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">estados / versiones</text>
+  <rect x="120" y="196" width="360" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.14" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="216" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">4. INTEROPERABILIDAD</text>
+  <text x="300" y="231" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">IFC / APIs / OpenBIM</text>
+  <rect x="100" y="248" width="400" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.11" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="268" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">3. ESTANDARIZACIÓN</text>
+  <text x="300" y="283" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">nombres / clasificación</text>
+  <rect x="80" y="300" width="440" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">2. ESTRUCTURACIÓN</text>
+  <text x="300" y="335" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">entidades / propiedades</text>
+  <rect x="60" y="352" width="480" height="48" rx="6" fill="var(--accent-3)" fill-opacity="0.05" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="300" y="372" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">1. DIGITALIZACIÓN</text>
+  <text x="300" y="387" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">archivos / modelos</text>
+</svg>
 
 :::ok
 Poner IA encima de la capa 1 puede producir demostraciones interesantes.
@@ -827,18 +806,9 @@ Tener millones de archivos digitales no significa tener una base de conocimiento
 
 Definimos entidades.
 
-```text
-Proyecto
-Contrato
-Activo
-Zona
-Elemento
-Actividad
-Documento
-Persona
-Inspección
-Incidencia
-```
+:::chips
+Proyecto, Contrato, Activo, Zona, Elemento, Actividad, Documento, Persona, Inspección, Incidencia
+:::
 
 Ahora podemos comenzar a organizar la información.
 
@@ -871,21 +841,32 @@ La estandarización permite que una máquina aplique la misma lógica sobre múl
 
 La información debe poder circular.
 
-```text
-BIM
- ↕
-CDE
- ↕
-ERP
- ↕
-GIS
- ↕
-PLANEACIÓN
- ↕
-SISTEMAS DOCUMENTALES
- ↕
-IA
-```
+<svg viewBox="0 0 750 100" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block; margin:14px 0">
+  <defs>
+    <marker id="io-end" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--accent-3)"/></marker>
+    <marker id="io-start" markerWidth="7" markerHeight="7" refX="0" refY="2.5" orient="auto-start-reverse"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--accent-3)"/></marker>
+  </defs>
+  <line x1="80" y1="50" x2="94" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <line x1="164" y1="50" x2="178" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <line x1="248" y1="50" x2="262" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <line x1="332" y1="50" x2="346" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <line x1="456" y1="50" x2="470" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <line x1="660" y1="50" x2="674" y2="50" stroke="var(--accent-3)" stroke-width="1.5" marker-start="url(#io-start)" marker-end="url(#io-end)"/>
+  <rect x="10" y="30" width="70" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="45" y="54" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">BIM</text>
+  <rect x="94" y="30" width="70" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="129" y="54" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">CDE</text>
+  <rect x="178" y="30" width="70" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="213" y="54" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">ERP</text>
+  <rect x="262" y="30" width="70" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="297" y="54" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">GIS</text>
+  <rect x="346" y="30" width="110" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="401" y="54" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">PLANEACIÓN</text>
+  <rect x="470" y="30" width="190" height="40" rx="8" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="565" y="54" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">SISTEMAS DOCUMENTALES</text>
+  <rect x="674" y="30" width="66" height="40" rx="8" fill="var(--accent-1)" fill-opacity="0.16" stroke="var(--accent-1)" stroke-width="1.5"/>
+  <text x="707" y="54" text-anchor="middle" font-size="11" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">IA</text>
+</svg>
 
 Una arquitectura institucional de IA necesitará consultar múltiples sistemas.
 
@@ -917,48 +898,46 @@ También debemos poder responder:
 ---
 
 ^^ Sesión 01 / Capa 6
-## Conocimiento
-
-Finalmente podemos relacionar conceptos.
-
-```text
-ACTIVO
-  │
-  ├── tiene → ELEMENTOS
-  ├── pertenece → PROYECTO
-  ├── está asociado → CONTRATO
-  ├── requiere → MANTENIMIENTO
-  ├── registra → INCIDENCIAS
-  └── posee → HISTORIAL
-```
-
-Aquí comenzamos a construir algo parecido a una **memoria institucional**.
-
----
-
-^^ Sesión 01 / Conocimiento
 ## BIM como grafo
 
-No necesitamos entrar todavía en tecnología de bases de grafos.
+Finalmente podemos relacionar conceptos. No necesitamos entrar todavía en tecnología de bases de grafos — el concepto importante es este:
 
-El concepto importante es este:
-
-```text
-PROYECTO
-    │
-    ├── tiene → CONTRATO
-    │
-    ├── contiene → TRAMO
-    │                  │
-    │                  └── contiene → ELEMENTO
-    │                                   │
-    │                                   ├── tiene → ENSAYO
-    │                                   ├── tiene → ACTIVIDAD
-    │                                   ├── genera → INCIDENCIA
-    │                                   └── tiene → EVIDENCIA
-    │
-    └── tiene → ACTORES
-```
+<svg viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:600px; height:auto; display:block; margin:14px auto">
+  <line x1="330" y1="36" x2="150" y2="75" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="36" x2="330" y2="75" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="36" x2="510" y2="75" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="105" x2="330" y2="144" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="176" x2="180" y2="216" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="176" x2="280" y2="216" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="176" x2="380" y2="216" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="330" y1="176" x2="480" y2="216" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <text x="235" y="52" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">tiene</text>
+  <text x="330" y="52" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">contiene</text>
+  <text x="425" y="52" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">tiene</text>
+  <text x="342" y="124" text-anchor="start" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">contiene</text>
+  <text x="242" y="191" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">tiene</text>
+  <text x="302" y="203" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">tiene</text>
+  <text x="358" y="191" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">genera</text>
+  <text x="418" y="203" text-anchor="middle" font-size="8.5" fill="var(--accent-2)" font-family="Inter, sans-serif">tiene</text>
+  <rect x="275" y="4" width="110" height="32" rx="7" fill="var(--accent-1)" fill-opacity="0.16" stroke="var(--accent-1)" stroke-width="1.6"/>
+  <text x="330" y="24" text-anchor="middle" font-size="11" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">PROYECTO</text>
+  <rect x="100" y="75" width="100" height="30" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="150" y="94" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">CONTRATO</text>
+  <rect x="280" y="75" width="100" height="30" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="330" y="94" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">TRAMO</text>
+  <rect x="460" y="75" width="100" height="30" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="510" y="94" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">ACTORES</text>
+  <rect x="275" y="144" width="110" height="32" rx="7" fill="var(--accent-2)" fill-opacity="0.14" stroke="var(--accent-2)" stroke-width="1.5"/>
+  <text x="330" y="164" text-anchor="middle" font-size="11" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">ELEMENTO</text>
+  <rect x="135" y="216" width="90" height="28" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.2"/>
+  <text x="180" y="234" text-anchor="middle" font-size="9.5" fill="var(--text-primary)" font-family="Inter, sans-serif">ENSAYO</text>
+  <rect x="235" y="216" width="90" height="28" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.2"/>
+  <text x="280" y="234" text-anchor="middle" font-size="9.5" fill="var(--text-primary)" font-family="Inter, sans-serif">ACTIVIDAD</text>
+  <rect x="335" y="216" width="90" height="28" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.2"/>
+  <text x="380" y="234" text-anchor="middle" font-size="9.5" fill="var(--text-primary)" font-family="Inter, sans-serif">INCIDENCIA</text>
+  <rect x="435" y="216" width="90" height="28" rx="6" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.2"/>
+  <text x="480" y="234" text-anchor="middle" font-size="9.5" fill="var(--text-primary)" font-family="Inter, sans-serif">EVIDENCIA</text>
+</svg>
 
 :::ok
 El valor del ecosistema BIM para IA no está solamente en almacenar atributos.
@@ -968,122 +947,12 @@ Está en **conservar las relaciones entre la información**.
 
 ---
 
-^^ Sesión 01 / Ciudad
-## BIM + GIS + información institucional
+^^ Sesión 01 / Taller
+## Actividad práctica (10 min)
 
-En proyectos urbanos y de infraestructura, BIM no vive aislado.
-
-```text
-                    CIUDAD / TERRITORIO
-                           │
-                          GIS
-                           │
-                  ┌────────┴────────┐
-                  │                 │
-            INFRAESTRUCTURA      ENTORNO
-                  │
-                 BIM
-                  │
-        ┌─────────┼─────────┐
-        │         │         │
-       CDE       ERP    DOCUMENTOS
-        │         │         │
-        └─────────┼─────────┘
-                  │
-                  IA
-```
-
-La IA puede convertirse en una capa de interacción sobre todo este ecosistema.
-
----
-
-^^ Sesión 01 / Madurez
-## El objetivo no es preguntarle al modelo
-
-Un escenario limitado sería:
-
-> "ChatGPT, dime qué tiene este IFC."
-
-Un escenario institucional es diferente:
-
-> "Analiza todos los contratos activos de infraestructura urbana, identifica elementos ejecutados con ensayos pendientes, consulta las incidencias asociadas, prioriza los casos de mayor riesgo y genera un informe con la evidencia correspondiente."
-
-Ese escenario necesita mucho más que un modelo de lenguaje.
-
----
-
-^^ Sesión 01 / Arquitectura
-## Una arquitectura conceptual
-
-```text
-             USUARIO
-                │
-                ▼
-        INTELIGENCIA ARTIFICIAL
-                │
-                ▼
-     ┌───────────────────────┐
-     │ CONTEXTO INSTITUCIONAL│
-     └───────────┬───────────┘
-                 │
-       ┌─────────┼──────────┐
-       ▼         ▼          ▼
-      BIM       GIS        CDE
-       │         │          │
-       └─────────┼──────────┘
-                 │
-       DATOS INSTITUCIONALES
-```
-
----
-
-^^ Sesión 01 / Diagnóstico
-## ¿Dónde estamos hoy?
-
-Muchas organizaciones se encuentran aquí:
-
-```text
-MUCHOS DATOS
-    +
-MUCHOS ARCHIVOS
-    +
-MUCHOS MODELOS
-    +
-MUCHAS PLATAFORMAS
-
-        ≠
-
-CONOCIMIENTO INSTITUCIONAL
-```
-
-El desafío no es solamente implementar IA.
-
-El desafío es preparar la información para que la IA pueda utilizarla.
-
----
-
-^^ Sesión 01 / Discusión
-## ¿Qué conservaría realmente la institución?
-
-:::card [Pregunta]
-Piensen en su institución.
-
-### ¿Qué porcentaje de la información BIM producida en un proyecto podría ser entendido dentro de diez años sin hablar con las personas que participaron en él?
-
-- ¿80 %?
-- ¿50 %?
-- ¿20 %?
-- ¿menos?
-:::
-
----
-
-^^ Sesión 01 / Discusión
-## Si conectáramos una IA hoy...
-
-:::card [Pregunta]
 Si hoy conectáramos una IA a todos los sistemas de la institución:
 
+:::card [Individual] Responda por escrito
 ### ¿Qué podría responder con certeza?
 
 ### ¿Qué tendría que inferir?
@@ -1091,32 +960,12 @@ Si hoy conectáramos una IA a todos los sistemas de la institución:
 ### ¿Qué información no podría relacionar?
 :::
 
----
+:::note
+**Material del taller** — se llena en pantalla y se descarga en PDF o `.md`:
+<a href="doc.html#d=talleres/taller-01" target="_blank" rel="noopener">Hoja de trabajo</a>
 
-^^ Sesión 01 / Madurez
-## BIM preparado para IA
-
-Un ecosistema BIM preparado para Inteligencia Artificial debería permitir:
-
-:::split-3
-:::card [Encontrar]
-Localizar información de manera automática.
-:::
-:::card [Relacionar]
-Conectar elementos, documentos, personas y procesos.
-:::
-:::card [Interpretar]
-Entender el significado de propiedades y estados.
-:::
-:::card [Verificar]
-Encontrar evidencia y trazabilidad.
-:::
-:::card [Analizar]
-Identificar patrones y anomalías.
-:::
-:::card [Actuar]
-Ejecutar procesos sobre sistemas institucionales.
-:::
+Responda individualmente. Después se elegirán al azar algunas personas para
+compartir sus respuestas en voz alta.
 :::
 
 ---
@@ -1441,44 +1290,206 @@ Este cambio es fundamental.
 
 La inteligencia artificial es el concepto amplio: sistemas capaces de realizar tareas que normalmente requieren capacidades cognitivas humanas.
 
+Machine Learning y Deep Learning no son ramas paralelas de la IA: son subconjuntos, uno dentro del otro.
+
 ```mermaid
 flowchart TB
-    A[INTELIGENCIA ARTIFICIAL]
-    A --> B[Sistemas basados en reglas]
-    A --> C[Machine Learning]
-    C --> D[Deep Learning]
-    D --> E[Modelos de lenguaje]
-    D --> F[Modelos de visión]
-    D --> G[Modelos multimodales]
-    D --> H[Modelos generativos]
+    subgraph IA["INTELIGENCIA ARTIFICIAL"]
+        direction TB
+        subgraph OPT["ALGORITMOS DE OPTIMIZACIÓN Y BÚSQUEDA"]
+            direction TB
+            I[Algoritmos genéticos]
+            J[Optimización por restricciones]
+            K[Búsqueda heurística]
+        end
+        subgraph ML["MACHINE LEARNING"]
+            direction TB
+            subgraph DL["DEEP LEARNING"]
+                direction TB
+                E[Modelos de lenguaje]
+                F[Visión artificial]
+                G[Reconocimiento de voz]
+                H[IA generativa]
+            end
+        end
+    end
 ```
+
+:::split-3
+:::card [IA] Concepto amplio
+Disciplina que desarrolla sistemas capaces de replicar o imitar tareas que normalmente requieren inteligencia humana. Incluye desde algoritmos de optimización y búsqueda hasta modelos que aprenden por sí mismos.
+:::
+:::card [ML] Subconjunto de la IA
+Los sistemas aprenden patrones a partir de datos —en vez de seguir reglas escritas a mano— y usan esos patrones para hacer predicciones.
+:::
+:::card [DL] Subconjunto del ML
+Evolución del Machine Learning: los algoritmos se estructuran en redes neuronales profundas capaces de aprender representaciones complejas directamente de los datos.
+:::
+:::
 
 ---
 
 ^^ Sesión 01 / Fundamentos de IA
-## Inteligencia Artificial y Machine Learning
+## La IA como búsqueda de la mejor solución
 
-:::split
-:::card [IA] Inteligencia Artificial
-En AECO puede utilizarse para:
+![Trayectorias convergiendo hacia una solución óptima](assets/img/ia-tensores-optimizacion.gif)
 
-:::chips
-Clasificación documental, Reconocimiento de elementos, Análisis de riesgos, Predicción, Optimización, Interpretación de lenguaje, Generación de información
-:::
+:::note
+Cada trayectoria es una representación vectorial —un **tensor**— explorando el espacio de posibles soluciones. El modelo ajusta esos vectores paso a paso hasta converger en el punto que mejor resuelve el problema, igual que estas rutas convergiendo hacia el destino.
 :::
 
-:::card [ML] Machine Learning
-En lugar de programar todas las reglas, el sistema aprende patrones utilizando datos.
+---
 
-**Ejemplo AECO**
+^^ Sesión 01 / Fundamentos de IA
+## Tipos de Machine Learning en BIM
 
-Tenemos cientos de proyectos históricos con:
+Machine Learning no es una sola técnica: es una familia de enfoques. Cada uno responde una pregunta distinta sobre los datos del proyecto.
 
-:::chips
-Presupuesto inicial, Avance, Cambios, Contratistas, Duración, Sobrecostos
+:::split-3
+:::card [Regresión] Predice un número
+Estima un valor continuo a partir de variables conocidas.
+
+**En BIM:** proyectar el costo final o la duración de una actividad usando datos históricos de contratos similares.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="100" x2="200" y2="100" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="20" y1="10" x2="20" y2="100" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <circle cx="40" cy="85" r="4" fill="var(--accent-3)"/>
+  <circle cx="65" cy="70" r="4" fill="var(--accent-3)"/>
+  <circle cx="80" cy="78" r="4" fill="var(--accent-3)"/>
+  <circle cx="105" cy="55" r="4" fill="var(--accent-3)"/>
+  <circle cx="125" cy="60" r="4" fill="var(--accent-3)"/>
+  <circle cx="150" cy="40" r="4" fill="var(--accent-3)"/>
+  <circle cx="170" cy="30" r="4" fill="var(--accent-3)"/>
+  <circle cx="185" cy="20" r="4" fill="var(--accent-3)"/>
+  <line x1="30" y1="95" x2="195" y2="15" stroke="var(--accent-1)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+
+:::
+:::
+:::card [Clasificación] Asigna una categoría
+Algoritmos como **Random Forest** o árboles de decisión combinan reglas simples para clasificar casos nuevos.
+
+**En BIM:** clasificar si un elemento o actividad tiene alto o bajo riesgo de generar una incidencia de calidad.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <line x1="110" y1="20" x2="60" y2="60" stroke="var(--glass-line)" stroke-width="2"/>
+  <line x1="110" y1="20" x2="160" y2="60" stroke="var(--glass-line)" stroke-width="2"/>
+  <line x1="60" y1="60" x2="35" y2="100" stroke="var(--glass-line)" stroke-width="2"/>
+  <line x1="60" y1="60" x2="85" y2="100" stroke="var(--glass-line)" stroke-width="2"/>
+  <line x1="160" y1="60" x2="135" y2="100" stroke="var(--glass-line)" stroke-width="2"/>
+  <line x1="160" y1="60" x2="185" y2="100" stroke="var(--glass-line)" stroke-width="2"/>
+  <circle cx="110" cy="20" r="9" fill="var(--accent-1)"/>
+  <circle cx="60" cy="60" r="7" fill="var(--accent-3)"/>
+  <circle cx="160" cy="60" r="7" fill="var(--accent-3)"/>
+  <circle cx="35" cy="100" r="6" fill="var(--accent-2)"/>
+  <circle cx="85" cy="100" r="6" fill="var(--accent-2)"/>
+  <circle cx="135" cy="100" r="6" fill="var(--accent-2)"/>
+  <circle cx="185" cy="100" r="6" fill="var(--accent-2)"/>
+</svg>
+
+:::
+:::
+:::card [Clustering] Agrupa sin etiquetas
+Encuentra grupos de datos parecidos sin que nadie le diga de antemano cuáles son las categorías.
+
+**En BIM:** agrupar contratos o elementos con patrones similares de sobrecosto, sin definirlos manualmente.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="40" rx="34" ry="26" fill="none" stroke="var(--accent-1)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <ellipse cx="150" cy="35" rx="36" ry="24" fill="none" stroke="var(--accent-3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <ellipse cx="100" cy="95" rx="40" ry="20" fill="none" stroke="var(--accent-2)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="38" cy="34" r="4" fill="var(--accent-1)"/>
+  <circle cx="55" cy="48" r="4" fill="var(--accent-1)"/>
+  <circle cx="62" cy="30" r="4" fill="var(--accent-1)"/>
+  <circle cx="40" cy="52" r="4" fill="var(--accent-1)"/>
+  <circle cx="140" cy="28" r="4" fill="var(--accent-3)"/>
+  <circle cx="160" cy="40" r="4" fill="var(--accent-3)"/>
+  <circle cx="150" cy="48" r="4" fill="var(--accent-3)"/>
+  <circle cx="168" cy="26" r="4" fill="var(--accent-3)"/>
+  <circle cx="80" cy="90" r="4" fill="var(--accent-2)"/>
+  <circle cx="100" cy="100" r="4" fill="var(--accent-2)"/>
+  <circle cx="120" cy="88" r="4" fill="var(--accent-2)"/>
+  <circle cx="108" cy="102" r="4" fill="var(--accent-2)"/>
+</svg>
+
+:::
+:::
 :::
 
-Un modelo podría aprender relaciones entre esas variables y estimar riesgo de desviación.
+:::split-3
+:::card [Anomalías] Detecta lo atípico
+Identifica valores que se apartan del comportamiento esperado.
+
+**En BIM:** detectar mediciones de un escaneo láser o sensor IoT que se desvían del modelo o de la tolerancia definida.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="4" fill="var(--accent-3)"/>
+  <circle cx="60" cy="28" r="4" fill="var(--accent-3)"/>
+  <circle cx="90" cy="32" r="4" fill="var(--accent-3)"/>
+  <circle cx="120" cy="27" r="4" fill="var(--accent-3)"/>
+  <circle cx="150" cy="31" r="4" fill="var(--accent-3)"/>
+  <circle cx="35" cy="60" r="4" fill="var(--accent-3)"/>
+  <circle cx="65" cy="58" r="4" fill="var(--accent-3)"/>
+  <circle cx="95" cy="62" r="4" fill="var(--accent-3)"/>
+  <circle cx="125" cy="57" r="4" fill="var(--accent-3)"/>
+  <circle cx="40" cy="90" r="4" fill="var(--accent-3)"/>
+  <circle cx="70" cy="88" r="4" fill="var(--accent-3)"/>
+  <circle cx="100" cy="92" r="4" fill="var(--accent-3)"/>
+  <circle cx="130" cy="87" r="4" fill="var(--accent-3)"/>
+  <circle cx="185" cy="95" r="10" fill="none" stroke="var(--accent-1)" stroke-width="2"/>
+  <circle cx="185" cy="95" r="5" fill="var(--accent-1)"/>
+</svg>
+
+:::
+:::
+:::card [Series de tiempo] Proyecta en el tiempo
+Aprende el patrón histórico de una variable para estimar su evolución futura.
+
+**En BIM:** proyectar el avance físico de la obra a partir de las curvas de avance registradas.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="100" x2="200" y2="100" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="20" y1="10" x2="20" y2="100" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <polyline points="25,85 50,90 75,65 100,72 125,45 150,50 175,25 195,15" fill="none" stroke="var(--accent-1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="195" cy="15" r="4" fill="var(--accent-1)"/>
+</svg>
+
+:::
+:::
+:::card [Refuerzo] Aprende por prueba y error
+El sistema prueba acciones, recibe una recompensa y ajusta su estrategia para maximizar el resultado.
+
+**En BIM:** optimizar la secuenciación 4D de actividades para minimizar tiempos muertos e interferencias.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="40" width="70" height="40" rx="10" fill="none" stroke="var(--accent-3)" stroke-width="2"/>
+  <text x="50" y="65" text-anchor="middle" font-size="12" fill="var(--text-primary)" font-family="Inter, sans-serif">Agente</text>
+  <rect x="135" y="40" width="70" height="40" rx="10" fill="none" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="170" y="65" text-anchor="middle" font-size="12" fill="var(--text-primary)" font-family="Inter, sans-serif">Entorno</text>
+  <path d="M85,50 H135" stroke="var(--accent-2)" stroke-width="2" marker-end="url(#arrow1)"/>
+  <path d="M135,70 H85" stroke="var(--accent-2)" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="110" y="42" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">acción</text>
+  <text x="110" y="88" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">recompensa</text>
+  <defs>
+    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-2)"/></marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-2)"/></marker>
+  </defs>
+</svg>
+
+:::
 :::
 :::
 
@@ -1496,6 +1507,38 @@ Permite muchas de las tecnologías actuales de:
 :::chips
 Visión artificial, Reconocimiento de voz, Modelos de lenguaje, IA generativa
 :::
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <line x1="35" y1="25" x2="110" y2="20" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="25" x2="110" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="25" x2="110" y2="70" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="60" x2="110" y2="20" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="60" x2="110" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="60" x2="110" y2="70" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="60" x2="110" y2="95" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="95" x2="110" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="95" x2="110" y2="70" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="35" y1="95" x2="110" y2="95" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="20" x2="185" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="45" x2="185" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="70" x2="185" y2="45" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="20" x2="185" y2="75" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="70" x2="185" y2="75" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <line x1="110" y1="95" x2="185" y2="75" stroke="var(--glass-line)" stroke-width="1.5"/>
+  <circle cx="35" cy="25" r="6" fill="var(--accent-3)"/>
+  <circle cx="35" cy="60" r="6" fill="var(--accent-3)"/>
+  <circle cx="35" cy="95" r="6" fill="var(--accent-3)"/>
+  <circle cx="110" cy="20" r="5" fill="var(--accent-2)"/>
+  <circle cx="110" cy="45" r="5" fill="var(--accent-2)"/>
+  <circle cx="110" cy="70" r="5" fill="var(--accent-2)"/>
+  <circle cx="110" cy="95" r="5" fill="var(--accent-2)"/>
+  <circle cx="185" cy="45" r="6" fill="var(--accent-1)"/>
+  <circle cx="185" cy="75" r="6" fill="var(--accent-1)"/>
+</svg>
+
+:::
 :::
 
 :::card [GenAI] IA generativa
@@ -1507,16 +1550,43 @@ Puede generar:
 Texto, Código, Imágenes, Audio, Video, Estructuras de datos
 :::
 
-Aquí aparece el cambio que hizo que la IA pudiera utilizarse directamente por profesionales BIM sin necesidad de desarrollar previamente un modelo de Machine Learning.
+La IA generativa también es Machine Learning —pero ya entrenado—. Por eso un profesional BIM puede usarla directamente, sin tener que entrenar su propio modelo: ese trabajo ya lo hizo el proveedor del modelo general.
+
+:::diagram
+
+<svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="5" y="10" width="95" height="100" rx="10" fill="none" stroke="var(--glass-line)" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="52" y="24" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--text-dim)" font-family="Inter, sans-serif">DISCRIMINATIVO</text>
+  <rect x="18" y="45" width="20" height="16" rx="3" fill="var(--accent-3)"/>
+  <path d="M40,53 H60" stroke="var(--glass-line)" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="62" y="43" width="26" height="20" rx="4" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+  <path d="M75,63 V80" stroke="var(--glass-line)" stroke-width="1.5" marker-end="url(#a2)"/>
+  <circle cx="75" cy="90" r="6" fill="var(--accent-1)"/>
+  <rect x="120" y="10" width="95" height="100" rx="10" fill="none" stroke="var(--glass-line)" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="167" y="24" text-anchor="middle" font-size="9" letter-spacing="1" fill="var(--text-dim)" font-family="Inter, sans-serif">GENERATIVO</text>
+  <rect x="133" y="45" width="20" height="16" rx="3" fill="var(--accent-3)"/>
+  <path d="M155,53 H175" stroke="var(--glass-line)" stroke-width="1.5" marker-end="url(#a3)"/>
+  <rect x="177" y="43" width="26" height="20" rx="4" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+  <path d="M190,63 V76" stroke="var(--glass-line)" stroke-width="1.5" marker-end="url(#a4)"/>
+  <line x1="178" y1="82" x2="202" y2="82" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="178" y1="90" x2="196" y2="90" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="178" y1="98" x2="200" y2="98" stroke="var(--accent-1)" stroke-width="2" stroke-linecap="round"/>
+  <defs>
+    <marker id="a1" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--glass-line)"/></marker>
+    <marker id="a2" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--glass-line)"/></marker>
+    <marker id="a3" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--glass-line)"/></marker>
+    <marker id="a4" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="var(--glass-line)"/></marker>
+  </defs>
+</svg>
+
+:::
 :::
 :::
 
 ---
 
 ^^ Sesión 01 / Fundamentos de IA
-## 3. Tres familias que deben conocer
-
-### Modelos de lenguaje
+## 3. Modelos de lenguaje
 
 Los LLM —Large Language Models— trabajan principalmente con lenguaje y representaciones de información.
 
@@ -1556,19 +1626,28 @@ Para AECO esto es especialmente poderoso porque una gran cantidad de conocimient
 
 Un modelo multimodal puede trabajar simultáneamente con diferentes tipos de información.
 
-```text
-Texto
-+
-Imagen
-+
-Documento
-+
-Plano
-+
-Tabla
-+
-Audio
-```
+<svg viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:600px; height:auto; display:block; margin:14px auto">
+  <line x1="70" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="174" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="278" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="382" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="486" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="590" y1="54" x2="330" y2="160" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <rect x="25" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="70" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Texto</text>
+  <rect x="129" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="174" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Imagen</text>
+  <rect x="233" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="278" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Documento</text>
+  <rect x="337" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="382" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Plano</text>
+  <rect x="441" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="486" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Tabla</text>
+  <rect x="545" y="20" width="90" height="34" rx="6" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="590" y="41" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">Audio</text>
+  <rect x="220" y="160" width="220" height="46" rx="8" fill="var(--accent-1)" fill-opacity="0.16" stroke="var(--accent-1)" stroke-width="1.8"/>
+  <text x="330" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MODELO MULTIMODAL</text>
+</svg>
 
 Esto tiene una implicación enorme en AECO.
 
