@@ -1508,6 +1508,8 @@ Permite muchas de las tecnologías actuales de:
 Visión artificial, Reconocimiento de voz, Modelos de lenguaje, IA generativa
 :::
 
+*Para entender una neurona y su relación con la regresión lineal: <a href="https://www.youtube.com/watch?v=MRIv2IwFTPg" target="_blank" rel="noopener">cómo funcionan las redes neuronales</a> (video).*
+
 :::diagram
 
 <svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
@@ -1699,28 +1701,33 @@ Cuando alguien dice:
 
 puede haber sucedido realmente algo mucho más complejo.
 
-```text
-MODELO
-GPT / Claude / Gemini / Llama / Qwen
-          ↓
-APLICACIÓN
-ChatGPT / Claude / Gemini
-          ↓
-HERRAMIENTAS
-Web / Python / archivos / APIs / bases de datos
-          ↓
-DATOS DE LA ORGANIZACIÓN
-BIM / CDE / GIS / ERP / documentos
-```
+<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:560px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="stack-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--glass-line)"/></marker>
+  </defs>
+  <rect x="220" y="10" width="260" height="48" rx="7" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="350" y="30" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MODELO</text>
+  <text x="350" y="45" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">GPT / Claude / Gemini / Llama / Qwen</text>
+  <line x1="350" y1="58" x2="350" y2="70" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#stack-arrow)"/>
+  <rect x="190" y="72" width="320" height="48" rx="7" fill="var(--accent-3)" fill-opacity="0.17" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="350" y="92" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">APLICACIÓN</text>
+  <text x="350" y="107" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">ChatGPT / Claude / Gemini</text>
+  <line x1="350" y1="120" x2="350" y2="132" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#stack-arrow)"/>
+  <rect x="160" y="134" width="380" height="48" rx="7" fill="var(--accent-3)" fill-opacity="0.13" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="350" y="154" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">HERRAMIENTAS</text>
+  <text x="350" y="169" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">Web / Python / archivos / APIs / bases de datos</text>
+  <line x1="350" y1="182" x2="350" y2="194" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#stack-arrow)"/>
+  <rect x="130" y="196" width="440" height="52" rx="7" fill="var(--accent-3)" fill-opacity="0.09" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="350" y="218" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">DATOS DE LA ORGANIZACIÓN</text>
+  <text x="350" y="233" text-anchor="middle" font-size="9" fill="var(--text-dim)" font-family="Inter, sans-serif">BIM / CDE / GIS / ERP / documentos</text>
+</svg>
 
-El modelo pudo:
+El modelo interpretó la solicitud. Pero completar la respuesta involucró a **todo el sistema**, no solo al modelo:
 
-1. interpretar la solicitud;
-2. consultar información;
-3. ejecutar código;
-4. utilizar una herramienta;
-5. procesar un archivo;
-6. generar una respuesta.
+1. la aplicación decidió qué herramienta invocar;
+2. una herramienta ejecutó código y procesó un archivo;
+3. esos datos vinieron de los sistemas de la organización;
+4. el modelo generó la respuesta final.
 
 Esto prepara el terreno para sesiones posteriores sobre agentes, herramientas y MCP.
 
@@ -1733,22 +1740,120 @@ No debemos imaginar el modelo como una gigantesca base de datos que almacena doc
 
 Durante el entrenamiento, el modelo analiza enormes cantidades de información para aprender patrones.
 
-```text
-DATOS
-↓
-ENTRENAMIENTO
-↓
-MODELO
-```
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:220px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="train-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--glass-line)"/></marker>
+  </defs>
+  <rect x="40" y="10" width="220" height="44" rx="7" fill="var(--accent-3)" fill-opacity="0.08" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="150" y="37" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">DATOS</text>
+  <line x1="150" y1="54" x2="150" y2="74" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#train-arrow)"/>
+  <rect x="40" y="76" width="220" height="44" rx="7" fill="var(--accent-3)" fill-opacity="0.13" stroke="var(--accent-3)" stroke-width="1.5"/>
+  <text x="150" y="103" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">ENTRENAMIENTO</text>
+  <line x1="150" y1="120" x2="150" y2="140" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#train-arrow)"/>
+  <rect x="40" y="142" width="220" height="44" rx="7" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="150" y="169" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MODELO</text>
+</svg>
 
 El resultado del entrenamiento son millones o miles de millones de parámetros numéricos.
 
 El modelo aprende **representaciones estadísticas y relaciones**.
 
+:::split
+:::card [Matiz] No todo el entrenamiento es igual
+Esto describe el **preentrenamiento**: aprender patrones de datos históricos.
+
+En **aprendizaje por refuerzo**, un agente prueba acciones en un entorno y ajusta su comportamiento según una señal de **recompensa** — sin que nadie le diga la respuesta correcta de antemano.
+
+Los modelos de lenguaje actuales combinan varias etapas: preentrenamiento + ajuste fino + **RLHF** (refuerzo con retroalimentación humana).
+:::
+:::card
+![Agente de IA aprendiendo a caminar mediante aprendizaje por refuerzo](assets/img/rl-aprende-a-caminar.gif)
+
+*Fuente: <a href="https://www.youtube.com/@aiwarehouse" target="_blank" rel="noopener">AI Warehouse</a>*
+:::
+:::
+
 ---
 
 ^^ Sesión 01 / Fundamentos
-## 8. Inferencia: lo que ocurre cuando usamos la IA
+## 8. Tokens
+
+Los modelos no leen exactamente palabras. Procesan unidades llamadas **tokens**.
+
+:::split
+:::card [Qué es] Un token puede ser...
+- una palabra;
+- parte de una palabra;
+- puntuación;
+- fragmentos de código;
+- otros componentes.
+
+<div style="display:flex; flex-wrap:wrap; gap:5px; font-family:var(--font-mono); font-size:13px; margin:14px 0"><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">El</span><span style="border:1.5px solid var(--accent-2); color:var(--accent-2); background:var(--glass); border-radius:6px; padding:4px 9px">muro</span><span style="border:1.5px solid var(--accent-1); color:var(--accent-1); background:var(--glass); border-radius:6px; padding:4px 9px">exter</span><span style="border:1.5px solid var(--accent-1); color:var(--accent-1); background:var(--glass); border-radius:6px; padding:4px 9px">ior</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">tiene</span><span style="border:1.5px solid var(--accent-2); color:var(--accent-2); background:var(--glass); border-radius:6px; padding:4px 9px">tres</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">capas</span><span style="border:1.5px solid var(--accent-2); color:var(--accent-2); background:var(--glass); border-radius:6px; padding:4px 9px">.</span></div>
+
+*"El muro exterior tiene tres capas." → 8 tokens. Notá cómo "exterior" se parte en dos.*
+:::
+:::card [Por qué importa] Más tokens, más costo
+<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:520px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="token-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-1)"/></marker>
+  </defs>
+  <rect x="240" y="10" width="220" height="36" rx="6" fill="var(--accent-1)" fill-opacity="0.06" stroke="var(--accent-1)" stroke-width="1.2"/>
+  <text x="350" y="33" text-anchor="middle" font-size="10" fill="var(--text-primary)" font-family="Inter, sans-serif">MÁS INFORMACIÓN</text>
+  <line x1="350" y1="46" x2="350" y2="58" stroke="var(--accent-1)" stroke-width="1.4" marker-end="url(#token-arrow)"/>
+  <rect x="220" y="60" width="260" height="40" rx="6" fill="var(--accent-1)" fill-opacity="0.10" stroke="var(--accent-1)" stroke-width="1.4"/>
+  <text x="350" y="85" text-anchor="middle" font-size="10.5" fill="var(--text-primary)" font-family="Inter, sans-serif">MÁS TOKENS</text>
+  <line x1="350" y1="100" x2="350" y2="112" stroke="var(--accent-1)" stroke-width="1.6" marker-end="url(#token-arrow)"/>
+  <rect x="200" y="114" width="300" height="44" rx="6" fill="var(--accent-1)" fill-opacity="0.14" stroke="var(--accent-1)" stroke-width="1.6"/>
+  <text x="350" y="141" text-anchor="middle" font-size="11" fill="var(--text-primary)" font-family="Inter, sans-serif">MAYOR CONTEXTO</text>
+  <line x1="350" y1="158" x2="350" y2="170" stroke="var(--accent-1)" stroke-width="1.9" marker-end="url(#token-arrow)"/>
+  <rect x="180" y="172" width="340" height="48" rx="6" fill="var(--accent-1)" fill-opacity="0.19" stroke="var(--accent-1)" stroke-width="1.9"/>
+  <text x="350" y="200" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MAYOR COSTO COMPUTACIONAL</text>
+</svg>
+
+Por eso no conviene enviar **"todo el CDE del proyecto"** a la IA — hay que seleccionar la información pertinente.
+:::
+:::
+
+:::note
+Probalo en vivo con tu propio texto: <a href="https://platform.openai.com/tokenizer" target="_blank" rel="noopener">OpenAI Tokenizer</a>.
+
+Para ver cómo esos tokens se relacionan entre sí en el espacio vectorial: <a href="https://www.youtube.com/watch?v=awGfhmsN7Lc" target="_blank" rel="noopener">cómo los modelos descomponen palabras y miden su cercanía</a> (video).
+:::
+
+---
+
+^^ Sesión 01 / Fundamentos
+## 9. Contexto: el escritorio de trabajo de la IA
+
+> **Los parámetros del modelo son lo aprendido durante su formación. El contexto es la información que tiene encima del escritorio mientras resuelve el problema.**
+
+:::split
+:::card [Qué le damos] Contexto de un proyecto real
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-family:var(--font-mono); font-size:12px; margin:14px 0"><span style="border:1.5px solid var(--accent-1); color:var(--accent-1); background:var(--glass); border-radius:6px; padding:4px 9px; font-weight:600">MODELO GENERAL</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">BEP</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">Contrato</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">Modelo BIM</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">Actas</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">Normativa</span></div>
+
+<div style="border:1.5px solid var(--accent-1); color:var(--accent-1); background:var(--glass-strong); border-radius:8px; padding:8px 12px; font-family:var(--font-mono); font-size:12px; font-weight:600; text-align:center">= MODELO TRABAJANDO EN EL CONTEXTO DEL PROYECTO</div>
+
+No siempre necesitamos entrenar nuestra propia IA. Muchas veces necesitamos construir correctamente su **contexto** — esto es especialmente importante para organizaciones públicas.
+:::
+:::card [El límite] Ventana de contexto
+Todo modelo tiene una capacidad limitada de información que puede procesar en una interacción: la **ventana de contexto** — medida, justamente, en tokens.
+
+> **Que algo quepa en la ventana de contexto no significa que sea conveniente introducirlo todo.**
+
+Para sistemas AECO importa:
+
+:::chips
+Seleccionar, Filtrar, Clasificar, Consultar, Relacionar
+:::
+
+Esto conecta con RAG, bases de datos y agentes.
+:::
+:::
+
+---
+
+^^ Sesión 01 / Fundamentos
+## 10. Inferencia: lo que ocurre cuando usamos la IA
 
 Cuando escribimos una solicitud ya no estamos entrenando el modelo.
 
@@ -1756,270 +1861,114 @@ Estamos realizando una:
 
 > **inferencia**
 
-```text
-MODELO ENTRENADO
-        +
-SOLICITUD
-        +
-CONTEXTO
-        ↓
-    INFERENCIA
-        ↓
-    RESPUESTA
-```
+<svg viewBox="0 0 500 254" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:440px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="infer-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--glass-line)"/></marker>
+  </defs>
+  <line x1="85" y1="60" x2="250" y2="120" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="250" y1="60" x2="250" y2="120" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <line x1="415" y1="60" x2="250" y2="120" stroke="var(--glass-line)" stroke-width="1.2"/>
+  <rect x="10" y="10" width="150" height="50" rx="7" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="85" y="40" text-anchor="middle" font-size="10" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">MODELO ENTRENADO</text>
+  <rect x="175" y="10" width="150" height="50" rx="7" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="250" y="40" text-anchor="middle" font-size="11" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">SOLICITUD</text>
+  <rect x="340" y="10" width="150" height="50" rx="7" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="415" y="40" text-anchor="middle" font-size="11" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">CONTEXTO</text>
+  <rect x="170" y="120" width="160" height="46" rx="7" fill="var(--accent-2)" fill-opacity="0.16" stroke="var(--accent-2)" stroke-width="1.6"/>
+  <text x="250" y="147" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">INFERENCIA</text>
+  <line x1="250" y1="166" x2="250" y2="192" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#infer-arrow)"/>
+  <rect x="160" y="196" width="180" height="48" rx="7" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="250" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">RESPUESTA</text>
+</svg>
 
 Ejemplo AECO:
 
 El modelo no necesita haber sido entrenado específicamente con nuestro proyecto.
 
-Podemos proporcionarle durante la inferencia:
-
-- BEP;
-- especificaciones;
-- tablas;
-- información BIM;
-- contrato;
-- actas.
-
-Y pedirle que razone sobre esa información.
-
----
-
-^^ Sesión 01 / Fundamentos
-## 9. Contexto: el escritorio de trabajo de la IA
-
-Una analogía útil:
-
-> **Los parámetros del modelo son lo aprendido durante su formación. El contexto es la información que tiene encima del escritorio mientras resuelve el problema.**
-
-Por ejemplo:
-
-```text
-MODELO GENERAL
-+
-BEP
-+
-Contrato
-+
-Modelo BIM
-+
-Actas
-+
-Normativa
-=
-MODELO TRABAJANDO EN EL CONTEXTO DEL PROYECTO
-```
-
-Esta distinción es especialmente importante para organizaciones públicas.
-
-No siempre necesitamos entrenar nuestra propia IA.
-
-Muchas veces necesitamos construir correctamente su **contexto**.
-
----
-
-^^ Sesión 01 / Fundamentos
-## 10. Tokens
-
-Los modelos no leen exactamente palabras.
-
-Procesan unidades llamadas:
-
-> **tokens**
-
-Un token puede representar:
-
-- una palabra;
-- parte de una palabra;
-- puntuación;
-- fragmentos de código;
-- otros componentes.
-
-Lo importante para esta clase no es calcular tokens.
-
-Lo importante es entender:
-
-```text
-Más información
-      ↓
-Más tokens
-      ↓
-Mayor contexto
-      ↓
-Mayor costo computacional
-```
-
-Por eso no necesariamente es buena estrategia enviar:
-
-> “Todo el CDE del proyecto a la IA.”
-
-Hay que seleccionar la información pertinente.
-
----
-
-^^ Sesión 01 / Fundamentos
-## 11. Ventana de contexto
-
-Todo modelo tiene una capacidad limitada de información que puede procesar en una interacción.
-
-Ese espacio es la:
-
-> **ventana de contexto**
-
-Una ventana grande permite analizar grandes cantidades de información.
-
-Pero:
-
-> **Que algo quepa en la ventana de contexto no significa que sea conveniente introducirlo todo.**
-
-Para sistemas AECO importa:
-
-- seleccionar;
-- filtrar;
-- clasificar;
-- consultar;
-- relacionar.
-
-Esto conecta posteriormente con RAG, bases de datos y agentes.
+Podemos darle, además del contexto que acabamos de ver, cosas como especificaciones o tablas — y pedirle que razone sobre todo eso.
 
 ---
 
 ^^ Sesión 01 / Especialización
-## 12. Modelos generales vs. soluciones especializadas
+## 11. Modelos generales vs. soluciones especializadas
 
 ### Modelo general
 
-Ejemplos:
+Ejemplos: ChatGPT, Claude, Gemini. Son capaces de resolver problemas de dominios muy diferentes.
 
-- ChatGPT;
-- Claude;
-- Gemini.
+### Solución especializada — dos caminos distintos
 
-Son capaces de resolver problemas de dominios muy diferentes.
+:::split
+:::card [Sin reentrenar] Modelo general + contexto y herramientas
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-family:var(--font-mono); font-size:12px; margin:14px 0"><span style="border:1.5px solid var(--accent-1); color:var(--accent-1); background:var(--glass); border-radius:6px; padding:4px 9px; font-weight:600">Modelo general</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">datos propios</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">reglas</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">herramientas</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">procesos</span><span style="color:var(--text-dim)">+</span><span style="border:1.5px solid var(--accent-3); color:var(--accent-3); background:var(--glass); border-radius:6px; padding:4px 9px">validaciones</span></div>
 
-### Solución especializada
+El modelo **no cambia**: solo se orquesta con contexto y herramientas en cada consulta.
 
-Puede construirse combinando:
+**Ejemplo:** un modelo general probablemente puede explicar qué significa un parámetro BIM. Una solución así podría además conectarse al CDE, consultar el estándar institucional, identificar parámetros faltantes y generar incidencias con evidencia.
+:::
+:::card [Fine-tuning] Reentrenar el modelo
+Se ajustan los **pesos internos** del modelo con ejemplos propios de la organización, para que aprenda patrones específicos en vez de recibirlos como contexto en cada consulta.
 
-```text
-Modelo general
-+
-datos propios
-+
-reglas
-+
-herramientas
-+
-procesos
-+
-validaciones
-```
-
-Ejemplo:
-
-Un modelo general probablemente puede explicar qué significa un parámetro BIM.
-
-Pero una solución especializada podría:
-
-1. conectarse al CDE;
-2. consultar el estándar BIM institucional;
-3. consultar el modelo;
-4. identificar parámetros faltantes;
-5. generar incidencias;
-6. presentar evidencia.
+Es más costoso, más lento de iterar y más difícil de mantener que orquestar un modelo general — por eso casi nunca es el punto de partida.
+:::
+:::
 
 La especialización no necesariamente significa:
 
-> “Entrenar nuestra propia IA.”
-
----
-
-^^ Sesión 01 / Especialización
-## 13. Entonces, ¿cuándo entrenamos?
-
-Podemos pensar en tres niveles:
-
-```text
-NIVEL 1
-Modelo general + Prompt
-
-NIVEL 2
-Modelo general + Contexto + Datos de la organización
-
-NIVEL 3
-Modelo especializado / Fine-tuning / ML propio
-```
-
-La pregunta es:
-
-> **¿En cuál deberíamos empezar?**
-
-Normalmente no en el nivel 3.
-
-Para muchas instituciones, el mayor valor inicial está en conectar correctamente los modelos generales con información institucional gobernada.
+> "Entrenar nuestra propia IA."
 
 ---
 
 ^^ Sesión 01 / Ecosistema
-## 14. ChatGPT, Claude y Gemini
+## 12. Un ecosistema de modelos, no solo tres
 
-No deben entenderse únicamente como “chats”.
+No deben entenderse únicamente como "chats". Cada mes aparecen nuevos jugadores compitiendo por el mismo lugar.
 
-Representan ecosistemas tecnológicos completos.
+<div style="display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin:18px 0 8px"><span style="display:inline-block; transform:rotate(-4deg); border:2px solid var(--accent-1); color:var(--accent-1); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">ChatGPT</span><span style="display:inline-block; transform:rotate(3deg); border:2px solid var(--accent-1); color:var(--accent-1); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">Claude</span><span style="display:inline-block; transform:rotate(-2deg); border:2px solid var(--accent-1); color:var(--accent-1); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">Gemini</span></div>
 
-### ChatGPT
+<div style="text-align:center; font-family:var(--font-display); font-weight:800; font-size:clamp(24px,3.4vw,38px); color:var(--text-dim); letter-spacing:.08em; margin:2px 0">VS</div>
 
-Aplicación construida sobre modelos de OpenAI, con capacidades de razonamiento, procesamiento de archivos, visión, generación de imágenes y uso de herramientas.
+<img src="assets/img/elegir-modelo-lucha.gif" alt="La interminable pelea de elegir un modelo u otro" style="display:block; margin:10px auto; max-width:100%">
 
-### Claude
+<div style="display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin:8px 0 18px"><span style="display:inline-block; transform:rotate(3deg); border:2px solid var(--accent-3); color:var(--accent-3); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">Grok</span><span style="display:inline-block; transform:rotate(-3deg); border:2px solid var(--accent-3); color:var(--accent-3); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">DeepSeek</span><span style="display:inline-block; transform:rotate(2deg); border:2px solid var(--accent-3); color:var(--accent-3); background:var(--glass-strong); border-radius:8px; padding:8px 18px; font-family:var(--font-display); font-weight:800; font-size:16px; text-transform:uppercase; letter-spacing:.03em">MiniMax</span></div>
 
-Ecosistema desarrollado por Anthropic, con modelos orientados a lenguaje, visión, razonamiento y procesamiento de contextos extensos.
+:::note
+La pelea es real, pero **la arquitectura de una solución institucional no debería depender conceptualmente de una sola interfaz de chat.**
 
-### Gemini
-
-Ecosistema de Google, fuertemente orientado a capacidades multimodales sobre texto, imágenes, documentos, audio y video.
-
-Mensaje importante:
-
-> **La arquitectura de una solución institucional no debería depender conceptualmente de una sola interfaz de chat.**
+Para ver cómo estos jugadores se van turnando el trono: <a href="https://www.youtube.com/watch?v=dULMDS_VJE8" target="_blank" rel="noopener">El juego de tronos de la IA</a> (video).
+:::
 
 ---
 
 ^^ Sesión 01 / Ecosistema
-## 15. ¿Y ejecutar IA localmente?
+## 13. ¿Y ejecutar IA localmente?
 
 Existen familias de modelos cuyos pesos pueden descargarse y ejecutarse en infraestructura propia.
 
-Ejemplos:
-
-- Llama;
-- Qwen;
-- otros modelos abiertos o con pesos disponibles.
+:::chips
+Llama, Qwen, DeepSeek, otros modelos abiertos
+:::
 
 Esto abre otro esquema:
 
-```text
-Cloud
-ChatGPT / Claude / Gemini
+:::split
+:::card [Cloud]
+Servido por el proveedor: ChatGPT, Claude, Gemini.
+:::
+:::card [Infraestructura propia]
+Corre en servidor o GPU institucional, ejecutando pesos abiertos como Llama, Qwen, DeepSeek y otros.
+:::
+:::
 
-vs.
-
-Infraestructura propia
-Servidor / GPU institucional
-        ↓
-Llama / Qwen / otros modelos
-```
-
-### Ventajas potenciales del modelo local
-
+:::split
+:::card [Ventajas] Del modelo local
 - mayor control;
 - residencia de datos;
 - operación en redes privadas;
 - personalización;
 - independencia de determinados proveedores.
-
-### Desventajas
-
+:::
+:::card [Desventajas] Del modelo local
 - infraestructura;
 - GPU;
 - mantenimiento;
@@ -2027,6 +1976,8 @@ Llama / Qwen / otros modelos
 - seguridad;
 - MLOps;
 - normalmente menor capacidad que los modelos frontera para determinadas tareas.
+:::
+:::
 
 La discusión correcta no es:
 
@@ -2039,223 +1990,128 @@ Es:
 ---
 
 ^^ Sesión 01 / Capacidades
-## 16. Capacidades reales de la IA en AECO
+## 14. Capacidades reales de la IA en AECO
 
-### Interpretar
-
-- especificaciones;
-- contratos;
-- actas;
-- informes;
-- planos;
-- fotografías.
-
-### Extraer
-
-```text
+:::split-3
+:::card [Interpretar]
+:::chips
+Especificaciones, Contratos, Actas, Informes, Planos, Fotografías
+:::
+:::
+:::card [Extraer]
 PDF → tabla
+
 Acta → compromisos
+
 Informe → riesgos
+
 Plano → información
-```
+:::
+:::card [Clasificar]
+:::chips
+Incidencias, Documentos, Fotografías, Consultas, Solicitudes
+:::
+:::
+:::
 
-### Clasificar
+:::split-3
+:::card [Comparar]
+Modelo BIM vs. Requisitos BIM
 
-- incidencias;
-- documentos;
-- fotografías;
-- consultas;
-- solicitudes.
+Especificación vs. Ficha técnica
 
-### Comparar
-
-```text
-Modelo BIM
-vs.
-Requisitos BIM
-
-Especificación
-vs.
-Ficha técnica
-
-Contrato
-vs.
-Informe de interventoría
-```
-
-### Generar
-
-- informes;
-- consultas;
-- código;
-- formularios;
-- estructuras JSON;
-- gráficos;
-- imágenes.
-
-### Razonar
-
+Contrato vs. Informe de interventoría
+:::
+:::card [Generar]
+:::chips
+Informes, Consultas, Código, Formularios, Estructuras JSON, Gráficos, Imágenes
+:::
+:::
+:::card [Razonar]
 Puede relacionar múltiples fuentes y proponer explicaciones o acciones.
+:::
+:::
 
 ---
 
 ^^ Sesión 01 / Limitaciones
-## 17. Lo que la IA NO debe confundirse con hacer
+## 15. Lo que la IA NO debe confundirse con hacer
 
-### La IA puede equivocarse con absoluta seguridad
-
-Los modelos generativos producen respuestas plausibles.
-
-No producen automáticamente respuestas verdaderas.
-
-### Puede inventar información
-
-Esto suele denominarse:
-
-> **alucinación**
-
-Ejemplo:
-
-> “Según la normativa, el artículo 8.4.17 establece…”
+:::split-3
+:::card [Seguridad] Puede equivocarse con absoluta seguridad
+Los modelos generativos producen respuestas plausibles. No producen automáticamente respuestas verdaderas.
+:::
+:::card [Alucinación] Puede inventar información
+> "Según la normativa, el artículo 8.4.17 establece…"
 
 Puede inventar perfectamente un artículo que nunca existió.
 
-### No conoce automáticamente nuestros proyectos
-
-Necesita acceso autorizado a la información.
+Pasó en la vida real: <a href="https://www.youtube.com/shorts/h8aBks7pz34" target="_blank" rel="noopener">un orador leyó en público</a> la sugerencia de seguimiento que la IA agregó al final de la respuesta.
+:::
+:::card [Acceso] No conoce nuestros proyectos
+Necesita acceso autorizado a la información — no lo tiene por defecto.
+:::
+:::
 
 ### No reemplaza cálculos especializados
 
 Para cálculos críticos:
 
-```text
-IA
-↓
-selecciona / interpreta
-↓
-software especializado
-↓
-calcula
-↓
-IA
-↓
-explica
-```
+<svg viewBox="0 0 700 110" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:640px; height:auto; display:block; margin:14px auto">
+  <defs>
+    <marker id="calc-arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--glass-line)"/></marker>
+  </defs>
+  <line x1="105" y1="55" x2="123" y2="55" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#calc-arrow)"/>
+  <line x1="223" y1="55" x2="241" y2="55" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#calc-arrow)"/>
+  <line x1="341" y1="55" x2="359" y2="55" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#calc-arrow)"/>
+  <line x1="459" y1="55" x2="477" y2="55" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#calc-arrow)"/>
+  <line x1="577" y1="55" x2="595" y2="55" stroke="var(--glass-line)" stroke-width="1.4" marker-end="url(#calc-arrow)"/>
+  <rect x="5" y="20" width="100" height="70" rx="7" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="55" y="60" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">IA</text>
+  <rect x="123" y="20" width="100" height="70" rx="7" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="173" y="52" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">selecciona</text>
+  <text x="173" y="65" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">/ interpreta</text>
+  <rect x="241" y="20" width="100" height="70" rx="7" fill="var(--accent-2)" fill-opacity="0.14" stroke="var(--accent-2)" stroke-width="1.6"/>
+  <text x="291" y="52" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">software</text>
+  <text x="291" y="65" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">especializado</text>
+  <rect x="359" y="20" width="100" height="70" rx="7" fill="var(--accent-2)" fill-opacity="0.14" stroke="var(--accent-2)" stroke-width="1.6"/>
+  <text x="409" y="60" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">calcula</text>
+  <rect x="477" y="20" width="100" height="70" rx="7" fill="var(--accent-1)" fill-opacity="0.18" stroke="var(--accent-1)" stroke-width="2"/>
+  <text x="527" y="60" text-anchor="middle" font-size="13" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">IA</text>
+  <rect x="595" y="20" width="100" height="70" rx="7" fill="var(--accent-3)" fill-opacity="0.1" stroke="var(--accent-3)" stroke-width="1.4"/>
+  <text x="645" y="60" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--text-primary)" font-family="Inter, sans-serif">explica</text>
+</svg>
 
-No:
-
-```text
-IA → inventa el resultado
-```
-
----
-
-^^ Sesión 01 / Limitaciones
-## 18. IA probabilística vs. BIM determinístico
-
-Esta distinción es fundamental.
-
-```text
-BIM / BASE DE DATOS / SOFTWARE
-
-ID elemento = 45783
-Área = 34.72 m²
-Nivel = N03
-
-DETERMINÍSTICO
-```
-
-Frente a:
-
-```text
-IA
-
-“Este elemento probablemente corresponde
-a un muro estructural que debería revisarse…”
-
-PROBABILÍSTICO
-```
-
-Por eso la arquitectura correcta es:
-
-```text
-DATOS CONFIABLES
-        ↓
-       IA
-        ↓
-INTERPRETACIÓN
-        ↓
-REGLAS / HERRAMIENTAS
-        ↓
-VALIDACIÓN
-```
-
-No:
-
-```text
-IA = BASE DE DATOS
-```
-
----
-
-^^ Sesión 01 / Arquitectura
-## 19. Una arquitectura responsable para una institución pública
-
-```text
-          FUENTES OFICIALES
-               │
-     ┌─────────┼──────────┐
-     │         │          │
-    BIM       CDE        GIS
-     │         │          │
-     └─────────┼──────────┘
-               ↓
-        DATOS GOBERNADOS
-               ↓
-          CONTEXTO IA
-               ↓
-         MODELO DE IA
-               ↓
-          HERRAMIENTAS
-               ↓
-          RESULTADO IA
-               ↓
-     VALIDACIÓN / TRAZABILIDAD
-               ↓
-        DECISIÓN HUMANA
-```
-
-Aquí se conectan directamente las sesiones 01A y 01B.
-
-La sesión 01A planteaba:
-
-> **Sin datos BIM gobernados, la IA no tiene una fuente confiable sobre la cual trabajar.**
-
-La sesión 01B responde:
-
-> **Tener buenos datos tampoco es suficiente: debemos comprender qué hace el modelo, qué información recibe, con qué herramientas trabaja y qué resultados requieren validación.**
+:::warn
+**No:** que la IA invente el resultado directamente, sin pasar por el software especializado.
+:::
 
 ---
 
 ^^ Sesión 01 / Taller
-## 20. Ejercicio final — ¿Qué IA utilizarías?
+## 16. Ejercicio final — ¿Qué IA utilizarías?
 
-| Situación | Tecnología dominante |
+Para cada situación, ¿qué tecnología usaría? A veces la mejor respuesta no es "usar IA".
+
+| Situación | Tecnología que usaría |
 |---|---|
-| Detectar probabilidad de retraso usando 500 proyectos históricos | Machine Learning |
-| Analizar una fotografía de obra | Modelo multimodal |
-| Resumir un informe de interventoría | LLM |
-| Generar una imagen conceptual de espacio público | Modelo generativo de imágenes |
-| Consultar información de un modelo BIM mediante lenguaje natural | LLM + datos BIM + herramientas |
-| Verificar automáticamente reglas geométricas del modelo | Software determinístico + IA como apoyo |
+| Detectar probabilidad de retraso usando 500 proyectos históricos | |
+| Analizar una fotografía de obra | |
+| Resumir un informe de interventoría | |
+| Generar una imagen conceptual de espacio público | |
+| Consultar información de un modelo BIM mediante lenguaje natural | |
+| Verificar automáticamente reglas geométricas del modelo | |
 
-La última respuesta es intencionalmente importante.
+:::chips
+LLM + datos BIM + herramientas, Modelo generativo de imágenes, Machine Learning, Software determinístico + IA como apoyo, Modelo multimodal, LLM
+:::
 
-La respuesta no siempre debe ser:
+:::note
+**Material del taller** — se llena en pantalla y se descarga en `.md`:
+<a href="doc.html#d=talleres/taller-final-01" target="_blank" rel="noopener">Hoja de trabajo</a>
 
-> “usar IA”.
-
-A veces la mejor arquitectura sigue siendo una regla determinística.
+Responda individualmente. Antes de que termine la clase, descargue el `.md` (botón en la hoja) y envíelo a <a href="mailto:hugo.gomez@ascend.net.co">hugo.gomez@ascend.net.co</a>.
+:::
 
 ---
 
