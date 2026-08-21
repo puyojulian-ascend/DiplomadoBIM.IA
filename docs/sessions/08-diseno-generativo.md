@@ -206,7 +206,7 @@ El subtramo se inunda. Porque la **capacidad de captación** nunca se escribió 
 :::
 
 :::ok
-Es la misma lección de la sesión 02, con consecuencias de obra. Allá, cuatro personas obtuvieron cuatro números distintos por cómo formularon la instrucción. Aquí, el diseño depende de cómo se formuló el problema.
+Es la misma lección de la sesión 02, con consecuencias de obra. Allá, cuatro criterios distintos sobre el mismo archivo daban cuatro números distintos. Aquí, el diseño depende de cómo se formuló el problema.
 :::
 
 ---
