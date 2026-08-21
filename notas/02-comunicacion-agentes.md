@@ -110,7 +110,7 @@ Con el plan B para cuando nadie contesta — que en virtual es lo normal.
 > **"¿Alguien ve algo raro en esa respuesta?"**
 
 *Si nadie contesta (probable):* "Se ve bien, ¿cierto? Redactada, con cifras, con ubicación.
-Ese es exactamente el problema. Les dejo el dato: el Tramo 2 tiene 148 sumideros, no 132. Y
+Ese es exactamente el problema. Les dejo el dato: el Tramo 2 tiene 74 sumideros, no 132. Y
 el modelo nunca vio el proyecto."
 
 **La pulsación va acá, no antes.** El recuadro rojo aparece cuando la frase ya se dijo: primero

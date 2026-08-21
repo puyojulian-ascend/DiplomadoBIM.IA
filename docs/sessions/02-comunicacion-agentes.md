@@ -33,7 +33,7 @@ Y si los datos ya están bien… **¿alcanza con pedirle bien las cosas a la IA?
 Se la hizo a una IA. Sin adjuntar nada.
 :::
 :::card [Lo que recibió] !Una respuesta impecable
-*"El Tramo 2 cuenta con 132 sumideros, de los cuales 27 no registran ficha de mantenimiento asociada, concentrados principalmente en el costado oriental entre K0+300 y K0+900."*
+*"El Tramo 2 cuenta con 132 sumideros, de los cuales 27 no registran ficha de mantenimiento asociada, concentrados principalmente en el costado oriental entre K0+300 y K0+700."*
 
 Redactada con seguridad. Con cifras exactas. Con ubicación.
 :::
@@ -251,7 +251,7 @@ La trampa 2 es la grave, y es la que más se parece al trabajo real: **el modelo
 :::
 
 :::warn
-En la respuesta de Marcela había dos cifras: **132 sumideros** y **27 sin ficha**. El tramo completo tiene 148, y el subtramo exportado tiene 24. Las dos cifras eran plausibles. Ninguna era un dato.
+En la respuesta de Marcela había dos cifras: **132 sumideros** y **27 sin ficha**. El tramo completo tiene 74, y el subtramo exportado tiene 24. Las dos cifras eran plausibles. Ninguna era un dato.
 :::
 
 :::ok
