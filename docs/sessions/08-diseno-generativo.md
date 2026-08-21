@@ -14,7 +14,7 @@ subtitulo: Dejar que el computador proponga y evalúe muchas alternativas — y 
 :::card [Quedó claro] El Enchufe
 La IA ya llega a la fuente viva, con el permiso correcto, y avisa cuando algo cambia.
 :::
-:::card [!Quedó abierto] La pregunta de hoy
+:::card [Quedó abierto] !La pregunta de hoy
 Pero todo lo que hace es **leer lo que ya está escrito**. ¿Puede proponer algo que nadie escribió?
 :::
 :::
@@ -27,7 +27,7 @@ Pero todo lo que hace es **leer lo que ya está escrito**. ¿Puede proponer algo
 > **Corredor Av. Guayacanes, K0+400 – K0+700.** Interventoría observó que seis sumideros quedan dentro del trazado de la ciclorruta segregada. Hay que reubicarlos.
 
 :::split
-:::card [!Lo que se toca al moverlos] Cuatro restricciones
+:::card [Lo que se toca al moverlos] !Cuatro restricciones
 - El colector pluvial necesita **pendiente mínima**: mover un sumidero mueve la red.
 - Tres **guayacanes** del separador tienen acta de manejo: no se talan.
 - El andén no puede bajar del **ancho mínimo de accesibilidad**.
@@ -193,7 +193,7 @@ Ninguna de estas herramientas resuelve un problema mal planteado. Cambian la vel
 > Primera corrida sobre el caso del corredor, con un solo objetivo: **minimizar costo**.
 
 :::split
-:::card [!El resultado óptimo] Eliminar dos sumideros
+:::card [El resultado óptimo] !Eliminar dos sumideros
 Costo mínimo. **Todas las restricciones escritas, cumplidas.** El algoritmo hizo un trabajo impecable.
 :::
 :::card [Lo que pasa en obra] La primera lluvia fuerte
@@ -243,7 +243,7 @@ Es la misma lección de la sesión 02, con consecuencias de obra. Allá, cuatro 
 - Generar variantes paramétricas.
 - Modelado repetitivo basado en patrones.
 :::
-:::card [!Todavía frágil] Requiere revisión fuerte
+:::card [Todavía frágil] !Requiere revisión fuerte
 - Interpretar planos complejos sin errores.
 - Nubes de puntos a modelo listo para usar.
 - Coherencia técnica en modelos grandes.
@@ -323,7 +323,7 @@ El comité eligió una — y por primera vez eligió **sabiendo exactamente qué
 :::card [Resultado] Lo que sale de esta sesión
 El **planteamiento de un problema de diseño** con sus tres piezas, y la **arquitectura de generación** de un modelo con su punto de control.
 :::
-:::card [!Idea fuerza] Una sola frase
+:::card [Idea fuerza] !Una sola frase
 El computador genera opciones; el profesional **define el problema y juzga las respuestas**. La creatividad no se automatiza: se **amplifica**.
 :::
 :::
@@ -339,7 +339,7 @@ El computador genera opciones; el profesional **define el problema y juzga las r
 :::card [Lo que resolvimos] La propuesta
 La IA ya propone alternativas que nadie dibujó, y obliga a explicitar el criterio con el que se elige.
 :::
-:::card [!Lo que queda abierto] La anticipación
+:::card [Lo que queda abierto] !La anticipación
 El IDU ya ejecutó **40 corredores parecidos**. Todos tenían un presupuesto y un plazo. Casi ninguno terminó en el presupuesto y el plazo que decía el papel.
 
 **¿Qué dicen esos 40 sobre lo que de verdad va a pasar con este?**

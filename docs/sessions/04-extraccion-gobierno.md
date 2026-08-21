@@ -12,9 +12,9 @@ subtitulo: Convertir documentos y modelos dispersos en información estructurada
 
 :::split
 :::card [Quedó claro] La Ficha del Agente
-Objetivo, conocimiento, herramientas, límites y usuario. Y una trampa: cuatro personas contaron los mismos sumideros y obtuvieron **6, 9, 11 y 12**.
+Objetivo, conocimiento, herramientas, límites y usuario. Y una trampa: contar los mismos sumideros con cuatro criterios distintos dio **6, 9, 11 y 12**.
 :::
-:::card [!Quedó abierto] La pregunta de hoy
+:::card [Quedó abierto] !La pregunta de hoy
 El agente ya sabe qué hacer. Pero **¿de dónde saca los datos — y quién los cuida?**
 :::
 :::
@@ -37,7 +37,7 @@ El Anexo Técnico 7 define formatos, niveles de información, hitos y responsabl
 :::card [02] El export venía roto
 El CSV del viernes tenía campos vacíos y categorías escritas de tres formas. El acta lo llama, textualmente, *"un error del proceso de exportación"*.
 :::
-:::card [!03] Y alguien tomó un atajo
+:::card [03] !Y alguien tomó un atajo
 Andrés, el coordinador BIM del Consorcio, pegó el anexo completo en una herramienta pública para resumirlo rápido.
 :::
 :::
@@ -94,7 +94,7 @@ La IA traduce entre estas tres representaciones.
 > Cada exportación **pierde algo**. El arte está en exportar lo justo, con nomenclaturas consistentes, para que la IA no tenga que adivinar.
 
 :::split
-:::card [!Qué se pierde] Fugas típicas
+:::card [Qué se pierde] !Fugas típicas
 - Relaciones entre elementos.
 - Unidades y sistemas de coordenadas.
 - Parámetros compartidos mal nombrados.
@@ -170,7 +170,7 @@ Cada fila tiene su numeral al lado. Sin esa columna, la matriz es **una opinión
 :::card [Lo que dice el anexo] Numeral 4.3.1
 Red de drenaje: **LOD 350** para el 100% de los elementos.
 :::
-:::card [!Lo que decidió el comité] Acta N.º 14 · 18 de junio
+:::card [Lo que decidió el comité] !Acta N.º 14 · 18 de junio
 Tuberías y colectores **enterrados: LOD 300**.
 Sumideros y pozos: se mantiene LOD 350.
 
@@ -214,7 +214,7 @@ La validación humana no consiste en releer lo que la IA escribió. Consiste en 
 > **Shadow IT**: herramientas que la gente adopta por su cuenta, sin pasar por TI. **Shadow AI**: lo mismo, pero cargando información del proyecto en herramientas públicas.
 
 :::split
-:::card [!El riesgo] Qué puede salir mal
+:::card [El riesgo] !Qué puede salir mal
 - Subir un anexo reservado a un chat público.
 - Datos del contrato procesados fuera del control de la entidad.
 - Sin control de acceso, permisos ni historial.
@@ -247,7 +247,7 @@ Información interna del proyecto sin identificadores contractuales: cantidades,
 
 *Sirve para trabajar, dentro de casa.*
 :::
-:::card [!Rojo] No sale
+:::card [Rojo] !No sale
 Anexos contractuales, precios unitarios, datos personales, correspondencia con el contratista, información bajo reserva.
 
 *No hay atajo que valga.*
@@ -327,7 +327,7 @@ Y una consecuencia del viernes pasado: los **11 sumideros sin ficha** que encont
 :::card [Resultado] Lo que sale de esta sesión
 Una **matriz de requisitos trazable** y un **semáforo aplicado** a los documentos propios, con la versión que sí puede salir de cada rojo.
 :::
-:::card [!Idea fuerza] Una sola frase
+:::card [Idea fuerza] !Una sola frase
 La IA no reemplaza el gobierno de datos: lo hace **más urgente**. Velocidad sin control es riesgo; control sin velocidad es burocracia. El equilibrio es el trabajo.
 :::
 :::
@@ -343,7 +343,7 @@ La IA no reemplaza el gobierno de datos: lo hace **más urgente**. Velocidad sin
 :::card [Lo que resolvimos] El dato
 Ya se sabe extraer con trazabilidad, detectar el documento vencido y decidir qué puede salir de la entidad.
 :::
-:::card [!Lo que queda abierto] La fuente
+:::card [Lo que queda abierto] !La fuente
 Cada copia envejece el día que alguien actualiza el original. Volver a exportar todo cada lunes no es un método.
 
 **¿Cómo se conecta la IA a la fuente viva?**

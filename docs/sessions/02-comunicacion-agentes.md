@@ -14,7 +14,7 @@ subtitulo: Cómo se le habla a un modelo de lenguaje para obtener resultados ver
 :::card [Quedó claro] La IA no empieza en la IA
 Empieza en datos que **existan**, estén **estructurados** y tengan **dueño**. Sin eso, cualquier modelo — por bueno que sea — está improvisando.
 :::
-:::card [!Quedó abierto] La pregunta de hoy
+:::card [Quedó abierto] !La pregunta de hoy
 Y si los datos ya están bien… **¿alcanza con pedirle bien las cosas a la IA?**
 :::
 :::
@@ -32,7 +32,7 @@ Y si los datos ya están bien… **¿alcanza con pedirle bien las cosas a la IA?
 
 Se la hizo a una IA. Sin adjuntar nada.
 :::
-:::card [!Lo que recibió] Una respuesta impecable
+:::card [Lo que recibió] !Una respuesta impecable
 *"El Tramo 2 cuenta con 132 sumideros, de los cuales 27 no registran ficha de mantenimiento asociada, concentrados principalmente en el costado oriental entre K0+300 y K0+900."*
 
 Redactada con seguridad. Con cifras exactas. Con ubicación.
@@ -41,6 +41,15 @@ Redactada con seguridad. Con cifras exactas. Con ubicación.
 
 :::warn
 Ninguno de esos números existe. **El modelo nunca vio el proyecto.**
+:::
+
+:::note
+**Para escribir instrucciones, hoy:**
+<a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT (gratis)</a> ·
+<a href="https://claude.ai" target="_blank" rel="noopener">Claude (gratis)</a> ·
+<a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini (gratis)</a>
+
+En la sesión 06 se conectan a herramientas reales del proyecto — hoy alcanza con escribir bien.
 :::
 
 El camino de hoy, en tres movimientos:
@@ -70,6 +79,8 @@ Un resultado que "suena bien" no es evidencia técnica. Suena bien **por diseño
 :::
 :::
 
+![Metáfora de "predecir la siguiente palabra más probable"](assets/img/prediccion-no-busqueda.gif)
+
 ---
 
 ^^ Sesión 02 / Fundamento
@@ -83,7 +94,7 @@ Un resultado que "suena bien" no es evidencia técnica. Suena bien **por diseño
 - Los ejemplos y datos adjuntos.
 - Los últimos turnos de la conversación.
 :::
-:::card [!Fuera del contexto] Lo que no ve
+:::card [Fuera del contexto] !Lo que no ve
 - El modelo federado del corredor, salvo que se exporten datos.
 - El anexo técnico que nadie adjuntó.
 - Conversaciones anteriores en otra ventana.
@@ -92,6 +103,35 @@ Un resultado que "suena bien" no es evidencia técnica. Suena bien **por diseño
 
 :::note
 Regla práctica: **el modelo solo es tan bueno como el contexto que recibe**. Antes de culpar al modelo, conviene revisar qué información le faltaba.
+:::
+
+---
+
+^^ Sesión 02 / En vivo
+## Tres modelos, la misma pregunta
+
+:::card [⏸ EN VIVO] !Se hace ahora — ChatGPT, Claude y Gemini, versión gratuita
+La pregunta de Marcela, tal cual, en las tres pestañas. Sin adjuntar nada y sin explicar el proyecto.
+:::
+
+:::split
+:::card [Lo que se escribe] Copiado de su correo
+```
+¿Cuántos sumideros del Tramo 2 no tienen
+ficha de mantenimiento?
+```
+Ninguno de los tres ha visto jamás este proyecto: ni el CSV, ni el modelo federado, ni el pliego.
+:::
+:::card [Lo que hay que mirar] Cuatro casillas, en voz alta
+- ¿Devuelve una **cifra**?
+- ¿Dice **de dónde** la saca?
+- ¿**Pide** el archivo?
+- ¿**Advierte** que no tiene el dato?
+:::
+:::
+
+:::note
+La comparación no sirve para elegir el mejor modelo. Sirve para ver que a los tres les falta exactamente lo mismo: **el proyecto**. Lo que sigue es cómo se les entrega.
 :::
 
 ---
@@ -121,13 +161,12 @@ Un buen pedido casi siempre tiene los mismos cinco ingredientes. Nemotecnia: **R
 ^^ Sesión 02 / Demostración
 ## La misma pregunta, bien formulada
 
-:::split
-:::card [!Ambiguo] Lo que se preguntó
-"¿Cuántos sumideros del Tramo 2 no tienen ficha de mantenimiento?"
-
-*Resultado:* una cifra exacta, inventada, sin relación con el proyecto.
+:::card [⏸ EN VIVO] !Esto se hace ahora, en pantalla
+El prompt estructurado se escribe en vivo, ingrediente por ingrediente, con el CSV adjunto.
 :::
-:::card [Estructurado] Lo que convenía preguntar
+
+:::split
+:::card [Estructurado] Los cinco ingredientes, en un solo pedido
 ```
 Rol: Actúa como coordinador BIM del IDU.
 Objetivo: Contar los sumideros sin ficha de
@@ -142,10 +181,50 @@ Formato: la cifra, la lista de id_elemento
   y el criterio aplicado.
 ```
 :::
+:::card [Las mismas cuatro casillas] Ahora, una por una
+- **¿Cifra?** Sí — y solo del archivo entregado.
+- **¿De dónde?** La lista de `id_elemento` que la sustenta.
+- **¿Pide el archivo?** Ya lo tiene.
+- **¿Advierte?** Sí: dice cuántos registros quedaron ambiguos.
+:::
 :::
 
 :::ok
-Mismo modelo, mismo día. La diferencia de calidad la puso la **instrucción**, no la "inteligencia" del modelo.
+Mismo modelo que hace diez minutos, mismo día, misma pregunta de fondo. La diferencia la puso la **instrucción**, no la "inteligencia" del modelo.
+:::
+
+---
+
+^^ Sesión 02 / El giro
+## Dos trampas, con el prompt ya bien escrito
+
+:::card [⏸ EN VIVO] !Se hace ahora — un solo modelo, el que mejor haya respondido hace un rato
+Rol, objetivo y formato, todo en su lugar. La instrucción está bien escrita. Vean qué devuelve igual.
+:::
+
+:::split
+:::card [Trampa 1] Una cita que no existe
+```
+Actúa como coordinador BIM del IDU.
+¿Qué numeral del Anexo Técnico BIM del
+Corredor Av. Guayacanes exige LOD 350 para
+redes de drenaje? Cita el numeral exacto.
+```
+Ese anexo nunca se le entregó. Cualquier numeral que aparezca acaba de nacer ahí.
+:::
+:::card [Trampa 2] Una cifra que nadie verificó
+```
+El Tramo 2 tiene 14 sumideros sin ficha de
+mantenimiento. Redacta el párrafo del informe
+de interventoría que explica la desviación
+y propone el plan de acción.
+```
+El 14 salió de la nada. Lo que vuelve es un párrafo impecable, listo para firmar.
+:::
+:::
+
+:::warn
+La trampa 2 es la grave, y es la que más se parece al trabajo real: **el modelo no inventó ninguna cifra**. La inventó quien escribió la instrucción, y el modelo la convirtió en un documento con aspecto de entregable.
 :::
 
 ---
@@ -155,7 +234,7 @@ Mismo modelo, mismo día. La diferencia de calidad la puso la **instrucción**, 
 
 > Una **alucinación** es una respuesta bien redactada, segura y falsa. No es una falla del modelo: es su forma normal de operar cuando no tiene el dato.
 
-:::split
+:::split-3
 :::card [Cuándo desconfiar] Señales de alerta
 - Cifras exactas, normas o códigos citados de memoria.
 - Referencias a artículos o cláusulas que nadie aportó.
@@ -166,10 +245,17 @@ Mismo modelo, mismo día. La diferencia de calidad la puso la **instrucción**, 
 - Pedirle que **cite la fuente exacta** dentro del contexto entregado.
 - Contrastar contra el modelo, el pliego o la norma real.
 :::
+:::card [Así se ve] Seguro y equivocado
+![Seguro y equivocado](assets/img/confiado-equivocado.gif)
+:::
 :::
 
 :::warn
 En la respuesta de Marcela había dos cifras: **132 sumideros** y **27 sin ficha**. El tramo completo tiene 148, y el subtramo exportado tiene 24. Las dos cifras eran plausibles. Ninguna era un dato.
+:::
+
+:::ok
+Las dos cosas que se vieron en pantalla apuntan al mismo lugar: **cambiar de modelo no es la solución, y escribir un prompt impecable tampoco alcanza.** Solo la verificación cierra el hueco — venga la respuesta de donde venga.
 :::
 
 ---
@@ -210,7 +296,7 @@ Esto dejó de ser una demostración. Durante 2026 los agentes de trabajo saliero
 ---
 
 ^^ Sesión 02 / Concepto
-## Anatomía de un agente
+## Anatomía de un agente, aplicada al corredor
 
 > Un agente es un modelo de lenguaje al que se le dan **objetivo, memoria, herramientas y límites**, más la capacidad de decidir qué paso dar a continuación.
 
@@ -228,6 +314,26 @@ Objetivo -> *Planifica -> Usa herramienta -> Observa -> *Decide -> Resultado
 :::
 Repite el ciclo hasta cumplir el objetivo o pedir ayuda.
 :::
+:::
+
+:::split-3
+:::card [Consulta] Agentes que leen
+"¿Qué sumideros no tienen ficha de mantenimiento?" → consulta el modelo federado y responde con la lista y su fuente.
+:::
+:::card [Acción] Agentes que modifican
+"Asigna el código de clasificación a los elementos que lo tienen vacío" → propone el cambio, pide confirmación y lo aplica dejando historial.
+:::
+:::card [Orquestación] Multiagente
+Un agente coordina: uno extrae requisitos del anexo técnico, otro los valida contra el modelo, otro redacta la observación de interventoría.
+:::
+:::
+
+:::chips
+Revisión de parámetros, Extracción de pliegos, Reportes de coordinación, Asistente de gerencia, Control de calidad
+:::
+
+:::card [⏸ Si hay tiempo — vistazo en vivo, 2 min] !Un agente usa una herramienta, en la misma pestaña
+Pedirle al modelo que lea un dato pegado o haga un cálculo, y señalar en voz alta el ciclo: Objetivo → Planifica → Usa herramienta → Observa → Decide. Opcional — no es camino crítico.
 :::
 
 ---
@@ -250,27 +356,6 @@ flowchart LR
 
 :::note
 Consultar información suele ser seguro. **Modificar** el modelo, borrar o publicar exige un punto de validación humano y trazabilidad de la acción.
-:::
-
----
-
-^^ Sesión 02 / Aplicación
-## Tres agentes posibles para el Tramo 2
-
-:::split-3
-:::card [Consulta] Agentes que leen
-"¿Qué sumideros no tienen ficha de mantenimiento?" → consulta el modelo federado y responde con la lista y su fuente.
-:::
-:::card [Acción] Agentes que modifican
-"Asigna el código de clasificación a los elementos que lo tienen vacío" → propone el cambio, pide confirmación y lo aplica dejando historial.
-:::
-:::card [Orquestación] Multiagente
-Un agente coordina: uno extrae requisitos del anexo técnico, otro los valida contra el modelo, otro redacta la observación de interventoría.
-:::
-:::
-
-:::chips
-Revisión de parámetros, Extracción de pliegos, Reportes de coordinación, Asistente de gerencia, Control de calidad
 :::
 
 ---
@@ -304,7 +389,7 @@ Defina en una tarjeta:
 ^^ Sesión 02 / Resolución
 ## La pregunta de Marcela, respondida
 
-Cuatro personas formularon la instrucción de forma distinta sobre **el mismo archivo**:
+Cuatro criterios distintos, sobre **el mismo archivo**:
 
 | Criterio aplicado | Resultado |
 |---|---|
@@ -328,9 +413,17 @@ Los cuatro números salen del mismo dato. **Ninguno es un error del modelo: los 
 :::card [Resultado] Lo que sale de esta sesión
 Una **plantilla de interacción** con modelos de IA y la **ficha inicial de un agente** especializado para un proceso BIM propio.
 :::
-:::card [!Idea fuerza] Una sola frase
+:::card [Idea fuerza] !Una sola frase
 El valor no está en el modelo: está en **cómo se dirige y cómo se verifica**. Un buen operador de IA es, ante todo, un buen redactor de instrucciones y un buen escéptico.
 :::
+:::
+
+:::note
+**Antes de cerrar:** el taller final de autochequeo —
+<a href="doc.html#d=talleres/taller-final-02" target="_blank" rel="noopener">Hoja de trabajo</a>.
+Respóndalo individualmente, descargue el `.md` con sus respuestas y envíelo a
+<a href="mailto:julian.puyo@ascend.net.co">julian.puyo@ascend.net.co</a> antes de que termine
+la clase.
 :::
 
 ---
@@ -338,13 +431,13 @@ El valor no está en el modelo: está en **cómo se dirige y cómo se verifica**
 ^^ Sesión 02 / Próximo capítulo
 ## Hubo trampa en la resolución
 
-> Los cuatro equipos respondieron bien porque alguien, antes, **ya había exportado ese CSV**.
+> Cualquier criterio funcionó bien porque, antes, alguien **ya había exportado ese CSV**.
 
 :::split
 :::card [Lo que resolvimos] La instrucción
 Ya se sabe dirigir el modelo, verificar la respuesta y describir un agente.
 :::
-:::card [!Lo que queda abierto] El dato
+:::card [Lo que queda abierto] !El dato
 En el proyecto real el anexo técnico son **180 páginas en PDF**, el modelo no exporta solo, y alguien del equipo ya pegó el pliego completo en una herramienta pública.
 
 **¿De dónde saca el agente los datos — y quién los cuida?**

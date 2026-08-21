@@ -81,7 +81,7 @@ publicar** exige confirmación humana y quedar registrado.
 
 ### Y la trampa que cierra la sesión
 
-Cuatro personas contaron los sumideros sin ficha **sobre el mismo archivo** y obtuvieron
-**6, 9, 11 y 12**. Ninguno era un error del modelo.
+Cuatro criterios distintos, **sobre el mismo archivo**, dan **6, 9, 11 y 12** sumideros sin
+ficha. Ninguno es un error del modelo.
 
 **La respuesta correcta no es una cifra: es una cifra con su criterio escrito al lado.**
