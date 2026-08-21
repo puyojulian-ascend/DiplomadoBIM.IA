@@ -69,6 +69,20 @@
     return row.split('|').map(function (texto, idx) { return { texto: texto, idx: idx }; });
   }
 
+  /* Una fila de tabla Markdown vive en UNA línea, así que el contenido de la celda no
+     puede llevar saltos crudos. Se conserva la intención pasándolos a <br>, que es la
+     forma estándar de partir renglón dentro de una tabla GFM. Y se escapa el pipe: sin
+     eso, un "|" tecleado en la respuesta agrega una columna y corrompe la tabla. */
+  function textoDeCelda(v) {
+    return String(v)
+      .replace(/\r\n?/g, '\n')
+      .replace(/\|/g, '\\|')
+      .split('\n').map(function (l) { return l.trim(); }).join('\n')
+      .replace(/\n{2,}/g, '\n')      // varias líneas en blanco seguidas -> una sola
+      .replace(/^\n+|\n+$/g, '')     // sin saltos sueltos al principio ni al final
+      .replace(/\n/g, '<br>');
+  }
+
   function reconstruirFila(line, partes) {
     var ind = /^(\s*)/.exec(line)[1];
     return ind + '| ' + partes.map(function (p) { return p.texto.trim(); }).join(' | ') + ' |';
@@ -95,7 +109,7 @@
       porLinea[ln].forEach(function (c) {
         var v = answers['td:' + c.n];
         if (v === undefined || !String(v).trim()) return;
-        if (partes[c.parte]) { partes[c.parte].texto = String(v).replace(/\s*\n\s*/g, ' ').trim(); tocada = true; }
+        if (partes[c.parte]) { partes[c.parte].texto = textoDeCelda(v); tocada = true; }
       });
       // Sin respuestas no se reescribe la fila: así el archivo no cambia de formato.
       if (tocada) lines[ln] = reconstruirFila(lines[ln], partes);
@@ -136,6 +150,14 @@
         el.setAttribute('spellcheck', 'true');
         if (vals[clave] !== undefined) el.textContent = vals[clave];
         el.addEventListener('input', onChange);
+        // Enter = salto de línea, parejo en todos los navegadores. Donde no se aceptó
+        // "plaintext-only", el comportamiento por defecto insertaría nodos <div> y
+        // textContent los leería todos pegados.
+        el.addEventListener('keydown', function (ev) {
+          if (ev.key !== 'Enter') return;
+          ev.preventDefault();
+          document.execCommand('insertText', false, '\n');
+        });
         // Evita pegar HTML con formato dentro del campo.
         el.addEventListener('paste', function (ev) {
           ev.preventDefault();
