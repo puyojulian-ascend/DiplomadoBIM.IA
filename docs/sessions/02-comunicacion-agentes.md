@@ -298,8 +298,6 @@ Esto dejó de ser una demostración. Durante 2026 los agentes de trabajo saliero
 ^^ Sesión 02 / Concepto
 ## Anatomía de un agente, aplicada al corredor
 
-<!-- ![Agente como una progresión de "subir de nivel"](assets/img/nivel-agente.gif) -->
-
 > Un agente es un modelo de lenguaje al que se le dan **objetivo, memoria, herramientas y límites**, más la capacidad de decidir qué paso dar a continuación.
 
 :::split
