@@ -970,6 +970,31 @@ compartir sus respuestas en voz alta.
 
 ---
 
+^^ Sesión 01 / Taller · Resultados
+## Lo que revelaron las 14 respuestas
+
+> El taller no evaluaba personas: retrató cómo ve el grupo la información de su propia entidad.
+
+:::split-3
+:::card [Certeza] Lo estructurado ya se reconoce
+Contratos, correspondencia, inventarios, cantidades de los modelos BIM, SECOP y SIGIDU aparecen como terreno firme. El grupo identifica bien dónde hay dato registrado.
+:::
+:::card [Inferencia] La frontera aún es difusa
+En 4 de 14 respuestas, "inferir" se confunde con consolidar o resumir información dispersa. Esa frontera —entre buscar, consolidar e inferir— es justo donde nacen las respuestas inventadas.
+:::
+:::card [Punto ciego] !El diagnóstico colectivo
+7 de 14 respuestas coinciden: lo que la IA no podría relacionar es la vida informal del proyecto — acuerdos verbales de obra, comités registrados en otras aplicaciones, trabajo de campo no reportado.
+:::
+:::
+
+:::ok
+El grupo ya sabe exactamente qué información se pierde.
+
+**Ese punto ciego no es un límite de la IA: es la brecha de captura que la entidad puede cerrar.**
+:::
+
+---
+
 ^^ Sesión 01 / Transición
 ## De copilotos a agentes
 
