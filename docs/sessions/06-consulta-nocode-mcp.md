@@ -14,7 +14,7 @@ subtitulo: Preguntarle al proyecto en lenguaje natural y conectar herramientas s
 :::card [Quedó claro] El Semáforo del Dato
 Verde sale, ámbar solo en casa, rojo no sale. Y la matriz de requisitos ya tiene columna de fuente, con las actas incluidas.
 :::
-:::card [!Quedó abierto] La pregunta de hoy
+:::card [Quedó abierto] !La pregunta de hoy
 Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva?**
 :::
 :::
@@ -30,7 +30,7 @@ Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva
 :::card [Lunes] El Consorcio radicó la corrección
 Compromiso **16-2**: se corrigió el código de clasificación de los elementos que lo tenían vacío. Modelo nuevo en el CDE.
 :::
-:::card [!Martes] Nadie avisó
+:::card [Martes] !Nadie avisó
 La matriz de Marcela sigue diciendo lo que decía el jueves. La copia que usó la IA es de la semana pasada. **Y nadie lo sabe.**
 :::
 :::
@@ -47,7 +47,7 @@ Volver a exportar todo cada lunes no es un método: es una tarea que alguien va 
 ## Búsqueda por palabra vs. búsqueda por significado
 
 :::split
-:::card [!Buscador tradicional] Coincidencia exacta
+:::card [Buscador tradicional] !Coincidencia exacta
 Buscar "elementos de drenaje" encuentra solo los documentos con **esas palabras**. Si el anexo dice "estructura de captación", no aparece.
 :::
 :::card [Buscador semántico] Coincidencia por sentido
@@ -200,7 +200,7 @@ Con autonomía viene responsabilidad. Los loops que solo **consultan** son segur
 > Muchas tareas que hoy exigen un plugin o un script pueden resolverse describiéndolas en lenguaje natural a un agente conectado.
 
 :::split
-:::card [!Antes] Con código
+:::card [Antes] !Con código
 Escribir un script o un complemento para: seleccionar los sumideros, leer un parámetro, escribir otro y exportar un reporte. Cada variación, un desarrollo nuevo.
 :::
 :::card [Ahora] Con un agente y sus herramientas
@@ -220,7 +220,7 @@ El profesional BIM no desaparece: pasa de **escribir** la solución a **dirigir 
 > Marcela conectó el agente al CDE. Funciona perfecto. Lo conectó **con su usuario**.
 
 :::split
-:::card [!Lo que nadie preguntó] ¿Con qué permisos entra?
+:::card [Lo que nadie preguntó] !¿Con qué permisos entra?
 El agente ve **todo lo que ve Marcela**: contratos, correspondencia, información económica del proceso.
 
 Y el agente le responde a cualquiera que le escriba.
@@ -286,7 +286,7 @@ Y la matriz del jueves ya se habría corregido sola el lunes a las 7:03 — avis
 :::card [Resultado] Lo que sale de esta sesión
 El **diagrama de una automatización** conectada con IA, con su decisión de plataforma según el semáforo y su cuenta de acceso definida.
 :::
-:::card [!Idea fuerza] Una sola frase
+:::card [Idea fuerza] !Una sola frase
 No se trata de programar más, sino de **conectar mejor**. La IA se vuelve útil cuando toca los datos y las herramientas reales — con permisos, límites y validación.
 :::
 :::
@@ -302,7 +302,7 @@ No se trata de programar más, sino de **conectar mejor**. La IA se vuelve útil
 :::card [Lo que resolvimos] La conexión
 La IA ya llega a la fuente, con el permiso correcto, y avisa cuando algo cambia.
 :::
-:::card [!Lo que queda abierto] La propuesta
+:::card [Lo que queda abierto] !La propuesta
 Interventoría observó que **seis sumideros chocan** con el trazado de la ciclorruta. Reubicarlos toca la pendiente del pluvial, el arbolado y el ancho del andén. Cuatro restricciones que no se pueden cumplir todas.
 
 **La respuesta no está escrita en ningún documento. ¿Puede la IA proponerla?**

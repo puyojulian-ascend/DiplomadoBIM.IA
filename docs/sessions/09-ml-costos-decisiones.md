@@ -14,7 +14,7 @@ subtitulo: Usar los datos históricos de los proyectos para anticipar costos, pl
 :::card [Quedó claro] El Abanico
 El diseño generativo no entrega una respuesta: entrega alternativas y obliga a elegir. Y una restricción que no se escribe, no existe.
 :::
-:::card [!Quedó abierto] La pregunta de hoy
+:::card [Quedó abierto] !La pregunta de hoy
 Pero todas las cifras del abanico son **estimaciones**. ¿Qué tan buenas son — y qué dice el pasado sobre lo que va a pasar?
 :::
 :::
@@ -101,7 +101,7 @@ Corredores **con** renovación de redes húmedas: **24%** de sobrecosto mediano.
 
 El doble. Y es la variable más fuerte del conjunto.
 :::
-:::card [!Lo que no predice] La longitud
+:::card [Lo que no predice] !La longitud
 La longitud del corredor —lo primero que todo el mundo mira— tiene una correlación de **0,15** con el sobrecosto.
 
 Prácticamente nada. La intuición del gremio apuntaba al lugar equivocado.
@@ -139,7 +139,7 @@ La clave no es acertar la cifra: es **saber dónde está concentrado el riesgo**
 > Se entrenó un modelo con **todas** las columnas disponibles del archivo. El resultado fue espectacular.
 
 :::split
-:::card [!La columna mágica] Número de otrosíes
+:::card [La columna mágica] !Número de otrosíes
 `num_otrosi` predice el sobrecosto con una correlación de **0,99**. Ninguna otra variable se le acerca.
 
 Un modelo con esa columna acierta casi siempre.
@@ -169,12 +169,12 @@ Quinta vez en el curso: la máquina hizo exactamente lo que se le pidió. El pro
 > Un modelo puede tener excelentes métricas y aun así ser inútil o peligroso. Estos son los venenos.
 
 :::split
-:::card [!Datos] Basura entra, basura sale
+:::card [Datos] !Basura entra, basura sale
 - **Sesgo**: si el histórico está mal, el modelo hereda el error.
 - **Cantidad**: pocos datos producen patrones falsos. Cuarenta proyectos es poco.
 - **Fuga**: variables que no existen cuando hay que predecir.
 :::
-:::card [!Razonamiento] Errores de lectura
+:::card [Razonamiento] !Errores de lectura
 - **Sobreajuste**: memoriza el pasado, falla en lo nuevo.
 - **Correlación no es causa**: dos cosas suben juntas sin que una cause la otra.
 - **Atípicos**: dos hallazgos arqueológicos no se predicen con ningún modelo.
@@ -208,7 +208,7 @@ BIM **4D** conecta el modelo con el cronograma; el ML añade la capa de **predic
 ## La Banda
 
 :::split
-:::card [!Predicción puntual] Una opinión con decimales
+:::card [Predicción puntual] !Una opinión con decimales
 > El Tramo 2 costará **$106.200 millones**.
 
 Suena preciso. No dice nada sobre cuánto se puede equivocar, así que no se puede usar para decidir.
@@ -256,7 +256,7 @@ El modelo **recomienda**, no decide. La decisión — y la responsabilidad — s
 - ¿Qué tan seguro está de esta predicción?
 - ¿Qué variables pesaron más — y estaban disponibles el día de la predicción?
 :::
-:::card [!Señal de alerta] Cuándo desconfiar
+:::card [Señal de alerta] !Cuándo desconfiar
 - Muy preciso "en el pasado", pero nadie lo probó con datos nuevos.
 - Predice sobre un tipo de proyecto que casi no vio.
 - Nadie puede explicar por qué dio ese número.
@@ -317,7 +317,7 @@ El valor no fue el número. Fue saber **dónde mirar**.
 :::card [Resultado] Lo que sale de esta sesión
 La **ficha de un modelo predictivo** con sus entradas verificadas contra la fuga, y una banda en vez de una cifra.
 :::
-:::card [!Idea fuerza] Una sola frase
+:::card [Idea fuerza] !Una sola frase
 El ML no adivina el futuro: **cuantifica la incertidumbre** del pasado para decidir mejor hoy. Su valor no es tener razón siempre, sino equivocarse menos que la intuición.
 :::
 :::
