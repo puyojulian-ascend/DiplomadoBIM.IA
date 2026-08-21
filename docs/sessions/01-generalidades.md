@@ -979,8 +979,8 @@ compartir sus respuestas en voz alta.
 :::card [Certeza] Lo estructurado ya se reconoce
 Contratos, correspondencia, inventarios, cantidades de los modelos BIM, SECOP y SIGIDU aparecen como terreno firme. El grupo identifica bien dónde hay dato registrado.
 :::
-:::card [Inferencia] La frontera aún es difusa
-En 4 de 14 respuestas, "inferir" se confunde con consolidar o resumir información dispersa. Esa frontera —entre buscar, consolidar e inferir— es justo donde nacen las respuestas inventadas.
+:::card [Inferencia] Dónde la ubica el grupo
+Las respuestas concentran la inferencia en dos lugares: **anticipar la gestión** —causas de retrasos, sobrecostos, desempeño de contratistas— y **compensar datos imperfectos**: mal clasificados, dispersos, sin estructura. Lo segundo es la zona de riesgo: pedir inferencia donde falta la fuente de verdad es pedir que la IA rellene los vacíos.
 :::
 :::card [Punto ciego] !El diagnóstico colectivo
 7 de 14 respuestas coinciden: lo que la IA no podría relacionar es la vida informal del proyecto — acuerdos verbales de obra, comités registrados en otras aplicaciones, trabajo de campo no reportado.
