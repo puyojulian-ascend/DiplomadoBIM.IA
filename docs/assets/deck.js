@@ -122,6 +122,12 @@
       case 'stack': return '<div class="stack">' + inner + '</div>';
       case 'note': case 'warn': case 'ok': return '<div class="callout ' + name + '">' + inner + '</div>';
       case 'diagram': return '<div class="card-diagram">' + inner + '</div>';
+      // Recuadro que no se muestra al entrar a la lámina: espera a que el docente pulse →.
+      // El envoltorio exterior es el que colapsa, así el .callout de adentro conserva su caja.
+      case 'spoiler': {
+        var flavor = /^(note|warn|ok)$/.test(arg) ? arg : 'warn';
+        return '<div class="spoiler"><div class="callout ' + flavor + '">' + inner + '</div></div>';
+      }
       case 'card': {
         var tag = '', title = arg;
         var tm = /^\[([^\]]*)\]\s*(.*)$/.exec(arg);
@@ -239,8 +245,11 @@
         var sub = wrap.querySelector(':scope > p:not(.sub)');
         if (sub) sub.classList.add('sub');
       }
-      // Entrada escalonada: cada hijo directo del wrap anima en secuencia
-      Array.prototype.forEach.call(wrap.children, function (c) { c.classList.add('stagger'); });
+      // Entrada escalonada: cada hijo directo del wrap anima en secuencia.
+      // Los .spoiler quedan fuera: su opacidad la maneja el revelado, no la entrada.
+      Array.prototype.forEach.call(wrap.children, function (c) {
+        if (!c.classList.contains('spoiler')) c.classList.add('stagger');
+      });
     });
   }
 
@@ -250,7 +259,8 @@
     frag.innerHTML =
       '<div class="footer"><span class="fl"><a href="index.html" title="Volver al índice">' +
       '<span class="brand">BIM + IA</span><span class="sub">Sesión ' + esc(meta.sesion || '') + '</span></a></span>' +
-      '<span class="fc"><b id="cur">01</b> / <span id="tot">00</span></span></div>' +
+      '<span class="fc"><b id="cur">01</b> / <span id="tot">00</span>' +
+      '<b id="spoil" title="Queda un bloque por revelar — pulsá →">●</b></span></div>' +
       '<div class="nav"><a href="index.html" aria-label="Índice">⌂</a>' +
       '<button id="prev" aria-label="Anterior">‹</button>' +
       '<button id="next" aria-label="Siguiente">›</button></div>' +
@@ -276,28 +286,55 @@
     });
     var dots = Array.prototype.slice.call(dotsWrap.children);
 
+    /* Revelado progresivo (:::spoiler): un bloque marcado no se muestra al entrar a la
+       lámina; el primer → lo despliega y recién el siguiente avanza. Así el deck no
+       adelanta el desenlace de algo que todavía se va a mostrar en vivo. */
+    var spoilFlag = document.getElementById('spoil');
+    function pending(s) { return s.querySelector('.spoiler:not(.shown)'); }
+    function setSpoilers(s, showAll) {
+      Array.prototype.forEach.call(s.querySelectorAll('.spoiler'), function (el) {
+        el.classList.toggle('shown', !!showAll);
+      });
+    }
+    function syncFlag() { if (spoilFlag) spoilFlag.classList.toggle('on', !!pending(slides[i])); }
+    // true = se reveló algo, así que NO hay que cambiar de lámina.
+    function reveal() {
+      var el = pending(slides[i]);
+      if (!el) return false;
+      el.classList.add('shown');
+      syncFlag();
+      return true;
+    }
+    function advance() { if (!reveal()) go(i + 1); }
+
     function go(n) {
       n = Math.max(0, Math.min(total - 1, n));
       if (n === i && slides[i].classList.contains('active')) return;
+      var back = n < i;
+      setSpoilers(slides[i], false); // la lámina que se abandona vuelve a su estado inicial
       slides[i].classList.remove('active');
       i = n;
       var s = slides[i]; void s.offsetWidth;
+      setSpoilers(s, back);
       s.classList.add('active');
       s.scrollTop = 0;
       cur.textContent = String(i + 1).padStart(2, '0');
       bar.style.width = (total > 1 ? (i / (total - 1) * 100) : 0) + '%';
       dots.forEach(function (d, k) { d.classList.toggle('on', k === i); });
       if (i > 0 && hint) hint.style.opacity = '0';
+      syncFlag();
       history.replaceState(null, '', deckHash(i + 1));
     }
 
-    document.getElementById('next').addEventListener('click', function () { go(i + 1); });
+    document.getElementById('next').addEventListener('click', function () { advance(); });
     document.getElementById('prev').addEventListener('click', function () { go(i - 1); });
     window.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(i + 1); }
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); advance(); }
       else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(i - 1); }
       else if (e.key === 'Home') { go(0); }
       else if (e.key === 'End') { go(total - 1); }
+      // s = revelar de una todo lo pendiente de la lámina, si el reloj no da para la pausa
+      else if (e.key === 's' || e.key === 'S') { setSpoilers(slides[i], true); syncFlag(); }
     });
 
     var x0 = null, y0 = null;
@@ -305,7 +342,7 @@
     deck.addEventListener('touchend', function (e) {
       if (x0 === null) return;
       var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? i + 1 : i - 1);
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) { if (dx < 0) advance(); else go(i - 1); }
       x0 = y0 = null;
     }, { passive: true });
 
@@ -313,6 +350,7 @@
     bar.style.width = '0%';
     var start = parseInt(hp.get('n'), 10);
     if (start > 1 && start <= total) go(start - 1);
+    syncFlag();
   }
 
   /* ---------------- Mermaid (carga diferida) ---------------- */

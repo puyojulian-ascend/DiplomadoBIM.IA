@@ -45,6 +45,10 @@ body { font-family: var(--font-body); color: var(--text-primary); -webkit-font-s
 .slide {
   position: absolute; inset: 0;
   display: flex; flex-direction: column; justify-content: center;
+  /* "safe": si el contenido no cabe, se alinea arriba en vez de desbordar por encima del
+     área desplazable, donde el scroll no puede alcanzarlo (scrollTop no va a negativo).
+     Los navegadores que no la soportan ignoran la línea y conservan el center de arriba. */
+  justify-content: safe center;
   padding: clamp(28px, 6vw, 96px);
   padding-bottom: clamp(64px, 9vh, 110px);
   opacity: 0; visibility: hidden; transform: translateY(14px);
@@ -67,6 +71,16 @@ body { font-family: var(--font-body); color: var(--text-primary); -webkit-font-s
 .slide.active .stagger:nth-child(8) { transition-delay: .66s }
 .slide.active .stagger:nth-child(9) { transition-delay: .74s }
 .slide.active .stagger:nth-child(10) { transition-delay: .82s }
+
+/* Spoiler — bloque que espera al docente (:::spoiler). Colapsado hasta que se pulsa →.
+   Colapsa el envoltorio, no el .callout: el recuadro de adentro conserva su padding y su
+   borde. El margen sí pasa al envoltorio (0 -> 14px), para que al estar cerrado no deje
+   un hueco delator; por eso el .callout va con margin-top:0.
+   grid 0fr -> 1fr interpola el alto REAL del contenido, cosa que max-height no hace.
+   Va prefijado con .slide a propósito — deck.css lo comparten doc.html e index.html. */
+.slide .spoiler { display: grid; grid-template-rows: 0fr; margin-top: 0; opacity: 0; transition: grid-template-rows .45s cubic-bezier(.2, .7, .2, 1), margin-top .45s cubic-bezier(.2, .7, .2, 1), opacity .3s ease }
+.slide .spoiler > * { min-height: 0; overflow: hidden; margin-top: 0 }
+.slide .spoiler.shown { grid-template-rows: 1fr; margin-top: 14px; opacity: 1 }
 
 /* ---------- Tipografía ---------- */
 .eyebrow {
@@ -96,10 +110,13 @@ h2.title { font-family: var(--font-display); font-weight: 700; line-height: 1.04
 .wrap h4 { font-family: var(--font-display); font-weight: 500; font-size: clamp(15px, 1.5vw, 18px); margin-top: 14px }
 .wrap a { color: var(--accent-3); text-decoration: none; border-bottom: 1px solid rgba(98, 191, 208, .35) }
 .wrap img { max-width: 100%; border-radius: 12px; margin-top: 14px; border: 1px solid var(--glass-line) }
-/* Los gifs ilustrativos van más chicos que una imagen normal — cambiá el 280px para ajustar.
-   display:block + margin auto los centra dentro de su contenedor (la lámina o la tarjeta). */
-.wrap img[src$="prediccion-no-busqueda.gif"] { max-width: 280px; display: block; margin-left: auto; margin-right: auto; }
-.wrap img[src$="confiado-equivocado.gif"]    { max-width: 200px; display: block; margin-left: auto; margin-right: auto; }
+/* Los gifs ilustrativos van más chicos que una imagen normal.
+   Estos dos son los únicos verticales del sitio (480x480 y 245x284), así que llevan tope de
+   ALTO además del de ancho: con solo max-width, en una pantalla baja o en móvil se comen la
+   lámina y empujan el título fuera de vista. El vh es el que cede cuando la pantalla es baja.
+   Para ajustar a mano: el px manda en pantallas altas, el vh en pantallas bajas. */
+.wrap img[src$="prediccion-no-busqueda.gif"] { max-width: 280px; max-height: 24vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
+.wrap img[src$="confiado-equivocado.gif"]    { max-width: 200px; max-height: 20vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
 .wrap hr { border: none; border-top: 1px solid var(--glass-line); margin: 20px 0 }
 blockquote { border-left: 3px solid var(--accent-1); padding-left: 16px; margin-top: 14px; color: var(--text-dim); font-style: italic }
 
@@ -222,6 +239,9 @@ code { font-family: var(--font-mono); font-size: .9em; background: rgba(234, 242
 .footer .sub { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); letter-spacing: .1em }
 .footer .fc { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); letter-spacing: .08em }
 .footer .fc b { color: var(--text-primary) }
+/* Punto rojo del pie: solo para el docente, avisa que queda un :::spoiler sin revelar. */
+#spoil { color: var(--red); opacity: 0; margin-left: 8px; transition: opacity .2s ease }
+#spoil.on { opacity: 1 }
 .progress { position: fixed; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(234, 242, 244, .07); z-index: 6 }
 .progress i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-1), var(--accent-2)); width: 0; transition: width .5s cubic-bezier(.3, .7, .2, 1) }
 .nav { position: fixed; right: clamp(20px, 4vw, 48px); bottom: clamp(46px, 8vh, 70px); z-index: 7; display: flex; gap: 10px; pointer-events: auto }

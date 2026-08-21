@@ -20,6 +20,27 @@ instrucción, ninguna por culpa del modelo.
 
 ---
 
+## Cuatro láminas piden dos pulsaciones
+
+En cuatro láminas el recuadro de cierre **no aparece al entrar**: espera. Es a propósito — en
+las cuatro, ese texto adelantaba el desenlace de algo que todavía no había pasado en pantalla.
+
+| Lámina | El bloque que espera | Cuándo revelarlo |
+|---|---|---|
+| **El caso** | ⚠ *"Ninguno de esos números existe"* | Después de leer la respuesta inventada completa y de lanzar la pregunta al auditorio |
+| **Tres modelos** | *"A los tres les falta lo mismo: el proyecto"* | Al terminar de recorrer las cuatro casillas en las tres pestañas |
+| **Demostración** | ✓ *"La diferencia la puso la instrucción"* | Después de verificar los `id_elemento` contra el archivo |
+| **Dos trampas** | ⚠ *"El modelo no inventó ninguna cifra"* | Después de leer en voz alta el párrafo de interventoría |
+
+**Cómo funciona:** un `→` despliega el bloque sin cambiar de lámina; el `→` siguiente avanza.
+Un **punto rojo junto al contador**, abajo a la derecha, avisa cuándo queda algo por revelar —
+solo se ve del lado del docente, el auditorio no nota nada. Si el reloj aprieta y no da para la
+pausa, la tecla **`s`** muestra todo lo pendiente de la lámina de una.
+
+Las otras trece láminas se comportan como siempre: un `→`, una lámina.
+
+---
+
 ## Minutado
 
 Contenido: ~107 min sin la lámina `Extra` ni el vistazo opcional, ~111 con la `Extra`, ~113 con
@@ -92,6 +113,10 @@ Con el plan B para cuando nadie contesta — que en virtual es lo normal.
 Ese es exactamente el problema. Les dejo el dato: el Tramo 2 tiene 148 sumideros, no 132. Y
 el modelo nunca vio el proyecto."
 
+**La pulsación va acá, no antes.** El recuadro rojo aparece cuando la frase ya se dijo: primero
+lo cree el auditorio, después se cae. Si se revela mientras todavía se está leyendo la
+respuesta inventada, la lámina se contesta sola y el beat 1 se pierde.
+
 ### En *Contexto*
 
 > **"¿Qué creen que el modelo puede ver del proyecto en este momento?"**
@@ -133,6 +158,7 @@ pestañas visibles.
    lámina funcione pase lo que pase.
 2. **(3 min)** Pegar la pregunta de Marcela, **tal cual**, en las tres pestañas.
 3. **(1 min)** Recorrer las cuatro casillas en voz alta, herramienta por herramienta.
+   **Recién ahí, `→`** para desplegar la conclusión de la lámina.
 
 **Los tres desenlaces, y qué decir en cada uno** — ninguno arruina la lámina:
 
@@ -172,6 +198,7 @@ se repite esa parte** — se entra directo a construir el pedido.
    diciendo en voz alta cuál se está agregando y por qué. Adjuntar el CSV.
 2. **(3 min)** Leer la respuesta. Debería dar un número **y** el criterio aplicado.
 3. **(2 min)** Pedirle que cite los `id_elemento`. Verificar dos contra el archivo, en vivo.
+   **Después de verificarlos, `→`** para desplegar el cierre.
 
 Cerrar recorriendo las **mismas cuatro casillas** de la lámina *Tres modelos* — están repetidas
 a propósito en la tarjeta de la derecha. El efecto buscado es que las cuatro pasen de rojo a
@@ -222,7 +249,8 @@ estructurado que acabamos de escribir, ¿ya podemos confiar en la respuesta?"* D
    - Leer el párrafo que devuelva **completo y en voz alta**, con tono de informe. Suele salir
      impecable: causas, responsable, plazo, plan de acción.
    - Entonces la frase que cierra la lámina: *"Todo esto es correcto salvo una cosa: el 14 me
-     lo inventé yo. Y el modelo no me lo preguntó ni una vez."*
+     lo inventé yo. Y el modelo no me lo preguntó ni una vez."* — y **`→`** para desplegar el
+     recuadro que lo deja escrito.
 
 3. **(1 min)** Nombrar la diferencia entre las dos, que es lo que hay que llevarse: en la
    trampa 1 mintió el modelo; en la trampa 2 **el modelo no mintió** — obedeció una premisa
@@ -323,6 +351,8 @@ antes de decirlo. Si no se alcanza a verificar, **no decirlo**: la sesión no lo
 - [ ] Probar **una vez** las dos trampas de la lámina *Dos trampas*, en la pestaña que se vaya
   a usar. La trampa 2 (el párrafo de interventoría a partir del "14") es la que hay que ver
   funcionando al menos una vez: es la red de seguridad del giro.
+- [ ] Pasar el deck entero una vez con `→`, para acostumbrarse a las cuatro láminas que piden
+  dos pulsaciones. Es el único cambio de reflejo respecto de cómo venía funcionando.
 - [ ] Leer [contexto-bim-para-el-docente.md](contexto-bim-para-el-docente.md) una vez antes de
   dormir. No hay que memorizarlo: la frase de posicionamiento es lo único que vale la pena
   tener a mano.

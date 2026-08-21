@@ -39,7 +39,7 @@ Redactada con seguridad. Con cifras exactas. Con ubicación.
 :::
 :::
 
-:::warn
+:::spoiler warn
 Ninguno de esos números existe. **El modelo nunca vio el proyecto.**
 :::
 
@@ -130,7 +130,7 @@ Ninguno de los tres ha visto jamás este proyecto: ni el CSV, ni el modelo feder
 :::
 :::
 
-:::note
+:::spoiler note
 La comparación no sirve para elegir el mejor modelo. Sirve para ver que a los tres les falta exactamente lo mismo: **el proyecto**. Lo que sigue es cómo se les entrega.
 :::
 
@@ -189,7 +189,7 @@ Formato: la cifra, la lista de id_elemento
 :::
 :::
 
-:::ok
+:::spoiler ok
 Mismo modelo que hace diez minutos, mismo día, misma pregunta de fondo. La diferencia la puso la **instrucción**, no la "inteligencia" del modelo.
 :::
 
@@ -223,7 +223,7 @@ El 14 salió de la nada. Lo que vuelve es un párrafo impecable, listo para firm
 :::
 :::
 
-:::warn
+:::spoiler warn
 La trampa 2 es la grave, y es la que más se parece al trabajo real: **el modelo no inventó ninguna cifra**. La inventó quien escribió la instrucción, y el modelo la convirtió en un documento con aspecto de entregable.
 :::
 
