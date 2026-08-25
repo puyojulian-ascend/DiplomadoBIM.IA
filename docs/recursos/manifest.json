@@ -36,8 +36,9 @@
       "items": [
         { "archivo": "caso/caso-corredor-guayacanes.md",        "titulo": "El caso",                 "desc": "Brief del corredor ficticio que atraviesa todo el curso.", "sesion": 2, "tipo": "doc" },
         { "archivo": "caso/elementos-tramo2.csv",               "titulo": "Elementos del Tramo 2",   "desc": "Export del modelo, subtramo K0+000 – K0+800. 63 registros.", "sesion": 2, "tipo": "descarga" },
-        { "archivo": "caso/pliego-anexo-tecnico-fragmento.md",  "titulo": "Anexo Técnico 7",         "desc": "Fragmento del capítulo 4: requisitos de entrega BIM.",     "sesion": 4, "tipo": "doc" },
-        { "archivo": "caso/actas-comite-fragmento.md",          "titulo": "Actas de comité 14 y 16", "desc": "Las decisiones que modificaron el anexo.",                 "sesion": 4, "tipo": "doc" },
+        { "archivo": "caso/pliego-anexo-tecnico-fragmento.md",  "titulo": "Anexo Técnico 7",         "desc": "Capítulos 4 y 5: requisitos de entrega y procesos de coordinación.", "sesion": 4, "tipo": "doc" },
+        { "archivo": "caso/actas-comite-fragmento.md",          "titulo": "Actas de comité 14, 15 y 16", "desc": "Las decisiones que modificaron el anexo.",             "sesion": 4, "tipo": "doc" },
+        { "archivo": "caso/interferencias-tramo2.csv",          "titulo": "Informe de interferencias", "desc": "Export del informe de coordinación del modelo federado. 31 incidencias.", "sesion": 4, "tipo": "descarga" },
         { "archivo": "caso/historico-costos-corredores.csv",    "titulo": "Histórico de 40 corredores", "desc": "Presupuesto y ejecución real de proyectos anteriores.",  "sesion": 9, "tipo": "descarga" }
       ]
     }

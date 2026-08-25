@@ -1,7 +1,7 @@
 ---
 sesion: 4
 titulo: Extracción, transformación y **gobierno** de la información BIM
-docente: Julián Puyo
+docente: Stiven Valencia
 fecha: 28/08/2026
 eyebrow: Curso BIM + IA
 subtitulo: Convertir documentos y modelos dispersos en información estructurada y utilizable — sin que la información del proyecto termine donde no debe.
@@ -28,17 +28,17 @@ El agente ya sabe qué hacer. Pero **¿de dónde saca los datos — y quién los
 ^^ Sesión 04 / El caso
 ## Tres cosas pasaron esta semana
 
-> **Corredor Av. Guayacanes.** Marcela necesita la matriz de seguimiento para el comité del jueves. En cinco días pasó todo esto.
+> **Corredor Av. Guayacanes.** Marcela necesita la matriz de seguimiento para el comité del jueves. Todo el expediente está en el entorno común de datos del proyecto — y aun así, en cinco días pasó todo esto.
 
 :::split-3
 :::card [01] El anexo son 180 páginas
-El Anexo Técnico 7 define formatos, niveles de información, hitos y responsables. Nadie lo ha convertido nunca en una tabla de seguimiento.
+El Anexo Técnico 7 define formatos, niveles de información, hitos, responsables y los procesos de coordinación. Nadie lo ha convertido nunca en una tabla de seguimiento.
 :::
 :::card [02] El export venía roto
 El CSV del viernes tenía campos vacíos y categorías escritas de tres formas. El acta lo llama, textualmente, *"un error del proceso de exportación"*.
 :::
 :::card [03] !Y alguien tomó un atajo
-Andrés, el coordinador BIM del Consorcio, pegó el anexo completo en una herramienta pública para resumirlo rápido.
+Andrés, el coordinador BIM del Consorcio, pegó el anexo completo —y las actas, con los nombres y documentos de todos los que firman— en una herramienta pública para resumirlo rápido.
 :::
 :::
 
@@ -138,6 +138,36 @@ Regla no negociable: pedir **trazabilidad**. Cada dato extraído debe indicar de
 
 ---
 
+^^ Sesión 04 / Extra
+## Dónde vive todo esto
+
+> Los documentos que se van a extraer no están sueltos: viven en el **entorno común de datos** del proyecto, con un estado, un permiso y un registro.
+
+:::split-3
+:::card [Estado] En qué punto está
+- **Trabajo en curso** — del autor, aún no se comparte.
+- **Compartido** — visible para el equipo, revisable.
+- **Publicado** — aprobado, sirve para construir.
+- **Archivado** — histórico, no se usa.
+
+Solo se emite concepto sobre lo *compartido* o superior.
+:::
+:::card [Permiso] Quién ve qué
+El acceso se asigna **por carpeta y por rol**, no por persona. Y alguien responde por esa asignación: el Gestor de Información del numeral 4.6.3.
+:::
+:::card [Registro] !Qué queda
+Cada carga, descarga, cambio de estado y cambio de permiso queda registrado — por el tiempo que dure el contrato.
+
+El rastro existe. La pregunta es si alguien lo mira.
+:::
+:::
+
+:::note
+Esto no es una plataforma: es una **forma de organizar**. Los nombres de los estados vienen de la norma de gestión de información, y cualquier entorno común de datos del mercado los implementa con su propio vocabulario.
+:::
+
+---
+
 ^^ Sesión 04 / Demostración
 ## De 180 páginas a una matriz de requisitos
 
@@ -152,6 +182,8 @@ Regla no negociable: pedir **trazabilidad**. Cada dato extraído debe indicar de
 | Nivel info · drenaje | LOD 350 | Contratista | 4.3.1 |
 | Ficha mantenimiento | 100% | Contratista | 4.3.1 |
 | Clasificación | Sin campos vacíos | Contratista | 4.4.2 |
+| Tolerancia · interferencia dura | 0 mm | Contratista | 5.2.1 |
+| Informe de interferencias | Por hito, formato abierto | Contratista | 5.3.2 |
 :::
 :::
 
@@ -227,6 +259,8 @@ El objetivo no es prohibir la IA: es **habilitarla con reglas**. Prohibir empuja
 
 :::warn
 Lo que hizo Andrés ya estaba prohibido — y el contrato lo dice sin nombrar ninguna marca. Numeral 4.7.3: *"aplica a cualquier servicio de procesamiento automatizado o asistido, con independencia de su denominación comercial"*.
+
+Y ya quedó consignado: **Acta N.º 15, numeral 4**. No hubo sanción — hubo un compromiso con plazo.
 :::
 
 ---

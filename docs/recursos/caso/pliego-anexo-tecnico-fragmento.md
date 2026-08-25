@@ -7,7 +7,7 @@
 **Objeto:** Estudios, diseños y construcción del Corredor Av. Guayacanes — Tramo 2
 **Anexo:** 7 — Requisitos de Información BIM
 **Versión:** 2.0 · Emitida el 12 de mayo de 2025
-**Extensión del documento completo:** 180 páginas. Este fragmento corresponde al capítulo 4.
+**Extensión del documento completo:** 180 páginas. Este fragmento corresponde a los capítulos 4 y 5.
 
 ---
 
@@ -101,7 +101,85 @@ automatizado o asistido**, con independencia de su denominación comercial.
 
 ---
 
+## CAPÍTULO 5 — PROCESOS DE COORDINACIÓN Y DETECCIÓN DE INTERFERENCIAS
+
+### 5.1 Entorno común de datos
+
+5.1.1. La totalidad de la información del proyecto se gestionará en el **entorno común de datos**
+dispuesto por la ENTIDAD, conforme al manual de gestión de información BIM vigente de la ENTIDAD.
+
+5.1.2. Todo documento o modelo residirá en uno de los siguientes **estados de la información**:
+*trabajo en curso*, *compartido*, *publicado* o *archivado*. El tránsito entre estados es un acto
+formal y queda registrado.
+
+5.1.3. Ningún entregable se considerará radicado mientras permanezca en estado de *trabajo en
+curso*. La INTERVENTORÍA solo emitirá concepto sobre información en estado *compartido* o
+superior.
+
+5.1.4. Los permisos de acceso se asignarán por carpeta y por rol de proyecto. El Gestor de
+Información designado conforme al numeral 4.6.3 es responsable de su asignación y revisión.
+
+5.1.5. El entorno común de datos conservará **registro de auditoría** de cargas, descargas,
+cambios de estado y modificaciones de permisos, por un término no inferior al del contrato.
+
+### 5.2 Tolerancias
+
+5.2.1. Se considera **interferencia dura** toda intersección geométrica entre elementos de
+disciplinas distintas. La tolerancia admisible es de **cero (0) milímetros**.
+
+5.2.2. Se considera **interferencia blanda** toda condición en que dos elementos de disciplinas
+distintas, sin intersecarse, no conservan la holgura mínima de **veinticinco (25) milímetros**.
+
+5.2.3. Las holguras de operación y mantenimiento exigidas por norma sectorial prevalecen sobre
+la tolerancia del numeral anterior cuando aquellas sean mayores.
+
+### 5.3 Informe de interferencias
+
+5.3.1. El CONTRATISTA entregará, con cada hito definido en el numeral 4.5, un **informe de
+interferencias** del modelo federado.
+
+5.3.2. El informe se entregará en **formato abierto de intercambio de incidencias de
+coordinación**, y contendrá como mínimo, por cada registro: identificador, disciplinas
+involucradas, identificadores de los elementos en conflicto, abscisa, tipo, holgura medida,
+severidad, responsable asignado y estado.
+
+5.3.3. No se aceptarán informes en formato de imagen o de documento portátil como sustituto del
+archivo de incidencias.
+
+### 5.4 Responsabilidades de coordinación
+
+5.4.1. El CONTRATISTA designará un responsable de coordinación por cada disciplina modelada.
+
+5.4.2. Las rondas de coordinación se ejecutarán con periodicidad **quincenal**, en concordancia
+con los comités previstos en el numeral 4.6.1.
+
+5.4.3. La asignación de una interferencia a un responsable no suspende los plazos de entrega del
+hito correspondiente.
+
+### 5.5 Ciclo de cierre
+
+5.5.1. Toda interferencia recorrerá el ciclo: **detección, asignación, propuesta de solución,
+verificación y cierre**.
+
+5.5.2. Una interferencia solo podrá declararse **cerrada** contra la versión vigente del modelo
+federado, previa verificación de la INTERVENTORÍA.
+
+5.5.3. Las interferencias de severidad **alta** que permanezcan abiertas **impiden la aprobación
+del hito** en el que fueron detectadas.
+
+5.5.4. El plazo de subsanación es de **diez (10) días hábiles** para severidad alta y de
+**veinte (20) días hábiles** para severidad media, contados desde la asignación.
+
+### 5.6 Trazabilidad del informe
+
+5.6.1. Todo informe de interferencias declarará de manera expresa la **versión del modelo
+federado** sobre la cual fue ejecutado, y la fecha y hora de ejecución.
+
+5.6.2. Un informe que no declare la versión sobre la que fue ejecutado se tendrá por **no
+radicado** para efectos del numeral 5.3.1.
+
+---
+
 ## Fin del fragmento
 
-*El documento completo continúa en el capítulo 5 — Procesos de coordinación y detección de
-interferencias.*
+*El documento completo continúa en el capítulo 6 — Entrega para operación y mantenimiento.*

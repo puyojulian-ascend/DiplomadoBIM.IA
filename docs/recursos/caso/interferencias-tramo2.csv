@@ -1,0 +1,33 @@
+id_interferencia,id_elemento_a,disciplina_a,id_elemento_b,disciplina_b,abscisa,tipo,tolerancia_mm,holgura_mm,severidad,estado,asignado_a,fecha_deteccion,version_modelo,observacion
+INT-001,POZ-007,Drenaje,ACU-004,Acueducto,K0+420,Dura,0,-12,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Cruce con red matriz
+INT-002,LUM-005,Alumbrado,AND-008,Andenes,K0+152,Blanda,25,18,Media,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-003,SUM-003,Drenaje,CAN-002,Canalizacion,K0+081,Blanda,25,21,Media,En revision,Consorcio Via Norte,02/07/2025,MOD-FED-v4,
+INT-004,POZ-002,Drenaje,EST-001,Estructuras,K0+118,Dura,0,-8,Alta,Cerrada,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Reubicacion aprobada
+INT-005,LUM-002,Alumbrado,ARB-001,Arborizacion,K0+064,Blanda,25,9,Media,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-006,SUM-005,Drenaje,AND-003,Andenes,K0+134,Blanda,25,24,Baja,Cerrada,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-007,SUM-099,Drenaje,CIC-009,Ciclorruta,K0+241,Dura,0,-55,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-008,POZ-004,Drenaje,PAV-006,Pavimentos,K0+169,Dura,0,-15,Media,Abierta,Consorcio Via Norte,02/07/2025,MOD-FED-v3,
+INT-009,LUM-008,Alumbrado,CAN-011,Canalizacion,K0+289,Blanda,25,22,Baja,Cerrada,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-010,SEN-002,Senalizacion,AND-014,Andenes,K0+312,Blanda,25,19,Baja,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v3,
+INT-011,SUM-015,Drenaje,CIC-014,Ciclorruta,K0+404,Dura,0,-45,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-012,POZ-008,Drenaje,CIC-016,Ciclorruta,K0+484,Blanda,25,11,Media,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Holgura insuficiente en tapa
+INT-013,SUM-016,Drenaje,CIC-017,Ciclorruta,K0+438,Dura,0,-62,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-014,SUM-018,Drenaje,CIC-020,Ciclorruta,K0+493,Dura,0,-29,Alta,Abierta,Consorcio Via Norte,02/07/2025,MOD-FED-v3,Sumidero dentro del trazado
+INT-015,LUM-011,Alumbrado,EST-007,Estructuras,K0+512,Dura,0,-6,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-016,SUM-017,Drenaje,CIC-019,Ciclorruta,K0+466,Dura,0,-38,ALTA,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-017,SUM-023,Drenaje,ARB-003,Arborizacion,K0+647,Blanda,25,14,Media,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-018,SUM-019,Drenaje,CIC-023,Ciclorruta,K0+521,Dura,0,-71,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-019,SUM-020,Drenaje,CIC-025,Ciclorruta,K0+558,Dura,0,-33,ALTA,Cerrada,Consorcio Via Norte,2025-07-02,MOD-FED-v3,Sumidero dentro del trazado
+INT-020,POZ-010,Drenaje,ACU-009,Acueducto,K0+612,Dura,0,-19,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v3,
+INT-021,SUM-021,Drenaje,CIC-027,Ciclorruta,K0+586,Dura,0,,Critica,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-022,SEN-004,Senalizacion,CIC-028,Ciclorruta,K0+601,Blanda,25,20,Baja,Por revisar,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-023,LUM-014,Alumbrado,AND-021,Andenes,K0+634,Blanda,25,23,Baja,Cerrado ,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-024,SUM-022,Drenaje,CIC-030,Ciclorruta,K0+619,Dura,0,,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-025,SUM-024,Drenaje,PAV-018,Pavimentos,K0+688,Dura,0,-9,Media,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-026,POZ-011,Drenaje,CAN-019,Canalizacion,K0+676,Blanda,25,16,Media,,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-027,LUM-016,Alumbrado,ARB-004,Arborizacion,K0+712,Blanda,25,12,Baja,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-028,SUM-013,Drenaje,AND-009,Andenes,K0+351,Blanda,25,17,Media,Abierta,Interventoria Andes,02/07/2025,MOD-FED-v3,
+INT-013,SUM-016,Drenaje,CIC-017,Ciclorruta,K0+438,Dura,0,-62,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,Sumidero dentro del trazado
+INT-029,POZ-012,Drenaje,EST-014,Estructuras,K0+729,Dura,0,-11,Alta,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-030,SEN-006,Senalizacion,PAV-022,Pavimentos,K0+742,Blanda,25,25,Baja,Cerrada,Consorcio Via Norte,2025-07-02,MOD-FED-v4,
+INT-031,SUM-011,Drenaje,ACU-002,Acueducto,K0+294,Dura,0,-21,ALTA,Abierta,Consorcio Via Norte,2025-07-02,MOD-FED-v3,
