@@ -100,6 +100,7 @@ h2.title { font-family: var(--font-display); font-weight: 700; line-height: 1.04
    display:block + margin auto los centra dentro de su contenedor (la lámina o la tarjeta). */
 .wrap img[src$="prediccion-no-busqueda.gif"] { max-width: 280px; display: block; margin-left: auto; margin-right: auto; }
 .wrap img[src$="confiado-equivocado.gif"]    { max-width: 200px; display: block; margin-left: auto; margin-right: auto; }
+.wrap img[src$="vaso-botella-agua.jpg"]       { max-width: 50%; max-height: 42vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
 .wrap hr { border: none; border-top: 1px solid var(--glass-line); margin: 20px 0 }
 blockquote { border-left: 3px solid var(--accent-1); padding-left: 16px; margin-top: 14px; color: var(--text-dim); font-style: italic }
 
