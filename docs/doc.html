@@ -14,7 +14,11 @@
   <link rel="stylesheet" href="assets/deck.css">
   <style>
     /* El lector tiene scroll vertical propio (a diferencia de un deck) */
-    html, body { overflow: auto }
+    /* deck.css fija html,body en height:100% (el reproductor de láminas lo necesita).
+       Acá el documento fluye y se imprime: si el alto queda clavado en 100%, el body se
+       vuelve un contenedor con scroll propio y window.print() saca una sola página, con
+       la barra de desplazamiento dibujada encima. */
+    html, body { height: auto; min-height: 100%; overflow: auto }
 
     .doc { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: clamp(28px, 5vh, 64px) clamp(20px, 5vw, 48px) 96px }
     .doc-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: clamp(20px, 4vh, 40px) }
@@ -78,7 +82,10 @@
     .doc-body code[data-fill] { display: block; min-height: 4.2em; outline: none; white-space: pre-wrap; word-break: break-word }
     .doc-body pre:has(code[data-fill]) { background: rgba(0, 0, 0, .18); border: 1px dashed var(--glass-line); transition: border-color .2s, background .2s }
     .doc-body pre:has(code[data-fill]:focus) { border-color: var(--accent-1); border-style: solid; background: rgba(0, 0, 0, .3) }
-    .doc-body td[data-fill] { min-width: 8em; outline: none; border-bottom: 1px solid var(--glass-line); background: rgba(251, 128, 0, .05); cursor: text }
+    /* pre-wrap muestra los saltos que se escriben con Enter; overflow-wrap:anywhere corta
+       las palabras larguísimas (una URL, un id pegado) que si no estiran la celda y obligan
+       a toda la tabla a desplazarse en horizontal. */
+    .doc-body td[data-fill] { min-width: 8em; outline: none; border-bottom: 1px solid var(--glass-line); background: rgba(251, 128, 0, .05); cursor: text; white-space: pre-wrap; overflow-wrap: anywhere }
     .doc-body td[data-fill]:empty::before { content: "—"; color: var(--text-faint) }
     .doc-body td[data-fill]:focus { background: rgba(251, 128, 0, .12); box-shadow: inset 0 -2px 0 var(--accent-1) }
     .doc-body input[type=checkbox]:not([disabled]) { cursor: pointer; width: 15px; height: 15px; vertical-align: -2px }
@@ -87,7 +94,7 @@
       .fill-note { display: none !important }
       .doc-body pre:has(code[data-fill]) { background: #fff; border: 1px solid #bbb }
       .doc-body code[data-fill] { min-height: 3.4em; color: #111 }
-      .doc-body td[data-fill] { background: none; border-bottom: 1px solid #999; color: #111 }
+      .doc-body td[data-fill] { background: none; border-bottom: 1px solid #999; color: #111; white-space: pre-wrap; overflow-wrap: anywhere }
       .doc-body td[data-fill]:empty::before { content: "" }
     }
 
@@ -98,16 +105,31 @@
       .doc { max-width: none; padding: 0 }
       .doc-body { color: #111; font-size: 11pt; line-height: 1.5 }
       .doc-body strong { color: #000 }
-      .doc-body h1, .doc-body h2, .doc-body h3 { color: #000; page-break-after: avoid }
+      .doc-body h1, .doc-body h2, .doc-body h3, .doc-body h4 { color: #000; page-break-after: avoid; break-after: avoid-page }
       .doc-body h2 { border-bottom: 1px solid #bbb }
       .doc-body em, .doc-body .rdesc { color: #444 }
       .doc-body a { color: #111; text-decoration: underline }
-      .doc-body hr { border-top: 1px solid #bbb; page-break-after: always; margin: 0 }
+      /* El --- solo fuerza hoja nueva en las fichas, donde separa FRENTE de REVERSO y
+         cada cara está pensada para recortarse. En talleres y documentos es un separador
+         de sección común y corriente, así que el texto sigue de largo. */
+      .doc-body hr { border-top: 1px solid #bbb; margin: 18px 0 }
+      .doc-body.es-ficha hr { page-break-after: always; margin: 0 }
+      /* Sin el salto por --- hay que cuidar los cortes: nada de una línea suelta al pie
+         ni al inicio de una hoja (el avoid-after de los encabezados ya está más arriba). */
+      .doc-body p, .doc-body blockquote { orphans: 3; widows: 3 }
       .doc-body blockquote { background: #f4f4f4; border-left: 3px solid #666; page-break-inside: avoid }
       .doc-body code, .doc-body pre { background: #f4f4f4; border: 1px solid #ddd; color: #111 }
       .doc-body th { color: #000; border-bottom: 1px solid #999 }
       .doc-body td { border-bottom: 1px solid #ddd }
-      .doc-body table, .doc-body pre { page-break-inside: avoid }
+      /* Refuerzo del reset de alto: sin esto, algunos navegadores igual toman la altura
+         de la ventana como el alto de la página y cortan en la primera hoja. */
+      html, body { height: auto !important; min-height: 0 !important; overflow: visible !important }
+      /* En pantalla la tabla es un bloque con scroll horizontal para que quepa en móvil.
+         Al imprimir tiene que volver a ser tabla, o se pierde lo que no entra a lo ancho
+         y no puede repartirse entre hojas. */
+      .doc-body table { display: table; overflow: visible; page-break-inside: auto }
+      .doc-body tr, .doc-body li { page-break-inside: avoid }
+      .doc-body pre { overflow: visible; white-space: pre-wrap; word-break: break-word; page-break-inside: avoid }
     }
   </style>
 </head>
@@ -225,6 +247,8 @@
           .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
           .then(function (md) {
             body.innerHTML = marked.parse(md);
+            // Las fichas se imprimen una cara por hoja; el resto fluye. Ver @media print.
+            body.classList.toggle('es-ficha', /^fichas\//.test(doc));
             var h1 = body.querySelector('h1');
             document.title = (h1 ? h1.textContent : 'Recurso') + ' — Diplomado BIM + IA';
             if (item && item.editable) montarTaller(md);

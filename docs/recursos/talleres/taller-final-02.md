@@ -20,7 +20,7 @@ una sirve para algo distinto.
 Esta respuesta salió de una IA, sin haberle dado ningún documento del proyecto:
 
 > *"El corredor Av. Guayacanes cumple con el numeral 4.2.1 del anexo técnico, que exige LOD 300
-> para redes de drenaje. Los 148 sumideros del proyecto están clasificados según ese numeral."*
+> para redes de drenaje. Los 156 sumideros del proyecto están clasificados según ese numeral."*
 
 Marque lo que corresponda:
 

@@ -43,8 +43,8 @@ taller de una sesión use lo que salió del taller de la anterior.
 
 | Elemento | Cantidad |
 |---|---|
-| Sumideros | 148 |
-| Pozos de inspección | 61 |
+| Sumideros | 74 |
+| Pozos de inspección | 38 |
 | Luminarias | 96 |
 | Señales verticales | 214 |
 | Árboles (nuevos y trasplantados) | 312 |
@@ -77,7 +77,7 @@ Aparecen en las actas y en los ejercicios. Son ficticias.
 | Archivo | Qué contiene | Se usa en |
 |---|---|---|
 | `caso-corredor-guayacanes.md` | Este brief. | Todas |
-| `elementos-tramo2.csv` | Export del modelo federado, **completo para el subtramo K0+000 – K0+800**: 63 registros entre sumideros, pozos, luminarias, señalización y arborización. Tiene vacíos, duplicados y códigos inconsistentes **a propósito**. | 02, 04, 06 |
+| `elementos-tramo2.csv` | Export del modelo federado para el subtramo K0+000 – K0+800, 63 registros. **Completo en la disciplina de drenaje** (sumideros y pozos de inspección) y con una **muestra** de luminarias, señalización y arborización — que es como suelen llegar los exports en la práctica. Tiene vacíos, duplicados y códigos inconsistentes **a propósito**. | 02, 04, 06 |
 | `pliego-anexo-tecnico-fragmento.md` | Fragmento del anexo técnico BIM del contrato, en lenguaje de pliego. Contiene requisitos extraíbles. | 04 |
 | `actas-comite-fragmento.md` | Dos actas de comité de seguimiento. Entre ellas hay una contradicción. | 04, 06 |
 | `historico-costos-corredores.csv` | 40 corredores anteriores con presupuesto y ejecución real. | 09 |
