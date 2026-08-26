@@ -139,10 +139,10 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 04 · Stiven | No toda la información puede salir de la entidad. Hay un semáforo, y ante la duda es ámbar. | Los datos ya están ordenados y clasificados, pero siguen en carpetas. ¿Cómo llega la IA a la fuente viva? |
 | 05 · Hugo | *(por completar)* | *(por completar)* |
 | 06 · Stiven | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
-| 07 · Hugo | *(por completar)* | *(por completar)* |
-| 08 · Julián | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
-| 09 · Julián | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco de Julián — se muestran los cinco objetos y se responde la pregunta de la 01)* |
-| 10 · Daniel | *(por completar)* | *(por completar)* |
+| 07 · Stiven | *(por completar)* | *(por completar)* |
+| 08 · Stiven | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
+| 09 · Stiven | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
+| 10 · Stiven | *(por completar)* | *(por completar)* |
 | 11 · Daniel | *(por completar)* | *(por completar)* |
 | 12 · Los tres | *(cierre)* | — |
 

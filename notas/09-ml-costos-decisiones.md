@@ -1,6 +1,6 @@
 # Guion — Sesión 09 · Machine learning para costos, planificación y decisiones
 
-**Miércoles 16/09/2026 · 2 horas · Julián Puyo**
+**Miércoles 16/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta. **Última sesión en solitario del arco.**
 
 ---
@@ -187,7 +187,7 @@ mundo real.
 |---|---|---|
 | Predicción de costos en construcción con ML es un campo activo, con modelos de series de tiempo para índices de costo vial y modelos de árboles combinados con seguimiento de avance | Literatura académica reciente y abundante | Alta como campo — **cualquier cifra concreta de precisión, verificarla** |
 | **IA explicable** (métodos que dicen qué variable pesó en cada predicción) es hoy parte del estándar de trabajo | Literatura reciente | Alta — y es la respuesta directa al "nadie puede explicar por qué dio ese número" |
-| Inspección de pavimentos con dron y visión por computador, con clasificación de deterioros | Tecnología madura y desplegada | Alta — buen enganche con la sesión 10 de Daniel |
+| Inspección de pavimentos con dron y visión por computador, con clasificación de deterioros | Tecnología madura y desplegada | Alta — buen enganche con la sesión 10 de Stiven |
 | "Adopción superior al 60% entre los grandes contratistas" o "precisión del 95%" | Prensa sectorial | **Baja — no citar** |
 
 ---

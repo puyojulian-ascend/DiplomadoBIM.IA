@@ -1,6 +1,6 @@
 # Guion — Sesión 08 · Diseño generativo
 
-**Viernes 11/09/2026 · 2 horas · Julián Puyo**
+**Viernes 11/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta.
 
 ---
@@ -204,7 +204,7 @@ saber qué se cede.
 
 ---
 
-## Traspaso a la sesión 09 (Julián, 16/09)
+## Traspaso a la sesión 09 (Stiven, 16/09)
 
 - **Quedó claro:** el diseño generativo no entrega una respuesta, entrega un abanico y obliga a
   elegir — y a escribir el criterio que antes era tácito.
