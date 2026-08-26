@@ -1,7 +1,7 @@
 ---
 sesion: 4
 titulo: Extracción, transformación y **gobierno** de la información BIM
-docente: Julián Puyo
+docente: Stiven Valencia
 fecha: 28/08/2026
 eyebrow: Curso BIM + IA
 subtitulo: Convertir documentos y modelos dispersos en información estructurada y utilizable — sin que la información del proyecto termine donde no debe.

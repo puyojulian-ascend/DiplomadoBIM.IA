@@ -1,6 +1,6 @@
 # Guion — Sesión 04 · Extracción, transformación y gobierno
 
-**Viernes 28/08/2026 · 2 horas · Julián Puyo**
+**Viernes 28/08/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta.
 
 ---
@@ -217,7 +217,7 @@ regulado, y la persona que responde por ello en la entidad no soy yo — es jur�
 
 ---
 
-## Traspaso a la sesión 05 (Daniel, 02/09)
+## Traspaso a la sesión 05 (Hugo, 02/09)
 
 - **Quedó claro:** no toda la información puede salir de la entidad. Hay un semáforo, y ante
   la duda es ámbar.

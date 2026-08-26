@@ -1,6 +1,6 @@
 # Guion — Sesión 06 · Consulta conversacional, no-code, MCP y loops
 
-**Viernes 04/09/2026 · 2 horas · Julián Puyo**
+**Viernes 04/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta.
 
 ---
