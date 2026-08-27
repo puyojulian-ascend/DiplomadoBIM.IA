@@ -26,35 +26,38 @@ Hay **tres** láminas `Extra` y la regla es dictar **como máximo una**. Con est
 elegida es la del entorno común de datos; las dos de estructura de datos se saltan, porque son
 territorio de Hugo el miércoles.
 
-Minutado con esa decisión tomada: **103 min de contenido + 17 de holgura.**
+Minutado con esa decisión tomada: **110 min de contenido + 10 de holgura.**
 
 | Min | Lámina | Tiempo |
 |---|---|---|
 | 0:00 | Portada · bienvenida | 3 |
 | 0:03 | **Antes** — En el capítulo anterior | 2 |
 | 0:05 | **El caso** — Tres cosas pasaron esta semana | 5 |
-| 0:10 | Riesgo silencioso — Pérdida de contexto al exportar | **3** |
-| 0:13 | Técnica — Lectura asistida de documentos | 7 |
-| 0:20 | *Extra — Dónde vive todo esto* · **corte a ACC en vivo** | *5* |
-| 0:25 | **Demostración en vivo** | 10 |
-| 0:35 | **El giro** — La matriz perfecta sobre el documento vencido | **12** |
-| 0:47 | Validación — Extraer no es confiar | 6 |
-| 0:53 | Gobierno — Shadow IT y Shadow AI | 8 |
-| 1:01 | **El objeto** — El Semáforo del Dato | **12** |
-| 1:13 | Práctica — Pública vs. entorno corporativo | 6 |
-| 1:19 | **Taller** | **19** |
-| 1:38 | **Resolución** — Las tres cosas, resueltas | 7 |
-| 1:45 | **La frase** + Próximo capítulo | 3 |
-| 1:48 | *Holgura / parqueadero de preguntas* | *12* |
+| 0:10 | Riesgo silencioso — Pérdida de contexto · **+ el conteo sobre el CSV sucio** | **5** |
+| 0:15 | Técnica — Lectura asistida de documentos | 7 |
+| 0:22 | *Extra — Dónde entra la IA* · **corte a la plataforma en vivo** | *5* |
+| 0:27 | **Demostración en vivo** | 10 |
+| 0:37 | **El giro** — La matriz perfecta sobre el documento vencido | **12** |
+| 0:49 | Validación — Extraer no es confiar | 6 |
+| 0:55 | Gobierno — Shadow IT y Shadow AI | 8 |
+| 1:03 | **El objeto** — El Semáforo del Dato | **12** |
+| 1:15 | Práctica — Pública vs. entorno corporativo | 6 |
+| 1:21 | **Taller** | **19** |
+| 1:40 | **Resolución** — Las tres cosas, resueltas | 7 |
+| 1:47 | **La frase** + Próximo capítulo | 3 |
+| 1:50 | *Holgura / parqueadero de preguntas* | *10* |
 
 ### De dónde sale ese minutado
+
+Base: 108 min de contenido y 12 de holgura, con las dos `Extra` de estructura dictadas.
 
 | Ajuste | Efecto |
 |---|---|
 | Se saltan las dos `Extra` de estructura de datos (Hugo las cubre el miércoles) | −11 |
 | *Pérdida de contexto al exportar* baja de 8 a 3 min | −5 |
-| Se dicta la `Extra` del entorno común de datos | +5 |
+| Se dicta la `Extra` de dónde entra la IA | +5 |
 | +4 al giro · +4 al taller · +3 al Semáforo | +11 |
+| **El conteo sobre el CSV sucio** (ver Demo 1) | **+2** |
 
 **La compresión de *Pérdida de contexto* no es un recorte, es un cambio de función.** La sesión 03
 dedica tres láminas a la pérdida de contexto al exportar (*"¿Qué significa exportar BIM?"*, *"En
@@ -220,14 +223,14 @@ existen para dar el anclaje concreto que este auditorio pide. Todos usan el expe
 
 | Min | Demostración | Dura | Riesgo | ¿Se puede saltar? |
 |---|---|---|---|---|
-| 0:10 | El export roto — el CSV del modelo | 2 min | Bajo | Sí, pero es el mejor anclaje a la herramienta de autoría |
+| 0:10 | El export roto **+ el conteo sobre el CSV sucio** | 4 min | Bajo | El conteo no: es lo único que conecta el archivo sucio con la respuesta de la IA |
 | 0:20 | El entorno común de datos | 5 min | Medio | Sí, la lámina se narra sola |
 | 0:25 | La extracción — 180 páginas a una matriz | 10 min | Medio | **No.** Es el alivio previo al giro |
 | 0:35 | Las actas — el giro | 3 min | Bajo | **No.** Es el corazón de la sesión |
 | 1:01 | La trampa de la versión verde | 3 min | Ninguno · sin pantalla | Sí, pero es el error más probable que van a cometer el lunes |
 
 **Si la sesión se atrasa, cortar en este orden:** 1.º la trampa de la versión verde (1:01) · 2.º el entorno
-común de datos (0:20), que se narra sin pantalla · 3.º el export roto (0:10), que son dos minutos.
+común de datos (0:20), que se narra sin pantalla · 3.º los tres defectos del CSV (0:10). **El conteo que sigue no se corta**: es lo único que conecta el archivo sucio con la respuesta de la IA.
 
 **Qué existe y qué no.** El expediente son *documentos*: el anexo, las actas y dos CSV, escritos como
 archivos. **No hay un modelo BIM del corredor detrás.** Eso no limita ninguna de las cinco demos
@@ -244,7 +247,7 @@ un modelo del Tramo 2.
 - **Narrar lo que se hace.** En remoto nadie ve dónde está el cursor.
 - **Volver siempre al deck** al terminar cada demo.
 
-### 0:10 · El export roto (2 min, opcional)
+### 0:10 · El export roto y lo que le hace a la IA (4 min, opcional)
 
 *Prueba que la información sí estaba en el modelo y se perdió al salir.*
 
@@ -255,6 +258,24 @@ un modelo del Tramo 2.
 2. `SUM-014` aparece **dos veces**, idéntico. *"¿Cuántos sumideros hay? Depende de si alguien desduplicó."*
 3. `SUM-011` tiene `codigo_clasificacion` **vacío**. *"Esto es la observación 2.3 del Acta 16 que van
    a leer en el taller."*
+
+**El conteo — 2 min más, y es lo que conecta el export con la IA.** Hasta acá el archivo sucio es
+un problema estético. Esto lo vuelve un problema de respuesta.
+
+4. Con el CSV adjunto, preguntarle al modelo: *"¿cuántos sumideros no tienen ficha de mantenimiento?"*
+5. Va a responder **un número, uno solo, con seguridad**. Dejarlo en pantalla.
+6. Preguntar a la sala: *"¿de dónde salió ese número?"* Y desarmarlo con el archivo a la vista:
+   `SUM-014` está dos veces · hay tres formas de escribir "Sumidero" · la ficha faltante viene en
+   vacío, en `N/D` y en `PENDIENTE`.
+7. Cerrar: *"el modelo eligió un criterio y no lo dijo. No se equivocó: nadie le dijo cuál usar."*
+
+**Lo que paga este momento.** El viernes pasado contaron los mismos sumideros y les dio 6, 9, 11 y
+12. Acá se ve **por qué**: la causa está en el archivo. Y es el giro de hoy en miniatura — una
+respuesta segura que nadie verificó — colocado 27 minutos antes del grande, en dosis pequeña.
+
+> **Si el modelo pide aclaración en vez de responder** (algunos lo hacen): mejor todavía. *"Miren,
+> este preguntó. Es exactamente lo que había que hacer — y es lo que ninguno de nosotros hizo el
+> viernes pasado."*
 
 **No hay modelo del corredor.** El CSV del caso se escribió como archivo: no salió de exportar nada.
 No existe un modelo del Tramo 2 del que sacar una tabla de planificación. Tres caminos honestos:
