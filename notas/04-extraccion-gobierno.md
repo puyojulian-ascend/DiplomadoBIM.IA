@@ -181,6 +181,45 @@ abierta.
 
 ---
 
+## La escalera de la materia prima
+
+**El problema que resuelve esta sección.** Las láminas 06 y 07 parecen dos temas contiguos sin
+relación: una habla de exports sucios, la otra de leer pliegos. No son dos temas. Son **dos
+escalones de una escalera de tres**, y el giro es el tercero.
+
+| # | Cómo viene la materia prima | Cómo se detecta la falla | Dónde |
+|---|---|---|---|
+| 1 | **Sucia** — el export roto | Abriendo el archivo | Lámina 06 · 0:10 |
+| 2 | **Limpia, pero la IA puede inventar** | Pidiendo trazabilidad | Lámina 07 · 0:15 |
+| 3 | **Limpia, trazable… y vencida** | Preguntando qué documento falta | El giro · 0:37 |
+
+**Cada escalón derrota la defensa del anterior.** Por eso el giro funciona: el auditorio llega con
+dos defensas puestas —miró el archivo y pidió la columna de fuente— y aun así falla. Sin esos dos
+escalones previos, el giro sería una advertencia más; con ellos, es un giro.
+
+Y por eso la lámina 06 **no es una desviación**: es el escalón que enseña a mirar.
+
+### Las dos frases puente
+
+Se dicen tal cual. Son lo único que hace falta para que las tres láminas se sientan una sola cosa.
+
+**De la 06 a la 07** — al cerrar el conteo, hacia el minuto 0:14:
+
+> *"Ese archivo estaba sucio, y se veía: bastaba abrirlo. Ahora vamos al otro montón — ciento
+> ochenta páginas de pliego, perfectamente legibles, sin un error de formato. Y ahí está la trampa:
+> cuando la materia prima se ve bien, uno deja de preguntar qué le falta."*
+
+**De la 07 al giro** — al cerrar la lámina de trazabilidad, hacia el minuto 0:22:
+
+> *"Con la columna de fuente ya no puede inventar. Guarden esa sensación de estar cubiertos — la
+> vamos a necesitar en diez minutos."*
+
+> **Cuidado con el tono de la segunda.** Es un guiño, no una amenaza. Dicha con demasiado peso, el
+> auditorio se pone en guardia y llega al giro esperándolo. Se dice de paso, casi al margen, y se
+> sigue.
+
+---
+
 ## Preguntas para el auditorio
 
 ### En *El caso*, sobre el atajo de Andrés
@@ -271,7 +310,7 @@ un problema estético. Esto lo vuelve un problema de respuesta.
 
 **Lo que paga este momento.** El viernes pasado contaron los mismos sumideros y les dio 6, 9, 11 y
 12. Acá se ve **por qué**: la causa está en el archivo. Y es el giro de hoy en miniatura — una
-respuesta segura que nadie verificó — colocado 27 minutos antes del grande, en dosis pequeña.
+respuesta segura que nadie verificó — colocado unos 25 minutos antes del grande, en dosis pequeña.
 
 > **Si el modelo pide aclaración en vez de responder** (algunos lo hacen): mejor todavía. *"Miren,
 > este preguntó. Es exactamente lo que había que hacer — y es lo que ninguno de nosotros hizo el

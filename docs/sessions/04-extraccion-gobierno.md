@@ -117,7 +117,7 @@ El CSV del viernes es exactamente esto. La información **sí estaba** en el mod
 ^^ Sesión 04 / Técnica
 ## Lectura asistida de documentos técnicos
 
-La IA multimodal lee pliegos, contratos, planes de ejecución, manuales y actas — y extrae lo que importa.
+> El otro montón no tiene filas ni columnas: **180 páginas de texto**, sin un solo error de formato. La IA también las lee — y esta vez la materia prima *se ve bien*.
 
 :::split
 :::card [Qué se extrae] Objetivos de extracción
