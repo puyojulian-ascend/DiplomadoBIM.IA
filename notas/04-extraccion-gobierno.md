@@ -226,8 +226,13 @@ existen para dar el anclaje concreto que este auditorio pide. Todos usan el expe
 | 0:35 | Las actas — el giro | 3 min | Bajo | **No.** Es el corazón de la sesión |
 | 1:01 | La versión verde de un documento rojo | 3 min | Bajo | Sí, pero enseña el patrón sano mejor que la lámina |
 
-**Si la sesión se atrasa, cortar en este orden:** 1.º la versión extendida del export (0:10) ·
-2.º la versión verde (1:01) · 3.º el entorno común de datos (0:20), que se narra sin pantalla.
+**Si la sesión se atrasa, cortar en este orden:** 1.º la versión verde (1:01) · 2.º el entorno
+común de datos (0:20), que se narra sin pantalla · 3.º el export roto (0:10), que son dos minutos.
+
+**Qué existe y qué no.** El expediente son *documentos*: el anexo, las actas y dos CSV, escritos como
+archivos. **No hay un modelo BIM del corredor detrás.** Eso no limita ninguna de las cinco demos
+—las cinco son sobre documentos y sobre cómo una IA los lee—, pero sí impide exportar en vivo desde
+un modelo del Tramo 2.
 **Las de 0:25 y 0:35 no se cortan nunca.**
 
 ### Reglas para todas
@@ -251,9 +256,15 @@ existen para dar el anclaje concreto que este auditorio pide. Todos usan el expe
 3. `SUM-011` tiene `codigo_clasificacion` **vacío**. *"Esto es la observación 2.3 del Acta 16 que van
    a leer en el taller."*
 
-**Versión extendida (5 min).** Solo si sobra tiempo: abrir el modelo, una tabla de planificación de
-sumideros, mostrar parámetro de tipo contra parámetro de instancia, exportar, y cerrar con lo que no
-viajó — relaciones, unidades y significado de abreviaturas.
+**No hay modelo del corredor.** El CSV del caso se escribió como archivo: no salió de exportar nada.
+No existe un modelo del Tramo 2 del que sacar una tabla de planificación. Tres caminos honestos:
+
+- **Recomendado:** quedarse con la versión ligera. Lo que hay que probar es *qué se pierde al
+  exportar*, y el archivo lo prueba solo.
+- **Si el auditorio pide ver la herramienta de autoría:** abrir cualquier modelo propio o de muestra,
+  60 segundos de tipo contra instancia, **diciendo que es una ilustración genérica**, no el corredor.
+- **Lo que no hay que hacer:** presentar un modelo cualquiera como si fuera el Tramo 2. En una sesión
+  sobre trazabilidad, que descubran un dato inventado cuesta la sesión entera.
 
 ### 0:20 · El entorno común de datos (5 min, opcional)
 
@@ -266,6 +277,32 @@ viajó — relaciones, unidades y significado de abreviaturas.
 5. Cerrar: *"el rastro existe. La pregunta es si alguien lo mira."*
 
 Es la demo con más riesgo — depende de red, licencia y permisos. Capturas guardadas la víspera.
+
+**Exige armar el proyecto antes: 30–45 min.** No requiere un modelo BIM — es una demo sobre
+documentos, y documentos hay. Receta:
+
+1. Proyecto nuevo llamado `DEMO — Corredor Av. Guayacanes (ficticio)`. Que «ficticio» esté en el
+   título es media lección de gobierno.
+2. Cuatro carpetas: `01 Trabajo en curso` · `02 Compartido` · `03 Publicado` · `04 Archivado`.
+3. Cargar así:
+
+| Carpeta | Archivo | Por qué ahí |
+|---|---|---|
+| `03 Publicado` | Anexo Técnico 7 | El documento contractual vigente — y el desactualizado |
+| `02 Compartido` | Actas 14, 15 y 16 | Las decisiones viven acá, no en el publicado |
+| `02 Compartido` | `interferencias-tramo2.csv` | Informe de coordinación del hito H-2 |
+| `01 Trabajo en curso` | `elementos-tramo2.csv` | El export roto, sin revisar |
+
+4. **Historial:** cargar el anexo dos veces en `03 Publicado` — primero la v1.0 (sin capítulo 5) y
+   después la v2.0. Eso produce dos versiones reales con fecha y autor.
+5. **Permisos:** `03 Publicado` en solo lectura, `01 Trabajo en curso` restringida.
+
+**El regalo:** con el anexo en *Publicado* y las actas en *Compartido*, la pantalla muestra el giro
+de la sesión antes de nombrarlo — el documento oficial está desactualizado y la modificación vive en
+otra carpeta. Señalarlo de pasada en el minuto 20 y volver a esa imagen en el 35.
+
+Cargar estos archivos es seguro y conviene decirlo: todo el expediente es **verde**, ficticio por
+construcción. Subirlo es exactamente el patrón sano que enseña la sesión.
 
 ### 1:01 · La versión verde de un documento rojo (3 min, opcional)
 
