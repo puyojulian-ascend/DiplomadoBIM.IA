@@ -32,6 +32,11 @@
 Todo documento rojo tiene una **versión verde útil**: el mismo problema, sin los datos que lo
 hacen reservado. Búsquela antes de renunciar a la herramienta.
 
+> ### La versión verde no la puede hacer una IA pública.
+> Para que la anonimice, primero hay que dársela — y ahí ya salió. Se hace a mano, con una
+> herramienta que no sea un modelo, dentro del entorno gobernado, o escribiendo un ejemplo
+> sintético desde cero.
+
 ---
 
 ## REVERSO

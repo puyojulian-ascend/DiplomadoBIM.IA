@@ -224,9 +224,9 @@ existen para dar el anclaje concreto que este auditorio pide. Todos usan el expe
 | 0:20 | El entorno común de datos | 5 min | Medio | Sí, la lámina se narra sola |
 | 0:25 | La extracción — 180 páginas a una matriz | 10 min | Medio | **No.** Es el alivio previo al giro |
 | 0:35 | Las actas — el giro | 3 min | Bajo | **No.** Es el corazón de la sesión |
-| 1:01 | La versión verde de un documento rojo | 3 min | Bajo | Sí, pero enseña el patrón sano mejor que la lámina |
+| 1:01 | La trampa de la versión verde | 3 min | Ninguno · sin pantalla | Sí, pero es el error más probable que van a cometer el lunes |
 
-**Si la sesión se atrasa, cortar en este orden:** 1.º la versión verde (1:01) · 2.º el entorno
+**Si la sesión se atrasa, cortar en este orden:** 1.º la trampa de la versión verde (1:01) · 2.º el entorno
 común de datos (0:20), que se narra sin pantalla · 3.º el export roto (0:10), que son dos minutos.
 
 **Qué existe y qué no.** El expediente son *documentos*: el anexo, las actas y dos CSV, escritos como
@@ -317,16 +317,34 @@ otra carpeta. Señalarlo de pasada en el minuto 20 y volver a esa imagen en el 3
 Cargar estos archivos es seguro y conviene decirlo: todo el expediente es **verde**, ficticio por
 construcción. Subirlo es exactamente el patrón sano que enseña la sesión.
 
-### 1:01 · La versión verde de un documento rojo (3 min, opcional)
+### 1:01 · La trampa de la versión verde (3 min, opcional)
 
-*Enseña el patrón sano mejor que la lámina.* Va dentro del bloque del Semáforo, después de la ronda
-de colores, con los 3 minutos extra que ese bloque ya tiene.
+*No requiere ejecutar nada: es una pregunta al auditorio y su vuelco.* Va dentro del bloque del
+Semáforo, después de la ronda de colores, con los 3 minutos extra que ese bloque ya tiene.
 
-1. Preguntar: *"esto es rojo. ¿Qué es lo que lo hace rojo?"*
-2. Pedirle al modelo una **versión anonimizada**: sin número de contrato, sin nombres, sin cifras
-   económicas, conservando los requisitos técnicos.
-3. Mostrar los dos al lado. **El problema técnico sobrevive intacto.**
-4. Cerrar: *"eso es lo que Andrés podía haber hecho."*
+**Es un segundo giro pequeño**, con la misma forma que el grande: la respuesta obvia falla. Está a
+26 minutos del giro principal, así que lo refuerza en vez de competirle.
+
+1. Mostrar el anexo —o describir un documento rojo del trabajo de ellos— y preguntar:
+   *"esto es rojo. ¿Cómo lo convierto en verde para poder trabajarlo con una IA?"*
+2. **Esperar.** Alguien va a decir *"que lo anonimice la IA"*. Es la respuesta natural y conviene
+   que se diga en voz alta. Si nadie la dice, proponerla uno mismo.
+3. **El vuelco:** *"para que la IA lo anonimice, primero se lo tengo que dar. Ya salió."* Pausa corta.
+4. Las cuatro salidas que sí funcionan:
+
+| Cómo | Cuándo conviene |
+|---|---|
+| **A mano**, por alguien que ya tiene acceso legítimo | Siempre válido. Lento en documentos largos |
+| **Herramienta determinística** — buscar y reemplazar, un script sobre campos conocidos | Datos estructurados. No hay modelo de por medio y corre en el equipo |
+| **Con IA, pero dentro del entorno gobernado** | Si la entidad tiene instancia contratada. Ya no es *sacar* el documento: es procesarlo en casa |
+| **Escribir uno sintético desde cero** | Lo más rápido para prototipar. Mismo problema, datos inventados |
+
+5. Cerrar señalando la pantalla: *"el expediente que estamos usando hoy no es un contrato del IDU
+   anonimizado. Está escrito desde cero. Por eso es verde, y por eso puedo proyectarlo."*
+
+**Por qué vale la pena el minuto extra.** Anonimizar con una IA pública es circular: se le está
+pidiendo protección a la herramienta de la que hay que proteger el documento. Es el error más
+probable que va a cometer alguien de esta sala el lunes, precisamente porque suena razonable.
 
 ---
 
