@@ -155,18 +155,20 @@ Pliegos, actas y manuales que ya están en la nube del proyecto, convertidos en 
 
 Y por eso mismo: es el punto donde el Semáforo decide qué se descarga y qué no.
 :::
-:::card [Sesión 06] Consultar la fuente
+:::card [Siguiente escalón] Consultar la fuente
 Dejar de descargar copias y preguntarle al proyecto vivo, que no envejece.
 
-Ahí aparecen dos cosas nuevas: cómo se enchufa, y qué permisos hereda lo que se enchufa.
+Es posible hoy con conectores estándar. Antes hay que responder dos preguntas: **cómo se enchufa**, y **qué permisos hereda** lo que se enchufa.
 :::
-:::card [Sesiones 08 y 09] Proponer y anticipar
-Cuando la IA deja de leer lo que ya está escrito: alternativas de diseño con restricciones en conflicto, y predicción de costo y plazo con su banda de incertidumbre.
+:::card [Escalón más alto] Proponer y anticipar
+Cuando la IA deja de leer lo que ya está escrito: alternativas de diseño con restricciones en conflicto, o predicción de costo y plazo con su banda de incertidumbre.
+
+Exige datos históricos ordenados y criterios de aceptación escritos. Es donde más se promete y menos se tiene listo.
 :::
 :::
 
 :::note
-Los cuatro pasos son **acumulativos**: cada uno necesita el anterior resuelto. Por eso el curso empieza por extraer y no por predecir — no se puede anticipar sobre datos que todavía nadie ordenó.
+Los cuatro pasos son **acumulativos**: cada uno necesita el anterior resuelto. Por eso el trabajo empieza por extraer y no por predecir — no se puede anticipar sobre datos que todavía nadie ordenó.
 :::
 
 ---
@@ -386,5 +388,3 @@ Cada copia envejece el día que alguien actualiza el original. Volver a exportar
 **¿Cómo se conecta la IA a la fuente viva?**
 :::
 :::
-
-> **Sesión 06 — Consulta conversacional, no-code, MCP y loops.** Viernes 04/09.

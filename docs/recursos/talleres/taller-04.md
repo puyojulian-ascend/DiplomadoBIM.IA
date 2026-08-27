@@ -113,6 +113,8 @@ Andrés pegó el Anexo Técnico completo en una herramienta pública para resumi
 - Tres requisitos extraídos **con su fuente**, contrastados contra las actas.
 - Cinco documentos propios clasificados, y una versión verde para cada rojo.
 
-Estos dos productos son el insumo de la **sesión 06**, donde aparece el problema siguiente:
-todo esto sigue viviendo en carpetas, y cada copia envejece el día que alguien actualiza el
-original.
+Guarde los dos: la matriz trazable y el semáforo aplicado a documentos reales sirven tal cual en
+su trabajo, sin nada más.
+
+Y dejan planteado el problema siguiente, que ninguna matriz mejor resuelve: **todo esto sigue
+viviendo en carpetas**, y cada copia envejece el día que alguien actualiza el original.

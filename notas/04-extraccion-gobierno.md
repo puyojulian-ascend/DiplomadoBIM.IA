@@ -281,8 +281,10 @@ nuevo es lo que la IA puede o no puede hacer con eso.
 3. **El movimiento que importa.** Para que una IA lea esos documentos hoy, **hay que descargarlos**.
    Y descargarlos es sacarlos del entorno gobernado: *"ahí es donde el Semáforo empieza a mandar."*
 4. Abrir la vista de permisos treinta segundos — no para explicarla, sino para dejar la pregunta:
-   *"si mañana conecto una IA acá, ¿con qué permisos entra?"* Decir que esa pregunta es la sesión 06.
-5. Cerrar: *"hoy trabajamos con copias descargadas. En la 06 dejamos de descargar."*
+   *"si mañana conecto una IA acá, ¿con qué permisos entra?"* **Dejarla abierta**, sin prometer
+   quién la responde ni cuándo.
+5. Cerrar: *"hoy trabajamos con copias descargadas. Dejar de descargar es posible —hay conectores
+   estándar para eso— pero antes hay que contestar esa pregunta de permisos."*
 
 **El eco del giro.** El anexo en *Publicado* y las actas en *Compartido* es la imagen del problema de
 hoy, montada antes de nombrarlo. Señalarla al pasar en el paso 2 y volver a ella en el minuto 35.
@@ -432,12 +434,12 @@ regulado, y la persona que responde por ello en la entidad no soy yo — es jur�
 > **Antes de cerrar el taller, decirlo en voz alta:** la hoja se llena en el navegador y se
 > guarda sola, pero **solo en ese equipo**. Quien quiera conservarla tiene que descargarla en
 > **PDF** o en **.md** con los botones de arriba. El .md sirve además para volver a dársela a
-> una IA más adelante. Los cinco talleres alimentan el proyecto integrador de la sesión 12.
+> una IA más adelante. Las hojas de taller del curso alimentan el trabajo final.
 
 | Cuándo | Qué |
 |---|---|
 | Al empezar el taller (1:19) | `recursos/caso/pliego-anexo-tecnico-fragmento.md`, `recursos/caso/actas-comite-fragmento.md` y `recursos/talleres/taller-04.md` |
-| Disponible, no obligatorio | `recursos/caso/interferencias-tramo2.csv` — el informe de coordinación. Quien quiera adelantarse, que lo abra; se usa en serio en la 06 y la 08 |
+| Disponible, no obligatorio | `recursos/caso/interferencias-tramo2.csv` — el informe de coordinación. Quien quiera explorarlo por su cuenta, que lo abra |
 | Al cerrar (1:45) | `recursos/fichas/ficha-04-semaforo.md` |
 
 > **Ojo con el taller:** sigue diciendo *"elija tres numerales del capítulo 4"* y sigue siendo
@@ -453,12 +455,12 @@ Se anota en el parqueadero y se contesta en los 12 minutos finales, que existen 
 
 | Pregunta | Respuesta |
 |---|---|
-| *"¿Esto funciona en Revit específicamente?"* | Lo de hoy es independiente de la herramienta de autoría: se trabaja sobre lo que se exporta y sobre documentos. La conexión directa a la herramienta es la sesión 06 |
-| *"¿Puedo conectar una IA al entorno de datos del proyecto?"* | Sí, y es el tema de la 06. Un adelanto que sí es de hoy porque es de gobierno: **un agente conectado hereda los permisos de quien lo conectó** |
+| *"¿Esto funciona en Revit específicamente?"* | Lo de hoy es independiente de la herramienta de autoría: se trabaja sobre lo que se exporta y sobre documentos. Conectarse directamente a la herramienta es otro problema, y depende de qué exponga la plataforma |
+| *"¿Puedo conectar una IA al entorno de datos del proyecto?"* | Es posible, con conectores estándar. Hoy no lo vemos, pero hay algo que sí es de hoy porque es de gobierno: **un agente conectado hereda los permisos de quien lo conectó** |
 | *"¿Puedo subir el pliego a la nube del proyecto y preguntarle ahí?"* | Esa es exactamente la respuesta correcta al Semáforo: el documento ámbar se procesa donde ya vive, no en una herramienta pública |
 | *"¿El asistente de la plataforma ya hace esto?"* | En parte, y cada vez más. Verificar el estado antes de dictarlo — cambia rápido |
 | *"¿Esto reemplaza al coordinador BIM?"* | No. El agente extrae y propone; la validación y la responsabilidad siguen siendo humanas |
-| *"¿Y la coordinación de modelos, el clash?"* | Hoy aparece como **documento a extraer**, no como proceso. Cómo se produce y se prioriza es la sesión 10, con Daniel |
+| *"¿Y la coordinación de modelos, el clash?"* | Hoy aparece como **documento a extraer**, no como proceso. Cómo se produce y cómo se prioriza es un tema aparte, y no es el de esta sesión |
 
 ---
 
