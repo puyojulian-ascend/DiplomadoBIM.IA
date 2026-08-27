@@ -213,7 +213,74 @@ respuesta útil: la información económica de un contrato en ejecución no sale
 
 ---
 
-## Demostración en vivo (10 min)
+## Las demostraciones en vivo — mapa
+
+Hay **cinco momentos** donde se corta a pantalla. Dos son obligatorios; tres son opcionales y
+existen para dar el anclaje concreto que este auditorio pide. Todos usan el expediente ficticio.
+
+| Min | Demostración | Dura | Riesgo | ¿Se puede saltar? |
+|---|---|---|---|---|
+| 0:10 | El export roto — el CSV del modelo | 2 min | Bajo | Sí, pero es el mejor anclaje a la herramienta de autoría |
+| 0:20 | El entorno común de datos | 5 min | Medio | Sí, la lámina se narra sola |
+| 0:25 | La extracción — 180 páginas a una matriz | 10 min | Medio | **No.** Es el alivio previo al giro |
+| 0:35 | Las actas — el giro | 3 min | Bajo | **No.** Es el corazón de la sesión |
+| 1:01 | La versión verde de un documento rojo | 3 min | Bajo | Sí, pero enseña el patrón sano mejor que la lámina |
+
+**Si la sesión se atrasa, cortar en este orden:** 1.º la versión extendida del export (0:10) ·
+2.º la versión verde (1:01) · 3.º el entorno común de datos (0:20), que se narra sin pantalla.
+**Las de 0:25 y 0:35 no se cortan nunca.**
+
+### Reglas para todas
+
+- **Ensayarlas la víspera, cronometradas.** Una demo sin ensayar consume el doble del tiempo previsto.
+- **Nada real. Nunca.** Proyecto desechable, expediente ficticio.
+- **No depurar en vivo.** Un intento y se pasa al plan B.
+- **Es virtual: agrandar todo.** Zoom al 150%, cursor lento.
+- **Narrar lo que se hace.** En remoto nadie ve dónde está el cursor.
+- **Volver siempre al deck** al terminar cada demo.
+
+### 0:10 · El export roto (2 min, opcional)
+
+*Prueba que la información sí estaba en el modelo y se perdió al salir.*
+
+**Versión ligera — la recomendada.** Abrir `elementos-tramo2.csv` y señalar tres defectos:
+
+1. Columna `categoria`: `Sumidero`, `SUMIDERO` y `sumidero ` con espacio final — tres formas del
+   mismo concepto. *"Cualquier agrupación por categoría acá da mal."*
+2. `SUM-014` aparece **dos veces**, idéntico. *"¿Cuántos sumideros hay? Depende de si alguien desduplicó."*
+3. `SUM-011` tiene `codigo_clasificacion` **vacío**. *"Esto es la observación 2.3 del Acta 16 que van
+   a leer en el taller."*
+
+**Versión extendida (5 min).** Solo si sobra tiempo: abrir el modelo, una tabla de planificación de
+sumideros, mostrar parámetro de tipo contra parámetro de instancia, exportar, y cerrar con lo que no
+viajó — relaciones, unidades y significado de abreviaturas.
+
+### 0:20 · El entorno común de datos (5 min, opcional)
+
+*Prueba que los documentos no están sueltos: tienen estado, permiso y rastro.*
+
+1. Abrir el proyecto desechable y **decir en voz alta que es ficticio**, y por qué eso importa.
+2. **Estados:** carpetas y su equivalencia con la norma. Solo se emite concepto sobre lo compartido o superior.
+3. **Permisos:** acceso por carpeta y por rol, no por persona.
+4. **Historial:** quién cargó qué y cuándo.
+5. Cerrar: *"el rastro existe. La pregunta es si alguien lo mira."*
+
+Es la demo con más riesgo — depende de red, licencia y permisos. Capturas guardadas la víspera.
+
+### 1:01 · La versión verde de un documento rojo (3 min, opcional)
+
+*Enseña el patrón sano mejor que la lámina.* Va dentro del bloque del Semáforo, después de la ronda
+de colores, con los 3 minutos extra que ese bloque ya tiene.
+
+1. Preguntar: *"esto es rojo. ¿Qué es lo que lo hace rojo?"*
+2. Pedirle al modelo una **versión anonimizada**: sin número de contrato, sin nombres, sin cifras
+   económicas, conservando los requisitos técnicos.
+3. Mostrar los dos al lado. **El problema técnico sobrevive intacto.**
+4. Cerrar: *"eso es lo que Andrés podía haber hecho."*
+
+---
+
+## 0:25 · La extracción, paso a paso (10 min, obligatoria)
 
 **Preparar antes:** `pliego-anexo-tecnico-fragmento.md` y `actas-comite-fragmento.md`
 abiertos y listos para adjuntar. Y el proyecto desechable de ACC abierto en otra pestaña.
