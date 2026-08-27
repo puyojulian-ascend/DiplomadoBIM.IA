@@ -266,15 +266,26 @@ No existe un modelo del Tramo 2 del que sacar una tabla de planificación. Tres 
 - **Lo que no hay que hacer:** presentar un modelo cualquiera como si fuera el Tramo 2. En una sesión
   sobre trazabilidad, que descubran un dato inventado cuesta la sesión entera.
 
-### 0:20 · El entorno común de datos (5 min, opcional)
+### 0:20 · Dónde entra la IA (5 min, opcional)
 
-*Prueba que los documentos no están sueltos: tienen estado, permiso y rastro.*
+*No prueba cómo se estructura un entorno común de datos — eso ya lo saben, lo usan todos los días.
+Prueba **dónde está hoy el límite**, y qué sesión lo levanta.*
+
+**El error que hay que evitar:** explicarles su propia herramienta. Si la demo se convierte en un
+recorrido de carpetas y permisos, se les está enseñando su trabajo. La pantalla es de ellos; lo
+nuevo es lo que la IA puede o no puede hacer con eso.
 
 1. Abrir el proyecto desechable y **decir en voz alta que es ficticio**, y por qué eso importa.
-2. **Estados:** carpetas y su equivalencia con la norma. Solo se emite concepto sobre lo compartido o superior.
-3. **Permisos:** acceso por carpeta y por rol, no por persona.
-4. **Historial:** quién cargó qué y cuándo.
-5. Cerrar: *"el rastro existe. La pregunta es si alguien lo mira."*
+2. Mostrar los documentos donde están. **Sin explicar carpetas ni estados.** Solo señalar dos cosas:
+   el anexo está en *Publicado* y las actas en *Compartido*. Media frase, y seguir.
+3. **El movimiento que importa.** Para que una IA lea esos documentos hoy, **hay que descargarlos**.
+   Y descargarlos es sacarlos del entorno gobernado: *"ahí es donde el Semáforo empieza a mandar."*
+4. Abrir la vista de permisos treinta segundos — no para explicarla, sino para dejar la pregunta:
+   *"si mañana conecto una IA acá, ¿con qué permisos entra?"* Decir que esa pregunta es la sesión 06.
+5. Cerrar: *"hoy trabajamos con copias descargadas. En la 06 dejamos de descargar."*
+
+**El eco del giro.** El anexo en *Publicado* y las actas en *Compartido* es la imagen del problema de
+hoy, montada antes de nombrarlo. Señalarla al pasar en el paso 2 y volver a ella en el minuto 35.
 
 Es la demo con más riesgo — depende de red, licencia y permisos. Capturas guardadas la víspera.
 

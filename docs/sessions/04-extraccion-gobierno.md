@@ -139,31 +139,34 @@ Regla no negociable: pedir **trazabilidad**. Cada dato extraído debe indicar de
 ---
 
 ^^ Sesión 04 / Extra
-## Dónde vive todo esto
+## Dónde entra la IA en lo que ya tienen
 
-> Los documentos que se van a extraer no están sueltos: viven en el **entorno común de datos** del proyecto, con un estado, un permiso y un registro.
+> No hay que cambiar de plataforma ni de proceso. La pregunta es **en qué punto** del flujo que ya existe entra una IA — y qué tan lejos se puede llegar hoy.
+
+:::flow
+Documentos en la nube -> *Leer y estructurar -> Consultar la fuente -> Proponer -> Anticipar
+:::
 
 :::split-3
-:::card [Estado] En qué punto está
-- **Trabajo en curso** — del autor, aún no se comparte.
-- **Compartido** — visible para el equipo, revisable.
-- **Publicado** — aprobado, sirve para construir.
-- **Archivado** — histórico, no se usa.
+:::card [Hoy · con lo que ya hay] !Leer y estructurar
+Pliegos, actas y manuales que ya están en la nube del proyecto, convertidos en matrices trazables.
 
-Solo se emite concepto sobre lo *compartido* o superior.
-:::
-:::card [Permiso] Quién ve qué
-El acceso se asigna **por carpeta y por rol**, no por persona. Y alguien responde por esa asignación: el Gestor de Información del numeral 4.6.3.
-:::
-:::card [Registro] !Qué queda
-Cada carga, descarga, cambio de estado y cambio de permiso queda registrado — por el tiempo que dure el contrato.
+**Esto se puede hacer el lunes.** Basta un modelo de contexto largo y los documentos descargados.
 
-El rastro existe. La pregunta es si alguien lo mira.
+Y por eso mismo: es el punto donde el Semáforo decide qué se descarga y qué no.
+:::
+:::card [Sesión 06] Consultar la fuente
+Dejar de descargar copias y preguntarle al proyecto vivo, que no envejece.
+
+Ahí aparecen dos cosas nuevas: cómo se enchufa, y qué permisos hereda lo que se enchufa.
+:::
+:::card [Sesiones 08 y 09] Proponer y anticipar
+Cuando la IA deja de leer lo que ya está escrito: alternativas de diseño con restricciones en conflicto, y predicción de costo y plazo con su banda de incertidumbre.
 :::
 :::
 
 :::note
-Esto no es una plataforma: es una **forma de organizar**. Los nombres de los estados vienen de la norma de gestión de información, y cualquier entorno común de datos del mercado los implementa con su propio vocabulario.
+Los cuatro pasos son **acumulativos**: cada uno necesita el anterior resuelto. Por eso el curso empieza por extraer y no por predecir — no se puede anticipar sobre datos que todavía nadie ordenó.
 :::
 
 ---
