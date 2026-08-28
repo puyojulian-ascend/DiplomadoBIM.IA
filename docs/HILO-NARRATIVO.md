@@ -20,7 +20,7 @@ frase **de qué depende la respuesta hoy**.
 
 ---
 
-## 2. Las cinco dependencias (sesiones de Julián)
+## 2. Las cinco dependencias (sesiones 02, 04, 06, 08 y 09)
 
 | Sesión | Fecha | Depende de… | Objeto memorable |
 |---|---|---|---|
@@ -154,9 +154,20 @@ lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos
 | Tema | Lo desarrolla | Lo hereda |
 |---|---|---|
 | El modelo BIM como estructura de datos · los tres grados de estructura · IFC · nomenclaturas | **03 · Hugo** | 04 · Stiven, que abre reconociéndolo y arranca donde eso termina: el anexo, las actas y los correos **no** están estructurados |
+| El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 · Stiven y 11 · Daniel, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
+| Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Stiven, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
 
 En la 04 esas dos láminas quedan marcadas `Extra`: se dictan solo si la 03 no alcanzó a
 cubrirlas. La sesión funciona en los dos escenarios.
+
+**Sobre los dos cruces:** la distinción es entre *usar* y *enseñar*. La 04 y la 06 se paran sobre
+el CDE y sobre un informe de interferencias porque son el material que hay que gobernar y
+consultar; no explican cómo se coordina un modelo ni cómo se configura un entorno común de datos.
+Ese desarrollo es de la 10 y la 11. Al abrirlas se hereda en voz alta: *"ya vieron dónde viven los
+documentos y ya vieron un informe de interferencias; hoy vamos a ver cómo se produce."*
+
+Con la 10 también a cargo de Stiven, el segundo cruce queda dentro del mismo docente; el que sigue
+siendo entre dos manos es el de la 11, con Daniel.
 
 Si aparecen más cruces, se anotan acá antes de que los decks se escriban.
 
@@ -164,7 +175,7 @@ Si aparecen más cruces, se anotan acá antes de que los decks se escriban.
 
 ## 8. Registro del lenguaje
 
-Las sesiones de Julián usan **español neutro, sin voseo**. El público es bogotano y la entidad
+Las sesiones del arco del caso (02, 04, 06, 08, 09) usan **español neutro, sin voseo**. El público es bogotano y la entidad
 es pública.
 
 - **Cuerpo de la lámina: impersonal.** "Un buen pedido tiene cinco ingredientes",

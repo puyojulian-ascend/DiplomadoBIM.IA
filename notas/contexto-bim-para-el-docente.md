@@ -1,6 +1,6 @@
 # Contexto BIM para el docente — posicionamiento y glosario mínimo
 
-> Documento interno, compartido por las cinco sesiones de Julián (02, 04, 06, 08, 09). No se
+> Documento interno, compartido por las cinco sesiones del arco del caso (02, 04, 06, 08, 09). No se
 > proyecta. Sirve para pararse frente a un público de arquitectos e ingenieros sin sonar ni
 > distante del tema ni fingiendo un dominio que no corresponde.
 

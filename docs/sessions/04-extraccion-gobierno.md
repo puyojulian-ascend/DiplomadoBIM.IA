@@ -28,17 +28,17 @@ El agente ya sabe qué hacer. Pero **¿de dónde saca los datos — y quién los
 ^^ Sesión 04 / El caso
 ## Tres cosas pasaron esta semana
 
-> **Corredor Av. Guayacanes.** Marcela necesita la matriz de seguimiento para el comité del jueves. En cinco días pasó todo esto.
+> **Corredor Av. Guayacanes.** Marcela necesita la matriz de seguimiento para el comité del jueves. Todo el expediente está en el entorno común de datos del proyecto — y aun así, en cinco días pasó todo esto.
 
 :::split-3
 :::card [01] El anexo son 180 páginas
-El Anexo Técnico 7 define formatos, niveles de información, hitos y responsables. Nadie lo ha convertido nunca en una tabla de seguimiento.
+El Anexo Técnico 7 define formatos, niveles de información, hitos, responsables y los procesos de coordinación. Nadie lo ha convertido nunca en una tabla de seguimiento.
 :::
 :::card [02] El export venía roto
 El CSV del viernes tenía campos vacíos y categorías escritas de tres formas. El acta lo llama, textualmente, *"un error del proceso de exportación"*.
 :::
 :::card [03] !Y alguien tomó un atajo
-Andrés, el coordinador BIM del Consorcio, pegó el anexo completo en una herramienta pública para resumirlo rápido.
+Andrés, el coordinador BIM del Consorcio, pegó el anexo completo —y las actas, con los nombres y documentos de todos los que firman— en una herramienta pública para resumirlo rápido.
 :::
 :::
 
@@ -117,7 +117,7 @@ El CSV del viernes es exactamente esto. La información **sí estaba** en el mod
 ^^ Sesión 04 / Técnica
 ## Lectura asistida de documentos técnicos
 
-La IA multimodal lee pliegos, contratos, planes de ejecución, manuales y actas — y extrae lo que importa.
+> El otro montón no tiene filas ni columnas: **180 páginas de texto**, sin un solo error de formato. La IA también las lee — y esta vez la materia prima *se ve bien*.
 
 :::split
 :::card [Qué se extrae] Objetivos de extracción
@@ -138,6 +138,41 @@ Regla no negociable: pedir **trazabilidad**. Cada dato extraído debe indicar de
 
 ---
 
+^^ Sesión 04 / Extra
+## Dónde entra la IA en lo que ya tienen
+
+> No hay que cambiar de plataforma ni de proceso. La pregunta es **en qué punto** del flujo que ya existe entra una IA — y qué tan lejos se puede llegar hoy.
+
+:::flow
+Documentos en la nube -> *Leer y estructurar -> Consultar la fuente -> Proponer -> Anticipar
+:::
+
+:::split-3
+:::card [Hoy · con lo que ya hay] !Leer y estructurar
+Pliegos, actas y manuales que ya están en la nube del proyecto, convertidos en matrices trazables.
+
+**Esto se puede hacer el lunes.** Basta un modelo de contexto largo y los documentos descargados.
+
+Y por eso mismo: es el punto donde el Semáforo decide qué se descarga y qué no.
+:::
+:::card [Siguiente escalón] Consultar la fuente
+Dejar de descargar copias y preguntarle al proyecto vivo, que no envejece.
+
+Es posible hoy con conectores estándar. Antes hay que responder dos preguntas: **cómo se enchufa**, y **qué permisos hereda** lo que se enchufa.
+:::
+:::card [Escalón más alto] Proponer y anticipar
+Cuando la IA deja de leer lo que ya está escrito: alternativas de diseño con restricciones en conflicto, o predicción de costo y plazo con su banda de incertidumbre.
+
+Exige datos históricos ordenados y criterios de aceptación escritos. Es donde más se promete y menos se tiene listo.
+:::
+:::
+
+:::note
+Los cuatro pasos son **acumulativos**: cada uno necesita el anterior resuelto. Por eso el trabajo empieza por extraer y no por predecir — no se puede anticipar sobre datos que todavía nadie ordenó.
+:::
+
+---
+
 ^^ Sesión 04 / Demostración
 ## De 180 páginas a una matriz de requisitos
 
@@ -152,6 +187,8 @@ Regla no negociable: pedir **trazabilidad**. Cada dato extraído debe indicar de
 | Nivel info · drenaje | LOD 350 | Contratista | 4.3.1 |
 | Ficha mantenimiento | 100% | Contratista | 4.3.1 |
 | Clasificación | Sin campos vacíos | Contratista | 4.4.2 |
+| Tolerancia · interferencia dura | 0 mm | Contratista | 5.2.1 |
+| Informe de interferencias | Por hito, formato abierto | Contratista | 5.3.2 |
 :::
 :::
 
@@ -227,6 +264,8 @@ El objetivo no es prohibir la IA: es **habilitarla con reglas**. Prohibir empuja
 
 :::warn
 Lo que hizo Andrés ya estaba prohibido — y el contrato lo dice sin nombrar ninguna marca. Numeral 4.7.3: *"aplica a cualquier servicio de procesamiento automatizado o asistido, con independencia de su denominación comercial"*.
+
+Y ya quedó consignado: **Acta N.º 15, numeral 4**. No hubo sanción — hubo un compromiso con plazo.
 :::
 
 ---
@@ -256,6 +295,35 @@ Anexos contractuales, precios unitarios, datos personales, correspondencia con e
 
 :::ok
 **Ante la duda, es ámbar. Nunca verde.** La duda no es una excusa para arriesgar: es la señal de que hay que preguntar.
+:::
+
+---
+
+^^ Sesión 04 / Extra
+## El mismo párrafo, en tres colores
+
+> El Anexo Técnico 7 **se clasifica solo**: el numeral 4.7.1 lo declara reservado y el 4.7.2 prohíbe incorporarlo a herramientas de terceros. Así se lo baja de color sin perderlo.
+
+:::split-3
+:::card [Rojo · como está] !No sale
+*"Contrato **IDU-CO-2025-0418**. Objeto: Corredor **Av. Guayacanes — Tramo 2**. El hito H-2 se radicará a más tardar el **30 de septiembre de 2025**, con el desplazamiento respecto del origen registrado."*
+:::
+:::card [Ámbar · sin identificadores] Entorno gobernado
+*"Corredor vial urbano de 2,4 km. El hito H-2 se radicará en la **semana 20**. Drenaje en **LOD 350** con ficha al 100%."*
+
+Sirve para trabajar dentro de casa: conserva las cantidades reales.
+:::
+:::card [Verde · requisito genérico] Cualquier herramienta
+*"Obra vial urbana. Entrega del modelo federado en la semana 20, en **IFC 4.3**, referida al datum nacional, con interferencia dura a **0 mm**."*
+
+Podría ser de cualquier pliego del país.
+:::
+:::
+
+:::warn
+**Ojo con borrar de más.** El datum nacional se queda: es público y obligatorio para obra pública. Lo que se va es el **desplazamiento local** del numeral 4.2.3. Regla: el estándar público se queda, el valor propio del proyecto se va.
+
+Y la prueba no es haber tachado campos, sino contestar: **¿alguien podría reconstruir de qué proyecto se trata?**
 :::
 
 ---
@@ -349,5 +417,3 @@ Cada copia envejece el día que alguien actualiza el original. Volver a exportar
 **¿Cómo se conecta la IA a la fuente viva?**
 :::
 :::
-
-> **Sesión 06 — Consulta conversacional, no-code, MCP y loops.** Viernes 04/09.

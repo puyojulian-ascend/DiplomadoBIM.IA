@@ -32,6 +32,29 @@
 Todo documento rojo tiene una **versión verde útil**: el mismo problema, sin los datos que lo
 hacen reservado. Búsquela antes de renunciar a la herramienta.
 
+> ### La versión verde no la puede hacer una IA pública.
+> Para que la anonimice, primero hay que dársela — y ahí ya salió. Se hace a mano, con una
+> herramienta que no sea un modelo, dentro del entorno gobernado, o escribiendo un ejemplo
+> sintético desde cero.
+
+**Qué se va y qué se queda.** La distinción no es dato técnico contra dato administrativo, sino
+**estándar público contra valor propio del proyecto**.
+
+| Se va | Se queda |
+|---|---|
+| Número de contrato · nombre de la obra | Formatos de intercambio |
+| Fechas absolutas → hitos relativos | Niveles de información exigidos |
+| Coordenadas locales y desplazamiento del origen | Datum nacional (es público y obligatorio) |
+| Cifras económicas · nombres de personas y empresas | Tolerancias y reglas genéricas |
+
+> **La prueba no es haber tachado campos.** Es contestar: *¿podría alguien reconstruir de qué
+> proyecto se trata?*
+
+**Y ojo con borrar de más.** Un documento sobre-redactado ya no responde nada, y la conclusión
+termina siendo "anonimizar no sirve". Anonimizar cambia **qué preguntas puede responder** el
+documento: la versión verde sirve para ensayar un método, no para verificar si un plazo sigue
+vigente.
+
 ---
 
 ## REVERSO

@@ -27,7 +27,7 @@ respondida completa.
 | **01** | mié 19/08 | Generalidades BIM + Inteligencia Artificial | Daniel Saavedra |
 | **02** | vie 21/08 | Comunicación efectiva y Agentes | Julián Puyo |
 | **03** | mié 26/08 | Flujos inteligentes y BIM como modelos de datos | Hugo Gómez |
-| **04** | vie 28/08 | Extracción, transformación y gobierno de la información BIM | Julián Puyo |
+| **04** | vie 28/08 | Extracción, transformación y gobierno de la información BIM | Stiven Valencia |
 | **05** | mié 02/09 | IA para comunicación visual y presentaciones | Daniel Saavedra |
 | **06** | vie 04/09 | Consulta conversacional, no-code, MCP y loops | Julián Puyo |
 | **07** | mié 09/09 | Automatización BIM y tecnologías de integración | Hugo Gómez |
