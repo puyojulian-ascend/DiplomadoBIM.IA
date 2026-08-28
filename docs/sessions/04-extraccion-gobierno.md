@@ -299,6 +299,35 @@ Anexos contractuales, precios unitarios, datos personales, correspondencia con e
 
 ---
 
+^^ Sesión 04 / Extra
+## El mismo párrafo, en tres colores
+
+> El Anexo Técnico 7 **se clasifica solo**: el numeral 4.7.1 lo declara reservado y el 4.7.2 prohíbe incorporarlo a herramientas de terceros. Así se lo baja de color sin perderlo.
+
+:::split-3
+:::card [Rojo · como está] !No sale
+*"Contrato **IDU-CO-2025-0418**. Objeto: Corredor **Av. Guayacanes — Tramo 2**. El hito H-2 se radicará a más tardar el **30 de septiembre de 2025**, con el desplazamiento respecto del origen registrado."*
+:::
+:::card [Ámbar · sin identificadores] Entorno gobernado
+*"Corredor vial urbano de 2,4 km. El hito H-2 se radicará en la **semana 20**. Drenaje en **LOD 350** con ficha al 100%."*
+
+Sirve para trabajar dentro de casa: conserva las cantidades reales.
+:::
+:::card [Verde · requisito genérico] Cualquier herramienta
+*"Obra vial urbana. Entrega del modelo federado en la semana 20, en **IFC 4.3**, referida al datum nacional, con interferencia dura a **0 mm**."*
+
+Podría ser de cualquier pliego del país.
+:::
+:::
+
+:::warn
+**Ojo con borrar de más.** El datum nacional se queda: es público y obligatorio para obra pública. Lo que se va es el **desplazamiento local** del numeral 4.2.3. Regla: el estándar público se queda, el valor propio del proyecto se va.
+
+Y la prueba no es haber tachado campos, sino contestar: **¿alguien podría reconstruir de qué proyecto se trata?**
+:::
+
+---
+
 ^^ Sesión 04 / Práctica
 ## Herramienta pública vs. entorno corporativo
 

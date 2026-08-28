@@ -26,7 +26,7 @@ Hay **tres** láminas `Extra` y la regla es dictar **como máximo una**. Con est
 elegida es la del entorno común de datos; las dos de estructura de datos se saltan, porque son
 territorio de Hugo el miércoles.
 
-Minutado con esa decisión tomada: **110 min de contenido + 10 de holgura.**
+Minutado con esa decisión tomada: **111 min de contenido + 9 de holgura.**
 
 | Min | Lámina | Tiempo |
 |---|---|---|
@@ -40,12 +40,12 @@ Minutado con esa decisión tomada: **110 min de contenido + 10 de holgura.**
 | 0:37 | **El giro** — La matriz perfecta sobre el documento vencido | **12** |
 | 0:49 | Validación — Extraer no es confiar | 6 |
 | 0:55 | Gobierno — Shadow IT y Shadow AI | 8 |
-| 1:03 | **El objeto** — El Semáforo del Dato | **12** |
-| 1:15 | Práctica — Pública vs. entorno corporativo | 6 |
-| 1:21 | **Taller** | **19** |
-| 1:40 | **Resolución** — Las tres cosas, resueltas | 7 |
-| 1:47 | **La frase** + Próximo capítulo | 3 |
-| 1:50 | *Holgura / parqueadero de preguntas* | *10* |
+| 1:03 | **El objeto** — El Semáforo **+ el mismo párrafo en tres colores** | **13** |
+| 1:16 | Práctica — Pública vs. entorno corporativo | 6 |
+| 1:22 | **Taller** | **19** |
+| 1:41 | **Resolución** — Las tres cosas, resueltas | 7 |
+| 1:48 | **La frase** + Próximo capítulo | 3 |
+| 1:51 | *Holgura / parqueadero de preguntas* | *9* |
 
 ### De dónde sale ese minutado
 
@@ -58,6 +58,7 @@ Base: 108 min de contenido y 12 de holgura, con las dos `Extra` de estructura di
 | Se dicta la `Extra` de dónde entra la IA | +5 |
 | +4 al giro · +4 al taller · +3 al Semáforo | +11 |
 | **El conteo sobre el CSV sucio** (ver Demo 1) | **+2** |
+| **La lámina del párrafo en tres colores** | **+1** |
 
 **La compresión de *Pérdida de contexto* no es un recorte, es un cambio de función.** La sesión 03
 dedica tres láminas a la pérdida de contexto al exportar (*"¿Qué significa exportar BIM?"*, *"En
@@ -67,11 +68,12 @@ el viernes le resta autoridad a los dos. Se convierte en puente de tres minutos:
 > *"El miércoles vieron que cada intercambio pierde algo. Hoy vamos a ver qué le hace eso a una
 > IA — y este CSV es un export de modelo, de los que ustedes producen todas las semanas."*
 
-### Sobre las tres láminas `Extra`
+### Sobre las cuatro láminas `Extra`
 
-**Regla de densidad: se dicta como máximo una.** El deck tiene 17 láminas de contenido y el
-hilo narrativo fija el máximo en 16 sin contar portada. La cuenta cierra solo si las otras dos
-`Extra` se saltan. No es una sugerencia: es lo que mantiene la sesión en dos horas.
+**Regla de densidad: se dictan como máximo dos.** El deck tiene 18 láminas de contenido y el
+hilo narrativo fija el máximo en 16 sin contar portada. La cuenta cierra solo si las dos de
+estructura de datos se saltan. **Queda exactamente en el límite**, así que no hay margen para
+agregar nada más sin quitar otra cosa.
 
 La sesión 03 de Hugo se llama *"Flujos inteligentes y BIM como modelos de datos"*, y su temario
 propuesto incluye los tres grados de estructura, IFC y nomenclaturas. **Ese territorio es de él:
@@ -81,7 +83,8 @@ la 04 no lo re-enseña, lo hereda.**
 |---|---|
 | *Un modelo BIM es un modelo de datos* | **Saltar** si Hugo trató el modelo como estructura de datos |
 | *Estructurado / semi / no estructurado* | **Saltar** si Hugo trató los tres grados de estructura y el IFC |
-| *Dónde vive todo esto* (entorno común de datos) | **Dictar.** Es el ancla que este auditorio está pidiendo, y el punto donde se corta a ACC en vivo |
+| *Dónde entra la IA en lo que ya tienen* | **Dictar.** Es el ancla que este auditorio está pidiendo, y el punto donde se corta a la plataforma en vivo |
+| *El mismo párrafo, en tres colores* | **Dictar.** Es el ejemplo trabajado de la anonimización; sin él el Semáforo queda en prohibición sin método |
 
 **Acuerdo con Hugo:** él desarrolla el concepto el miércoles y deja su fila en la tabla de
 traspaso del [hilo narrativo](../docs/HILO-NARRATIVO.md). El viernes se abre reconociéndolo en
@@ -399,8 +402,61 @@ Semáforo, después de la ronda de colores, con los 3 minutos extra que ese bloq
 | **Con IA, pero dentro del entorno gobernado** | Si la entidad tiene instancia contratada. Ya no es *sacar* el documento: es procesarlo en casa |
 | **Escribir uno sintético desde cero** | Lo más rápido para prototipar. Mismo problema, datos inventados |
 
-5. Cerrar señalando la pantalla: *"el expediente que estamos usando hoy no es un contrato del IDU
+5. **Pasar a la lámina del párrafo en tres colores** y recorrerla — el ejemplo trabajado, abajo.
+6. Cerrar señalando la pantalla: *"el expediente que estamos usando hoy no es un contrato del IDU
    anonimizado. Está escrito desde cero. Por eso es verde, y por eso puedo proyectarlo."*
+
+### El ejemplo trabajado — la lámina en tres colores
+
+**Por qué el anexo es rojo: lo dice él.** Antes de bajarlo de color, leer sus propios numerales.
+Esto ahorra toda discusión sobre la clasificación.
+
+| Numeral | Qué dice |
+|---|---|
+| **4.7.1** | La información técnica, contractual y económica es de carácter **reservado** |
+| **4.7.2** | Prohíbe incorporar información del proyecto en plataformas o herramientas de terceros |
+| **4.7.3** | Y lo extiende a **cualquier servicio de procesamiento automatizado o asistido**, con independencia de su denominación comercial |
+
+**Qué se va y qué se queda.** La distinción no es "dato técnico contra dato administrativo", sino
+**estándar público contra valor propio del proyecto**:
+
+| Se va | Se queda |
+|---|---|
+| Número de contrato · nombre del corredor | Formato de intercambio (IFC 4.3) |
+| Fechas absolutas → se vuelven hitos relativos | Niveles de información (LOD 350 / 300) |
+| **Desplazamiento respecto del origen** (4.2.3) | **Datum nacional MAGNA-SIRGAS** (4.2.1) |
+| Cifras económicas · nombres de personas y empresas | Tolerancias de interferencia (0 mm / 25 mm) |
+
+> **Cuidado con borrar de más.** MAGNA-SIRGAS / CTM12 es el datum geodésico **nacional**, publicado
+> por el IGAC y obligatorio para obra pública. Saber que un proyecto colombiano lo usa no identifica
+> nada — es como saber que usa el sistema métrico. Lo identificable es el **offset local**, no el
+> datum.
+>
+> Vale la pena decirlo en voz alta, porque el error contrario es frecuente: se sobre-redacta hasta
+> dejar un documento que ya no responde nada, se concluye que anonimizar no sirve, y se vuelve a
+> pegar el original.
+
+**La prueba final**, que es mejor que cualquier lista de campos:
+
+> *"¿Podría alguien reconstruir de qué proyecto se trata?"*
+
+Un checklist da falsa confianza. Esa pregunta, no.
+
+### Lo que la versión verde deja de poder responder
+
+Este es el matiz que cierra el círculo con el giro, y conviene decirlo:
+
+Al convertir *"30 de septiembre de 2025"* en *"semana 20"*, el documento **deja de poder detectar
+que el Acta 16 movió esa fecha al 24 de octubre**. La versión verde sirve para redactar un correo
+sobre tolerancias o para ensayar un método de extracción. **No sirve para preguntar si un plazo
+sigue vigente.**
+
+> *"Anonimizar no es solo quitar: es cambiar qué preguntas puede responder el documento. Por eso se
+> prototipa con la versión verde y se opera con la real, adentro."*
+
+> **Nota de honestidad.** El "texto original" de la lámina es un **compuesto**: une el encabezado del
+> contrato con el numeral 4.5.2. No es un párrafo literal del anexo. Si alguien lo abre y no lo
+> encuentra tal cual, decirlo sin problema — está armado para que quepa en una tarjeta.
 
 **Por qué vale la pena el minuto extra.** Anonimizar con una IA pública es circular: se le está
 pidiendo protección a la herramienta de la que hay que proteger el documento. Es el error más
