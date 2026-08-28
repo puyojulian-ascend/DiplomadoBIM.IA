@@ -1,7 +1,7 @@
 ---
 sesion: 8
 titulo: Diseño **generativo** e integración de modelos BIM con IA
-docente: Julián Puyo
+docente: Stiven Valencia
 fecha: 11/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Dejar que el computador proponga y evalúe muchas alternativas — y entender qué tan real es "generar" un modelo BIM automáticamente.

@@ -1,7 +1,7 @@
 ---
 sesion: 6
 titulo: Consulta conversacional, no-code, **MCP** y loops
-docente: Julián Puyo
+docente: Stiven Valencia
 fecha: 04/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Preguntarle al proyecto en lenguaje natural y conectar herramientas sin escribir aplicaciones completas — para que la respuesta salga de la fuente viva y no de una copia vieja.

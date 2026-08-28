@@ -1,7 +1,7 @@
 ---
 sesion: 9
 titulo: Machine learning para **costos, planificación y decisiones**
-docente: Julián Puyo
+docente: Stiven Valencia
 fecha: 16/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Usar los datos históricos de los proyectos para anticipar costos, plazos y riesgos — y saber cuándo esas predicciones son confiables.

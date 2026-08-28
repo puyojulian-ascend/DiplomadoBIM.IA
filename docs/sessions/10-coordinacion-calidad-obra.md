@@ -1,7 +1,7 @@
 ---
 sesion: 10
 titulo: IA para **coordinación, calidad** y captura en obra
-docente: Daniel Saavedra
+docente: Stiven Valencia
 fecha: 18/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Sesión pendiente de contenido — esqueleto editable con el temario propuesto.

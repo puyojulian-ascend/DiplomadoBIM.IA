@@ -137,12 +137,12 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 02 · Julián | El valor no está en el modelo, está en cómo se dirige y cómo se verifica. | El agente ya sabe qué hacer, pero ¿de dónde saca los datos del proyecto? |
 | 03 · Hugo | *(por completar)* | *(por completar)* |
 | 04 · Stiven | No toda la información puede salir de la entidad. Hay un semáforo, y ante la duda es ámbar. | Los datos ya están ordenados y clasificados, pero siguen en carpetas. ¿Cómo llega la IA a la fuente viva? |
-| 05 · Daniel | *(por completar)* | *(por completar)* |
-| 06 · Julián | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
-| 07 · Hugo | *(por completar)* | *(por completar)* |
-| 08 · Julián | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
-| 09 · Julián | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
-| 10 · Daniel | *(por completar)* | *(por completar)* |
+| 05 · Hugo | *(por completar)* | *(por completar)* |
+| 06 · Stiven | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
+| 07 · Stiven | *(por completar)* | *(por completar)* |
+| 08 · Stiven | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
+| 09 · Stiven | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
+| 10 · Stiven | *(por completar)* | *(por completar)* |
 | 11 · Daniel | *(por completar)* | *(por completar)* |
 | 12 · Los tres | *(cierre)* | — |
 
@@ -154,18 +154,20 @@ lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos
 | Tema | Lo desarrolla | Lo hereda |
 |---|---|---|
 | El modelo BIM como estructura de datos · los tres grados de estructura · IFC · nomenclaturas | **03 · Hugo** | 04 · Stiven, que abre reconociéndolo y arranca donde eso termina: el anexo, las actas y los correos **no** están estructurados |
-| El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 y 11 · Daniel, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
-| Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Daniel, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
+| El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 · Stiven y 11 · Daniel, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
+| Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Stiven, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
 
 En la 04 esas dos láminas quedan marcadas `Extra`: se dictan solo si la 03 no alcanzó a
 cubrirlas. La sesión funciona en los dos escenarios.
 
-**Sobre los dos cruces con Daniel:** la distinción es entre *usar* y *enseñar*. La 04 y la 06
-se paran sobre el CDE y sobre un informe de interferencias porque son el material que hay que
-gobernar y consultar; no explican cómo se coordina un modelo ni cómo se configura un entorno
-común de datos. Ese desarrollo es de la 10 y la 11. Al abrirlas, Daniel hereda en voz alta:
-*"ya vieron dónde viven los documentos y ya vieron un informe de interferencias; hoy vamos a
-ver cómo se produce."*
+**Sobre los dos cruces:** la distinción es entre *usar* y *enseñar*. La 04 y la 06 se paran sobre
+el CDE y sobre un informe de interferencias porque son el material que hay que gobernar y
+consultar; no explican cómo se coordina un modelo ni cómo se configura un entorno común de datos.
+Ese desarrollo es de la 10 y la 11. Al abrirlas se hereda en voz alta: *"ya vieron dónde viven los
+documentos y ya vieron un informe de interferencias; hoy vamos a ver cómo se produce."*
+
+Con la 10 también a cargo de Stiven, el segundo cruce queda dentro del mismo docente; el que sigue
+siendo entre dos manos es el de la 11, con Daniel.
 
 Si aparecen más cruces, se anotan acá antes de que los decks se escriban.
 

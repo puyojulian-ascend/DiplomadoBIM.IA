@@ -542,7 +542,7 @@ Se anota en el parqueadero y se contesta en los 12 minutos finales, que existen 
 
 ---
 
-## Traspaso a la sesión 05 (Daniel, 02/09)
+## Traspaso a la sesión 05 (Hugo, 02/09)
 
 - **Quedó claro:** no toda la información puede salir de la entidad. Hay un semáforo, y ante
   la duda es ámbar.

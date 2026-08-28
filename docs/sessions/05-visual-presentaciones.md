@@ -1,7 +1,7 @@
 ---
 sesion: 5
 titulo: IA para **comunicación visual** y presentaciones
-docente: Daniel Saavedra
+docente: Hugo Gómez
 fecha: 02/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Sesión pendiente de contenido — esqueleto editable con el temario propuesto.

@@ -1,7 +1,7 @@
 ---
 sesion: 12
 titulo: Taller final y **cierre académico**
-docente: Daniel · Hugo · Julián
+docente: Daniel · Hugo · Stiven
 fecha: 25/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Sesión pendiente de contenido — esqueleto editable con la estructura del proyecto integrador.
