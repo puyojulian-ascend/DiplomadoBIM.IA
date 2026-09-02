@@ -196,6 +196,26 @@
     mountChrome(meta);
     initNav();
     renderMermaid();
+    initLightbox();
+  }
+
+  /* ---------------- Lightbox: ampliar cualquier imagen al clic ---------------- */
+  function initLightbox() {
+    var box = document.createElement('div');
+    box.className = 'lightbox';
+    var img = document.createElement('img');
+    box.appendChild(img);
+    document.body.appendChild(box);
+
+    function open(src, alt) { img.src = src; img.alt = alt || ''; box.classList.add('open'); }
+    function close() { box.classList.remove('open'); img.src = ''; }
+
+    deck.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t.tagName === 'IMG' && t.closest('.wrap')) { e.stopPropagation(); open(t.src, t.alt); }
+    });
+    box.addEventListener('click', close);
+    window.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
   }
 
   function coverSlide(meta) {
