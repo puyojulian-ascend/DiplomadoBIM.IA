@@ -109,7 +109,10 @@ h2.title { font-family: var(--font-display); font-weight: 700; line-height: 1.04
 .wrap h3 { font-family: var(--font-display); font-weight: 600; font-size: clamp(17px, 1.8vw, 22px); margin-top: 18px; letter-spacing: -.01em }
 .wrap h4 { font-family: var(--font-display); font-weight: 500; font-size: clamp(15px, 1.5vw, 18px); margin-top: 14px }
 .wrap a { color: var(--accent-3); text-decoration: none; border-bottom: 1px solid rgba(98, 191, 208, .35) }
-.wrap img { max-width: 100%; border-radius: 12px; margin-top: 14px; border: 1px solid var(--glass-line) }
+.wrap img { max-width: 100%; border-radius: 12px; margin-top: 14px; border: 1px solid var(--glass-line); cursor: zoom-in }
+.lightbox { position: fixed; inset: 0; z-index: 500; display: flex; align-items: center; justify-content: center; padding: 5vh 5vw; background: rgba(6, 12, 14, .92); opacity: 0; pointer-events: none; transition: opacity .2s ease; cursor: zoom-out }
+.lightbox.open { opacity: 1; pointer-events: auto }
+.lightbox img { max-width: 100%; max-height: 100%; border-radius: 10px; box-shadow: 0 30px 80px rgba(0, 0, 0, .55) }
 /* Los gifs ilustrativos van más chicos que una imagen normal.
    Estos dos son los únicos verticales del sitio (480x480 y 245x284), así que llevan tope de
    ALTO además del de ancho: con solo max-width, en una pantalla baja o en móvil se comen la
@@ -118,6 +121,9 @@ h2.title { font-family: var(--font-display); font-weight: 700; line-height: 1.04
 .wrap img[src$="prediccion-no-busqueda.gif"] { max-width: 280px; max-height: 24vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
 .wrap img[src$="confiado-equivocado.gif"]    { max-width: 200px; max-height: 20vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
 .wrap img[src$="vaso-botella-agua.jpg"]       { max-width: 50%; max-height: 42vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; }
+.wrap img[src$="tuberia-zanja-obra.jpg"]      { max-width: 100%; max-height: 34vh; width: 100%; height: auto; display: block; object-fit: cover; }
+.wrap img[src$="imagen-ia-viral-pope.jpg"]    { max-width: 26%; max-height: 18vh; width: auto; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 10px; }
+.wrap img[src$="nerf-teaser.gif"]             { max-width: 560px; width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; }
 .wrap hr { border: none; border-top: 1px solid var(--glass-line); margin: 20px 0 }
 blockquote { border-left: 3px solid var(--accent-1); padding-left: 16px; margin-top: 14px; color: var(--text-dim); font-style: italic }
 
