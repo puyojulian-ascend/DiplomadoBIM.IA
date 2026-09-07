@@ -19,6 +19,10 @@ Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva
 :::
 :::
 
+:::note
+**Y el miércoles, con Hugo:** convertir esa información en algo comprensible — imágenes, diagramas y presentaciones, sin confundir una representación útil con una evidencia técnica. Esa clase cerró con la misma pregunta de hoy: cada vez hay que descargar, copiar y volver a subir, y **la respuesta envejece el día que cambia la fuente**.
+:::
+
 ---
 
 ^^ Sesión 06 / El caso
@@ -201,11 +205,17 @@ Con autonomía viene responsabilidad. Los loops que solo **consultan** son segur
 
 :::split
 :::card [Antes] !Con código
-Escribir un script o un complemento para: seleccionar los sumideros, leer un parámetro, escribir otro y exportar un reporte. Cada variación, un desarrollo nuevo.
+Escribir un script o un complemento para: leer el inventario, leer el informe de interferencias, normalizar mayúsculas y fechas, cruzar por identificador y exportar un reporte. Cada variación, un desarrollo nuevo.
 :::
 :::card [Ahora] Con un agente y sus herramientas
-*"Identifica los sumideros sin ficha de mantenimiento, contrasta contra el Acta 14 y prepara el listado del compromiso 16-1."* El agente lo hace con sus herramientas, **pide confirmación** y deja historial.
+*"¿Qué elementos de drenaje siguen sin ficha de mantenimiento y además arrastran una interferencia abierta?"*
+
+El agente elige sus herramientas, lee las dos fuentes, normaliza y cruza. **Pide confirmación** y deja historial.
 :::
+:::
+
+:::ok
+Aparece **SUM-011, en K0+294**. Es el mismo elemento del compromiso **16-2** que el Consorcio corrigió el lunes — pero sigue **sin ficha de mantenimiento** (compromiso **16-1**, abierto) y arrastra una **interferencia dura de severidad alta** contra el acueducto. Nadie lo había visto porque los tres datos **nunca estuvieron en la misma tabla**.
 :::
 
 :::note
@@ -228,6 +238,10 @@ Y el agente le responde a cualquiera que le escriba.
 :::card [La regla] Permisos heredados
 Un agente conectado **no tiene permisos propios: hereda los de quien lo conectó**. Si se conecta con una cuenta de coordinación, es una cuenta de coordinación la que queda expuesta a quien converse con él.
 :::
+:::
+
+:::note
+**Y esto ya estaba escrito.** Acta N.º 15, numeral 2.4: la Interventoría pidió *documentar el criterio de asignación de permisos para las cuentas de integración y servicios automatizados, por no corresponder a personas naturales.* Es el compromiso **15-1**, con plazo al 16 de julio. El Acta 16 lo registra como cumplimiento parcial. **Nadie lo cerró — y hoy hay un agente conectado.**
 :::
 
 :::warn
@@ -270,6 +284,7 @@ Elija una tarea real de su proceso y dibuje su flujo:
 | Alguien tiene que acordarse de exportar | Un **loop por evento**: cuando se radica algo, se verifica qué filas cambian |
 | Cada integración era un desarrollo | **Un enchufe** expuesto una vez, que el agente usa cuando lo necesita |
 | El agente veía todo lo de Marcela | Entra con una **cuenta de servicio de solo lectura**, con alcance limitado al proyecto |
+| El compromiso **15-1** llevaba dos meses vencido | El criterio de permisos para cuentas automatizadas queda escrito **antes** de conectar, no después |
 
 :::ok
 Y la matriz del jueves ya se habría corregido sola el lunes a las 7:03 — avisando que la fila del código de clasificación cambió, y **por qué**.
