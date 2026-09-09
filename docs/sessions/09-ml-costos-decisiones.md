@@ -2,7 +2,7 @@
 sesion: 9
 titulo: Machine learning para **costos, planificación y decisiones**
 docente: Stiven Valencia
-fecha: 16/09/2026
+fecha: 18/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Usar los datos históricos de los proyectos para anticipar costos, plazos y riesgos — y saber cuándo esas predicciones son confiables.
 ---
@@ -355,4 +355,4 @@ Las cinco veces, la máquina hizo exactamente lo que se le pidió: el número de
 **El trabajo nunca estuvo en la máquina. Estuvo en el planteamiento — y ese sigue siendo suyo.**
 :::
 
-> **Próximas sesiones:** coordinación y calidad en obra (18/09), CDE y gemelos digitales (23/09), y el taller final con los tres docentes el **25/09**.
+> **Próximas sesiones:** coordinación y calidad en obra (23/09), CDE y gemelos digitales (25/09), y el taller final con los tres docentes el **30/09**.

@@ -1,6 +1,6 @@
 # Guion — Sesión 06 · Consulta conversacional, no-code, MCP y loops
 
-**Viernes 04/09/2026 · 2 horas · Stiven Valencia**
+**Miércoles 09/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta.
 
 ---
@@ -604,20 +604,20 @@ Salen todos los años. Conviene tenerlas resueltas en una frase para no perder e
 ## Traspaso
 
 La sesión 06 cierra la tercera de las cinco dependencias. La siguiente clase del arco es la
-**08**; en el medio va la **07**, del mismo docente, el miércoles 09/09.
+**08**; en el medio va la **07**, del mismo docente, el viernes 11/09.
 
-### A la sesión 07 — Automatización BIM y tecnologías de integración (Stiven, 09/09)
+### A la sesión 07 — Automatización BIM y tecnologías de integración (Stiven, 11/09)
 
 Es continuidad directa y del mismo docente, así que no hace falta un "en el capítulo anterior"
 formal. Lo que hay que recoger:
 
-- La lámina `Extra` de APIs, si el viernes se saltó por tiempo.
+- La lámina `Extra` de APIs, si el miércoles se saltó por tiempo.
 - La distinción **no-code / API / MCP** ya quedó instalada: la 07 puede pararse sobre ella y
   entrar directo a las tecnologías de integración.
 - El compromiso **15-1** quedó abierto en la narración. Si la 07 lo cierra —documentar el
   criterio de permisos para cuentas automatizadas— el arco gana continuidad.
 
-### A la sesión 08 — Diseño generativo (Stiven, 11/09)
+### A la sesión 08 — Diseño generativo (Stiven, 16/09)
 
 - **Quedó claro:** conectar la IA a la fuente es un problema de enchufe estándar, no de
   programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó.

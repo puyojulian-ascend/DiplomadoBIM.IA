@@ -2,7 +2,7 @@
 sesion: 6
 titulo: Consulta conversacional, no-code, **MCP** y loops
 docente: Stiven Valencia
-fecha: 04/09/2026
+fecha: 09/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Preguntarle al proyecto en lenguaje natural y conectar herramientas sin escribir aplicaciones completas — para que la respuesta salga de la fuente viva y no de una copia vieja.
 ---
@@ -20,7 +20,7 @@ Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva
 :::
 
 :::note
-**Y el miércoles, con Hugo:** convertir esa información en algo comprensible — imágenes, diagramas y presentaciones, sin confundir una representación útil con una evidencia técnica. Esa clase cerró con la misma pregunta de hoy: cada vez hay que descargar, copiar y volver a subir, y **la respuesta envejece el día que cambia la fuente**.
+**Y el miércoles pasado, con Hugo:** convertir esa información en algo comprensible — imágenes, diagramas y presentaciones, sin confundir una representación útil con una evidencia técnica. Esa clase cerró con la misma pregunta de hoy: cada vez hay que descargar, copiar y volver a subir, y **la respuesta envejece el día que cambia la fuente**.
 :::
 
 ---
@@ -347,4 +347,4 @@ Interventoría observó que **seis sumideros chocan** con el trazado de la ciclo
 :::
 :::
 
-> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Viernes 11/09.
+> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Miércoles 16/09.

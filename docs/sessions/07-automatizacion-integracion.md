@@ -2,7 +2,7 @@
 sesion: 7
 titulo: Automatización BIM y **tecnologías de integración**
 docente: Stiven Valencia
-fecha: 09/09/2026
+fecha: 11/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Sesión pendiente de contenido — esqueleto editable con el temario propuesto.
 ---

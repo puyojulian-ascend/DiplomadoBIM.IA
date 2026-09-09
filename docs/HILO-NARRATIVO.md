@@ -26,9 +26,9 @@ frase **de qué depende la respuesta hoy**.
 |---|---|---|---|
 | **02** | 21/08 | cómo se formula la instrucción — y de si el sistema solo responde o además actúa | **La Ficha del Agente** |
 | **04** | 28/08 | de dónde salen los datos — y de quién los cuida | **El Semáforo del Dato** |
-| **06** | 04/09 | a qué esté conectada — a la fuente viva, no a una copia | **El Enchufe** |
-| **08** | 11/09 | qué pueda proponer — no una respuesta, un abanico | **El Abanico** |
-| **09** | 16/09 | qué pueda anticipar — y con cuánta incertidumbre | **La Banda** |
+| **06** | 09/09 | a qué esté conectada — a la fuente viva, no a una copia | **El Enchufe** |
+| **08** | 16/09 | qué pueda proponer — no una respuesta, un abanico | **El Abanico** |
+| **09** | 18/09 | qué pueda anticipar — y con cuánta incertidumbre | **La Banda** |
 
 En el cierre de la sesión 09 se muestran los cinco objetos juntos. Ese es el final de
 temporada: la respuesta completa a la pregunta que abrió la 01.
