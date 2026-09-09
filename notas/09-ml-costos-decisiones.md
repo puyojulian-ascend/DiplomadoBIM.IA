@@ -1,6 +1,6 @@
 # Guion — Sesión 09 · Machine learning para costos, planificación y decisiones
 
-**Miércoles 16/09/2026 · 2 horas · Stiven Valencia**
+**Viernes 18/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta. **Última sesión en solitario del arco.**
 
 ---
@@ -212,7 +212,7 @@ y ahí es cuando la gente quiere la colección.
 ## Cierre del arco
 
 Esta es la última sesión de Julián en solitario. Las siguientes son la 10 y la 11 de Daniel, y
-el taller final del **25/09** con los tres docentes.
+el taller final del **30/09** con los tres docentes.
 
 **Para el taller final:** los productos acumulados de los cinco talleres —ficha del agente,
 semáforo aplicado, flujo con su cuenta de acceso, problema de diseño planteado y ficha de un

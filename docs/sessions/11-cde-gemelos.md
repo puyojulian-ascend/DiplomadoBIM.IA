@@ -2,7 +2,7 @@
 sesion: 11
 titulo: BIM, CDE y **gemelos digitales**
 docente: Daniel Saavedra
-fecha: 23/09/2026
+fecha: 25/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Sesión pendiente de contenido — esqueleto editable con el temario propuesto.
 ---

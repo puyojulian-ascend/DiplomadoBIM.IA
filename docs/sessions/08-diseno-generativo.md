@@ -2,7 +2,7 @@
 sesion: 8
 titulo: Diseño **generativo** e integración de modelos BIM con IA
 docente: Stiven Valencia
-fecha: 11/09/2026
+fecha: 16/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Dejar que el computador proponga y evalúe muchas alternativas — y entender qué tan real es "generar" un modelo BIM automáticamente.
 ---
@@ -346,4 +346,4 @@ El IDU ya ejecutó **40 corredores parecidos**. Todos tenían un presupuesto y u
 :::
 :::
 
-> **Sesión 09 — Machine learning para costos, planificación y decisiones.** Miércoles 16/09.
+> **Sesión 09 — Machine learning para costos, planificación y decisiones.** Viernes 18/09.

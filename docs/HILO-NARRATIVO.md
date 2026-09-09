@@ -26,9 +26,9 @@ frase **de qué depende la respuesta hoy**.
 |---|---|---|---|
 | **02** | 21/08 | cómo se formula la instrucción — y de si el sistema solo responde o además actúa | **La Ficha del Agente** |
 | **04** | 28/08 | de dónde salen los datos — y de quién los cuida | **El Semáforo del Dato** |
-| **06** | 04/09 | a qué esté conectada — a la fuente viva, no a una copia | **El Enchufe** |
-| **08** | 11/09 | qué pueda proponer — no una respuesta, un abanico | **El Abanico** |
-| **09** | 16/09 | qué pueda anticipar — y con cuánta incertidumbre | **La Banda** |
+| **06** | 09/09 | a qué esté conectada — a la fuente viva, no a una copia | **El Enchufe** |
+| **08** | 16/09 | qué pueda proponer — no una respuesta, un abanico | **El Abanico** |
+| **09** | 18/09 | qué pueda anticipar — y con cuánta incertidumbre | **La Banda** |
 
 En el cierre de la sesión 09 se muestran los cinco objetos juntos. Ese es el final de
 temporada: la respuesta completa a la pregunta que abrió la 01.
@@ -137,7 +137,7 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 02 · Julián | El valor no está en el modelo, está en cómo se dirige y cómo se verifica. | El agente ya sabe qué hacer, pero ¿de dónde saca los datos del proyecto? |
 | 03 · Hugo | *(por completar)* | *(por completar)* |
 | 04 · Stiven | No toda la información puede salir de la entidad. Hay un semáforo, y ante la duda es ámbar. | Los datos ya están ordenados y clasificados, pero siguen en carpetas. ¿Cómo llega la IA a la fuente viva? |
-| 05 · Hugo | *(por completar)* | *(por completar)* |
+| 05 · Hugo | Una representación útil no es una evidencia técnica: la IA multimodal comunica, pero no certifica. | Cada vez hay que descargar, copiar y volver a subir. ¿Y si la IA pudiera consultar directamente la fuente viva? |
 | 06 · Stiven | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
 | 07 · Stiven | *(por completar)* | *(por completar)* |
 | 08 · Stiven | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |

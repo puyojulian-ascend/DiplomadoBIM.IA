@@ -2,7 +2,7 @@
 sesion: 6
 titulo: Consulta conversacional, no-code, **MCP** y loops
 docente: Stiven Valencia
-fecha: 04/09/2026
+fecha: 09/09/2026
 eyebrow: Curso BIM + IA
 subtitulo: Preguntarle al proyecto en lenguaje natural y conectar herramientas sin escribir aplicaciones completas — para que la respuesta salga de la fuente viva y no de una copia vieja.
 ---
@@ -17,6 +17,10 @@ Verde sale, ámbar solo en casa, rojo no sale. Y la matriz de requisitos ya tien
 :::card [Quedó abierto] !La pregunta de hoy
 Todo eso sigue viviendo en carpetas. **¿Cómo se conecta la IA a la fuente viva?**
 :::
+:::
+
+:::note
+**Y el miércoles pasado, con Hugo:** convertir esa información en algo comprensible — imágenes, diagramas y presentaciones, sin confundir una representación útil con una evidencia técnica. Esa clase cerró con la misma pregunta de hoy: cada vez hay que descargar, copiar y volver a subir, y **la respuesta envejece el día que cambia la fuente**.
 :::
 
 ---
@@ -96,7 +100,9 @@ Esto ataca de raíz el problema de la sesión 02: la respuesta se ancla en **doc
 :::
 
 :::warn
-Límite clave: RAG responde bien sobre lo que está en sus fuentes. Conviene distinguir siempre el **conocimiento general** del modelo del **conocimiento del proyecto** que vive en los documentos.
+**Límite clave:** RAG responde bien **solo** sobre lo que está en sus fuentes. Conviene distinguir siempre el **conocimiento general** del modelo —lo que aprendió en el entrenamiento— del **conocimiento del proyecto**, que vive en el CDE.
+
+*El ingeniero y el manual:* la IA es un ingeniero brillante; el RAG es el manual de esta obra. Sin el manual, responde con la obra anterior — y lo hace con seguridad. Es la **alucinación de la sesión 02**, ahora con fuentes: se reduce, no desaparece.
 :::
 
 ---
@@ -149,9 +155,9 @@ Saber que "existe una API" permite **formular el requerimiento** correcto a un e
 - **Herramientas**: las funciones disponibles, cada una con sus permisos.
 :::
 :::card [Ya no es una promesa] Dónde está hoy
-Durante 2026 el protocolo pasó a tener soporte nativo en las plataformas grandes de IA, y existe un ecosistema —todavía joven— de servidores para el mundo BIM y openBIM:
+Durante 2026 el protocolo pasó a tener soporte nativo en las plataformas grandes de IA. Y dejó de ser solo openBIM: **Autodesk publicó servidores oficiales**, incluido el de Revit 2027 — de solo lectura.
 :::chips
-IfcOpenShell, Bonsai, web-ifc / Fragments, servidores propietarios en desarrollo
+Revit 2027 (oficial, lectura), Forma / APS, IfcOpenShell, Bonsai, web-ifc / Fragments
 :::
 :::
 :::
@@ -170,6 +176,27 @@ IfcOpenShell, Bonsai, web-ifc / Fragments, servidores propietarios en desarrollo
 
 :::ok
 No son competidores: son capas. Un flujo no-code puede llamar a un agente, y el agente puede usar herramientas por MCP. La pregunta no es cuál es mejor, sino **quién decide el siguiente paso** en cada caso.
+:::
+
+---
+
+^^ Sesión 06 / Sus herramientas
+## Dónde entra cada pieza en lo que ustedes ya usan
+
+:::split-3
+:::card [Gemini] La consulta
+Se cargan los documentos del expediente y se pregunta. Eso es RAG, y no necesita permiso de nadie: lo que sube, lo sube una persona a mano.
+:::
+:::card [Forma] La fuente viva
+El CDE del proyecto. Se lee por API o por servidor MCP, y esa conexión **se autoriza a nivel de cuenta**: alguien con permisos de administración aprueba la aplicación. No es un botón del usuario.
+:::
+:::card [Revit 2027] El modelo
+Trae un servidor MCP **oficial de Autodesk, de solo lectura**. El agente consulta el modelo abierto; no lo modifica.
+:::
+:::
+
+:::warn
+**Cuidado con los nombres.** Desde marzo de 2026 Autodesk Construction Cloud se llama **Autodesk Forma**: el CDE de este caso es Forma. **Forma Site Design** —el de masas, asoleación y alternativas— es otro producto de la misma marca. No son lo mismo, y no se conectan igual.
 :::
 
 ---
@@ -201,11 +228,17 @@ Con autonomía viene responsabilidad. Los loops que solo **consultan** son segur
 
 :::split
 :::card [Antes] !Con código
-Escribir un script o un complemento para: seleccionar los sumideros, leer un parámetro, escribir otro y exportar un reporte. Cada variación, un desarrollo nuevo.
+Escribir un script o un complemento para: leer el inventario, leer el informe de interferencias, normalizar mayúsculas y fechas, cruzar por identificador y exportar un reporte. Cada variación, un desarrollo nuevo.
 :::
-:::card [Ahora] Con un agente y sus herramientas
-*"Identifica los sumideros sin ficha de mantenimiento, contrasta contra el Acta 14 y prepara el listado del compromiso 16-1."* El agente lo hace con sus herramientas, **pide confirmación** y deja historial.
+:::card [Ahora] Con Gemini y sus herramientas
+*"¿Qué elementos de drenaje siguen sin ficha de mantenimiento y además arrastran una interferencia abierta?"*
+
+El agente elige sus herramientas, lee las dos fuentes, normaliza y cruza. **Pide confirmación** y deja historial.
 :::
+:::
+
+:::ok
+Aparece **SUM-011, en K0+294**. Es el mismo elemento del compromiso **16-2** que el Consorcio corrigió el lunes — pero sigue **sin ficha de mantenimiento** (compromiso **16-1**, abierto) y arrastra una **interferencia dura de severidad alta** contra el acueducto. Nadie lo había visto porque los tres datos **nunca estuvieron en la misma tabla**.
 :::
 
 :::note
@@ -228,6 +261,10 @@ Y el agente le responde a cualquiera que le escriba.
 :::card [La regla] Permisos heredados
 Un agente conectado **no tiene permisos propios: hereda los de quien lo conectó**. Si se conecta con una cuenta de coordinación, es una cuenta de coordinación la que queda expuesta a quien converse con él.
 :::
+:::
+
+:::note
+**Y esto ya estaba escrito.** Acta N.º 15, numeral 2.4: la Interventoría pidió *documentar el criterio de asignación de permisos para las cuentas de integración y servicios automatizados, por no corresponder a personas naturales.* Es el compromiso **15-1**, con plazo al 16 de julio. El Acta 16 lo registra como cumplimiento parcial. **Nadie lo cerró — y hoy hay un agente conectado.**
 :::
 
 :::warn
@@ -270,6 +307,7 @@ Elija una tarea real de su proceso y dibuje su flujo:
 | Alguien tiene que acordarse de exportar | Un **loop por evento**: cuando se radica algo, se verifica qué filas cambian |
 | Cada integración era un desarrollo | **Un enchufe** expuesto una vez, que el agente usa cuando lo necesita |
 | El agente veía todo lo de Marcela | Entra con una **cuenta de servicio de solo lectura**, con alcance limitado al proyecto |
+| El compromiso **15-1** llevaba dos meses vencido | El criterio de permisos para cuentas automatizadas queda escrito **antes** de conectar, no después |
 
 :::ok
 Y la matriz del jueves ya se habría corregido sola el lunes a las 7:03 — avisando que la fila del código de clasificación cambió, y **por qué**.
@@ -309,4 +347,4 @@ Interventoría observó que **seis sumideros chocan** con el trazado de la ciclo
 :::
 :::
 
-> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Viernes 11/09.
+> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Miércoles 16/09.
