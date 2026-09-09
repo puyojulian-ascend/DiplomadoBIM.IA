@@ -100,7 +100,9 @@ Esto ataca de raíz el problema de la sesión 02: la respuesta se ancla en **doc
 :::
 
 :::warn
-Límite clave: RAG responde bien sobre lo que está en sus fuentes. Conviene distinguir siempre el **conocimiento general** del modelo del **conocimiento del proyecto** que vive en los documentos.
+**Límite clave:** RAG responde bien **solo** sobre lo que está en sus fuentes. Conviene distinguir siempre el **conocimiento general** del modelo —lo que aprendió en el entrenamiento— del **conocimiento del proyecto**, que vive en el CDE.
+
+*El ingeniero y el manual:* la IA es un ingeniero brillante; el RAG es el manual de esta obra. Sin el manual, responde con la obra anterior — y lo hace con seguridad. Es la **alucinación de la sesión 02**, ahora con fuentes: se reduce, no desaparece.
 :::
 
 ---
@@ -153,9 +155,9 @@ Saber que "existe una API" permite **formular el requerimiento** correcto a un e
 - **Herramientas**: las funciones disponibles, cada una con sus permisos.
 :::
 :::card [Ya no es una promesa] Dónde está hoy
-Durante 2026 el protocolo pasó a tener soporte nativo en las plataformas grandes de IA, y existe un ecosistema —todavía joven— de servidores para el mundo BIM y openBIM:
+Durante 2026 el protocolo pasó a tener soporte nativo en las plataformas grandes de IA. Y dejó de ser solo openBIM: **Autodesk publicó servidores oficiales**, incluido el de Revit 2027 — de solo lectura.
 :::chips
-IfcOpenShell, Bonsai, web-ifc / Fragments, servidores propietarios en desarrollo
+Revit 2027 (oficial, lectura), Forma / APS, IfcOpenShell, Bonsai, web-ifc / Fragments
 :::
 :::
 :::
@@ -174,6 +176,27 @@ IfcOpenShell, Bonsai, web-ifc / Fragments, servidores propietarios en desarrollo
 
 :::ok
 No son competidores: son capas. Un flujo no-code puede llamar a un agente, y el agente puede usar herramientas por MCP. La pregunta no es cuál es mejor, sino **quién decide el siguiente paso** en cada caso.
+:::
+
+---
+
+^^ Sesión 06 / Sus herramientas
+## Dónde entra cada pieza en lo que ustedes ya usan
+
+:::split-3
+:::card [Gemini] La consulta
+Se cargan los documentos del expediente y se pregunta. Eso es RAG, y no necesita permiso de nadie: lo que sube, lo sube una persona a mano.
+:::
+:::card [Forma] La fuente viva
+El CDE del proyecto. Se lee por API o por servidor MCP, y esa conexión **se autoriza a nivel de cuenta**: alguien con permisos de administración aprueba la aplicación. No es un botón del usuario.
+:::
+:::card [Revit 2027] El modelo
+Trae un servidor MCP **oficial de Autodesk, de solo lectura**. El agente consulta el modelo abierto; no lo modifica.
+:::
+:::
+
+:::warn
+**Cuidado con los nombres.** Desde marzo de 2026 Autodesk Construction Cloud se llama **Autodesk Forma**: el CDE de este caso es Forma. **Forma Site Design** —el de masas, asoleación y alternativas— es otro producto de la misma marca. No son lo mismo, y no se conectan igual.
 :::
 
 ---
@@ -207,7 +230,7 @@ Con autonomía viene responsabilidad. Los loops que solo **consultan** son segur
 :::card [Antes] !Con código
 Escribir un script o un complemento para: leer el inventario, leer el informe de interferencias, normalizar mayúsculas y fechas, cruzar por identificador y exportar un reporte. Cada variación, un desarrollo nuevo.
 :::
-:::card [Ahora] Con un agente y sus herramientas
+:::card [Ahora] Con Gemini y sus herramientas
 *"¿Qué elementos de drenaje siguen sin ficha de mantenimiento y además arrastran una interferencia abierta?"*
 
 El agente elige sus herramientas, lee las dos fuentes, normaliza y cruza. **Pide confirmación** y deja historial.
