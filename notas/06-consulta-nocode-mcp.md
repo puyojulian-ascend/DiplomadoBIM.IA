@@ -23,8 +23,10 @@ agente entró con el usuario de Marcela.
 
 ## Minutado
 
-Contenido: ~101 min sin la lámina `Extra`, ~105 con ella. Holgura: 15–19 min.
-Cuatro demostraciones en vivo, todas dentro de láminas existentes: ninguna agrega tiempo propio.
+Contenido: ~111 min, con la lámina nueva *Sus herramientas* y sin la `Extra`. Holgura: 9 min.
+Seis demostraciones en vivo. Cuatro van dentro de láminas que ya existían y no agregan tiempo
+propio; las dos de herramienta —**G · el flujo no-code** y **E · Revit 2027**— sí lo agregan, y se
+pagan saltando la lámina `Extra` (4 min) y descontando 6 de la holgura.
 
 | Min | Lámina | Tiempo |
 |---|---|---|
@@ -34,17 +36,20 @@ Cuatro demostraciones en vivo, todas dentro de láminas existentes: ninguna agre
 | 0:10 | Del buscador al significado | 5 |
 | 0:15 | **RAG** — Preguntarle a los documentos propios | 7 |
 | 0:22 | RAG en el corredor · **Demo A** | 8 |
-| 0:30 | No-code — Automatización sin escribir aplicaciones | 8 |
-| 0:38 | *Extra — APIs en versión funcional* | *4 (opcional)* |
-| 0:42 | **El objeto** — El Enchufe · **Demo B** | 11 |
-| 0:53 | MCP frente a API y no-code | 5 |
-| 0:58 | Loops | 6 |
-| 1:04 | Ejemplo integrador · **Demo C** | 8 |
-| 1:12 | **El giro** · **Demo D** *(opcional)* | 9 |
-| 1:21 | **Taller** | 15 |
-| 1:36 | **Resolución** — La matriz que ya no envejece | 6 |
-| 1:42 | **La frase** + Próximo capítulo | 3 |
-| 1:45 | *Holgura / preguntas* | *15* |
+| 0:30 | No-code — Automatización sin escribir aplicaciones · **Demo G** | 11 |
+| 0:41 | **El objeto** — El Enchufe · **Demo B** | 11 |
+| 0:52 | MCP frente a API y no-code | 5 |
+| 0:57 | **Sus herramientas** — Dónde entra cada pieza · **Demo E** | 7 |
+| 1:04 | Loops | 6 |
+| 1:10 | Ejemplo integrador · **Demo C** | 8 |
+| 1:18 | **El giro** · **Demo D** *(opcional)* | 9 |
+| 1:27 | **Taller** | 15 |
+| 1:42 | **Resolución** — La matriz que ya no envejece | 6 |
+| 1:48 | **La frase** + Próximo capítulo | 3 |
+| 1:51 | *Holgura / preguntas* | *9* |
+
+La lámina `Extra` **no está en este minutado**: es la que paga las dos demos de herramienta. Si se
+decide no hacerlas, vuelve a entrar en 0:41 y la holgura sube a 13.
 
 ### De dónde sale ese minutado
 
@@ -55,15 +60,22 @@ Cuatro demostraciones en vivo, todas dentro de láminas existentes: ninguna agre
   analogía del cajón de cables no debe pasar de treinta segundos; el resto es la demostración.
 - **El giro tiene 9** en vez de 8: la Demo D es opcional pero cabe, y el remate del Acta 15
   necesita silencio después.
-- **El taller arranca a 1:21 con la `Extra`, y a 1:17 sin ella.** Los 15 minutos del taller no se
-  negocian: son el insumo de la sesión 12.
-- Si a 1:00 el reloj va corrido, lo que se sacrifica es *MCP frente a API y no-code* (esa tabla
-  está completa en la ficha de bolsillo). Nunca el giro, nunca el taller.
+- **`Sus herramientas` tiene 7** porque adentro va la Demo E, que es la que el auditorio vino a
+  ver: su propio Revit contestando preguntas. Cuatro de esos siete son demostración.
+- **No-code sube de 8 a 11** por la Demo G. Si el flujo no quedó montado, vuelve a 8 y la sesión
+  no lo nota.
+- **El taller arranca a 1:27.** Los 15 minutos del taller no se negocian: son el insumo de la
+  sesión 12.
+- Si a 1:10 el reloj va corrido, lo que se sacrifica es *MCP frente a API y no-code* (esa tabla
+  está completa en la ficha de bolsillo). Nunca el giro, nunca el taller, y nunca la Demo E si ya
+  quedó montada: montarla cuesta más que dictarla.
 
 ### Sobre la lámina `Extra`
 
-La de APIs es conceptual y la de MCP la absorbe casi entera. **Si el grupo ya viene cómodo con
-la idea de sistemas que se hablan entre sí, sáltela.** La sesión 07 —el miércoles, con el mismo
+La de APIs es conceptual, la de MCP la absorbe casi entera y la nueva *Sus herramientas* la
+aterriza en producto. **Con las demos G y E en el plan, sáltela: sus 4 minutos son los que las
+pagan.** Sin esas demos vuelve a ser opcional, según qué tan cómodo venga el grupo con la idea
+de sistemas que se hablan entre sí. La sesión 07 —el miércoles, con el mismo
 docente— desarrolla integración con más espacio; vale la pena anunciarlo al saltarla, en una
 frase: *"esto lo vemos con calma el miércoles."*
 
@@ -122,7 +134,7 @@ autohospedaje— porque de eso depende que la plataforma sea usable con informac
 | "n8n" | Plataforma no-code autohospedable | Puede correr dentro de la entidad. Es la que habilita el ámbar |
 | "ChatGPT / Claude / Gemini" | Cliente de IA | Lo que importa no es cuál, sino **a qué está conectado y con qué cuenta** |
 | "Un GPT / un asistente personalizado" | RAG sobre documentos cargados | Sirve para documentos. No cuenta elementos de una fuente viva |
-| "El API de Revit / de la plataforma" | La puerta de entrada del sistema | Requiere desarrollo. MCP no la reemplaza: la envuelve |
+| "El API de Revit / de la plataforma" | La puerta de entrada del sistema | Requiere desarrollo. MCP no la reemplaza: la envuelve — y en Revit 2027 el propio Autodesk ya la envolvió |
 | "Un plugin" | Desarrollo a medida | Cada variación es un desarrollo nuevo. Ese es el costo que MCP baja |
 
 **Sobre el CDE de la entidad:** no prometer que se conecta. La respuesta honesta es que depende
@@ -133,15 +145,25 @@ justamente el resultado del taller.
 
 ## Las demostraciones en vivo — mapa
 
-Cuatro demostraciones, tres obligatorias. Todas usan el **mismo expediente del caso** que los
-asistentes ya tienen; ninguna necesita un modelo BIM abierto.
+Seis demostraciones, tres obligatorias. Las cuatro del expediente (A, B, C, D) usan el **mismo
+material que los asistentes ya tienen** y no necesitan ningún modelo abierto ni conexión a la
+entidad. Las dos de herramienta (G y E) se hacen con lo que el auditorio usa a diario — y son
+las que se caen si falla la red. Por eso ninguna de esas dos es obligatoria.
 
 | Momento | Demo | Herramienta | Min | ¿Obligatoria? |
 |---|---|---|---|---|
-| 0:22 | **A · RAG sobre el expediente** | Chat con carga de documentos | 8 | Sí |
-| 0:42 | **B · El agente descubre las herramientas** | Cliente con MCP | 4 | Sí |
-| 1:04 | **C · El cruce que nadie pidió** | Cliente con MCP | 5 | Sí |
-| 1:12 | **D · El giro en vivo** | Cliente con MCP | 3 | No — alto impacto |
+| 0:22 | **A · RAG sobre el expediente** | Gemini, app web, con documentos cargados | 8 | Sí |
+| 0:30 | **G · El flujo que avisa solo** | n8n + Gemini, sobre el correo de Forma **o** sobre la hoja de la matriz | 3 | No — se cae sin red |
+| 0:41 | **B · El agente descubre las herramientas** | Gemini CLI + servidor de archivos | 4 | Sí |
+| 0:57 | **E · Revit contesta, pero no escribe** | Gemini CLI + Revit 2027 MCP | 4 | No — alto impacto |
+| 1:10 | **C · El cruce que nadie pidió** | Gemini CLI + servidor de archivos | 5 | Sí |
+| 1:18 | **D · El giro en vivo** | Gemini CLI + servidor de archivos | 3 | No — alto impacto |
+
+**Las dos superficies de Gemini no son intercambiables.** La app web sirve para la Demo A —cargar
+documentos y preguntar— pero **no conecta servidores MCP locales**. Todo lo que sea herramienta
+(B, E, C, D) va por **Gemini CLI**, que sí los lee. Conviene tener las dos ventanas abiertas de
+entrada, y decirlo en voz alta la primera vez que se cambia: *"cambio de ventana porque cambio de
+capacidad, no por gusto."*
 
 ### Reglas para todas
 
@@ -169,6 +191,42 @@ asistentes ya tienen; ninguna necesita un modelo BIM abierto.
    agente no debería leer y va a leer.
 4. Correr las tres preguntas una vez. Anotar lo que salió. Si el resultado difiere de lo que
    dice este guion, **vale el guion**: las cifras de abajo están verificadas contra los CSV.
+
+### Montaje de las demos de herramienta — 60 minutos, el día anterior
+
+**Para la Demo E (Revit 2027).**
+
+5. Descargar el complemento **Revit Public MCP Server** desde `accounts.autodesk.com`, dentro de
+   los productos asociados a la licencia de **Revit 2027**, e instalarlo. Es un complemento
+   aparte: no viene con Revit.
+6. El instalador **configura solo Claude Desktop y Cursor**. Para **Gemini CLI hay que agregarlo a
+   mano** en `~/.gemini/settings.json` (en Windows, `C:\Users\<usuario>\.gemini\settings.json`):
+
+   ~~~json
+   { "mcpServers": { "revit": { "command": "C:\\ruta\\real\\RevitMCPServer.exe" } } }
+   ~~~
+
+   **Verificar la ruta real del ejecutable**, no copiarla de aquí: cambia según dónde haya quedado
+   instalado, y es la causa número uno de que el servidor no aparezca en el cliente.
+7. Abrir Revit 2027 **con el modelo cargado antes de que entre el auditorio**. El servidor
+   responde sobre el modelo abierto: si no hay modelo, no hay respuesta. Usar un modelo propio o
+   ficticio — **nunca uno real del IDU**, por el numeral 4.7.3 que se proyecta dos láminas después.
+8. Correr una vez las dos preguntas de la Demo E y **guardar una captura de la lista de
+   herramientas**. Es el plan B.
+
+**Para la Demo G (no-code).**
+
+9. El montaje completo está al final de este documento: **Anexo — Montaje paso a paso de la
+   Demo G**. Son unos 45 minutos la primera vez. Tres cosas que conviene saber antes de empezar,
+   porque son las que tumban la demostración:
+
+   - Forma **no le manda notificación a quien sube el archivo**: hacen falta **dos cuentas**.
+   - Las notificaciones pueden estar en **resumen diario**. Si lo están, no llega nada en clase.
+   - El disparador de Gmail en n8n es **por sondeo**, no instantáneo: hay un minuto de espera
+     que hay que tener previsto en el guion hablado.
+
+10. **Ejecutar el flujo una vez y dejar la ejecución guardada en el historial.** Si en vivo el
+    correo tarda más de 90 segundos, se abre esa ejecución y la demostración se sostiene igual.
 
 ---
 
@@ -215,7 +273,47 @@ no se cargó. Hay dos desenlaces y los dos sirven:
 
 ---
 
-### 0:42 · Demo B — El agente descubre las herramientas (4 min, obligatoria)
+### 0:30 · Demo G — El flujo que avisa solo (3 min, opcional)
+
+Va dentro de la lámina de *No-code*, después de nombrar las tres piezas —disparador, acción,
+condición— y antes del `note` del semáforo. Es la demostración más humilde de la sesión y la más
+replicable: **no necesita desarrollador, ni cuenta de servicio, ni permiso de TI.**
+
+**El disparador honesto.** Forma ya manda un correo cuando alguien radica en una carpeta suscrita.
+Ese correo es el disparador. No hay webhook, no hay aplicación registrada, no hay integración: hay
+un correo que la plataforma ya mandaba y que ahora alguien lee por uno.
+
+1. **(1 min)** Mostrar el lienzo de n8n con el flujo detenido y señalar las tres piezas de la
+   lámina: *"disparador, condición, acción. Nada más."*
+2. **(1 min)** Provocar el cambio y esperarlo en silencio:
+   - **Variante A** (dos cuentas de Autodesk): radicar el archivo en Forma desde la cuenta B.
+   - **Variante B** (una sola cuenta): **corregir en vivo la celda de `SUM-011`** en la hoja que
+     hace de fuente. Es exactamente lo que el Consorcio hizo el lunes.
+3. **(1 min)** Leer la salida en voz alta y contrastarla contra el expediente proyectado.
+
+El montaje de las dos está en el anexo del final. **Con un solo usuario de Autodesk, va la
+variante B** — y conviene saber que no es un premio de consuelo: cierra mejor que la A, porque el
+disparador deja de ser un correo y pasa a ser **el cambio en la fuente**, que es la frase textual
+de la lámina de resolución.
+
+**Frase de remate:** *"No programé nada, y tampoco pedí nada. El disparador es un correo que la
+plataforma ya me mandaba y que yo borraba sin leer."*
+
+**El límite, que es la lámina siguiente:** si n8n corre en la nube de un tercero, ese correo —con
+su adjunto— sale de la entidad. Eso es **verde solamente**. Para ámbar, n8n autohospedado dentro
+de la entidad. Conviene encadenarlo con el `note` sin hacer pausa.
+
+**Lo que hay que decir para no mentir.** Esto es lo que se puede montar sin pedir permiso. Lo
+correcto a mediano plazo es un **webhook** de la plataforma, y eso **sí** exige una aplicación
+registrada por un administrador de la cuenta. *"Lo que acaban de ver es el atajo. Lo otro es lo
+que hay que pedirle a TI — y el taller de hoy es el borrador de ese pedido."*
+
+> **Plan B:** abrir la ejecución guardada del día anterior y contarla. Si tampoco hay red,
+> proyectar el lienzo: las tres piezas se ven igual, y es lo que la lámina enseña.
+
+---
+
+### 0:41 · Demo B — El agente descubre las herramientas (4 min, obligatoria)
 
 Va **dentro** de la lámina del Enchufe, después de la analogía del cajón de cables y antes de la
 tabla de tres piezas. Es corta y conceptual: no busca asombrar, busca que se vea el
@@ -250,7 +348,51 @@ sumideros con cuatro criterios dio 6, 9, 11 y 12— resuelto ahora con la fuente
 
 ---
 
-### 1:04 · Demo C — El cruce que nadie pidió (5 min, obligatoria)
+### 0:57 · Demo E — Revit contesta, pero no escribe (4 min, opcional, alto impacto)
+
+Va dentro de la lámina *Sus herramientas*, sobre la tarjeta de Revit. Es la demostración que el
+auditorio vino a ver —su herramienta, su modelo— y la que hace que MCP deje de ser una idea.
+
+**La línea de la tarjeta de Forma**, al pasar por ella y antes de conectar Revit. Cuesta veinte
+segundos y es el mejor anticipo del giro que hay en toda la sesión:
+
+> *"Y si mañana quieren leer Forma Site Design desde una aplicación propia, Autodesk exige
+> registrar esa aplicación como **cuenta de servicio** dentro de una extensión instalada en el
+> sitio. No se entra con el usuario de nadie. La plataforma los va a obligar a hacer exactamente
+> lo que la Interventoría pidió por escrito hace dos meses."*
+
+Después, la demostración:
+
+1. **(1 min)** En Gemini CLI, escribir `/mcp`. Aparece la lista de herramientas que **Revit anunció
+   al conectarse**. Frase: *"Esto no lo instalé pieza por pieza. Autodesk publicó el servidor,
+   Gemini lo leyó, y ahora sabe qué le puede preguntar a Revit. Es el mismo descubrimiento de hace
+   quince minutos, pero contra el modelo de ustedes."*
+2. **(2 min)** La pregunta del caso — es el compromiso **16-2**:
+
+   > *"En el modelo abierto, ¿cuántos elementos hay de la categoría de sumideros, y cuántos tienen
+   > vacío el parámetro de código de clasificación?"*
+
+   Se lee la respuesta y se contrasta contra la matriz proyectada.
+3. **(1 min)** **La segunda pregunta es la que importa**, y hay que hacerla sabiendo que falla:
+
+   > *"Corrígelos: lléneles el código de clasificación."*
+
+   No puede. El servidor oficial es **de solo lectura**.
+
+**Frase de remate**, que enlaza con la lámina de loops: *"El fabricante ya decidió por ustedes lo
+que esa lámina recomienda: que lea, no que escriba. El día que eso cambie, la decisión vuelve a
+ser de ustedes — y ahí ya no va a haber quien la tome en su lugar."*
+
+**Advertencia de montaje:** el complemento responde sobre el **modelo abierto**. Si se cierra el
+documento a mitad de la demostración, deja de contestar. Y el modelo tiene que ser propio o
+ficticio: **nunca uno real del IDU**.
+
+> **Plan B:** proyectar la captura de la lista de herramientas y hacer la pregunta contra
+> `elementos-tramo2.csv`, como en la Demo B. Se pierde el asombro, no el argumento.
+
+---
+
+### 1:10 · Demo C — El cruce que nadie pidió (5 min, obligatoria)
 
 Es **la cima de la sesión**. Va dentro del *Ejemplo integrador* y es la demostración que
 justifica MCP frente a no-code: ningún flujo fijo tenía esto previsto, porque el paso siguiente
@@ -300,7 +442,7 @@ vigente **se tiene por no radicado**. Es decir: la interferencia alta de `SUM-01
 
 ---
 
-### 1:12 · Demo D — El giro en vivo (3 min, opcional pero recomendada)
+### 1:18 · Demo D — El giro en vivo (3 min, opcional pero recomendada)
 
 Va **después** de leer el blockquote de la lámina del giro y **antes** de mostrar las dos
 tarjetas. Es incómoda a propósito.
@@ -402,6 +544,10 @@ Si es genérico, pedir que lo aterricen a una persona y un documento.
 | Existen servidores MCP para BIM y openBIM (IfcOpenShell, Bonsai, web-ifc / Fragments) | [Arquitectura de referencia para servidores MCP en BIM, arXiv 2601.00809](https://arxiv.org/html/2601.00809v2) | Media — **son proyectos jóvenes; presentarlos como ecosistema emergente, no como producto maduro** |
 | Autodesk Construction Cloud pasó a la marca **Autodesk Forma** (marzo 2026); lo que era Docs es hoy la gestión de datos de Forma | [adsknews.autodesk.com](https://adsknews.autodesk.com/en/news/autodesk-construction-cloud-is-now-autodesk-forma/) | Alta — fuente primaria |
 | n8n se puede autohospedar; Zapier y Make son servicios gestionados | Documentación de los proveedores | Alta |
+| Revit 2027 tiene un servidor MCP **oficial** de Autodesk, de solo lectura, que se instala como complemento aparte | [Anuncio de Autodesk, 17/06/2026](https://www.autodesk.com/blogs/aec/2026/06/17/revit-public-mcp-server/) · [Ayuda de Revit 2027](https://help.autodesk.com/cloudhelp/2027/ENU/Revit-WhatsNew/files/GUID-97697CBF-0E11-484E-96E5-4277E3E8D61F.htm) | Alta — fuente primaria. **Es una versión preliminar: decirlo** |
+| Para leer **Forma Site Design** desde una aplicación externa, el Client ID debe registrarse como cuenta de servicio en una extensión instalada en el sitio | [Guía del desarrollador de la Forma Site Design API](https://aps.autodesk.com/en/docs/forma/v1/developers_guide/intro/element-system/) | Alta — y esa API está en **beta** |
+| Forma manda correo de radicación a quien se suscribe a una carpeta, **pero no a quien sube el archivo** | [Soporte de Autodesk](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Failed-to-get-an-email-when-someone-uploads-a-file-to-a-folder-even-after-subscribing-to-the-it-in-BIM-360.html) | Alta — de este detalle depende que la Demo G funcione |
+| Gemini CLI lee servidores MCP declarados en `~/.gemini/settings.json` | [Documentación de Gemini CLI](https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md) | Alta |
 
 ### Cifras del caso — verificadas contra los CSV del expediente
 
@@ -416,10 +562,13 @@ auditorio. Están comprobadas.
 | Único elemento sin código de clasificación | `SUM-011` | `elementos-tramo2.csv` |
 | Nivel de información de tubería enterrada | **LOD 300** | Acta N.º 14, numeral 4.1 |
 
-**Honestidad obligatoria en esta sesión.** MCP para BIM es hoy un ecosistema **emergente**, no
-una solución de estantería. Si se presenta como algo listo para producción y alguien lo intenta
-el lunes, el curso pierde credibilidad. La formulación correcta: *"el estándar ya está; las
-piezas para BIM están naciendo; conviene entenderlo ahora para no llegar tarde."*
+**Honestidad obligatoria en esta sesión.** El panorama se movió en 2026 y hay que contarlo con
+precisión: **ya hay servidores oficiales de fabricante** —el de Revit 2027 entre ellos— pero son
+de **solo lectura** y en versión preliminar, y el resto del ecosistema BIM/openBIM sigue siendo
+**emergente**. Si se presenta como algo listo para producción y alguien lo intenta el lunes, el
+curso pierde credibilidad. La formulación correcta: *"el estándar ya está, los fabricantes ya
+publicaron las primeras piezas, y todas leen pero ninguna escribe — conviene entenderlo ahora
+para no llegar tarde."*
 
 ---
 
@@ -434,7 +583,7 @@ Salen todos los años. Conviene tenerlas resueltas en una frase para no perder e
 | "¿La información va a entrenar el modelo?" | Depende del contrato del servicio, no de la tecnología. Es una cláusula, y hay que leerla antes de conectar. |
 | "¿Y si el agente se equivoca y modifica algo?" | Por eso los loops que modifican necesitan confirmación humana y un tope. Los que solo consultan son seguros. |
 | "¿Cuánto cuesta montar esto?" | Menos que un plugin a medida, y más de lo que parece. El costo real no es la conexión: es definir los permisos. |
-| "¿Puedo conectarlo a Revit o a Navisworks?" | Hay ecosistema naciente por la vía de IFC. Hoy es viable sobre los datos exportados; sobre el modelo en vivo, todavía es frágil. |
+| "¿Puedo conectarlo a Revit o a Navisworks?" | A **Revit 2027**, sí: Autodesk publicó un servidor MCP oficial, de solo lectura, que se instala como complemento aparte — es el que vimos hoy. En versiones anteriores y en Navisworks sigue siendo por la vía de IFC, sobre datos exportados. |
 
 ---
 
@@ -481,3 +630,209 @@ la Demo C**, así que se pueden nombrar como conocidos: *"a dos de estos ya los 
 viernes."*
 
 Registrado en [HILO-NARRATIVO.md](../docs/HILO-NARRATIVO.md), sección 7.
+
+---
+
+## Anexo — Montaje paso a paso de la Demo G
+
+Unos 45 minutos la primera vez, 10 las siguientes. Conviene hacerlo **el día anterior**, no la
+mañana de la clase: dos de los pasos dependen de correo ajeno y no se pueden apurar.
+
+### Paso 0 · Dónde va a correr n8n
+
+Para la clase sirve **n8n Cloud** (prueba gratuita, sin instalar nada) porque **todo el expediente
+es ficticio**. Y conviene decirlo en voz alta durante la demostración, porque es justamente el
+`note` del semáforo: *"esto está corriendo en la nube de un tercero, y por eso solo lo puedo hacer
+con información verde. Para ámbar, esto mismo va autohospedado dentro de la entidad."*
+
+Si se prefiere montarlo autohospedado desde el principio, los pasos son idénticos: cambia dónde
+se abre el navegador, no el flujo.
+
+### Paso 1 · Las cuentas
+
+| Qué | Para qué | Nota |
+|---|---|---|
+| **Dos cuentas de Autodesk** con acceso al proyecto en Forma | Una se suscribe a la carpeta; la otra radica en vivo | Si solo hay una, **saltar a la variante B** al final de este anexo |
+| **Un buzón de Gmail** (personal, no institucional) | Es el que recibe la notificación y dispara n8n | Evita pelear con el correo de la entidad |
+| **Una clave de API de Gemini** | La usa el nodo de Gemini en n8n | Se saca en <https://aistudio.google.com/apikey> |
+
+En n8n Cloud se puede saltar la clave de Gemini usando *Use Gateway credits* en el nodo. Para el
+ensayo alcanza; para la clase conviene la clave propia, que no depende de un saldo.
+
+### Paso 2 · Forma: lograr que el correo salga
+
+Este paso es el que falla, y falla en silencio. **No pasar al paso 3 hasta verlo funcionar.**
+
+1. Entrar a Forma con la **cuenta A** (la que va a recibir).
+2. Ir a la carpeta del proyecto donde se va a radicar. Tres puntos junto a la carpeta →
+   **Suscribirse a la carpeta**.
+3. Arriba a la derecha, en el perfil → **Configuración de notificaciones**. Verificar que las
+   notificaciones de carga de archivos estén **inmediatas y no en resumen diario**. Si están en
+   resumen, durante la clase no llega absolutamente nada y no hay forma de darse cuenta a tiempo.
+4. Que la dirección de la cuenta A sea —o reenvíe a— el buzón de Gmail del paso 1.
+
+> **La trampa.** Forma **no notifica a quien sube el archivo**. Si se radica con la misma cuenta
+> que está suscrita, no llega nada y todo parece roto. Por eso hacen falta dos cuentas: **A**
+> escucha, **B** radica.
+
+5. **Prueba obligatoria:** radicar cualquier archivo desde la **cuenta B** y confirmar que a la
+   **A** le llega el correo. Anotar el **remitente exacto** — se necesita en el paso 3.
+
+### Paso 3 · El flujo en n8n — cuatro nodos
+
+La forma del flujo es literalmente la de la lámina: **disparador → condición → acción**.
+
+| # | Nodo | Configuración |
+|---|---|---|
+| 1 | **Gmail Trigger** | Credencial de Google del buzón. *Poll Times*: **cada minuto**. En *Filters → Sender* (o en la búsqueda, `from:`), el remitente anotado en el paso 2 |
+| 2 | **Filter** | Condición sobre el asunto o el cuerpo: que contenga `Tramo 2` (o el nombre de la carpeta). Es la **condición** de la lámina |
+| 3 | **Google Gemini** | Credencial tipo *Google Gemini (PaLM) API* con la clave del paso 1. Operación: mensaje a un modelo. El prompt va abajo |
+| 4 | **Gmail → Send** | Se manda el resultado a la misma dirección. Que la demostración termine en un correo es lo que la hace creíble |
+
+**El Gmail Trigger es por sondeo, no instantáneo.** Con el intervalo en un minuto, entre que se
+radica y que el flujo arranca puede pasar hasta un minuto — más lo que tarde Forma. Eso no es un
+problema si está previsto en el guion: es el minuto en que se explica el semáforo.
+
+### Paso 4 · El prompt del nodo de Gemini
+
+Va escrito de antemano, como todos los de la sesión. Este funciona sobre el **texto de la
+notificación**, que es lo que realmente llega — Forma avisa que hubo una radicación, no adjunta el
+archivo:
+
+> Eres el asistente de coordinación BIM del Corredor Av. Guayacanes. Vas a recibir el texto de una
+> notificación de radicación del CDE. Devuelve, en un párrafo corto y en español neutro:
+> qué archivo se radicó, quién lo radicó y en qué carpeta; qué filas de la matriz de requisitos
+> habría que volver a revisar por causa de esa radicación; y qué información **no** puedes
+> determinar con la notificación sola. No inventes datos que no estén en el texto.
+>
+> Texto de la notificación:
+> {{ $json.snippet }}
+
+La última instrucción no es decorativa: es el **límite clave** de la lámina de RAG, aplicado. Si
+Gemini se inventa las filas, esa falla se muestra y se usa — es la mejor lámina de la sesión.
+
+### Paso 5 · Variante con fuente viva (opcional, si sobra tiempo de montaje)
+
+Agregar un nodo **HTTP Request** entre el 2 y el 3, apuntando al CSV del expediente publicado, y
+pasarle a Gemini el contenido junto con la notificación. Así el flujo **no lee una copia**: lee la
+fuente en el momento en que pregunta, que es exactamente la tesis de la sesión. Con n8n en la
+nube la URL tiene que ser pública; con n8n en el portátil sirve la del servidor local del curso.
+
+Es la variante bonita, pero **no es la obligatoria**: agrega un punto de falla y el argumento se
+sostiene sin ella.
+
+### Paso 6 · El ensayo, que es parte del montaje
+
+1. Activar el flujo y radicar desde la cuenta B.
+2. Verificar que llegue el correo de salida.
+3. **Dejar esa ejecución en el historial de n8n y no borrarla.** Es el plan B: si en vivo el
+   correo se demora, se abre el historial y se cuenta lo que pasó.
+4. Tomar además una captura del lienzo con los cuatro nodos. Es el plan B del plan B: las tres
+   piezas de la lámina se ven igual en una captura.
+
+### Checklist de cinco minutos antes de entrar
+
+- [ ] Flujo **activo** en n8n (no en modo de prueba: se apaga solo)
+- [ ] Sesión abierta en Forma con la **cuenta B**, en la carpeta correcta
+- [ ] Buzón de Gmail abierto en otra pestaña
+- [ ] Historial de n8n con la ejecución del ensayo, abierto en una tercera
+- [ ] El archivo que se va a radicar, ya en el escritorio y con nombre que contenga `Tramo 2`
+
+### Los tres modos de que se caiga, y qué hacer
+
+| Síntoma | Causa casi segura | Qué hacer en vivo |
+|---|---|---|
+| No llega ningún correo | Notificaciones en resumen diario, o se radicó con la cuenta suscrita | Abrir el historial del ensayo y contarlo. No depurar delante del auditorio |
+| Llega el correo pero el flujo no arranca | El filtro de remitente no coincide | Igual: historial. Se arregla después |
+| Gemini responde con datos inventados | El prompt perdió la última instrucción | **No disimular: usarlo.** Es el límite clave de la lámina de RAG, demostrado en vivo |
+
+**Regla que vale para toda la sesión:** ninguna de estas caídas cuesta más de treinta segundos si
+el historial está abierto en una pestaña. Si hay que empezar a depurar, la demostración ya se
+perdió — y el argumento no.
+
+---
+
+### Variante B — con un solo usuario de Autodesk: el vigía de la matriz
+
+Si no hay dos cuentas, el correo de Forma deja de servir como disparador: la plataforma no
+notifica a quien sube el archivo, y no hay forma de rodear eso desde una sola sesión.
+
+**Antes de descartar la variante A**, vale cinco minutos preguntarle al administrador del proyecto
+si se puede invitar un segundo correo propio —uno personal— como miembro. Si se puede, la Demo G
+queda tal como está escrita arriba. Si no, esta variante la reemplaza sin perder nada.
+
+#### Qué cambia
+
+El disparador deja de ser un correo y pasa a ser **el cambio en la fuente**. Una hoja de cálculo
+hace de fuente: es el inventario de elementos, el mismo `elementos-tramo2.csv` del expediente,
+pegado en una hoja. El flujo la vigila. Cuando alguien toca una celda, avisa qué cambió y qué
+filas de la matriz hay que volver a mirar.
+
+**Esto no es un sustituto pobre de la variante A: es la lámina de resolución, literal.** Ahí dice
+*"la matriz del jueves ya se habría corregido sola el lunes a las 7:03 — avisando que la fila del
+código de clasificación cambió, y por qué"*. Eso es exactamente lo que hace este flujo, y se ve
+pasar en vivo.
+
+#### El montaje — 25 minutos
+
+1. Crear una hoja de cálculo en Google Sheets y pegar el contenido de
+   `docs/recursos/caso/elementos-tramo2.csv`. La primera columna, `id_elemento`, queda como
+   identificador.
+2. Confirmar que **`SUM-011` tiene vacía la celda de `codigo_clasificacion`**. Es la única fila
+   del archivo en esa condición, y es el compromiso **16-2**. Esa celda es la que se corrige en
+   vivo.
+3. En n8n, tres nodos:
+
+   | # | Nodo | Configuración |
+   |---|---|---|
+   | 1 | **Google Sheets Trigger** | La hoja del paso 1. *Trigger On*: **Row Updated**. *Poll Times*: **cada minuto**. **Key column: `id_elemento`** |
+   | 2 | **Google Gemini** | Credencial *Google Gemini (PaLM) API*. El prompt va abajo |
+   | 3 | **Gmail → Send** | El aviso, al propio correo |
+
+4. **El detalle que hace fallar este nodo:** si no se declara una columna clave única, el
+   disparador se salta filas o dispara dos veces. Con `id_elemento` como *key column* no pasa.
+5. Ensayar: cambiar cualquier celda, esperar el minuto, verificar que llegue el correo. **Dejar
+   esa ejecución en el historial**, igual que en la variante A.
+6. **Devolver la celda de `SUM-011` a vacía** después del ensayo. Si queda diligenciada, en clase
+   no hay nada que corregir y la demostración se queda sin gesto.
+
+#### El prompt del nodo de Gemini
+
+> Eres el asistente de coordinación BIM del Corredor Av. Guayacanes. Vas a recibir una fila del
+> inventario de elementos del Tramo 2 que acaba de cambiar. Devuelve, en tres líneas y en español
+> neutro: qué elemento cambió y en qué campo; si ese cambio cierra o afecta algún compromiso de
+> comité, nombrándolo; y qué fila de la matriz de requisitos hay que volver a revisar. Si no
+> puedes determinar alguna de las tres cosas con la fila sola, dilo en vez de suponerlo.
+>
+> Fila modificada:
+> {{ JSON.stringify($json) }}
+
+#### En vivo — el gesto
+
+Con la hoja proyectada, decir *"yo soy el Consorcio, y es lunes"*, y escribir el código de
+clasificación en la celda de `SUM-011`. Después, silencio y esperar el correo. Ese minuto se llena
+con el `note` del semáforo, que es la lámina siguiente.
+
+Cuando llegue: *"nadie exportó nada, nadie se acordó de nada, y la matriz ya sabe. Eso es todo lo
+que pedía el lunes de la primera lámina."*
+
+#### La honestidad que hay que decir en voz alta
+
+La hoja **no es el CDE**, y hay que decirlo antes de que alguien lo pregunte:
+
+> *"Estoy usando una hoja para que ustedes vean el cambio con sus propios ojos. En el proyecto
+> real esto es un archivo en Forma, y el disparador es una notificación o un webhook de la
+> plataforma — que exige una aplicación registrada por un administrador de la cuenta. Lo que les
+> estoy demostrando no es la hoja: es que **puede existir un vigía**, y que el vigía avisa el
+> lunes a las 7:03 sin que nadie se acuerde de nada."*
+
+Dicho así, la demostración no promete de más y además **prepara el taller**: la aplicación
+registrada por un administrador es justamente la conversación con TI que sale de la Parte B.
+
+#### Los modos de que se caiga
+
+| Síntoma | Causa casi segura | Qué hacer en vivo |
+|---|---|---|
+| El flujo no arranca al cambiar la celda | Falta la columna clave, o el sondeo está en más de un minuto | Abrir el historial del ensayo. No depurar |
+| Dispara dos veces | Misma causa: columna clave no única | Ignorarlo. No afecta el argumento |
+| Gemini nombra un compromiso que no existe | El prompt perdió la última instrucción | **Usarlo.** Es el límite clave de la lámina de RAG, en vivo |
