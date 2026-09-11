@@ -35,8 +35,11 @@ construida la sesión, y hay tres decisiones de diseño que conviene tener prese
    son el puente entre las dos sesiones: no se saltan por tiempo.
 2. **El punto de partida es el oficio, no la tecnología.** La sesión abre preguntando qué hace
    un coordinador BIM toda la semana, y recién en el segundo bloque aparecen las herramientas.
-3. **Las tres demostraciones obligatorias se hacen en una hoja de cálculo.** Sin instalar nada,
-   sin terminal, sin modelo abierto. Lo demás es opcional.
+3. **Cada demostración se hace dos veces: a mano y con un agente.** Primero en la hoja de
+   cálculo —sin instalar nada, sin terminal, sin modelo abierto— y enseguida pedida en español a
+   Antigravity. El orden no se invierte: a mano es como el auditorio consigue la verdad de
+   referencia con la que después audita al agente. Las tres versiones a mano son las
+   obligatorias; las de agente son evidencia, no argumento.
 
 ### Registro
 
@@ -55,32 +58,32 @@ construida la sesión, y hay tres decisiones de diseño que conviene tener prese
 
 ## Minutado
 
-Contenido: ~110 min sin la lámina `Extra`. Holgura: 10 min. Seis demostraciones, tres
-obligatorias y las tres son en hoja de cálculo.
+Contenido: ~110 min sin la lámina `Extra`. Holgura: 10 min. Nueve demostraciones en pares —tres a
+mano, seis con agente— y **las tres obligatorias suman 7 minutos**.
 
 | Min | Lámina | Tiempo |
 |---|---|---|
 | 0:00 | Portada · bienvenida | 3 |
 | 0:03 | **Antes** — El miércoles, en cuatro líneas | 4 |
-| 0:07 | **Antes** — Las cuatro palabras raras, en castellano | 4 |
+| 0:07 | **Antes** — Las cuatro siglas del miércoles | 4 |
 | 0:11 | **El caso** — La semana de Marcela | 5 |
 | 0:16 | Qué hace de verdad un coordinador BIM | 6 |
 | 0:22 | La prueba de las cuatro preguntas | 5 |
-| 0:27 | Anatomía de una automatización BIM | 5 |
-| 0:32 | Asistencia, automatización y autonomía | 4 |
-| 0:36 | Ustedes ya programan · **Demo 1** | 5 |
-| 0:41 | El filtro que miente · **Demos 2 y 3** | 13 |
-| 0:54 | El mismo encargo, cuatro tecnologías | 6 |
-| 1:00 | La matriz de decisión · **Demo 4** *(opcional)* | 5 |
-| 1:05 | Pedirle el código a la IA · **Demo 5** | 11 |
-| 1:16 | **El giro** · **Demo 6** *(opcional)* | 10 |
+| 0:27 | Anatomía de una automatización BIM | 4 |
+| 0:31 | Asistencia, automatización y autonomía · **Demo 0** | 7 |
+| 0:38 | Ustedes ya programan · **Demos 1A y 1B** | 8 |
+| 0:46 | El filtro que miente · **Demos 2A, 2B, 3A y 3B** | 15 |
+| 1:01 | El mismo encargo, cuatro tecnologías | 5 |
+| 1:06 | La matriz de decisión | 4 |
+| 1:10 | Pedirle el código a la IA · **Demo 4** | 6 |
+| 1:16 | **El giro** · **Demo 5** | 10 |
 | 1:26 | **Taller** | 15 |
 | 1:41 | **Resolución** — La semana de Marcela, después | 5 |
 | 1:46 | **La frase** + Próximo capítulo | 4 |
 | 1:50 | *Holgura / preguntas* | *10* |
 
-La lámina `Extra` —*Script, grafo, plugin y aplicación*— **no está en el minutado**. Se dicta
-solo si el bloque de tecnologías deja al grupo con la duda de qué es cada cosa, y cuesta 4 min.
+La lámina `Extra` —*Script, grafo, plugin y aplicación*— **no está en el minutado**. Se dicta solo
+si el bloque de tecnologías deja al grupo con la duda de qué es cada cosa, y cuesta 4 min.
 
 ### De dónde sale ese minutado
 
@@ -89,16 +92,32 @@ solo si el bloque de tecnologías deja al grupo con la duda de qué es cada cosa
 - **`Qué hace de verdad un coordinador BIM` tiene 6** porque es donde el auditorio se reconoce.
   Conviene gastar la mitad de ese tiempo **escuchando**: preguntar cuál de las cinco familias se
   les come el día. Lo que digan es el material del taller.
-- **El bloque de la hoja de cálculo tiene 18 minutos** (0:36–0:54) y es el corazón de la
-  sesión: es donde el auditorio comprueba que ya maneja la lógica que hace falta. No se recorta.
-- **El giro tiene 10** porque hay que leer dos documentos en pantalla —el anexo y el acta— y
-  dejar silencio después del recuento de 13 / 1 / 1.
+- **El bloque central va de 0:38 a 1:01** —23 minutos— y es el corazón de la sesión: es donde el
+  auditorio comprueba que ya maneja la lógica que hace falta, y donde ve al agente hacer lo mismo
+  y equivocarse igual. No se recorta.
+- **El giro tiene 10** porque hay que leer dos documentos en pantalla —el anexo y el acta— y dejar
+  silencio después del recuento de 13 / 1 / 1.
 - **El taller arranca a 1:26.** Los 15 minutos no se negocian: son insumo de la sesión 12.
-- Si a 1:00 el reloj va corrido, lo que se sacrifica es **la matriz de decisión** (está completa
-  en la hoja de taller, parte C.1) y la **Demo 4**. Nunca el bloque de la hoja de cálculo, nunca
-  el giro, nunca el taller.
 
----
+### Qué se cae, y en qué orden
+
+Las demos de agente son las que agregan tiempo, así que son las primeras que se sueltan. En este
+orden, y sin culpa:
+
+| Si falta… | Se suelta | Se recupera |
+|---|---|---|
+| 3 min | Demo 1B | La Demo 1A ya deja el punto |
+| 6 min | + Demo 3B | La Demo 3A ya deja el punto |
+| 10 min | + Demo 4 | Se narra en 30 segundos sobre la lámina |
+| 15 min | + Demo 5 | La lámina del giro es la que mejor se sostiene sola |
+| 18 min | + Demo 0 | Se señala la fila de RAG en la lámina de las cuatro siglas |
+
+**Lo último que se suelta es la Demo 2B**, aunque sea de agente: es la que cierra el argumento de
+la sesión —la máquina cae en la misma trampa que nosotros— y no tiene reemplazo narrado que
+funcione igual.
+
+**Nunca se sueltan:** las tres demos de hoja de cálculo, el giro, el taller ni las dos láminas de
+repaso.
 
 ## El análisis del rol — de dónde salen las cinco familias
 
@@ -141,8 +160,10 @@ escribe la regla, la vuelve el cuello de botella de todo el equipo.**
    pregunta de hoy: ya está conectada, ¿y ahora qué se le encarga?
 2. **El reconocimiento** (*El caso* y *Qué hace un coordinador BIM*). "Esa es mi semana." Es el
    momento en que la clase deja de ser sobre tecnología.
-3. **El reconocimiento técnico** (*Ustedes ya programan* y las tres demos de hoja de cálculo).
-   "Ya sabía hacer esto." La lógica de una automatización resulta ser la que usan a diario.
+3. **El reconocimiento técnico** (*Ustedes ya programan* y el bloque de demos pareadas). Primero
+   "ya sabía hacer esto" —la lógica de una automatización es la que usan a diario— y enseguida, en
+   la Demo 2B, "la máquina se equivocó igual que yo". Los dos descubrimientos en el mismo bloque:
+   ese es el centro de gravedad de la sesión.
 4. **La confianza** (*Cuatro tecnologías* y *La matriz*). Ya se puede elegir sin saber programar.
 5. **El giro** (*El giro*). Justo cuando eligieron la herramienta, resulta que la herramienta no
    era el problema.
@@ -151,45 +172,131 @@ escribe la regla, la vuelve el cuello de botella de todo el equipo.**
 
 ## Las demostraciones — mapa
 
-Seis, y **las tres obligatorias se hacen en Excel o en Hojas de cálculo de Google**, sobre un
-archivo que el auditorio ya descargó en la sesión 02. No hay montaje: se abre el CSV y se
-trabaja.
+Cada demostración se hace **dos veces**: primero **a mano**, en la hoja de cálculo, y enseguida
+**pedida en español a un agente**. Ese orden no es adorno y no se invierte.
 
-| Momento | Demo | Herramienta | Min | ¿Obligatoria? |
+**Por qué a mano primero.** Cuando el auditorio ya contó los sumideros con sus propios ojos,
+tiene una verdad de referencia. Entonces la respuesta del agente deja de ser magia y pasa a ser
+algo que se puede **auditar**: coincide o no coincide con lo que ellos ya saben. Al revés —agente
+primero— no hay con qué contrastar, y la clase se convierte en una demostración de producto.
+
+**Por qué con agente después.** Es donde el RAG del miércoles deja de ser una sigla: el agente no
+responde de memoria, responde sobre los archivos de **una carpeta que se ve en pantalla**. Y es
+donde aparece el tema de la sesión: la máquina puede contar, pero el criterio lo sigue poniendo
+una persona.
+
+La herramienta es **Google Antigravity**. Se eligió por tres razones concretas, no por novedad:
+es gratuita durante la versión preliminar y entra con una cuenta personal de Gmail, muestra su
+**plan de trabajo** antes de ejecutar —que es exactamente lo que hay que enseñar a auditar— y
+tiene un límite de carpeta visible, que aterriza el giro del miércoles sin tener que explicarlo.
+
+| Momento | Demo | Dónde | Min | ¿Obligatoria? |
 |---|---|---|---|---|
-| 0:36 | **1 · Su primera condición** | Hoja de cálculo | 4 | Sí |
-| 0:41 | **2 · El filtro que miente** | Hoja de cálculo | 5 | Sí |
-| 0:46 | **3 · El criterio hay que declararlo** | Hoja de cálculo | 4 | Sí |
-| 1:00 | **4 · Esto que ven aquí es "no-code"** | n8n, el lienzo del miércoles | 2 | No |
-| 1:05 | **5 · Que lo explique en español** | Gemini CLI, montaje del miércoles | 5 | No — recomendada |
-| 1:16 | **6 · El giro en vivo** | Gemini CLI | 4 | No — funciona narrada |
+| 0:31 | **0 · La carpeta que el agente puede ver** | Antigravity | 3 | Sí, si se usa el agente |
+| 0:38 | **1A · Su primera condición** | Hoja de cálculo | 2 | **Sí** |
+| 0:40 | **1B · La misma pregunta, en español** | Antigravity | 3 | No |
+| 0:46 | **2A · El filtro que miente** | Hoja de cálculo | 3 | **Sí** |
+| 0:49 | **2B · ¿Y el agente cae en la misma trampa?** | Antigravity | 4 | No, pero es la última que se suelta |
+| 0:53 | **3A · El criterio hay que declararlo** | Hoja de cálculo | 2 | **Sí** |
+| 0:55 | **3B · Pregúntele qué contó** | Antigravity | 3 | No |
+| 1:10 | **4 · Que lo explique en español** | Antigravity | 4 | No — recomendada |
+| 1:16 | **5 · El giro en vivo** | Antigravity | 5 | No — funciona narrada |
+
+**Las tres obligatorias siguen siendo las de hoja de cálculo**, y suman 7 minutos. Si Antigravity
+no quedó montado, si no hay red o si el reloj se corrió, **la sesión se dicta completa sin una
+sola demo de agente** y no pierde nada de su argumento. Todo lo que agrega el agente es
+evidencia; el argumento vive en las láminas.
+
+> **La demo de n8n de la versión anterior queda fuera.** Antigravity ocupa ese lugar mejor:
+> muestra una herramienta en vivo y además paga el bloque de RAG. Si sobra tiempo al final, se
+> puede abrir el lienzo del miércoles 30 segundos al pasar por la lámina de la matriz.
 
 ### Reglas para todas
 
-1. **La hoja de cálculo se proyecta grande.** Zoom al 150%. Si no se leen los nombres de las
-   columnas desde la última fila, la demostración no existe.
-2. **Las fórmulas se pegan, no se teclean.** Conviene tenerlas en un archivo de texto aparte:
-   una fórmula mal tecleada en vivo cuesta tres minutos y toda la atención.
-3. **Se cuenta en voz alta lo que se va a hacer antes de hacerlo.** Este auditorio no sigue una
+1. **La hoja de cálculo y el agente van en dos ventanas abiertas de entrada**, y se dice en voz
+   alta cada vez que se cambia: *"cambio de ventana porque cambio de herramienta, no por gusto."*
+2. **Las fórmulas y los prompts se pegan, no se teclean.** Los nueve están al final de este
+   documento, listos para copiar.
+3. **Primero se anuncia el resultado esperado, después se ejecuta.** Este auditorio no sigue una
    pantalla que se mueve sola.
-4. **Nada de datos reales del IDU.** Todo el expediente es ficticio — numeral 4.7.3 del anexo,
-   el mismo que se proyecta en el giro.
+4. **Si el agente se equivoca, no se disimula: se usa.** Es la mejor lámina de la sesión y no se
+   puede fabricar. La Demo 2B está diseñada para que eso pase.
+5. **Nada de datos reales del IDU, y la carpeta de trabajo es una carpeta nueva** — nunca una de
+   la entidad. Es el numeral 4.7.3 del propio anexo que se proyecta en el giro.
 
-### Montaje previo — 10 minutos
+### Montaje previo — 20 minutos la noche anterior
+
+**La hoja de cálculo (5 min).**
 
 1. Abrir `elementos-tramo2.csv` en Excel o en Hojas de cálculo. **Verificar que la columna `I`
    sea `ficha_mantenimiento`** y que los datos vayan de la fila 2 a la 64.
-2. Dejar un archivo de texto aparte con las cuatro fórmulas de abajo, listas para pegar.
-3. Dejar una segunda pestaña con la hoja **ya resuelta**, por si algo se rompe en vivo.
-4. Abrir en otra ventana el Anexo Técnico 7 en el numeral **4.3** y el Acta 14 en el numeral
+2. Dejar una segunda pestaña con la hoja **ya resuelta**, por si algo se rompe en vivo.
+3. Abrir en otra ventana el Anexo Técnico 7 en el numeral **4.3** y el Acta 14 en el numeral
    **4.1**. Son los dos documentos del giro y hay que poder mostrarlos sin buscarlos.
+
+**Antigravity (15 min).**
+
+4. Descargar desde <https://antigravity.google/download> e instalar. Windows 10 o superior, x64 o
+   ARM64. Es **gratuito durante la versión preliminar** y se entra con una **cuenta personal de
+   Gmail** — no hace falta pedirle nada a TI, y conviene que sea personal y no institucional.
+5. Crear una carpeta **nueva** de trabajo, fuera de cualquier ruta de la entidad. Por ejemplo
+   `C:\curso-bim-ia\expediente\`. Copiar adentro los cuatro archivos del caso:
+   `elementos-tramo2.csv`, `interferencias-tramo2.csv`, `pliego-anexo-tecnico-fragmento.md` y
+   `actas-comite-fragmento.md`.
+6. Abrir esa carpeta como **workspace** y marcarla como carpeta de confianza cuando lo pida. Por
+   defecto el agente solo accede a lo que está dentro del proyecto: **ese límite es la Demo 0**,
+   así que conviene no ampliarlo.
+7. Correr **las cinco preguntas una vez** y anotar lo que salió. Si el resultado difiere de lo que
+   dice este guion, **vale el guion**: las cifras de abajo están verificadas contra los CSV.
+8. Dejar abierto el **panel de artefactos** con el plan de la última ejecución. Es el plan B de
+   casi todas las demos.
+
+> **Advertencia que hay que tomar en serio.** Un entorno agéntico con permiso de ejecutar cosas en
+> el equipo es, por definición, una superficie de riesgo; durante 2026 se reportaron
+> vulnerabilidades en varias de estas herramientas. Para la clase no importa, porque **todo el
+> expediente es ficticio y la carpeta es nueva**. Para el trabajo real sí importa, y es
+> exactamente la conversación del taller: alcance limitado, carpeta propia, nada de la entidad.
+> Vale la pena decirlo en voz alta en la Demo 0 — refuerza el giro del miércoles mejor que
+> cualquier lámina.
 
 ---
 
-### 0:36 · Demo 1 — Su primera condición (4 min, obligatoria)
+### 0:31 · Demo 0 — La carpeta que el agente puede ver (3 min)
 
-Va dentro de la lámina *Ustedes ya programan*, después de leer la tabla de las cinco palabras.
-Es la demostración que convierte la palabra "programar" en algo que el auditorio ya hace.
+Va al final de la lámina *Asistencia, automatización y autonomía*, y es la que convierte el RAG
+del miércoles en algo físico. Son tres minutos y cambian toda la mitad siguiente de la sesión.
+
+1. **(1 min)** Abrir Antigravity con la carpeta del expediente ya cargada. Mostrar el árbol: **cuatro
+   archivos**. Nada más.
+
+   > *"El miércoles dijimos RAG y sonó a sigla. Esto es RAG: una carpeta. Este agente va a
+   > responder sobre estos cuatro archivos. Lo que no esté acá, para él no existe — no lo va a
+   > adivinar y no lo va a inventar. Y si lo inventa, lo vamos a notar, porque los cuatro archivos
+   > los tenemos nosotros también."*
+
+2. **(1 min)** Preguntarle algo que **no** está en la carpeta:
+
+   > *"¿Cuál es el presupuesto total del Corredor Av. Guayacanes?"*
+
+   Tiene que decir que no lo encuentra en los archivos disponibles. Si lo inventa, **mejor**: es
+   la alucinación de la sesión 02 en vivo, con la carpeta a la vista para desmentirla.
+
+3. **(1 min)** La otra cara, que es el giro del miércoles hecho pantalla:
+
+   > *"Fíjense en el límite. El agente ve esta carpeta y solo esta. Si yo hubiera abierto acá una
+   > carpeta de la entidad, vería todo lo que hay adentro: contratos, correspondencia, lo que
+   > sea. El miércoles eso se llamó heredar permisos. Hoy se ve dónde está el borde — y el borde
+   > lo puse yo cuando elegí qué carpeta abrir."*
+
+> **Plan B:** se narra con la lámina de las cuatro siglas, señalando la fila de RAG: *"le paso la
+> carpeta del proyecto y le pregunto."* La frase ya está escrita ahí.
+
+---
+
+### 0:38 · Demo 1A — Su primera condición (2 min, obligatoria)
+
+Va dentro de la lámina *Ustedes ya programan*, después de leer la tabla de las cinco palabras. Es
+la demostración que convierte la palabra "programar" en algo que el auditorio ya hace.
 
 1. **(1 min)** En la celda `M1` escribir el encabezado `revision`. En `M2`, pegar:
 
@@ -197,37 +304,59 @@ Es la demostración que convierte la palabra "programar" en algo que el auditori
    =SI(I2="";"FALTA";"OK")
    ~~~
 
-2. **(1 min)** Arrastrar hasta `M64`. Y decirlo con todas las letras: *"Acaban de escribir una
-   **condición** y un **ciclo**. Eso es el 80% de cualquier automatización. La otra palabra,
-   'variable', es la celda `I2`."*
+   Arrastrar hasta `M64`. Y decirlo con todas las letras: *"Acaban de escribir una **condición** y
+   un **ciclo**. Eso es el 80% de cualquier automatización. La otra palabra, 'variable', es la
+   celda `I2`."*
 
-3. **(1 min)** Contar el resultado:
+2. **(1 min)** Contar:
 
    ~~~
    =CONTAR.SI(M2:M64;"FALTA")
    ~~~
 
-   **Da 10.** Anotarlo en el tablero: hace falta para la Demo 3.
+   **Da 10.** Escribirlo en el tablero: hace falta para las tres demos siguientes.
 
-4. **(1 min)** El remate, que es el puente a todo el bloque 2: *"Un script de Python que revisa
-   estos 63 elementos hace exactamente esto. La misma condición, el mismo ciclo, el mismo
-   conteo. Lo que cambia es que va escrito en renglones en vez de celdas — y que puede leer el
-   modelo en vez de la hoja."*
-
-> **Plan B:** la pestaña resuelta. La lámina sostiene el argumento sola.
+> **Plan B:** la pestaña resuelta.
 
 ---
 
-### 0:41 · Demo 2 — El filtro que miente (5 min, obligatoria)
+### 0:40 · Demo 1B — La misma pregunta, en español (3 min)
+
+Sin cambiar de tema, cambiar de ventana. El auditorio ya sabe que la respuesta es 10.
+
+1. **(1 min)** Pegar en Antigravity:
+
+   > *"En `elementos-tramo2.csv`, dime cuántos elementos no tienen ficha de mantenimiento."*
+
+2. **(1 min)** Mientras trabaja, **señalar el plan** que muestra antes de ejecutar. Esa es la
+   pieza que hay que enseñar a mirar: *"antes de hacer nada, dice qué va a hacer. Eso es lo que
+   uno le pide a un practicante el primer día."*
+
+3. **(1 min)** Leer el resultado y contrastarlo contra el 10 del tablero. Y el remate, que es todo
+   el sentido del par:
+
+   > *"La fórmula y la frase hicieron lo mismo. La diferencia es que la fórmula la escribí yo y sé
+   > exactamente qué cuenta. La frase la interpretó él. Por eso lo importante no es que responda:
+   > es que yo tenga con qué verificar la respuesta — y lo tengo, porque lo acabo de hacer a
+   > mano."*
+
+**Si da un número distinto de 10, no se corrige: se celebra.** Se pasa directo a la Demo 3B y se
+le pregunta qué contó. Es el mismo hallazgo, dos minutos antes.
+
+> **Plan B:** se salta. La Demo 1A sostiene la lámina sola.
+
+---
+
+### 0:46 · Demo 2A — El filtro que miente (3 min, obligatoria)
 
 Va dentro de la lámina *El filtro que miente*. Es la demostración más importante de la sesión y
 la que paga la sesión 04.
 
-1. **(1 min)** Filtrar la columna `categoria` por `Sumidero`. **Salen 22 filas.** Preguntar al
-   auditorio: *"¿Cuántos sumideros hay en el Tramo 2?"* Van a decir 22.
+1. **(1 min)** Filtrar la columna `categoria` por `Sumidero`. **Salen 22 filas.** Preguntar:
+   *"¿Cuántos sumideros hay en el Tramo 2?"* Van a decir 22.
 
-2. **(2 min)** Quitar el filtro y ordenar la columna `categoria` alfabéticamente. Aparecen
-   arriba y abajo las tres filas raras:
+2. **(1 min)** Quitar el filtro y ordenar `categoria` alfabéticamente. Aparecen las tres filas
+   raras:
 
    | Elemento | Cómo quedó escrito |
    |---|---|
@@ -238,11 +367,7 @@ la que paga la sesión 04.
    Y `SUM-014` aparece **dos veces**, con la observación *"Registro repetido en el export"*.
 
 3. **(1 min)** La cuenta correcta: 22 filas − 1 repetida = 21 elementos, + 3 mal escritos = **24
-   sumideros**. Escribirlo en el tablero.
-
-4. **(1 min)** El remate, y hay que dejar silencio antes: *"`SUM-005`, `SUM-015` y `SUM-018`
-   son tres de los que no tienen ficha de mantenimiento. El filtro no se equivocó: hizo
-   exactamente lo que se le pidió. **Y el error se esconde justo donde estaba el problema.**"*
+   sumideros**. Escribirlo en el tablero, al lado del 10.
 
 **Si alguien pregunta cómo se arregla:** `=ESPACIOS(MAYUSC(B2))` normaliza mayúsculas y espacios
 en una columna auxiliar. Dos funciones. No hace falta más — y ese es el punto.
@@ -251,29 +376,58 @@ en una columna auxiliar. Dos funciones. No hace falta más — y ese es el punto
 
 ---
 
-### 0:46 · Demo 3 — El criterio hay que declararlo (4 min, obligatoria)
+### 0:49 · Demo 2B — ¿Y el agente cae en la misma trampa? (4 min)
 
-Sigue en la misma lámina, sin cambiar de pantalla. Es el ejercicio de la sesión 02 —contar los
+**Es la mejor demostración de la sesión**, y funciona salga como salga. El auditorio acaba de
+descubrir a mano que la respuesta es 24 y que el camino obvio da 22. Ahora se lo preguntamos a la
+máquina, **en frío**, sin avisarle nada.
+
+1. **(1 min)** Pegar, tal cual, sin pistas:
+
+   > *"¿Cuántos sumideros hay en el Tramo 2?"*
+
+2. **(2 min)** Leer la respuesta. Hay tres desenlaces y los tres sirven:
+
+   | Lo que responde | Qué decir |
+   |---|---|
+   | **22** | *"Cayó exactamente donde caímos nosotros hace dos minutos. Y fíjense que lo dijo con toda seguridad. Nosotros lo sabemos porque lo contamos a mano; si no, nos lo habríamos creído."* |
+   | **24, y explica que normalizó** | *"Hizo lo mismo que hicimos a mano — y lo dijo. Eso es lo que hay que exigirle siempre: no el número, el camino."* |
+   | **Otro número** | Pasar directo al paso 3. Es todavía mejor. |
+
+3. **(1 min)** La pregunta que hay que hacer **siempre**, salga lo que salga:
+
+   > *"¿Cómo llegaste a ese número? ¿Qué hiciste con las mayúsculas, los espacios y las filas
+   > repetidas?"*
+
+   Leer el plan en pantalla. **Ahí está la lección completa:** el agente puede normalizar, pero
+   uno solo se entera si pregunta — y solo se le ocurre preguntar si ya lo hizo a mano.
+
+**Frase de remate, y después silencio:** *"La máquina no es más confiable que el dato que le
+dieron. Es más rápida. Y eso significa que si el dato está sucio, se equivoca más rápido."*
+
+> **Plan B:** se narra. La lámina trae las tres cifras y el argumento se sostiene entero con la
+> Demo 2A.
+
+---
+
+### 0:53 · Demo 3A — El criterio hay que declararlo (2 min, obligatoria)
+
+Sigue en la hoja de cálculo, sin cambiar de pantalla. Es el ejercicio de la sesión 02 —contar los
 mismos sumideros con criterios distintos— resuelto a la vista de todos.
 
-1. **(1 min)** Recordar el resultado de la Demo 1: **10 elementos sin ficha**. Y preguntar:
-   *"¿Están seguros de que son 10?"*
-
-2. **(2 min)** Mirar la columna `I` con calma. Hay celdas que dicen `N/D` y celdas que dicen
-   `PENDIENTE`. Cambiar la fórmula de `M2` por:
+1. **(1 min)** Recordar el 10 del tablero y preguntar: *"¿Están seguros de que son 10?"* Mirar la
+   columna `I` con calma: hay celdas que dicen `N/D` y celdas que dicen `PENDIENTE`. Cambiar `M2`
+   por:
 
    ~~~
    =SI(O(I2="";I2="N/D";I2="PENDIENTE");"FALTA";"OK")
    ~~~
 
-   Arrastrar. **Ahora da 16 filas**, y 15 elementos distintos porque `SUM-014` está repetido.
+2. **(1 min)** Arrastrar. **Ahora da 16 filas**, y 15 elementos distintos porque `SUM-014` está
+   repetido. El remate: *"El dato no cambió. Cambió lo que yo llamé 'sin ficha'. Diez y quince son
+   los dos correctos — para dos criterios distintos."*
 
-3. **(1 min)** El remate: *"El dato no cambió. Cambió lo que yo llamé 'sin ficha'. Diez y
-   quince son los dos correctos — para dos criterios distintos. **Una automatización no puede
-   declarar el criterio por usted: lo hereda de quien la encargó.**"*
-
-**Cifras verificadas contra el CSV** — conviene tenerlas a mano porque el auditorio va a querer
-recontar:
+**Cifras verificadas contra el CSV** — conviene tenerlas a mano porque el auditorio va a recontar:
 
 | Criterio | Filas | Elementos distintos |
 |---|---|---|
@@ -281,78 +435,92 @@ recontar:
 | Vacías + `N/D` + `PENDIENTE` | 16 | **15** |
 | De esos 15, **red de drenaje** | 13 | **12** (11 sumideros + `POZ-005`) |
 
-El **12** es el número que ya se dictó en la sesión 04 y en la Demo B del miércoles. Si alguien
-lo recuerda y lo señala, celebrarlo: es continuidad, no contradicción — 15 es sobre los 63
-elementos, 12 es sobre la red de drenaje.
+El **12** es el número que ya se dictó en la sesión 04 y en la Demo B del miércoles. Si alguien lo
+recuerda y lo señala, celebrarlo: es continuidad, no contradicción — 15 es sobre los 63 elementos,
+12 es sobre la red de drenaje.
 
 > **Plan B:** proyectar esta tabla.
 
 ---
 
-### 1:00 · Demo 4 — Esto que ven aquí es "no-code" (2 min, opcional)
+### 0:55 · Demo 3B — Pregúntele qué contó (3 min)
 
-Va dentro de *La matriz de decisión*, sobre la primera fila de la tabla. Es un callback de dos
-minutos al lienzo de n8n que ya quedó montado el miércoles: se abre, se señalan las tres cajas y
-se cierra.
+Cierra el par y cierra el bloque. Es corta y es la que deja la idea que el taller va a pedir por
+escrito.
 
-Frase única: *"Esto es lo que la tabla llama no-code. Es lo que vieron el miércoles y es, de
-todas las opciones de esta lámina, la que más veces es la respuesta correcta."*
+1. **(1 min)** Volver a Antigravity, a la respuesta de la Demo 1B, y preguntar:
 
-**No volver a ejecutarlo.** El miércoles ya se demostró; hoy es una referencia visual para que
-la palabra "no-code" tenga una imagen asociada. Si el flujo no abre, se pasa de largo.
+   > *"¿Qué consideraste como 'sin ficha de mantenimiento'? ¿Contaste las celdas vacías
+   > solamente?"*
+
+2. **(1 min)** Y entonces cambiar el criterio sin tocar un solo dato:
+
+   > *"Cuenta también las que dicen `N/D` y las que dicen `PENDIENTE`, y descarta las filas
+   > repetidas por identificador."*
+
+   El número se mueve de 10 a 15 en pantalla, igual que en la hoja.
+
+3. **(1 min)** El remate, que es la frase de la sesión adelantada:
+
+   > *"No cambió el archivo. No cambió la herramienta. Cambió la regla — y la regla la escribí yo
+   > en una frase. Ahí está todo lo de hoy: la máquina ejecuta, el criterio es de ustedes. Por eso
+   > el taller de las once y media les va a pedir que escriban la regla, no que elijan la
+   > herramienta."*
+
+> **Plan B:** se salta. La Demo 3A ya deja el punto.
 
 ---
 
-### 1:05 · Demo 5 — Que lo explique en español (5 min, opcional pero recomendada)
+### 1:10 · Demo 4 — Que lo explique en español (4 min, recomendada)
 
-Va dentro de la lámina *Pedirle el código a la IA*, y es la que cubre la hora 14 del programa sin
-convertir la sesión en un curso de programación. Se hace en el mismo Gemini CLI apuntado a la
-carpeta del expediente, que ya quedó montado el miércoles.
+Va dentro de *Pedirle el código a la IA*, y cubre la hora 14 del programa sin convertir la sesión
+en un curso de programación.
 
-1. **(2 min)** Pedir el script, con el prompt pegado:
+1. **(1 min)** Pedir el script, ahora sí:
 
-   > *"Escribe un script que lea `elementos-tramo2.csv`, normalice mayúsculas y espacios en la
-   > columna `categoria`, elimine filas repetidas por `id_elemento` y me diga cuántos sumideros
-   > no tienen ficha de mantenimiento. Cuenta como 'sin ficha' las celdas vacías, `N/D` y
-   > `PENDIENTE`."*
+   > *"Escribe el script que hace exactamente lo que acabamos de hacer: leer el CSV, normalizar
+   > mayúsculas y espacios en `categoria`, descartar filas repetidas por `id_elemento` y contar
+   > los sumideros sin ficha, tomando como ausencia las celdas vacías, `N/D` y `PENDIENTE`."*
 
-   Aparecen veinte renglones. **Nadie tiene que entenderlos**, y hay que decirlo.
+   Aparecen veinte renglones. **Nadie tiene que entenderlos, y hay que decirlo.**
 
 2. **(2 min)** La pregunta que importa de verdad:
 
-   > *"Ahora explícame ese script línea por línea, como si yo fuera arquitecto y no hubiera
-   > programado nunca."*
+   > *"Ahora explícamelo línea por línea, como si yo fuera arquitecto y no hubiera programado
+   > nunca."*
 
-   Leer la explicación en voz alta. Señalar dónde aparece la **condición** y dónde el **ciclo**
-   de la Demo 1. Ese reconocimiento es todo el objetivo de la demostración.
+   Leer la explicación en voz alta y **señalar dónde aparece la condición y dónde el ciclo de la
+   Demo 1A**. Ese reconocimiento es todo el objetivo: *"esto es su `=SI()`, escrito de otra
+   manera."*
 
-3. **(1 min)** Y las otras dos preguntas de la lámina, aunque sea rápido:
+3. **(1 min)** Las otras dos preguntas de la lámina:
 
    > *"¿Qué pasa si un dato viene vacío, repetido o mal escrito?"*
-   > *"¿Qué modifica en el modelo, exactamente?"*
+   > *"¿Qué modifica, exactamente?"*
 
-   La segunda tiene que dar **"nada"**: el script solo lee un CSV. Rematar con eso: *"Esta
-   respuesta es la que hay que exigir siempre antes de correr algo. Si no se entiende, no se
-   corre."*
+   La segunda tiene que dar **"nada"**: solo lee un CSV. Rematar con eso — *"esta es la respuesta
+   que hay que exigir antes de correr algo. Si no se entiende, no se corre."*
 
-> **Plan B:** se narra. Es la demostración más fácil de contar sin hacerla, porque el argumento
-> —pedir la explicación, no el código— se entiende enunciado.
+> **Plan B:** se narra. El argumento —pedir la explicación, no el código— se entiende enunciado.
 
 ---
 
-### 1:16 · Demo 6 — El giro en vivo (4 min, opcional)
+### 1:16 · Demo 5 — El giro en vivo (5 min)
 
 Va **después** de leer el blockquote de la lámina del giro y antes de abrir las dos tarjetas.
-Funciona igual de bien narrada: la fuerza está en los dos documentos, no en la herramienta.
+Funciona igual de bien narrada: la fuerza está en los dos documentos, no en la herramienta. Y es
+la demostración donde el RAG de la Demo 0 rinde de verdad, porque el agente ya no lee una tabla:
+**lee el pliego**.
 
 1. **(1 min)** El encargo ingenuo, tal como lo haría cualquiera:
 
-   > *"Marca todo elemento de este inventario que no tenga ficha de mantenimiento."*
+   > *"En esta carpeta está el Anexo Técnico 7. Aplica su numeral 4.3 al inventario de elementos y
+   > márcame todo lo que no cumpla."*
 
-   Salen **15**. Proyectar la lista.
+   **Nótese que nadie le dijo qué dice el 4.3.** Lo va a leer del archivo: eso es RAG, y ahora se
+   ve para qué sirve.
 
-2. **(2 min)** Abrir el **Anexo Técnico 7, numeral 4.3** en la otra ventana y leer los cuatro
-   subnumerales en voz alta, uno por uno, contra la lista:
+2. **(2 min)** Leer el resultado contra los cuatro subnumerales, proyectando el anexo al lado:
 
    | Elemento marcado | Qué dice la regla que le aplica |
    |---|---|
@@ -361,22 +529,82 @@ Funciona igual de bien narrada: la fuerza está en los dos documentos, no en la 
    | `SEN-003` | 4.3.3 — exigible **únicamente** con estructura de soporte propia. **El export no trae esa columna: es indecidible** |
    | `ARB-003` | 4.3.4 — lleva **ficha de manejo silvicultural**, no de mantenimiento. **Mal marcado** |
 
-3. **(1 min)** El segundo error, abriendo el **Acta 14, numeral 4.1**: la misma regla 4.3.1 exigía
-   LOD 350 para toda la red de drenaje, y el comité lo bajó a 300 en tuberías y colectores
-   enterrados. El numeral 4.3 del acta aclara que **no se emitiría versión nueva del anexo**.
+   **Si el agente distingue los cuatro subnumerales solo, hay que celebrarlo en voz alta** — y
+   entonces la lección cambia de lugar, que es aún mejor: *"lo hizo bien porque tenía el documento.
+   El que escribió la regla a mano la semana pasada no lo tenía abierto."*
 
-**Frase de remate**, y después silencio: *"Trece bien, uno indecidible, uno mal. El código no
-tuvo ni un error. Lo que estaba mal era la frase con la que lo encargué — y la frase la escribí
-yo, no la IA."*
+3. **(1 min)** El segundo error, el de vigencia. Preguntar:
 
-**El detalle que vale oro si hay tiempo:** el numeral **4.2 del Acta 14** ratifica que la ficha
-de mantenimiento sigue siendo exigible al 100% para la red de drenaje, *"con independencia del
-nivel de información aprobado"*. Es decir: quien hubiera leído **solo** el acta también se
-habría equivocado, en la dirección contraria. *"No es que el documento nuevo mande sobre el
-viejo. Es que hay que leer los dos."*
+   > *"¿Hay alguna acta de comité que modifique ese numeral?"*
+
+   Encuentra el **Acta 14, numeral 4.1**: el LOD bajó a 300 en tuberías y colectores enterrados, y
+   el numeral 4.3 del acta aclara que **no se emitiría versión nueva del anexo**.
+
+4. **(1 min)** **Frase de remate, y después silencio:**
+
+   > *"Trece bien, uno indecidible, uno mal. El código no tuvo ni un error. Lo que estaba mal era
+   > la frase con la que lo encargué — y la frase la escribí yo, no la IA."*
+
+**El detalle que vale oro si hay tiempo:** el numeral **4.2 del Acta 14** ratifica que la ficha de
+mantenimiento sigue siendo exigible al 100% para la red de drenaje, *"con independencia del nivel
+de información aprobado"*. Es decir: quien hubiera leído **solo** el acta también se habría
+equivocado, en la dirección contraria. *"No es que el documento nuevo mande sobre el viejo. Es que
+hay que leer los dos — y el agente puede leer los dos a la vez, que es lo único que hoy hace mejor
+que nosotros."*
 
 > **Plan B:** la lámina trae la tabla completa y los dos numerales. Es la lámina que mejor se
 > sostiene sola de toda la sesión.
+
+---
+
+### Los prompts y las fórmulas, para copiar
+
+Conviene tener este bloque abierto en un archivo de texto aparte durante toda la clase.
+
+**Hoja de cálculo**
+
+~~~
+=SI(I2="";"FALTA";"OK")
+=CONTAR.SI(M2:M64;"FALTA")
+=SI(O(I2="";I2="N/D";I2="PENDIENTE");"FALTA";"OK")
+=ESPACIOS(MAYUSC(B2))
+~~~
+
+**Antigravity**
+
+~~~
+[Demo 0]  ¿Cuál es el presupuesto total del Corredor Av. Guayacanes?
+
+[Demo 1B] En elementos-tramo2.csv, dime cuántos elementos no tienen ficha
+          de mantenimiento.
+
+[Demo 2B] ¿Cuántos sumideros hay en el Tramo 2?
+
+[Demo 2B] ¿Cómo llegaste a ese número? ¿Qué hiciste con las mayúsculas, los
+          espacios y las filas repetidas?
+
+[Demo 3B] ¿Qué consideraste como "sin ficha de mantenimiento"? ¿Contaste las
+          celdas vacías solamente?
+
+[Demo 3B] Cuenta también las que dicen N/D y las que dicen PENDIENTE, y
+          descarta las filas repetidas por identificador.
+
+[Demo 4]  Escribe el script que hace exactamente lo que acabamos de hacer:
+          leer el CSV, normalizar mayúsculas y espacios en categoria,
+          descartar filas repetidas por id_elemento y contar los sumideros
+          sin ficha, tomando como ausencia las celdas vacías, N/D y PENDIENTE.
+
+[Demo 4]  Ahora explícamelo línea por línea, como si yo fuera arquitecto y no
+          hubiera programado nunca.
+
+[Demo 4]  ¿Qué pasa si un dato viene vacío, repetido o mal escrito?
+          ¿Qué modifica, exactamente?
+
+[Demo 5]  En esta carpeta está el Anexo Técnico 7. Aplica su numeral 4.3 al
+          inventario de elementos y márcame todo lo que no cumpla.
+
+[Demo 5]  ¿Hay alguna acta de comité que modifique ese numeral?
+~~~
 
 ---
 
@@ -401,7 +629,7 @@ por radicación, y hay cinco subtramos."*
 Van a decir la 4, los datos. **Es la 2**: la regla. Y ese es el hallazgo de la lámina: la regla
 existe, pero vive en la cabeza de alguien y nadie la escribió nunca.
 
-### En *Ustedes ya programan* — antes de la Demo 1
+### En *Ustedes ya programan* — antes de la Demo 1A
 
 > **"¿Quién aquí ha usado un `=SI()` en Excel?"**
 
@@ -486,6 +714,11 @@ cerrar: *"Una automatización sin dueño escrito es deuda técnica con nombre de
 |---|---|
 | El servidor MCP oficial de Revit 2027 es de solo lectura | Alta — anuncio de Autodesk del 17/06/2026. Se menciona de paso, en la lámina de autonomía |
 | Dynamo corre dentro de Revit y no requiere instalación aparte ni permisos de TI | Alta — viene con el producto |
+| **Antigravity es gratuito durante la versión preliminar** y se entra con una cuenta personal de Gmail, con cupo de uso incluido | Alta — [antigravity.google](https://antigravity.google/download). **Decir que es versión preliminar**, no producto estable |
+| Corre en Windows 10 o superior, x64 y ARM64; también macOS y Linux | Alta — página oficial de descarga |
+| Muestra **planes de implementación** como artefacto antes de ejecutar, en un panel de revisión | Alta — [docs de artefactos](https://antigravity.google/docs/artifacts/). Es la pieza que se enseña a auditar en las Demos 1B y 2B |
+| Por defecto el agente solo accede a las carpetas del proyecto abierto; existe aislamiento de workspace | Alta — [docs de permisos](https://antigravity.google/docs/permissions/). Es el sustento de la Demo 0 |
+| Durante 2026 se reportaron vulnerabilidades en entornos agénticos de este tipo | Media-alta — **no se nombra ningún producto en clase**; se usa solo como razón de la regla "carpeta nueva, nada de la entidad" |
 
 ---
 
@@ -499,6 +732,18 @@ cerrar: *"Una automatización sin dueño escrito es deuda técnica con nombre de
 **No hay ficha de bolsillo.** Las fichas son las de los cinco objetos, y esta sesión no tiene
 objeto. Si alguien la pide, la hoja de taller cumple esa función: la parte C.1 es la matriz de
 decisión completa.
+
+**Si preguntan cómo replicar las demos** —y van a preguntar después de la 2B—, se comparte
+<https://antigravity.google/download> con tres advertencias, en este orden:
+
+1. Es **versión preliminar y gratuita**. Puede cambiar o dejar de ser gratis.
+2. Se entra con **cuenta personal**, no institucional.
+3. **La carpeta que se abre es una carpeta nueva, con archivos de prueba.** Nunca una carpeta de
+   la entidad, y nunca información del proyecto real. Es el numeral 4.7.3, y es el mismo criterio
+   que la Interventoría pidió por escrito en el compromiso **15-1**, que sigue abierto.
+
+El punto 3 no es una formalidad de cierre: es la parte de la clase que más rápido se les olvida y
+la única que puede tener consecuencia real.
 
 ---
 
