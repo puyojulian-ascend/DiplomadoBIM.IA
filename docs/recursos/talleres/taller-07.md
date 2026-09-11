@@ -6,12 +6,15 @@
 > semana completa y a decidir qué se automatiza primero**. El producto de hoy es una decisión
 > priorizada, no un dibujo.
 
+> **Cómo se llena:** las casillas naranjas de las tablas son de una línea; las cajas punteadas
+> son para escribir libremente. Todo se guarda solo y se puede descargar al final.
+
 ---
 
 ## Parte A — El inventario de su semana (5 min)
 
-Para cada familia, escriba la tarea que **más veces repite** y calcule las horas que le dedica
-en una semana típica. Si una familia no aplica a su rol, escriba una raya.
+Para cada familia, escriba la tarea que **más veces repite** y calcule las horas que le dedica en
+una semana típica. Si una familia no aplica a su rol, escriba una raya.
 
 | # | Familia | Su tarea más repetida | Horas/semana |
 |---|---|---|---|
@@ -21,22 +24,24 @@ en una semana típica. Si una familia no aplica a su rol, escriba una raya.
 | 4 | **Reportar** — convertir el hallazgo en entregable | | |
 | 5 | **Avisar** — escribir a quien corresponde y hacer seguimiento | | |
 
-```
-Total de horas/semana:  __________
+Ahora sume la columna de horas y calcule qué parte de una jornada de 40 representa.
 
-De una jornada de 40, eso es el  __________ %
-```
+| Cálculo | Su respuesta |
+|---|---|
+| **Total de horas por semana** | |
+| **Sobre una jornada de 40, eso es el…** | |
 
-> Antes de seguir, mire ese porcentaje y quédese un momento con él. Es la parte de su semana que
+> Mire ese porcentaje y quédese un momento con él antes de seguir. Es la parte de su semana que
 > **no** es criterio profesional: es mover y verificar información.
 
 ---
 
 ## Parte B — El triaje (5 min)
 
-Ahora pase sus cinco tareas por las cuatro preguntas. Una marca por casilla que responda **sí**.
+Pase sus cinco tareas por las cuatro preguntas. Escriba **sí** o **no** en cada casilla, y cuente
+los **sí** en la última columna.
 
-| # | ¿Se repite? | ¿La regla está **escrita**? | ¿El resultado se verifica? | ¿Los datos existen? | Total |
+| # | ¿Se repite? | ¿La regla está **escrita**? | ¿El resultado se verifica? | ¿Los datos existen? | Total de *sí* |
 |---|---|---|---|---|---|
 | 1 | | | | | |
 | 2 | | | | | |
@@ -46,27 +51,28 @@ Ahora pase sus cinco tareas por las cuatro preguntas. Una marca por casilla que 
 
 ### B.1 · Las dos que importan
 
-```
-La tarea con más marcas (la candidata):   N.º ______
-
-La tarea con más horas/semana:            N.º ______
-```
+| Tarea | Número |
+|---|---|
+| La que sacó **más *sí*** — la candidata | |
+| La que se lleva **más horas** | |
 
 - [ ] **Son la misma.** Empiece por ahí: es la decisión fácil.
 - [ ] **Son distintas.** *Ese es el hallazgo del ejercicio.* La que más duele no es la que está
-      lista, y elegir la que está lista igual es la respuesta correcta — la otra necesita trabajo
-      antes, no herramienta.
+      lista, y elegir la que está lista igual es la respuesta correcta — la otra no necesita una
+      herramienta, necesita que alguien escriba la regla primero.
 
 ### B.2 · La que falló la pregunta 2
 
 Casi siempre hay una tarea que se repite, se verifica y tiene datos — pero cuya regla **no está
 escrita en ninguna parte**: vive en la experiencia de quien la hace.
 
+| Dato | Su respuesta |
+|---|---|
+| **Número de esa tarea** | |
+
+**¿Quién es hoy la única persona que sabe cómo se hace?** Escríbalo abajo:
+
 ```
-¿Cuál de las cinco es?   N.º ______
-
-¿Quién es hoy la única persona que sabe cómo se hace?
-
 
 
 ```
@@ -115,22 +121,22 @@ Marque **una**. La primera que aplique, decide.
 - [ ] **Plugin o aplicación** — la va a usar todo el equipo, todos los días, durante años.
 - [ ] **Agente con herramientas** — los pasos dependen de lo que se encuentre.
 
-```
-Por qué esa y no la anterior:
+**¿Por qué esa y no la anterior de la lista?** Escríbalo abajo:
 
+```
 
 
 ```
 
 ### C.4 · La firma
 
+| Dato | Su respuesta |
+|---|---|
+| **Quién responde por esta automatización cuando la regla cambie** | |
+
+**Si esa persona se va de la entidad, ¿quién queda?** Escríbalo abajo:
+
 ```
-Nombre de quien responde por esta automatización cuando la regla cambie:
-
-
-
-Si esa persona se va de la entidad, ¿quién queda?
-
 
 
 ```
