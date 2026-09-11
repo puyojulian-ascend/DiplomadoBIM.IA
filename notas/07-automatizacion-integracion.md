@@ -9,15 +9,16 @@ Documento del docente. No se proyecta.
 
 Marcela se pasa la semana revisando, extrayendo, cruzando y reportando — y no alcanza a llegar
 al segundo subtramo. Se automatiza lo repetible, se elige la tecnología al final y no al
-principio, y entonces aparece el problema: el script no falló nunca. **La regla estaba mal
-escrita.**
+principio, y entonces aparece el problema: el script no falló nunca, y **por eso nadie lo volvió
+a mirar el día que un acta cambió la regla que tenía adentro.**
 
 | | |
 |---|---|
-| **La frase** | Primero la regla, después el robot. |
-| **El giro** | Una automatización no vuelve correcta una regla: la aplica más rápido. |
+| **La frase** | Automatizar no es escribir un script: es adoptar una regla. |
+| **El giro** | Una automatización no envejece. Envejece la regla que lleva adentro — y no avisa. |
 | **El pago de la sesión 04** | Normalizar antes de contar es la diferencia entre 21 sumideros y 24. |
-| **El remate del giro** | De los 15 elementos marcados, 13 estaban bien, uno era indecidible y uno estaba mal — y nadie leyó el script. |
+| **El remate del giro** | El acta cambió el requisito el 18 de junio. La automatización siguió aplicando el anterior durante **seis comités**. |
+| **El error secundario** | Y además el alcance estaba mal: 13 bien, uno indecidible, uno mal. Ni un error de código. |
 
 **Esta sesión no tiene objeto memorable.** Los objetos son cinco y están asignados a las
 sesiones del arco (02, 04, 06, 08, 09). La 07 es una sesión de oficio, no de dependencia: no
@@ -540,10 +541,12 @@ la demostración donde el RAG de la Demo 0 rinde de verdad, porque el agente ya 
    Encuentra el **Acta 14, numeral 4.1**: el LOD bajó a 300 en tuberías y colectores enterrados, y
    el numeral 4.3 del acta aclara que **no se emitiría versión nueva del anexo**.
 
-4. **(1 min)** **Frase de remate, y después silencio:**
+4. **(1 min)** **Frase de remate, y después silencio.** El titular es la fecha, no el recuento:
 
-   > *"Trece bien, uno indecidible, uno mal. El código no tuvo ni un error. Lo que estaba mal era
-   > la frase con la que lo encargué — y la frase la escribí yo, no la IA."*
+   > *"Esta acta es del 18 de junio. Si yo hubiera puesto esto a correr en mayo, habría seguido
+   > exigiendo LOD 350 durante seis comités — y nunca me habría avisado, porque desde su punto de
+   > vista no se estaba equivocando. Trece bien, uno indecidible, uno mal, y ni un error de
+   > código. El problema no es que falle: es que **no falla, y sigue.**"*
 
 **El detalle que vale oro si hay tiempo:** el numeral **4.2 del Acta 14** ratifica que la ficha de
 mantenimiento sigue siendo exigible al 100% para la red de drenaje, *"con independencia del nivel
@@ -648,22 +651,51 @@ el giro, dicho por el auditorio.
 
 ## Claves del taller
 
-### A.1 — Las cuatro preguntas
+El taller de hoy **no se parece al del miércoles a propósito**, y conviene decirlo al repartirlo:
+*"el miércoles diseñamos un flujo; hoy no vamos a diseñar nada, vamos a inventariar la semana
+entera y a decidir qué va primero."* Es un ejercicio de **triaje**, no de diseño. La diferencia
+importa porque el error más común de una entidad no es automatizar mal: es automatizar lo que no
+tocaba.
 
-La mayoría va a marcar las cuatro casillas de entrada. **Hay que pedir que relean la segunda**:
-"tiene una regla" no significa "yo sé cómo se hace", significa que está escrita en algún lado. Si
-la respuesta a B.3 es *"en ningún lado"*, la casilla no se marca — y ese es el resultado más
-valioso que puede producir el taller.
+### Parte A — El inventario
 
-### B.2 — La regla con su excepción
+El único número que importa es **el porcentaje final**, y hay que pedir en voz alta que lo miren
+dos segundos antes de seguir. Suele dar entre 50 y 70%. Ese porcentaje es toda la justificación de
+la sesión y no hace falta comentarlo: se deja en silencio.
 
-Es la casilla que separa un taller bueno de uno que se llenó por llenar. Regla para dictar en voz
-alta: *si la regla no tiene excepción, o es trivial o usted todavía no la conoce bien.* El
-numeral 4.3 del anexo tiene tres excepciones en cuatro renglones.
+**Si alguien dice que no puede estimar las horas**, que ponga un rango. El ejercicio no busca
+precisión contable, busca orden de magnitud.
 
-### C.1 — La matriz de decisión
+### Parte B — El triaje
 
-Respuestas frecuentes y qué contestar:
+**B.1 es el hallazgo.** En la mayoría de las hojas, la tarea con más marcas y la tarea con más
+horas **no son la misma**. Cuando eso pasa hay que decir la frase completa, porque es
+contraintuitiva:
+
+> *"La que más le duele no es la que está lista. Y aun así hay que empezar por la que está lista
+> — la otra no necesita una herramienta, necesita que alguien escriba la regla primero."*
+
+**B.2 es la que hay que proteger del optimismo.** Casi todos van a marcar la pregunta 2 en las
+cinco tareas. Hay que intervenir: *"¿está escrita, o usted sabe cómo se hace? No es lo mismo.
+Escrita quiere decir que alguien más podría hacerla mañana sin preguntarle a usted."* Con esa
+aclaración, la mitad de las marcas se caen — y ahí empieza a servir el ejercicio.
+
+**Y B.2 es el puente a la sesión 10.** Cuando alguien identifique su tarea sin regla escrita, vale
+la pena nombrarlo: *"guarde esa. El 23 de septiembre la clase entera es sobre eso: cómo se
+escriben las reglas de validación de un modelo."*
+
+### Parte C — La ficha
+
+**C.1 es la parte nueva del curso y la que más cuesta.** Las tres primeras filas se llenan rápido;
+la cuarta —*¿cómo se enteraría si mañana cambia?*— deja a casi todo el mundo en blanco. **Esa
+casilla en blanco es el giro del día, escrito de su puño y letra.** Si el grupo la deja vacía, no
+hay que rescatarlos: hay que señalarlo.
+
+**C.4 es el remate.** Pedir en voz alta **un** nombre, de alguien. Cuesta, porque suena a
+asignarle trabajo a un tercero. Romper el hielo con uno propio. Y si alguien responde "el área" o
+"TI", devolver la pregunta: *"un área no revisa actas. ¿Quién, con nombre?"*
+
+Respuestas frecuentes en C.3 y qué contestar:
 
 | Lo que marcan | Qué contestar |
 |---|---|
@@ -671,14 +703,6 @@ Respuestas frecuentes y qué contestar:
 | **Agente**, porque es lo del miércoles | ¿Puede dibujar todos los pasos de antemano? Si puede, es no-code. Elegir agente cuando basta una receta es sobreingeniería |
 | **Dynamo**, por costumbre | Correcto **si toca geometría o parámetros dentro de Revit**. Si es una tabla, Python o la hoja de cálculo van más rápido |
 | **No-code** | Casi siempre la respuesta correcta. Confirmarlo sin ironía: es la menos emocionante y la que más funciona |
-
-### C.3 — La pregunta del mantenimiento
-
-Es la que nadie responde bien y la que más sirve. Si la respuesta es un nombre propio y esa
-persona es la única, la automatización **todavía no existe**: existe un favor. Frase para
-cerrar: *"Una automatización sin dueño escrito es deuda técnica con nombre de persona."*
-
----
 
 ## Cifras y afirmaciones — verificadas antes de dictar
 
@@ -756,12 +780,44 @@ tocarla**: el arco de las cinco dependencias va 06 → 08, y la 07 es una sesió
 intercala. Basta con una frase al abrir la 08: *"el viernes automatizamos lo que ya estaba
 escrito; hoy le vamos a pedir algo que no está escrito en ninguna parte."*
 
-- **Quedó claro:** lo escaso no es quien sabe programar, es quien sabe escribir la regla. Y una
-  automatización no vuelve correcta una regla: la aplica más rápido.
+- **Quedó claro:** automatizar no es escribir un script, es adoptar una regla — y toda regla
+  adoptada necesita un dueño, porque las reglas cambian y los scripts no.
 - **Quedó abierto:** todo lo automatizable supone que la respuesta ya existe en algún documento.
   ¿Y cuando no existe?
 
-La lámina *Próximo capítulo* deja servido el caso de la 08 con las mismas palabras que ya usa la
-06: seis sumideros contra el trazado de la ciclorruta entre K0+400 y K0+700.
+**Cuidado con el giro, que es el cruce más delicado del bloque.** Las dos sesiones son del mismo
+docente con cinco días de diferencia, y los dos giros comparten forma: *la máquina hizo bien su
+trabajo*. Por eso la 07 se corrió a propósito hacia la **vigencia** —la regla estaba bien el día
+que se escribió y un acta la cambió después— y le dejó a la 08 el de **formulación**: la
+restricción que nadie escribió. Al llegar al giro de la 08 conviene apoyarse en eso en una línea:
+*"el viernes la regla envejeció; hoy la regla nunca se escribió. Son dos maneras distintas de que
+el resultado sea impecable y esté mal."* Si la 07 hubiera usado el giro de formulación, el del
+Abanico —que es objeto de arco— habría llegado gastado.
+
+### A la sesión 10 — Coordinación, calidad y obra (Stiven, 23/09)
+
+Es el traspaso más importante que deja esta sesión, y está registrado en los acuerdos de reparto
+de [HILO-NARRATIVO.md](../docs/HILO-NARRATIVO.md), sección 7.
+
+La 07 **no enseña a escribir reglas de validación**: las trata como insumo. La pregunta 2 de la
+prueba —*¿la regla está escrita?*— funciona como filtro, y la tarea que la falla se manda
+explícitamente a la 10, tanto en la parte B.2 del taller como en voz alta durante el ejercicio.
+
+- **Lo que la 10 recibe servido:** cada asistente llega con **una tarea propia, identificada por
+  escrito, que se repite y se verifica pero cuya regla nadie ha redactado nunca**. Ese es el
+  material de la hora 19 y no hay que volver a levantarlo.
+- **Lo que la 10 no debe repetir:** la matriz no-code / Dynamo / Python / plugin, los tres niveles
+  de autonomía y la prueba de las cuatro preguntas. Se heredan en voz alta.
+- **Lo que la 10 desarrolla y la 07 solo rozó:** el catálogo de reglas —parámetros obligatorios,
+  nomenclatura, clasificación, duplicados—, la priorización de interferencias y la clasificación
+  de incidencias. El stub original de la 07 traía *"diseñar un agente de revisión de calidad BIM"*
+  como actividad, que es literalmente la actividad de la hora 19; **se retiró de la 07 a
+  propósito**.
+
+### A la sesión 11 — BIM, CDE y gemelos digitales (Daniel, 25/09)
+
+Pese a que el título de la 07 dice *tecnologías de integración*, la integración con CDE, ERP y
+sistemas empresariales —mapeo de datos, identificadores únicos, sincronización— es la hora 21 y es
+de Daniel. La 07 solo nombra la categoría al elegir tecnología, y no entra. Vale la pena avisarle.
 
 Registrado en [HILO-NARRATIVO.md](../docs/HILO-NARRATIVO.md), sección 7.

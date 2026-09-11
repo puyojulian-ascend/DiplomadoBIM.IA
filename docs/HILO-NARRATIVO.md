@@ -139,7 +139,7 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 04 · Stiven | No toda la información puede salir de la entidad. Hay un semáforo, y ante la duda es ámbar. | Los datos ya están ordenados y clasificados, pero siguen en carpetas. ¿Cómo llega la IA a la fuente viva? |
 | 05 · Hugo | Una representación útil no es una evidencia técnica: la IA multimodal comunica, pero no certifica. | Cada vez hay que descargar, copiar y volver a subir. ¿Y si la IA pudiera consultar directamente la fuente viva? |
 | 06 · Stiven | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
-| 07 · Stiven | Lo escaso no es quien sabe programar: es quien sabe escribir la regla. Automatizar no vuelve correcta una regla — la aplica más rápido. | Todo lo automatizable supone que la respuesta ya está escrita en algún documento. ¿Y cuando no existe en ninguno? |
+| 07 · Stiven | Automatizar no es escribir un script: es adoptar una regla, y toda regla adoptada necesita un dueño. Una automatización no envejece — envejece la regla que lleva adentro, y no avisa. | Todo lo automatizable supone que la respuesta ya está escrita en algún documento. ¿Y cuando no existe en ninguno? |
 | 08 · Stiven | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
 | 09 · Stiven | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
 | 10 · Stiven | *(por completar)* | *(por completar)* |
@@ -156,9 +156,21 @@ lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos
 | El modelo BIM como estructura de datos · los tres grados de estructura · IFC · nomenclaturas | **03 · Hugo** | 04 · Stiven, que abre reconociéndolo y arranca donde eso termina: el anexo, las actas y los correos **no** están estructurados |
 | El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 · Stiven y 11 · Daniel, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
 | Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Stiven, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
+| **Reglas de validación de modelo** — parámetros obligatorios, nomenclatura, clasificación, duplicados | **10 · Stiven** (hora 19), donde se diseña el agente de revisión de calidad y se arma el catálogo de reglas | 07 · Stiven, que llega antes y las trata como **insumo**: la regla es algo que hay que tener escrito para poder automatizar, no algo que la 07 enseñe a redactar |
+| **Integración con CDE, ERP y sistemas empresariales** — mapeo de datos, identificadores únicos, sincronización | **11 · Daniel** (hora 21) | 07 · Stiven, que solo nombra la categoría al elegir tecnología. Pese al título de la 07, la integración empresarial **no** se desarrolla ahí |
+| **Dynamo y el paramétrico** | **07 · Stiven**, como *tecnología de automatización* — una de las cuatro de la matriz de decisión | 08 · Stiven, que lo retoma como *herramienta de generación* en el panorama del diseño generativo |
+| **"La máquina hizo bien su trabajo; el error fue de formulación"** | **08 · Stiven** — es el giro del Abanico: una restricción que no se escribe, no existe | 07 · Stiven llega antes y **usa otro giro a propósito**: no la formulación inicial sino la **vigencia** — la regla estaba bien el día que se escribió y un acta la cambió tres meses después. Las dos sesiones son del mismo docente y con cinco días de diferencia; repetir la forma le habría quitado fuerza a la 08, que es sesión de arco |
 
 En la 04 esas dos láminas quedan marcadas `Extra`: se dictan solo si la 03 no alcanzó a
 cubrirlas. La sesión funciona en los dos escenarios.
+
+**Sobre la 07 y la 10.** Es el cruce más fino de todos y conviene tenerlo claro: la **07 decide
+qué automatizar y con qué**; la **10 define qué revisa una automatización de calidad**. La 07
+pregunta *"¿está escrita la regla?"* como filtro —si no lo está, la tarea todavía no es
+candidata— y manda esa tarea explícitamente a la 10, tanto en el taller como en voz alta. La 10
+recoge justamente esas tareas y les construye el catálogo de reglas. El stub original de la 07
+traía como actividad *"diseñar un agente de revisión de calidad BIM"*, que es literalmente la
+actividad de la hora 19: se retiró de la 07 por eso.
 
 **Sobre los dos cruces:** la distinción es entre *usar* y *enseñar*. La 04 y la 06 se paran sobre
 el CDE y sobre un informe de interferencias porque son el material que hay que gobernar y

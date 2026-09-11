@@ -1,93 +1,111 @@
 # Taller — Sesión 07 · Automatización BIM y tecnologías de integración
 
-**Duración:** 15 minutos · **Trabajo:** individual o en parejas
+**Duración:** 15 minutos · **Trabajo:** individual
 
-> El producto de hoy es una **ficha de automatización**: una tarea suya, descrita con la
-> precisión suficiente para que alguien más —o una IA— la pueda construir sin preguntarle nada.
+> El miércoles usted diseñó **un** flujo. Hoy no vamos a diseñar nada: vamos a **inventariar su
+> semana completa y a decidir qué se automatiza primero**. El producto de hoy es una decisión
+> priorizada, no un dibujo.
 
 ---
 
-## Parte A — La tarea (3 min)
+## Parte A — El inventario de su semana (5 min)
 
-Elija **una tarea real** de su semana. Que sea de las cinco familias: revisar, extraer, cruzar,
-reportar o avisar. **No elija "decidir".**
+Para cada familia, escriba la tarea que **más veces repite** y calcule las horas que le dedica
+en una semana típica. Si una familia no aplica a su rol, escriba una raya.
+
+| # | Familia | Su tarea más repetida | Horas/semana |
+|---|---|---|---|
+| 1 | **Revisar** — verificar que algo cumpla una regla | | |
+| 2 | **Extraer** — sacar tablas, exportar, limpiar | | |
+| 3 | **Cruzar** — comparar dos listas | | |
+| 4 | **Reportar** — convertir el hallazgo en entregable | | |
+| 5 | **Avisar** — escribir a quien corresponde y hacer seguimiento | | |
 
 ```
-La tarea, en una frase:
+Total de horas/semana:  __________
+
+De una jornada de 40, eso es el  __________ %
+```
+
+> Antes de seguir, mire ese porcentaje y quédese un momento con él. Es la parte de su semana que
+> **no** es criterio profesional: es mover y verificar información.
+
+---
+
+## Parte B — El triaje (5 min)
+
+Ahora pase sus cinco tareas por las cuatro preguntas. Una marca por casilla que responda **sí**.
+
+| # | ¿Se repite? | ¿La regla está **escrita**? | ¿El resultado se verifica? | ¿Los datos existen? | Total |
+|---|---|---|---|---|---|
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+| 4 | | | | | |
+| 5 | | | | | |
+
+### B.1 · Las dos que importan
+
+```
+La tarea con más marcas (la candidata):   N.º ______
+
+La tarea con más horas/semana:            N.º ______
+```
+
+- [ ] **Son la misma.** Empiece por ahí: es la decisión fácil.
+- [ ] **Son distintas.** *Ese es el hallazgo del ejercicio.* La que más duele no es la que está
+      lista, y elegir la que está lista igual es la respuesta correcta — la otra necesita trabajo
+      antes, no herramienta.
+
+### B.2 · La que falló la pregunta 2
+
+Casi siempre hay una tarea que se repite, se verifica y tiene datos — pero cuya regla **no está
+escrita en ninguna parte**: vive en la experiencia de quien la hace.
+
+```
+¿Cuál de las cinco es?   N.º ______
+
+¿Quién es hoy la única persona que sabe cómo se hace?
 
 
 
 ```
+
+> Esa tarea **no** es candidata a automatizarse todavía, y no es un fracaso: es el trabajo previo.
+> Escribir esa regla vale más que cualquier herramienta de esta clase.
+
+---
+
+## Parte C — La ficha de la candidata (5 min)
+
+Trabaje **solo sobre la tarea que eligió en B.1**.
+
+### C.1 · Procedencia de la regla
+
+Lo que distingue una automatización que dura de una que hay que rehacer cada seis meses.
 
 | Pregunta | Su respuesta |
 |---|---|
-| ¿Cada cuánto se hace? | |
-| ¿Cuánto tiempo le toma cada vez? | |
-| ¿Quién se acuerda de hacerla? | |
-| ¿Qué pasa el día que nadie la hace? | |
+| ¿En qué documento está escrita la regla? | |
+| ¿De qué fecha es ese documento? | |
+| ¿Algo posterior lo modificó — un acta, un comité, un correo? | |
+| ¿Cómo se enteraría usted si mañana cambia? | |
 
-### A.1 · La prueba de las cuatro preguntas
+> La última fila es la que nadie responde. En el caso de hoy, un acta cambió el requisito el
+> 18 de junio y la automatización siguió aplicando el anterior durante seis comités.
 
-Marque solo las que puede responder que **sí**. Si falta alguna, esa es su tarea de esta semana
-—no la automatización.
+### C.2 · Hasta dónde llega
 
-- [ ] **Se repite** — al menos una vez por semana, o una vez por radicación.
-- [ ] **Tiene una regla** — cabe en una frase con "si… entonces…".
-- [ ] **El resultado se puede verificar** — alguien mira la salida y sabe si está bien.
-- [ ] **Los datos ya existen** — en una tabla, un modelo o un documento, no en la cabeza de alguien.
+- [ ] **Asistencia** — me propone qué hacer; yo lo hago.
+- [ ] **Automatización** — la ejecuta completa, pero yo la disparo y yo la valido.
+- [ ] **Autonomía** — corre sola con cada radicación y me avisa.
 
----
+Si marcó **autonomía**, estas dos no son opcionales:
 
-## Parte B — La ficha de automatización (7 min)
+- [ ] Pide **confirmación** antes de modificar cualquier cosa.
+- [ ] Deja **historial** de lo que hizo, con fecha y elemento.
 
-### B.1 · Las cinco casillas
-
-| Casilla | Pregunta | Su respuesta |
-|---|---|---|
-| **Disparador** | ¿Qué la inicia: un evento o un horario? | |
-| **Alcance** | ¿Sobre qué elementos corre — y sobre cuáles **no** debe correr? | |
-| **Regla** | Escríbala completa: "si… entonces…" | |
-| **Salida** | ¿Un reporte, una marca en el modelo, un correo? | |
-| **Validación** | ¿Quién mira antes de que se aplique? | |
-
-### B.2 · La regla, escrita en serio
-
-La casilla de arriba es la que casi siempre queda a medias. Escríbala otra vez, con las
-excepciones incluidas:
-
-```
-Si
-
-                                            entonces
-
-
-Excepto cuando
-
-```
-
-> Si le costó escribir la excepción, esa excepción es exactamente la que su automatización va a
-> ejecutar mal 63 veces.
-
-### B.3 · De dónde sale la regla
-
-Una regla que no está en ningún documento es una regla que vive en una persona.
-
-```
-¿En qué documento está escrita esta regla?
-(anexo, acta, procedimiento, norma, correo, "en ningún lado")
-
-
-
-¿De qué fecha es ese documento?  ______________
-
-¿Algo posterior la modificó?  ______________
-```
-
----
-
-## Parte C — La tecnología (5 min)
-
-### C.1 · La matriz de decisión
+### C.3 · Con qué se hace
 
 Marque **una**. La primera que aplique, decide.
 
@@ -95,7 +113,7 @@ Marque **una**. La primera que aplique, decide.
 - [ ] **Dynamo** — lee o modifica elementos dentro de Revit.
 - [ ] **Python** — cruza tablas, calcula, limpia datos o arma reportes fuera del modelo.
 - [ ] **Plugin o aplicación** — la va a usar todo el equipo, todos los días, durante años.
-- [ ] **Agente con herramientas** — los pasos dependen de lo que se encuentre; no se pueden dibujar antes.
+- [ ] **Agente con herramientas** — los pasos dependen de lo que se encuentre.
 
 ```
 Por qué esa y no la anterior:
@@ -104,23 +122,10 @@ Por qué esa y no la anterior:
 
 ```
 
-### C.2 · Los tres niveles
-
-¿Hasta dónde llega esta automatización?
-
-- [ ] **Asistencia** — me propone qué hacer; yo lo hago.
-- [ ] **Automatización** — la ejecuta completa, pero yo la disparo y yo la valido.
-- [ ] **Autonomía** — corre sola con cada radicación y me avisa.
-
-Si marcó **autonomía**, las dos casillas siguientes no son opcionales:
-
-- [ ] Pide **confirmación** antes de modificar cualquier cosa en el modelo.
-- [ ] Deja **historial** de todo lo que hizo, con fecha y elemento.
-
-### C.3 · La pregunta del mantenimiento
+### C.4 · La firma
 
 ```
-Si la regla cambia el mes entrante, ¿quién actualiza la automatización?
+Nombre de quien responde por esta automatización cuando la regla cambie:
 
 
 
@@ -130,13 +135,18 @@ Si esa persona se va de la entidad, ¿quién queda?
 
 ```
 
+> Una automatización sin nombre no es un ahorro: es una deuda que todavía no venció.
+
 ---
 
 ## Para llevar
 
-- Una ficha de automatización completa: disparador, alcance, regla, salida y validación.
-- La regla escrita con su excepción, y el documento donde está —o la constancia de que no está.
-- La tecnología elegida, con el porqué, y el nivel de autonomía con sus dos candados.
+- El **inventario de su semana**, con el porcentaje que hoy no es criterio profesional.
+- Las cinco tareas **triadas**, y la candidata elegida con su razón.
+- La tarea cuya regla nadie ha escrito — identificada, con el nombre de quien la sabe.
+- Una ficha con **procedencia de la regla, nivel de autonomía, tecnología y responsable**.
 
-> Esta ficha es insumo del proyecto integrador de la **sesión 12**. Y la excepción que le costó
-> escribir en B.2 es, casi siempre, la parte del proceso que solo usted conoce.
+> Los tres primeros productos son insumo directo del proyecto integrador de la **sesión 12**.
+> Y la tarea de B.2 —la que se repite pero cuya regla nadie escribió— es exactamente el material
+> de la **sesión 10**, donde las reglas de validación dejan de ser un supuesto y se vuelven el
+> tema de la clase.

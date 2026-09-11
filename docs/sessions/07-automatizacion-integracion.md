@@ -325,29 +325,31 @@ Si la respuesta a la tercera no se entiende, **no se corre**.
 ---
 
 ^^ Sesión 07 / El giro
-## El script funcionó perfecto. La regla estaba mal escrita.
+## Estuvo bien tres meses. Y siguió corriendo.
 
-> Marcela automatizó la revisión con una frase: *"marca todo elemento que no tenga ficha de mantenimiento."* Corrió en cuatro segundos y marcó **15 elementos**. El Consorcio contestó el mismo día. Tenía razón en dos de ellos.
+> Marcela automatizó la revisión en mayo, y funcionó. Corrió en cada radicación desde entonces y nadie volvió a abrirla — precisamente porque **siempre había acertado**.
 
 :::split
-:::card [Error de alcance] !La regla no es una: son cuatro
-El numeral **4.3.1** exige ficha al 100% — pero **solo para la red de drenaje**. Los otros tres numerales dicen cosas distintas:
+:::card [El 18 de junio] El comité cambió la regla
+**Acta N.º 14, numeral 4.1:** el nivel baja a **LOD 300** en tuberías y colectores enterrados. Sumideros y pozos de inspección se mantienen en 350.
 
-- **4.3.2** alumbrado: también al 100%. `LUM-004` quedó bien marcado.
-- **4.3.3** señalización: exigible **únicamente** con estructura de soporte propia. `SEN-003` **no se puede decidir**: esa columna no existe en el export.
-- **4.3.4** arbolado: lleva **ficha de manejo silvicultural**, que es otra cosa. `ARB-003` se marcó mirando la columna equivocada.
+Y el numeral 4.3 de esa misma acta: **no se emitiría versión nueva del anexo.**
 :::
-:::card [Error de vigencia] Acta N.º 14, numeral 4.1
-Y la misma regla 4.3.1 exige **LOD 350** para toda la red de drenaje. El comité lo bajó a **LOD 300** en tuberías y colectores enterrados, manteniendo 350 solo en sumideros y pozos.
+:::card [Lo que pasó después] !Nada
+La automatización siguió leyendo el numeral 4.3.1 original. **Seis comités.** Seis informes de calidad firmados por la entidad, exigiendo un nivel que el propio comité ya había cambiado.
 
-El numeral 4.3 del acta aclara que **no se emitiría versión nueva del anexo**. Quien automatizó leyó el anexo — que está vigente y desactualizado al mismo tiempo.
+Nadie lo notó, porque la automatización no se equivocó nunca: **se quedó quieta.**
 :::
 :::
 
 :::warn
-De los 15: **13 bien marcados**, uno **indecidible** con los datos que hay, uno **mal**. El código no tuvo ni un error — hizo exactamente lo que se le pidió, 63 veces, sin dudar y sin preguntar.
+Una automatización **no envejece**. Envejece **la regla que lleva adentro** — y no avisa, porque no sabe que existe un acta.
 
-**Automatizar no vuelve correcta una regla: la aplica más rápido.** Y nadie del equipo podía detectarlo, porque nadie leyó el script: lo pidieron, lo corrieron y le creyeron.
+La pregunta que nadie hizo el día que se puso a funcionar: **¿de quién es esto cuando la regla cambie?**
+:::
+
+:::note
+**Y hay un segundo error, de otra clase.** El numeral 4.3 no es una regla: son cuatro. `SEN-003` quedó marcado sin que se pudiera decidir —el export no trae la columna de estructura de soporte— y `ARB-003` se marcó mirando la columna equivocada, porque el arbolado lleva **ficha silvicultural**. Trece bien, uno indecidible, uno mal. **Y ni un error de código.**
 :::
 
 ---
@@ -355,19 +357,21 @@ De los 15: **13 bien marcados**, uno **indecidible** con los datos que hay, uno 
 ^^ Sesión 07 / Taller
 ## Actividad práctica (15 min)
 
-:::split
-:::card [Parte A] La ficha de una automatización
-Tome **una tarea propia** de su semana —de las cinco familias— y complétela:
-- **Disparador**: ¿qué la inicia, un evento o un horario?
-- **Regla**: escríbala en una frase con *"si… entonces…"*.
-- **Alcance**: ¿qué elementos toca, y cuáles no debe tocar?
-- **Salida**: ¿un reporte, una marca en el modelo, un correo?
-- **Validación**: ¿quién mira antes de que se aplique?
+> El miércoles se diseñó **un** flujo. Hoy no se diseña nada: se **inventaría la semana completa y se decide qué va primero**.
+
+:::split-3
+:::card [Parte A] El inventario
+Para cada una de las cinco familias, la tarea que más repite y **las horas que le dedica**.
+
+Se suma. Y se mira el porcentaje de la jornada que hoy **no** es criterio profesional.
 :::
-:::card [Parte B] La matriz de decisión
-1. ¿No-code, Dynamo, Python, plugin o agente? Y por qué.
-2. ¿De dónde sale la regla — y **en qué documento está escrita**?
-3. Si esa regla cambia el mes entrante, **¿quién actualiza la automatización?**
+:::card [Parte B] El triaje
+Las cinco pasan por las cuatro preguntas. Gana la que más marcas saque.
+
+Y aparece la incómoda: **la que más horas se lleva casi nunca es la que está lista.**
+:::
+:::card [Parte C] La ficha
+Solo de la candidata: procedencia de la regla, nivel de autonomía, tecnología — y **el nombre de quien responde cuando la regla cambie**.
 :::
 :::
 
@@ -393,7 +397,11 @@ Tome **una tarea propia** de su semana —de las cinco familias— y complétela
 :::ok
 No se automatizaron las cinco familias: se automatizaron **revisar, extraer, cruzar y reportar**. **Avisar quedó a medias a propósito** —el borrador es de la máquina, la firma es de ella— y **decidir** no se tocó.
 
-El resultado no es que Marcela trabaje menos: es que el lunes le queda libre para lo único que no puede hacer nadie más.
+Y cada una quedó con dos cosas que antes no tenía: **el documento del que sale su regla**, y **un nombre** — la persona que la revisa cuando ese documento cambie.
+:::
+
+:::note
+El resultado no es que Marcela trabaje menos: es que el lunes le queda libre para lo único que no puede hacer nadie más. Y que el día que un acta mueva la regla, **alguien se entera**.
 :::
 
 ---
@@ -401,14 +409,14 @@ El resultado no es que Marcela trabaje menos: es que el lunes le queda libre par
 ^^ Sesión 07 / La frase
 ## Lo que hay que llevarse de hoy
 
-> **Primero la regla, después el robot.** Una automatización no hace las cosas mejor: las hace sesenta y tres veces exactamente iguales.
+> **Automatizar no es escribir un script: es adoptar una regla.** Y toda regla adoptada necesita un dueño, porque las reglas cambian y los scripts no.
 
 :::split
 :::card [Resultado] Lo que sale de esta sesión
-La **ficha de una automatización propia** —disparador, regla, alcance, salida y validación— y la tecnología elegida con su porqué escrito.
+El **inventario de su semana** con las cinco tareas triadas, y la ficha de la que eligió: nivel, tecnología, procedencia de la regla y **nombre del responsable**.
 :::
 :::card [Idea fuerza] !Una sola frase
-Lo escaso no es quien sabe programar: es **quien sabe escribir la regla**. Y esa persona es la que conoce el proyecto, no la que conoce el lenguaje.
+Lo escaso no es quien sabe programar: es **quien responde por la regla**. Y esa persona es la que conoce el proyecto, no la que conoce el lenguaje.
 :::
 :::
 
