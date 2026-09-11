@@ -4,7 +4,7 @@
 > doce charlas sueltas, es una sola historia contada en doce capítulos.
 
 **Curso BIM + IA · IDU · 24 horas · 12 sesiones de 2 horas · Virtual en vivo**
-Del 19 de agosto al 25 de septiembre de 2026.
+Del 19 de agosto al 30 de septiembre de 2026.
 
 ---
 
@@ -28,12 +28,12 @@ respondida completa.
 | **02** | vie 21/08 | Comunicación efectiva y Agentes | Julián Puyo |
 | **03** | mié 26/08 | Flujos inteligentes y BIM como modelos de datos | Hugo Gómez |
 | **04** | vie 28/08 | Extracción, transformación y gobierno de la información BIM | Stiven Valencia |
-| **05** | mié 02/09 | IA para comunicación visual y presentaciones | Daniel Saavedra |
-| **06** | mié 09/09 | Consulta conversacional, no-code, MCP y loops | Julián Puyo |
-| **07** | vie 11/09 | Automatización BIM y tecnologías de integración | Hugo Gómez |
-| **08** | mié 16/09 | Diseño generativo e integración de modelos BIM con IA | Julián Puyo |
-| **09** | vie 18/09 | Machine learning para costos, planificación y decisiones | Julián Puyo |
-| **10** | mié 23/09 | IA para coordinación, calidad y captura en obra | Daniel Saavedra |
+| **05** | mié 02/09 | IA para comunicación visual y presentaciones | Hugo Gómez |
+| **06** | mié 09/09 | Consulta conversacional, no-code, MCP y loops | Stiven Valencia |
+| **07** | vie 11/09 | Automatización BIM y tecnologías de integración | Stiven Valencia |
+| **08** | mié 16/09 | Diseño generativo e integración de modelos BIM con IA | Stiven Valencia |
+| **09** | vie 18/09 | Machine learning para costos, planificación y decisiones | Stiven Valencia |
+| **10** | mié 23/09 | IA para coordinación, calidad y captura en obra | Stiven Valencia |
 | **11** | vie 25/09 | BIM, CDE y gemelos digitales | Daniel Saavedra |
 | **12** | mié 30/09 | Taller final y cierre académico | Los tres docentes |
 
