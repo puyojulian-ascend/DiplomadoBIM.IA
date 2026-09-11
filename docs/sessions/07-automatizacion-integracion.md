@@ -206,31 +206,33 @@ Por eso en esta sesión no se aprende a programar. Se aprende a **encargar** una
 ---
 
 ^^ Sesión 07 / Bloque 2
-## El filtro que miente
+## Tres maneras de contar lo mismo
 
-> En la hoja de elementos del Tramo 2, filtre la columna `categoria` por **Sumidero** y cuente lo que sale.
+> En la hoja de elementos del Tramo 2, cuente los sumideros. Tres caminos razonables, tres respuestas distintas.
 
 :::metrics
-22 | Filas que devuelve el filtro
-21 | Sumideros distintos, porque uno está repetido
-24 | Sumideros que hay de verdad
+25 | Filtrando por categoría
+24 | Con una fórmula de conteo
+22 | Contando solo la palabra exacta
 :::
 
 :::split
-:::card [Por qué] Tres maneras de escribir la misma palabra
-`SUM-005` y `SUM-018` quedaron como **`SUMIDERO`**. `SUM-015` quedó como **`sumidero `**, con un espacio al final que no se ve en pantalla.
+:::card [Por qué] La palabra quedó escrita de tres maneras
+`Sumidero` en 22 filas, **`SUMIDERO`** en 2, y **`sumidero `** en una — con un espacio final que no se ve en pantalla.
 
 Y `SUM-014` aparece **dos veces** en el export.
 :::
-:::card [Lo que importa] !Los tres que se pierden
-`SUM-005`, `SUM-015` y `SUM-018` son tres de los doce elementos de drenaje **sin ficha de mantenimiento**.
+:::card [Lo que nadie espera] !El número correcto es el peor
+Hay **24 sumideros**. La fórmula dio 24 — y está mal: **le falta `SUM-015`** y cuenta `SUM-014` dos veces.
 
-El filtro no falló: hizo exactamente lo que se le pidió. **Lo que estaba mal era el dato.**
+**Dos errores que se cancelaron.** El número correcto, con el elemento equivocado adentro.
 :::
 :::
 
 :::warn
-Esto es la sesión 04 cobrando: **normalizar antes de contar** no es un tecnicismo, es la diferencia entre 21 y 24. Una automatización montada sobre este archivo sin limpiarlo primero repite el error 63 veces, más rápido y sin que nadie mire.
+La hoja de cálculo **normaliza por debajo y no avisa**: el filtro junta `Sumidero` con `SUMIDERO` sin decirlo. Eso la vuelve cómoda y engañosa a la vez — porque **el dato sigue sucio**, y el siguiente que lo lea —un script, un agente, Revit— no va a ser tan amable.
+
+Y `SUM-015`, el que se perdió por el camino, es **uno de los doce que no tienen ficha de mantenimiento**.
 :::
 
 ---
