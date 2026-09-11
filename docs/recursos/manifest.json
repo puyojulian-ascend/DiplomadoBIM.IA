@@ -28,6 +28,7 @@
         { "archivo": "talleres/taller-03.md", "titulo": "Taller 03 · Flujos y datos",           "desc": "Identifique su Skill: qué cambia, qué se mantiene y qué ya es reutilizable.", "sesion": 3, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-04.md", "titulo": "Taller 04 · Extracción y gobierno",    "desc": "La matriz trazable y el semáforo aplicado.",           "sesion": 4, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-06.md", "titulo": "Taller 06 · Conexión y automatización","desc": "Diseñar un flujo y decidir con qué usuario se conecta.", "sesion": 6, "tipo": "doc", "editable": true },
+        { "archivo": "talleres/taller-07.md", "titulo": "Taller 07 · Automatización BIM",       "desc": "La ficha de una automatización propia y la matriz de decisión.", "sesion": 7, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-08.md", "titulo": "Taller 08 · Diseño generativo",        "desc": "Formular un problema y cazar la restricción tácita.",  "sesion": 8, "tipo": "doc", "editable": true },
         { "archivo": "talleres/taller-09.md", "titulo": "Taller 09 · Predicción y decisiones",  "desc": "La ficha de un modelo y la caza de la fuga.",          "sesion": 9, "tipo": "doc", "editable": true }
       ]
