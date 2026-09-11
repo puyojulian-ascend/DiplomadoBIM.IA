@@ -206,33 +206,33 @@ Por eso en esta sesión no se aprende a programar. Se aprende a **encargar** una
 ---
 
 ^^ Sesión 07 / Bloque 2
-## Tres maneras de contar lo mismo
+## Dos caminos coincidieron. Y los dos estaban mal.
 
-> En la hoja de elementos del Tramo 2, cuente los sumideros. Tres caminos razonables, tres respuestas distintas.
+> En la hoja de elementos del Tramo 2, cuente los sumideros. El filtro dice una cosa. La fórmula de conteo dice **lo mismo**. Y las dos están equivocadas.
 
 :::metrics
-25 | Filtrando por categoría
-24 | Con una fórmula de conteo
-22 | Contando solo la palabra exacta
+25 | Lo que dicen los dos caminos
+24 | Sumideros que hay de verdad
+3 | Grafías distintas de la misma palabra
 :::
 
 :::split
-:::card [Por qué] La palabra quedó escrita de tres maneras
-`Sumidero` en 22 filas, **`SUMIDERO`** en 2, y **`sumidero `** en una — con un espacio final que no se ve en pantalla.
+:::card [Lo que la hoja esconde] Normaliza y no avisa
+La palabra quedó escrita de tres maneras: `Sumidero` en 22 filas, **`SUMIDERO`** en 2 y **`sumidero `** en una, con un espacio final invisible.
 
-Y `SUM-014` aparece **dos veces** en el export.
+La hoja junta las tres **por debajo**, sin decirlo. Por eso los dos caminos coinciden: los dos están limpiando en silencio.
 :::
-:::card [Lo que nadie espera] !El número correcto es el peor
-Hay **24 sumideros**. La fórmula dio 24 — y está mal: **le falta `SUM-015`** y cuenta `SUM-014` dos veces.
+:::card [Lo que no arregla sola] !El duplicado
+`SUM-014` aparece **dos veces** en el export — y el propio archivo lo dice, en la columna `observacion`.
 
-**Dos errores que se cancelaron.** El número correcto, con el elemento equivocado adentro.
+Filtrar devuelve **filas**, no elementos. Son 25 filas y **24 sumideros**.
 :::
 :::
 
 :::warn
-La hoja de cálculo **normaliza por debajo y no avisa**: el filtro junta `Sumidero` con `SUMIDERO` sin decirlo. Eso la vuelve cómoda y engañosa a la vez — porque **el dato sigue sucio**, y el siguiente que lo lea —un script, un agente, Revit— no va a ser tan amable.
+Que dos métodos distintos den el mismo número **no es una confirmación**: puede ser el mismo error, dos veces. Aquí lo fue.
 
-Y `SUM-015`, el que se perdió por el camino, es **uno de los doce que no tienen ficha de mantenimiento**.
+Y lo más incómodo: la ayuda de la hoja **termina en la hoja**. El dato sigue teniendo tres grafías y un duplicado, y el siguiente que lo lea —un script, un agente, Revit— no va a ser tan amable.
 :::
 
 ---

@@ -16,7 +16,7 @@ a mirar el día que un acta cambió la regla que tenía adentro.**
 |---|---|
 | **La frase** | Automatizar no es escribir un script: es adoptar una regla. |
 | **El giro** | Una automatización no envejece. Envejece la regla que lleva adentro — y no avisa. |
-| **El pago de la sesión 04** | Tres maneras razonables de contar los mismos sumideros dan 25, 24 y 22 — y la que acierta el número tiene el elemento equivocado adentro. |
+| **El pago de la sesión 04** | Dos caminos distintos dan el mismo número y los dos están mal: son 25 filas y 24 sumideros. Coincidir no es confirmar. |
 | **El remate del giro** | El acta cambió el requisito el 18 de junio. La automatización siguió aplicando el anterior durante **seis comités**. |
 | **El error secundario** | Y además el alcance estaba mal: 13 bien, uno indecidible, uno mal. Ni un error de código. |
 
@@ -47,7 +47,7 @@ construida la sesión, y hay tres decisiones de diseño que conviene tener prese
 - **Ninguna sigla sin su traducción, la primera vez y cada vez.** Se dice "MCP, el enchufe" o
   "no-code, la receta" — nunca la sigla sola.
 - **Cada concepto entra por un ejemplo de obra, no por una definición.** Primero el filtro que
-  da tres números distintos para la misma pregunta; después la palabra "normalizar".
+  coincide con la fórmula en un número equivocado; después la palabra "normalizar".
 - **Lo que se muestre en una terminal se muestra antes en la hoja de cálculo.** La hoja es el
   idioma común del auditorio.
 - **El objetivo no es aprender a programar, y se dice en voz alta.** La lámina *Ustedes ya
@@ -73,7 +73,7 @@ mano, seis con agente— y **las tres obligatorias suman 7 minutos**.
 | 0:27 | Anatomía de una automatización BIM | 4 |
 | 0:31 | Asistencia, automatización y autonomía · **Demo 0** | 7 |
 | 0:38 | Ustedes ya programan · **Demos 1A y 1B** | 8 |
-| 0:46 | Tres maneras de contar lo mismo · **Demos 2A, 2B, 3A y 3B** | 15 |
+| 0:46 | Dos caminos coincidieron · **Demos 2A, 2B, 3A y 3B** | 15 |
 | 1:01 | El mismo encargo, cuatro tecnologías | 5 |
 | 1:06 | La matriz de decisión | 4 |
 | 1:10 | Pedirle el código a la IA · **Demo 4** | 6 |
@@ -196,7 +196,7 @@ tiene un límite de carpeta visible, que aterriza el giro del miércoles sin ten
 | 0:31 | **0 · La carpeta que el agente puede ver** | Antigravity | 3 | Sí, si se usa el agente |
 | 0:38 | **1A · Su primera condición** | Hoja de cálculo | 2 | **Sí** |
 | 0:40 | **1B · La misma pregunta, en español** | Antigravity | 3 | No |
-| 0:46 | **2A · Tres maneras de contar lo mismo** | Hoja de cálculo | 3 | **Sí** |
+| 0:46 | **2A · Dos caminos coincidieron** | Hoja de cálculo | 3 | **Sí** |
 | 0:49 | **2B · ¿Y el agente cae en la misma trampa?** | Antigravity | 4 | No, pero es la última que se suelta |
 | 0:53 | **3A · El criterio hay que declararlo** | Hoja de cálculo | 2 | **Sí** |
 | 0:55 | **3B · Pregúntele qué contó** | Antigravity | 3 | No |
@@ -353,77 +353,88 @@ le pregunta qué contó. Es el mismo hallazgo, dos minutos antes.
 
 ---
 
-### 0:46 · Demo 2A — Tres maneras de contar lo mismo (3 min, obligatoria)
+### 0:46 · Demo 2A — Dos caminos coincidieron (3 min, obligatoria)
 
-Va dentro de la lámina *Tres maneras de contar lo mismo*. Es la demostración más importante de la
-sesión y la que paga la sesión 04.
+Va dentro de la lámina *Dos caminos coincidieron. Y los dos estaban mal.* Es la demostración más
+importante de la sesión y la que paga la sesión 04.
 
-**Lo que cambió respecto de la versión anterior de este guion, y por qué importa:** las hojas de
-cálculo modernas **normalizan por debajo al filtrar**. El filtro junta `Sumidero` con `SUMIDERO`
-—y en Google Sheets también recorta el espacio final— sin decir que lo hizo. Así que el filtro
-**no** devuelve 22: devuelve **25**. La demostración no se cae por eso; se vuelve mejor, porque
-ahora el punto no es que la herramienta mienta, sino que **ayuda en silencio y el dato queda
-sucio igual**.
+**Advertencia de montaje, que aquí importa más que en ninguna otra demo.** Las hojas de cálculo
+**normalizan por debajo y en silencio**, y cuánto normalizan **cambia según la herramienta**. En
+Google Sheets, tanto el filtro como `CONTAR.SI` juntan `Sumidero`, `SUMIDERO` y `sumidero ` —
+mayúsculas **y** espacio final— y los dos devuelven **25**. En otras versiones `CONTAR.SI` no
+recorta el espacio y devuelve 24.
 
-1. **(1 min)** Filtrar la columna `categoria` por `Sumidero`. **Salen 25 filas.** Preguntar al
-   auditorio: *"¿Cuántos sumideros hay en el Tramo 2?"* Van a decir 25. Anotarlo en el tablero.
+**La demostración no depende de cuál sea.** Se apoya en dos hechos que son del **dato**, no de la
+herramienta, y que ninguna versión cambia:
 
-2. **(1 min)** Sin discutirlo todavía, pegar en dos celdas libres:
+| Hecho | Valor | Por qué es del dato |
+|---|---|---|
+| Hay **25 filas** de sumidero y **24 sumideros** | 25 ≠ 24 | `SUM-014` está dos veces en el export |
+| `EXACTO` cuenta solo la grafía literal | **22** | La palabra está escrita de tres maneras |
+
+**Corra las tres el día anterior y anote lo que dan en su hoja.** Si su `CONTAR.SI` da 24 en vez
+de 25, el guion de abajo cambia una frase y nada más: en el paso 2 se dice *"casi el mismo
+número"* en lugar de *"el mismo número"*, y el resto se dicta igual.
+
+1. **(1 min)** Filtrar la columna `categoria` por `Sumidero`. **Salen 25 filas.** Preguntar:
+   *"¿Cuántos sumideros hay en el Tramo 2?"* Van a decir 25. Anotarlo en el tablero.
+
+2. **(30 s)** Verificarlo por otro camino, como haría cualquiera que quiere estar seguro:
 
    ~~~
    =CONTAR.SI(B2:B64;"Sumidero")
+   ~~~
+
+   **Da 25 otra vez.** Y aquí va la frase que monta la trampa — hay que decirla convencido:
+
+   > *"Dos métodos distintos, el mismo número. Eso normalmente quiere decir que está bien."*
+
+3. **(1 min)** Y no lo está. **Hay 24 sumideros.** Mostrar `SUM-014` repetido, y leer en voz alta
+   su columna `observacion`: *"Registro repetido en el export"*. **El archivo lo decía.**
+
+   > *"Filtrar devuelve **filas**, no elementos. Los dos caminos contaron filas, y una fila estaba
+   > dos veces. Coincidieron porque cometieron el mismo error — no porque tuvieran razón."*
+
+4. **(30 s)** El segundo hallazgo, que es el que explica por qué la hoja se veía tan limpia:
+
+   ~~~
    =SUMAPRODUCTO(--EXACTO(B2:B64;"Sumidero"))
    ~~~
 
-   Dan **24** y **22**. Anotar los tres números juntos y dejar que la sala los mire:
+   **Da 22.** ¿Por qué? Porque `EXACTO` es la única que no perdona nada:
 
-   > *"Mismo archivo, misma pregunta, tres respuestas: 25, 24 y 22. Ninguna fórmula falló.
-   > Las tres hicieron exactamente lo que les pedí — y les pedí tres cosas distintas sin darme
-   > cuenta."*
+   ~~~
+   =UNICOS(B2:B64)
+   ~~~
 
-3. **(1 min)** El desenlace, que es lo que hay que dejar grabado. **Hay 24 sumideros.** Y el
-   camino que dio 24 es el peor de los tres:
+   Salen `Sumidero`, `SUMIDERO` y `sumidero ` como **tres valores distintos**. *(En algunas
+   versiones la función es `UNIQUE`. Si no existe, `=EXACTO(B24;B25)` sobre dos filas que se vean
+   idénticas devuelve FALSO y sirve igual.)*
 
-   | Camino | Da | Elementos distintos | Qué le pasa |
-   |---|---|---|---|
-   | Filtro | 25 | 24 | Normaliza las grafías, pero **cuenta `SUM-014` dos veces** |
-   | `CONTAR.SI` | **24** | 23 | **Le falta `SUM-015`** y también duplica `SUM-014` |
-   | `EXACTO` | 22 | 21 | Solo la grafía exacta: pierde tres |
+**Frase de remate, y después silencio:**
 
-   **Frase de remate, y después silencio:**
+> *"La hoja me estuvo ayudando todo este tiempo: juntó las mayúsculas y se comió el espacio, sin
+> avisarme. Le agradezco — pero esa ayuda **termina en la hoja**. El dato sigue teniendo tres
+> grafías y un duplicado, y el próximo que lo lea no va a ser tan amable."*
 
-   > *"La fórmula dio el número correcto. Y adentro tiene el elemento equivocado: le falta
-   > `SUM-015` y cuenta uno dos veces. Dos errores que se cancelaron. Si yo hubiera parado en el
-   > número, me iba tranquilo a la reunión."*
+Y el cierre que enlaza con el bloque siguiente:
 
-   Y el cierre, que enlaza con todo el bloque siguiente:
-
-   > *"`SUM-015` es uno de los doce que no tienen ficha de mantenimiento. O sea que el que se
-   > perdió por el camino es justamente uno de los que estaba buscando."*
-
-**Para mostrar las tres grafías**, si alguien no cree que sean distintas —y conviene que lo pidan
-ellos—, pegar en una columna vacía:
-
-~~~
-=UNICOS(B2:B64)
-~~~
-
-Salen `Sumidero`, `SUMIDERO` y `sumidero ` como **tres valores distintos**, porque para la máquina
-lo son. *(En algunas versiones la función se llama `UNIQUE`. Si no existe, sirve igual ordenar la
-columna y mirar, o `=EXACTO(B24;B25)` sobre dos filas que se vean idénticas: devuelve FALSO.)*
+> *"De las tres grafías raras, `SUM-005`, `SUM-015` y `SUM-018` son tres de los doce elementos que
+> no tienen ficha de mantenimiento. Justamente los que estábamos buscando."*
 
 **Si alguien pregunta cómo se arregla:** `=ESPACIOS(MAYUSC(B2))` normaliza mayúsculas y espacios en
-una columna auxiliar. Dos funciones. No hace falta más — y ese es el punto.
+una columna auxiliar, y quitar duplicados resuelve lo otro. Dos funciones y un botón. No hace
+falta más — y ese es el punto.
 
-> **Plan B:** la lámina trae las tres métricas (25 / 24 / 22), las tres grafías y el elemento que
-> se pierde. El argumento se sostiene entero sin tocar la hoja.
+> **Plan B:** la lámina trae las tres métricas (25 / 24 / 3), las tres grafías y el duplicado. El
+> argumento se sostiene entero sin tocar la hoja.
 
 ---
 
 ### 0:49 · Demo 2B — ¿Y el agente cae en la misma trampa? (4 min)
 
 **Es la mejor demostración de la sesión**, y funciona salga como salga. El auditorio acaba de
-descubrir a mano que hay 24 sumideros y que tres caminos razonables dan 25, 24 y 22. Ahora se lo
+descubrir a mano que hay 24 sumideros y que dos caminos razonables coinciden en 25. Ahora se lo
 preguntamos a la máquina, **en frío**, sin avisarle nada.
 
 1. **(1 min)** Pegar, tal cual, sin pistas:
@@ -616,14 +627,17 @@ Conviene tener este bloque abierto en un archivo de texto aparte durante toda la
 [Demo 2A]  =CONTAR.SI(B2:B64;"Sumidero")
 [Demo 2A]  =SUMAPRODUCTO(--EXACTO(B2:B64;"Sumidero"))
 [Demo 2A]  =UNICOS(B2:B64)
+[Demo 2A]  =EXACTO(B24;B25)     <- por si no existe UNICOS
 
 [Demo 3A]  =SI(O(I2="";I2="N/D";I2="PENDIENTE");"FALTA";"OK")
 
 [si preguntan]  =ESPACIOS(MAYUSC(B2))
 ~~~
 
-Valores esperados: **10** y luego **16 filas / 15 elementos** en el par de la ficha; **25 / 24 /
-22** en el trío del conteo de sumideros, contra **24** reales.
+Valores esperados: **10** y luego **16 filas / 15 elementos** en el par de la ficha. En el conteo
+de sumideros, **25** por filtro y por `CONTAR.SI` (en Google Sheets; puede dar 24 en otras
+versiones), **22** con `EXACTO`, y **24** sumideros reales. Los dos números que sostienen la demo
+son **25 filas contra 24 elementos** y el **22** de `EXACTO`.
 
 **Antigravity**
 
@@ -763,10 +777,10 @@ Respuestas frecuentes en C.3 y qué contestar:
 | Cifra | Valor | Fuente |
 |---|---|---|
 | Elementos en el export del Tramo 2 | **63 filas**, 62 identificadores distintos | `elementos-tramo2.csv` |
-| Filas que devuelve el filtro `categoria = Sumidero` | **25** | La hoja normaliza mayúsculas y espacios al filtrar, sin avisar |
-| `=CONTAR.SI(B2:B64;"Sumidero")` | **24** | Insensible a mayúsculas, pero **no** recorta el espacio final |
-| `=SUMAPRODUCTO(--EXACTO(B2:B64;"Sumidero"))` | **22** | Sensible a todo: solo la grafía exacta |
-| Elementos distintos que devuelve `CONTAR.SI` | **23** | Le falta `SUM-015`, y `SUM-014` va dos veces |
+| Filas con categoría de sumidero, en cualquier grafía | **25** | Es lo que devuelven el filtro y `CONTAR.SI` en Google Sheets |
+| Sumideros **distintos** | **24** | `SUM-014` está repetido en el export, y el archivo lo dice |
+| `=SUMAPRODUCTO(--EXACTO(B2:B64;"Sumidero"))` | **22** | La única que no perdona: solo la grafía literal |
+| Grafías distintas de la palabra | **3** | `Sumidero`, `SUMIDERO` y `sumidero ` |
 | Sumideros reales del Tramo 2 | **24** | Sumando `SUM-005`, `SUM-018` (`SUMIDERO`) y `SUM-015` (`sumidero `) |
 | Elementos con ficha vacía | **10** | Solo celdas en blanco |
 | Elementos sin ficha, contando `N/D` y `PENDIENTE` | **16 filas / 15 elementos** | Tres codificaciones, desduplicando `SUM-014` |
