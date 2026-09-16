@@ -11,11 +11,11 @@ subtitulo: Usar los datos históricos de los proyectos para anticipar costos, pl
 ## En el capítulo anterior
 
 :::split
-:::card [Quedó claro] El Abanico
-El diseño generativo no entrega una respuesta: entrega alternativas y obliga a elegir. Y una restricción que no se escribe, no existe.
+:::card [Quedó claro] La Ventanilla
+Al modelo se le pide y devuelve lo que está escrito en la ficha. Y cuál de sus tres puertas se abre es una decisión con dueño, porque la máquina no distingue "falta el dato" de "no se ha decidido".
 :::
 :::card [Quedó abierto] !La pregunta de hoy
-Pero todas las cifras del abanico son **estimaciones**. ¿Qué tan buenas son — y qué dice el pasado sobre lo que va a pasar?
+Pero la ventanilla solo entrega lo que el modelo sabe **hoy**. El presupuesto y el plazo son **estimaciones**, y no salieron de ahí. ¿Qué tan buenas son?
 :::
 :::
 
@@ -341,8 +341,8 @@ De **a qué esté conectada**.
 :::
 :::
 :::split
-:::card [08] El Abanico
-De **qué pueda proponer**.
+:::card [08] La Ventanilla
+De **qué pueda leer del modelo**, y en qué dirección.
 :::
 :::card [09] La Banda
 De **qué pueda anticipar**, y con cuánta incertidumbre.
@@ -350,7 +350,7 @@ De **qué pueda anticipar**, y con cuánta incertidumbre.
 :::
 
 :::ok
-Las cinco veces, la máquina hizo exactamente lo que se le pidió: el número dependió de la instrucción, la matriz del documento que faltaba, el acceso del permiso heredado, el diseño de la restricción no escrita, y la predicción de una columna que no existía todavía.
+Las cinco veces, la máquina hizo exactamente lo que se le pidió: el número dependió de la instrucción, la matriz del documento que faltaba, el acceso del permiso heredado, la escritura en el modelo del campo que estaba vacío a propósito, y la predicción de una columna que no existía todavía.
 
 **El trabajo nunca estuvo en la máquina. Estuvo en el planteamiento — y ese sigue siendo suyo.**
 :::

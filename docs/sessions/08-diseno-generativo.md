@@ -1,315 +1,309 @@
 ---
 sesion: 8
-titulo: Diseño **generativo** e integración de modelos BIM con IA
+titulo: Integración de **modelos BIM con IA**
 docente: Stiven Valencia
 fecha: 16/09/2026
 eyebrow: Curso BIM + IA
-subtitulo: Dejar que el computador proponga y evalúe muchas alternativas — y entender qué tan real es "generar" un modelo BIM automáticamente.
+subtitulo: Cómo llega una IA hasta el modelo, qué le puede preguntar de verdad y qué no debería poder tocar — más un vistazo a lo que viene con el diseño generativo.
 ---
 
 ^^ Sesión 08 / Antes
 ## En el capítulo anterior
 
 :::split
-:::card [Quedó claro] El Enchufe
-La IA ya llega a la fuente viva, con el permiso correcto, y avisa cuando algo cambia.
+:::card [Quedó claro] Automatizar es adoptar una regla
+Y toda regla adoptada necesita un dueño, porque las reglas cambian y los scripts no. El agente escribe el Python por debajo; lo que se audita es el plan y el resultado.
 :::
 :::card [Quedó abierto] !La pregunta de hoy
-Pero todo lo que hace es **leer lo que ya está escrito**. ¿Puede proponer algo que nadie escribió?
+Pero todo lo automatizable supone que la respuesta ya está escrita en algún documento. **¿Y cuando la respuesta no está en ningún documento, sino en el modelo?**
 :::
 :::
 
 ---
 
 ^^ Sesión 08 / El caso
-## Seis sumideros y cuatro restricciones que no caben
+## Seis sumideros que ningún documento ubica
 
-> **Corredor Av. Guayacanes, K0+400 – K0+700.** Interventoría observó que seis sumideros quedan dentro del trazado de la ciclorruta segregada. Hay que reubicarlos.
+> **Corredor Av. Guayacanes, K0+400 – K0+700.** Interventoría observó que seis sumideros quedan dentro del trazado de la ciclorruta segregada. Pide el listado con abscisa y cota de tapa, para el comité del jueves.
 
 :::split
-:::card [Lo que se toca al moverlos] !Cuatro restricciones
-- El colector pluvial necesita **pendiente mínima**: mover un sumidero mueve la red.
-- Tres **guayacanes** del separador tienen acta de manejo: no se talan.
-- El andén no puede bajar del **ancho mínimo de accesibilidad**.
-- Cada metro de colector reubicado **cuesta**.
-:::
-:::card [El problema real] No hay solución cómoda
-Ninguna restricción se puede violar, y **no existe una alternativa que las cumpla todas holgadamente**. Cualquier salida cede algo.
+:::card [Dónde está la respuesta] En el modelo, no en el expediente
+El anexo no lo dice. Las actas no lo dicen. El informe de interferencias tampoco: esto no es un choque entre redes, es un elemento parado sobre un trazado.
 
-Hasta hoy, esa decisión se tomaba en una reunión, con dos opciones dibujadas a mano y mucha experiencia.
+**La respuesta está en la geometría**, y la geometría solo vive en el modelo.
+:::
+:::card [El problema] !La IA nunca ha visto el modelo
+Desde la sesión 06 el agente lee el expediente: documentos, actas, informes. Todo lo que le conectaron son **archivos**.
+
+El modelo federado son 2,4 GB abiertos en el equipo de Marcela, y para la IA no existe.
 :::
 :::
 
-**La pregunta de hoy:** ¿puede la IA proponer una solución que nadie escribió — y cómo se sabe si es buena?
+**La pregunta de hoy:** ¿cómo llega la IA hasta el modelo — y qué le puede preguntar de verdad?
 
 ---
 
-^^ Sesión 08 / Conceptos
-## Paramétrico, generativo y optimización
+^^ Sesión 08 / Bloque 1
+## El modelo no es un documento
 
-> Tres palabras que se confunden. La diferencia está en **quién propone** y **quién evalúa**.
-
-| | Paramétrico | Generativo | Optimización |
-|---|---|---|---|
-| **Qué hace** | Se cambia un valor y el modelo se ajusta | El sistema **propone** muchas opciones | El sistema **busca la mejor** según un objetivo |
-| **Quién decide** | El diseñador | El diseñador filtra | El algoritmo, guiado por objetivos |
-| **En el corredor** | Mover el eje y que todo se actualice | 200 combinaciones de posición de sumideros | La combinación con menos metros de colector |
-
-:::note
-Generar no es optimizar. **Generar** produce variedad; **optimizar** persigue una meta. Casi siempre se usan juntos, y confundirlos lleva a pedirle a una herramienta lo que no hace.
-:::
-
----
-
-^^ Sesión 08 / El planteamiento
-## Cómo se formula el problema del corredor
-
-> Todo diseño generativo se define con tres piezas. Si no se pueden escribir, todavía no hay un problema resoluble — hay una intuición.
+> Un PDF se lee de principio a fin. Un modelo no: es una base de datos con forma. Y esa diferencia decide qué se le puede preguntar.
 
 :::split-3
-:::card [01] Variables
-Lo que el sistema puede cambiar.
-
-- Posición longitudinal de cada sumidero (± 15 m)
-- Profundidad de tapa
-- Trazado local de la ciclorruta (± 0,8 m)
-- Ancho del andén, dentro del rango normativo
+:::card [01] Objetos
+No hay "líneas": hay **sumideros**, pozos, tramos de colector. Cada uno sabe qué es.
 :::
-:::card [02] Restricciones
-Lo que no puede violar.
-
-- Pendiente mínima del colector
-- Los tres guayacanes, intocables
-- Ancho mínimo de andén
-- Distancia máxima entre punto bajo y captación
+:::card [02] Parámetros
+Los campos de la ficha: código, abscisa, cota de tapa, ficha de mantenimiento, estado.
 :::
-:::card [03] Función objetivo
-Lo que busca mejorar.
-
-- Minimizar metros de colector reubicado
-- Minimizar afectación de espacio público
+:::card [03] Geometría
+Dónde está cada cosa, con qué forma y en relación con qué. Es lo más pesado y lo más difícil de consultar.
 :::
 :::
 
 :::ok
-Escribir bien estas tres piezas es el **90% del trabajo**. El algoritmo es solo el motor — y arranca igual, esté bien o mal planteado el problema.
+De las tres capas, **la IA llega hoy muy bien a la segunda**. Los parámetros son tabla: se leen, se filtran y se cruzan igual que un CSV — que es exactamente lo que se practicó el viernes.
 :::
 
 ---
 
-^^ Sesión 08 / Motor
-## Cómo se genera y se evalúa
+^^ Sesión 08 / Bloque 1
+## Tres caminos hasta el modelo
+
+> Las tres funcionan. No son niveles de dificultad: son tres respuestas a *quién mantiene esto y qué pasa cuando el modelo cambie*.
+
+| | Cómo se hace | Qué llega | Se rompe cuando… |
+|---|---|---|---|
+| **Exportar** | Se saca una tabla o un IFC y se le entrega a la IA | Una **copia**, con lo que había ese día | El modelo se actualiza y nadie vuelve a exportar |
+| **API** | Un desarrollo consulta el modelo o la plataforma | Lo que se haya programado, cuando se programó | Sale la versión siguiente, o se va quien lo escribió |
+| **MCP** | El modelo expone sus herramientas y el agente las descubre | La **fuente viva**, con los permisos de quien conectó | Se conecta con la cuenta equivocada |
+
+:::note
+Es la misma decisión de la sesión 06 —fotocopia contra llave— aplicada ahora al modelo y no al expediente. Y aparece una restricción nueva que los documentos no tenían: **el modelo pesa**. Exportar 2,4 GB para preguntar por seis sumideros no es una opción; filtrar antes de preguntar sí lo es.
+:::
+
+---
+
+^^ Sesión 08 / Bloque 1
+## Qué entrega el modelo y qué no
+
+:::split
+:::card [Contesta bien] Lo que está en un campo
+- *"¿Qué sumideros del Tramo 2 no tienen ficha de mantenimiento?"*
+- *"¿Cuántos elementos quedaron sin código de clasificación?"*
+- *"Dame abscisa y cota de tapa de estos seis."*
+:::
+:::card [Contesta mal, o no contesta] !Lo que hay que mirar
+- *"¿Este sumidero estorba la ciclorruta?"* — es geometría, y hay que calcularla.
+- *"¿Por qué se dejó este pozo acá?"* — es **intención**, y no está escrita en ninguna parte.
+- *"¿Está bien diseñado?"* — es criterio profesional.
+:::
+:::
+
+:::warn
+La regla corta: **el modelo entrega lo que alguien escribió en un campo.** Si el campo está mal, la respuesta sale mal — y con la misma seguridad. Es el Semáforo de la 04 y la alucinación de la 02, ahora sobre el modelo.
+:::
+
+---
+
+^^ Sesión 08 / Práctica
+## En vivo: conectar y preguntar
 
 ```mermaid
 flowchart LR
-    A[Variables + restricciones] --> B[Genera alternativas]
-    B --> C[Evalua contra objetivos]
-    C --> D{Mejora?}
-    D -- Si --> E[Guarda y recombina]
-    D -- No --> F[Descarta]
-    E --> B
-    C --> G[Frente de Pareto]
+    A[Modelo abierto] --> B[Servidor MCP]
+    B --> C[Agente]
+    D[(Expediente<br/>anexo, actas)] --> C
+    C --> E[Respuesta + de donde salio]
+    E --> F{Revision humana}
 ```
 
-:::card [Algoritmos genéticos] La idea intuitiva
-Se inspira en la evolución: las mejores soluciones se **combinan y mutan** para producir la siguiente generación. Tras muchas iteraciones emergen opciones que nadie habría dibujado a mano.
+:::warn
+**El corredor es ficticio y su modelo no existe.** Todo el expediente del curso está construido para el ejercicio. Así que lo que sigue no corre sobre el Tramo 2: corre sobre **un modelo real y simple**, abierto en la máquina de acá adelante.
+
+No es un descuento. Es el punto: **las tres capas y los tres caminos son los mismos** en un modelo de cuatro elementos y en un corredor de 2,4 GB. Lo que cambia es el tamaño, no la mecánica.
+:::
+
+:::split
+:::card [Lo que se va a ver] La misma pregunta, dos veces
+Nada de tablas exportadas: todo sale del **modelo abierto**, en vivo. La misma pregunta antes y después de que algo cambie en Revit — y, arriba en la pantalla, la primera respuesta quedándose quieta.
+:::
+:::card [Lo que hay que mirar] !El plan, no la respuesta
+Antes de ejecutar, el agente declara **qué va a consultar y cómo**. Ahí es donde se audita. Cuando la respuesta ya está en pantalla, es tarde.
+:::
 :::
 
 ---
 
 ^^ Sesión 08 / El objeto
-## El Abanico: cuando no hay una sola mejor solución
+## La Ventanilla
 
-> En proyectos reales los objetivos **compiten**. Menos metros de colector puede significar más afectación de andén. No hay una ganadora: hay un **abanico de compromisos**.
+> Al modelo no se entra: **se le pide por una ventanilla**. Se hace la solicitud, alguien busca en la ficha y devuelve lo que ahí dice. Ni más, ni distinto.
 
 :::split
-:::card [Frente de Pareto] Qué es
-El conjunto de soluciones donde **no se puede mejorar un objetivo sin empeorar otro**. Cada punto del abanico es un trueque legítimo, no un error.
+:::card [Lo que llega por la ventanilla] La ficha, no el edificio
+Llega lo que **está escrito en el campo**. No llega lo que el proyectista tenía en la cabeza, ni por qué tomó esa decisión, ni si el campo sigue siendo cierto.
 :::
-:::card [Rol del profesional] Qué aporta el humano
-El algoritmo entrega el abanico; **la persona elige el punto**. Y al elegir, tiene que decir en voz alta qué está cediendo — que es exactamente lo que un comité necesita para decidir.
+:::card [Y tiene tres puertas] !La que se abre la elige alguien
+Autodesk publica **tres versiones** del servidor: una que **solo lee**; una que **lee y escribe**; y una de **acceso anticipado**, con más herramientas y menos rodaje.
+
+No es un detalle técnico: **cuál se conecta es una decisión**, y tiene dueño. En un rato vamos a abrir la que escribe.
 :::
 :::
 
 :::ok
-El valor del abanico no es la alternativa ganadora. Es poder mostrar **qué se cede y cuánto cuesta cada opción**.
+La ventanilla no es un defecto. Es lo que hace que la conexión sea **auditable**: se sabe qué se pidió, qué se devolvió y de dónde salió. Un agente que entra a la bodega no deja ese rastro.
 :::
 
 ---
 
-^^ Sesión 08 / Aplicaciones
-## Dónde se usa en infraestructura lineal
+^^ Sesión 08 / Bloque 2
+## Del dato al modelo: generar y actualizar
+
+> La ventanilla también funciona al revés, con una condición: que lo que entra venga **estructurado y con una regla**, no en lenguaje suelto.
 
 :::split
-:::card [Trazado] Alineamiento y movimiento de tierras
-Evaluar alineamiento horizontal y vertical **a la vez**, optimizando volúmenes de corte y lleno, seguridad, afectación predial y paso por zonas sensibles.
+:::card [Funciona razonablemente] Con supervisión
+- Crear elementos desde una tabla de datos.
+- Poblar parámetros según una regla escrita.
+- Generar variantes de familias paramétricas.
+- Modelado repetitivo por patrón.
 :::
-:::card [Redes] Drenaje y servicios
-Ubicación de captación, pendientes, cruces con otras redes, longitud total de colector.
-:::
-:::
-:::split
-:::card [Espacio público] Mobiliario y arborización
-Distribución de mobiliario, sombra, superficie permeable, recorridos peatonales.
-:::
-:::card [Obra] Fases y manejo de tránsito
-Secuencia constructiva que minimiza el impacto en el tráfico y la duración de los desvíos.
+:::card [Todavía frágil] !Requiere revisión fuerte
+- Interpretar planos complejos sin errores.
+- Nube de puntos a modelo listo para usar.
+- Coherencia técnica en modelos grandes.
 :::
 :::
 
 :::note
-La diferencia con edificación importa: en un edificio se optimiza un volumen dentro de un lote; en un corredor se optimiza **una línea a lo largo de kilómetros**, con restricciones que cambian en cada abscisa.
+Es la misma anatomía del viernes: **seleccionar, filtrar, consultar, decidir, actuar, reportar.** Lo único que cambia es que el paso "actuar" ahora escribe en el modelo — y por eso es el paso que se confirma a mano.
 :::
 
 ---
 
 ^^ Sesión 08 / Extra
-## El panorama de herramientas
-
-:::split
-:::card [Infraestructura lineal] Lo más pertinente aquí
-Han aparecido plataformas de diseño generativo específicas para infraestructura —viales, férreas, corredores— que exploran alternativas de trazado sobre datos geoespaciales, optimizando costo de construcción, longitud y afectación de suelo.
-:::chips
-Infraspace, optimización de alineamiento en plataformas de diseño vial
-:::
-:::
-:::card [Edificación y sitio] El resto del ecosistema
-Herramientas maduras para cabida, implantación y distribución en planta, más el paramétrico a medida de toda la vida.
-:::chips
-Autodesk Forma, TestFit, Grasshopper, Dynamo
-:::
-:::
-:::
-
-:::warn
-Ninguna de estas herramientas resuelve un problema mal planteado. Cambian la velocidad de exploración, no la calidad de la formulación.
-:::
-
----
-
-^^ Sesión 08 / El giro
-## El algoritmo no se equivocó
-
-> Primera corrida sobre el caso del corredor, con un solo objetivo: **minimizar costo**.
-
-:::split
-:::card [El resultado óptimo] !Eliminar dos sumideros
-Costo mínimo. **Todas las restricciones escritas, cumplidas.** El algoritmo hizo un trabajo impecable.
-:::
-:::card [Lo que pasa en obra] La primera lluvia fuerte
-El subtramo se inunda. Porque la **capacidad de captación** nunca se escribió como restricción: era obvia, y por obvia nadie la puso.
-:::
-:::
-
-:::warn
-**Una restricción que no se escribe, no existe.** El optimizador va a encontrar todos los huecos de la formulación — no por malicia, sino porque encontrar huecos es literalmente su trabajo.
-:::
-
-:::ok
-Es la misma lección de la sesión 02, con consecuencias de obra. Allá, cuatro criterios distintos sobre el mismo archivo daban cuatro números distintos. Aquí, el diseño depende de cómo se formuló el problema.
-:::
-
----
-
-^^ Sesión 08 / Segunda mitad
-## ¿Qué significa "generar" un modelo BIM?
-
-> "La IA hará el modelo sola" es la promesa más repetida del mercado. Conviene separar qué es real y qué es expectativa.
-
-:::split
-:::card [Qué implica generar] Las capas de un modelo
-- **Geometría**: crear los elementos.
-- **Objetos**: que sean sumideros, no cilindros.
-- **Parámetros**: asignar la información correcta.
-- **Relaciones**: coherencia entre elementos y con la red.
-:::
-:::card [Puntos de partida] Desde dónde se genera
-- Desde **reglas** de diseño.
-- Desde **tablas** o datos estructurados.
-- Desde **instrucciones** en lenguaje natural.
-- Desde **planos**, nubes de puntos o imágenes.
-:::
-:::
-
----
-
-^^ Sesión 08 / Realidad
-## Lo que hoy funciona y lo que todavía no
-
-:::split
-:::card [Funciona razonablemente] Con supervisión
-- Crear elementos desde tablas y datos estructurados.
-- Poblar parámetros según reglas.
-- Generar variantes paramétricas.
-- Modelado repetitivo basado en patrones.
-:::
-:::card [Todavía frágil] !Requiere revisión fuerte
-- Interpretar planos complejos sin errores.
-- Nubes de puntos a modelo listo para usar.
-- Coherencia técnica en modelos grandes.
-:::
-:::
-
-:::warn
-El riesgo más peligroso no es el modelo que falla: es el que **parece correcto** y es técnicamente inválido. Geometría impecable, información equivocada. Y ya sabemos de la sesión 02 que lo que se ve bien, se ve bien por diseño.
-:::
-
----
-
-^^ Sesión 08 / Método
-## Un flujo de generación asistida sensato
+## Un flujo de generación sensato
 
 ```mermaid
 flowchart LR
     A[Datos estructurados<br/>tabla / reglas] --> B[Genera geometria + objetos]
     B --> C[Asigna parametros]
-    C --> D[Validacion automatica<br/>geometria e informacion]
+    C --> D[Validacion automatica]
     D --> E{Revision profesional}
-    E -- OK --> F[Modelo aprobado]
+    E -- OK --> F[Se aplica al modelo bueno]
     E -- Ajustes --> A
 ```
 
 :::ok
-La generación automática no elimina al modelador: **le cambia el rol**, de dibujar a definir reglas y validar resultados. Es el mismo movimiento de la sesión 06 — de escribir la solución a dirigirla.
+La generación automática no elimina al modelador: **le cambia el rol**, de dibujar a definir reglas y validar resultados. Y nunca se corre sobre el modelo bueno: copia primero, comparación después.
+:::
+
+---
+
+^^ Sesión 08 / El giro
+## Le dieron escritura
+
+> Funcionó tan bien leyendo que se pidió el permiso completo. *"Completa la ficha de mantenimiento de todos los elementos de drenaje del Tramo 2."*
+
+:::split
+:::card [Lo que hizo] Las 16, en cuatro segundos
+Los **10 campos en blanco**, los **4** que decían `N/D` y los **2** que decían `PENDIENTE`. Formato correcto, nomenclatura correcta, ni un error de sintaxis.
+
+**La máquina hizo exactamente lo que se le pidió.**
+:::
+:::card [Lo que nadie previó] !Tres estaban vacíos a propósito
+Tres de esos diez son los sumideros de **K0+400 – K0+700**: los que esperan la decisión de reubicación. El campo estaba en blanco porque no había nada que escribir todavía.
+
+Ahora dice algo. Y dice algo que nadie decidió.
+:::
+:::
+
+:::warn
+**La máquina no distingue "falta el dato" de "todavía no se ha decidido".** Para ella las dos cosas se ven igual: una celda vacía.
+
+Y hay algo peor en la misma jugada: en blanco, `N/D` y `PENDIENTE` eran **tres estados distintos** que alguien codificó a propósito. La máquina los aplanó en uno solo —"le falta"— y los llenó a los tres igual.
+:::
+
+:::ok
+Por eso las ventanillas son tres y no una: el fabricante **no decidió por nadie**, dejó la decisión a la vista y con dueño. **Lo que lee puede ser autónomo; lo que escribe, no** — es la misma regla del viernes, ahora con el modelo de por medio.
+:::
+
+---
+
+^^ Sesión 08 / Investigación
+## Lo que viene: paramétrico, generativo y optimización
+
+> Tres palabras que se confunden, y que van a aparecer en las ofertas de software del año que viene. La diferencia está en **quién propone**.
+
+| | Qué hace | Quién decide |
+|---|---|---|
+| **Paramétrico** | Se cambia un valor y el modelo se ajusta | El diseñador |
+| **Generativo** | El sistema **propone** muchas opciones | El diseñador filtra |
+| **Optimización** | El sistema **busca la mejor** según un objetivo | El algoritmo, guiado por objetivos |
+
+:::note
+Generar no es optimizar: **generar produce variedad, optimizar persigue una meta.** Es la distinción que hay que tener clara para leer una ficha de producto sin comprar humo.
+:::
+
+---
+
+^^ Sesión 08 / Investigación
+## Y el abanico, que es a dónde lleva todo esto
+
+> Cuando los objetivos compiten —menos metros de colector contra menos afectación de andén— no hay una ganadora. Hay un **abanico de compromisos**, y alguien tiene que elegir un punto.
+
+:::split
+:::card [Lo que cambia] De una respuesta a un rango
+El sistema no entrega la solución: entrega las alternativas que **no son peores que ninguna otra en todo**. Cada una cede algo distinto.
+:::
+:::card [Lo que no cambia] !El criterio sigue siendo humano
+Al elegir, hay que decir en voz alta qué se está cediendo. Que es exactamente lo que un comité necesita para poder decidir — y firmar.
+:::
+:::
+
+:::warn
+**Tema de investigación, no de compra.** Estas herramientas existen y son reales, pero hoy son más maduras en edificación que en infraestructura lineal. Lo que sirve desde ya es la pregunta: *¿cuáles son mis variables, mis restricciones y mi objetivo?* Esa se puede escribir sin comprar nada.
 :::
 
 ---
 
 ^^ Sesión 08 / Taller
-## Actividad práctica (15 min)
+## La ronda: ¿a quién le sirve esto? (15 min)
 
-:::split
-:::card [Parte A] Formule un problema
-Elija un problema de diseño de su contexto y escriba sus tres piezas: **variables**, **restricciones** y **función objetivo**.
+> Hoy no hay hoja que llenar: **hablamos.** Piensen en **una tarea concreta** —suya o de alguien de su equipo— que hoy se resuelve abriendo el modelo a mano. ¿Qué cambiaría si se le pudiera preguntar por la ventanilla?
 
-Después, la pregunta que importa: **¿qué restricción es tan obvia que no la escribió?**
+:::split-3
+:::card [01] La tarea
+Una frase, con nombre propio. Qué se resuelve hoy **abriendo el modelo**, y quién lo hace.
 :::
-:::card [Parte B] Arquitectura de generación
-Esboce un flujo para generar o actualizar un modelo a partir de información estructurada, incluyendo el punto de **validación humana**.
+:::card [02] Lo que cuesta
+Cuánto toma, cada cuánto se repite — y qué pasa cuando quien la hace **no está**.
+:::
+:::card [03] !Por cuál puerta
+¿Alcanza con que **lea**? ¿O hace falta que **escriba**? Y si escribe: ¿quién lo firma?
 :::
 :::
 
-:::note
-**Material del taller** — se llena en pantalla y se descarga en PDF o `.md`:
-<a href="doc.html#d=talleres/taller-08" target="_blank" rel="noopener">Hoja de trabajo</a>
+:::ok
+La tercera es la que importa, y casi siempre la respuesta es **"con leer alcanza"**. Descubrirlo en voz alta y sobre un caso propio vale más que cualquier ejercicio de escritorio.
 :::
 
 ---
 
 ^^ Sesión 08 / Resolución
-## Los seis sumideros, resueltos
+## Los seis sumideros, ubicados
 
-> Se reformuló el problema con la **capacidad de captación como restricción dura**. Y se volvió a correr.
-
-| | Qué entregó |
+| Lo que se preguntó | Por dónde salió |
 |---|---|
-| **Alternativas en el frente** | 7 soluciones, ninguna dominada por otra |
-| **Tres de ellas** | Priorizan costo: menos metros de colector, más afectación de andén |
-| **Dos de ellas** | Conservan los tres guayacanes intactos, con mayor costo |
-| **Dos de ellas** | Maximizan espacio público, con el plazo más largo |
+| Cuáles son y dónde están | **Parámetro** — abscisa y cota de tapa, por la ventanilla |
+| Cuáles caen dentro del trazado | **Geometría** — el cálculo lo hace el modelo, no la IA |
+| Qué exige el anexo para cada uno | **Expediente** — el agente ya lo tenía desde la 06 |
+| Qué se hace con ellos | **Nadie automatizó esto.** Es la decisión del comité del jueves |
 
 :::ok
-El comité eligió una — y por primera vez eligió **sabiendo exactamente qué estaba cediendo y cuánto costaba cada alternativa**. Ese, y no la geometría, fue el aporte de la máquina.
+La IA no reubicó ningún sumidero. Armó en cuatro minutos la tabla que Marcela armaba en media mañana —con abscisa, cota, requisito del anexo y estado— y la dejó **con la fuente de cada dato al lado**.
+
+Y los tres campos que estaban vacíos a propósito **siguen vacíos** — porque para esta consulta se abrió la ventanilla de solo lectura. No lo impidió el software: lo decidió alguien, y esa decisión tiene nombre.
 :::
 
 ---
@@ -317,30 +311,32 @@ El comité eligió una — y por primera vez eligió **sabiendo exactamente qué
 ^^ Sesión 08 / La frase
 ## Lo que hay que llevarse de hoy
 
-> **El Abanico.** El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y al obligar a elegir, obliga a escribir lo que hasta ahora era criterio tácito.
+> **La Ventanilla.** Al modelo se le pide y él devuelve lo que está escrito en la ficha. No lo que alguien pensó, no lo que debería decir: lo que dice. Y tiene tres puertas: **cuál se abre es una decisión con dueño**.
 
 :::split
 :::card [Resultado] Lo que sale de esta sesión
-El **planteamiento de un problema de diseño** con sus tres piezas, y la **arquitectura de generación** de un modelo con su punto de control.
+**Una tarea propia** que hoy se resuelve abriendo el modelo — con su tiempo, su dueño y la puerta por la que entraría. Y los casos de los demás, que casi nunca son los que uno esperaba.
 :::
 :::card [Idea fuerza] !Una sola frase
-El computador genera opciones; el profesional **define el problema y juzga las respuestas**. La creatividad no se automatiza: se **amplifica**.
+Conectar la IA al modelo no la vuelve inteligente sobre el proyecto: la vuelve **rápida leyendo lo que ya está escrito**. Lo que no está escrito sigue siendo trabajo de alguien.
 :::
 :::
 
 ---
 
 ^^ Sesión 08 / Próximo capítulo
-## Todas las cifras del abanico son estimaciones
+## La ventanilla dice lo que hay hoy
 
-> Cuánto cuesta reubicar un colector, cuánto se demora la fase. Números que salieron del presupuesto: **$86.400 millones y 22 meses**.
+> Cantidades, parámetros, estados, abscisas. Todo lo que el modelo sabe es **presente**: lo que está construido o lo que está dibujado.
 
 :::split
-:::card [Lo que resolvimos] La propuesta
-La IA ya propone alternativas que nadie dibujó, y obliga a explicitar el criterio con el que se elige.
+:::card [Lo que resolvimos] El acceso al modelo
+La IA ya llega al modelo por la ventanilla, sabe qué puede preguntarle y qué no, y no le toca nada.
 :::
-:::card [Lo que queda abierto] !La anticipación
-El IDU ya ejecutó **40 corredores parecidos**. Todos tenían un presupuesto y un plazo. Casi ninguno terminó en el presupuesto y el plazo que decía el papel.
+:::card [Lo que queda abierto] !El futuro
+El presupuesto del Tramo 2 dice **$86.400 millones** y **22 meses**. Esas dos cifras no salieron del modelo: salieron de una estimación.
+
+El IDU ya ejecutó **40 corredores parecidos**. Casi ninguno terminó en el presupuesto y el plazo que decía el papel.
 
 **¿Qué dicen esos 40 sobre lo que de verdad va a pasar con este?**
 :::

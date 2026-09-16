@@ -187,9 +187,16 @@ donde aparece el tema de la sesión: la máquina puede contar, pero el criterio 
 una persona.
 
 La herramienta es **Google Antigravity**. Se eligió por tres razones concretas, no por novedad:
-es gratuita durante la versión preliminar y entra con una cuenta personal de Gmail, muestra su
+es gratuita en su plan Individual y entra con una cuenta personal de Gmail, muestra su
 **plan de trabajo** antes de ejecutar —que es exactamente lo que hay que enseñar a auditar— y
 tiene un límite de carpeta visible, que aterriza el giro del miércoles sin tener que explicarlo.
+
+> **Dónde se nombra en el deck.** Desde el 13/09 la lámina *Pedirle el código a la IA — o ni
+> siquiera pedirlo* (Bloque 3) nombra Antigravity en sus `chips`, junto a Claude Code y Copilot.
+> Es la lámina donde aterriza todo lo que las demos mostraron: el agente escribe el Python por
+> debajo, lo corre, y lo que se audita es **el plan y el resultado**, no el código. Al llegar
+> ahí conviene referirse a las demos ya hechas — *"es lo que vimos en pantalla hace un rato"*—
+> y no presentar la herramienta de nuevo.
 
 | Momento | Demo | Dónde | Min | ¿Obligatoria? |
 |---|---|---|---|---|
@@ -243,8 +250,9 @@ evidencia; el argumento vive en las láminas.
 **Antigravity (15 min).**
 
 4. Descargar desde <https://antigravity.google/download> e instalar. Windows 10 o superior, x64 o
-   ARM64. Es **gratuito durante la versión preliminar** y se entra con una **cuenta personal de
-   Gmail** — no hace falta pedirle nada a TI, y conviene que sea personal y no institucional.
+   ARM64. Es **gratuito en el plan Individual** ($0/mes, con cupos semanales de uso) y se entra con una
+   **cuenta personal de Gmail** — no hace falta pedirle nada a TI, y conviene que sea personal y
+   no institucional.
 5. Crear una carpeta **nueva** de trabajo, fuera de cualquier ruta de la entidad. Por ejemplo
    `C:\curso-bim-ia\expediente\`. Copiar adentro los cuatro archivos del caso:
    `elementos-tramo2.csv`, `interferencias-tramo2.csv`, `pliego-anexo-tecnico-fragmento.md` y
@@ -806,7 +814,7 @@ Respuestas frecuentes en C.3 y qué contestar:
 |---|---|
 | El servidor MCP oficial de Revit 2027 es de solo lectura | Alta — anuncio de Autodesk del 17/06/2026. Se menciona de paso, en la lámina de autonomía |
 | Dynamo corre dentro de Revit y no requiere instalación aparte ni permisos de TI | Alta — viene con el producto |
-| **Antigravity es gratuito durante la versión preliminar** y se entra con una cuenta personal de Gmail, con cupo de uso incluido | Alta — [antigravity.google](https://antigravity.google/download). **Decir que es versión preliminar**, no producto estable |
+| **El plan Individual de Antigravity es gratuito** ($0/mes, con cupos semanales) y se entra con una cuenta personal de Gmail | Alta — reverificado **13/09/2026** en [antigravity.google](https://antigravity.google/). **Pasó a disponibilidad general: ya no se dice "versión preliminar".** Los planes pagos (AI Pro USD 19/mes, Ultra USD 99,99/mes) solo suben límites — no hacen falta para la clase |
 | Corre en Windows 10 o superior, x64 y ARM64; también macOS y Linux | Alta — página oficial de descarga |
 | Muestra **planes de implementación** como artefacto antes de ejecutar, en un panel de revisión | Alta — [docs de artefactos](https://antigravity.google/docs/artifacts/). Es la pieza que se enseña a auditar en las Demos 1B y 2B |
 | Por defecto el agente solo accede a las carpetas del proyecto abierto; existe aislamiento de workspace | Alta — [docs de permisos](https://antigravity.google/docs/permissions/). Es el sustento de la Demo 0 |

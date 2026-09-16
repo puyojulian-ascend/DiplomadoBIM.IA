@@ -27,7 +27,7 @@ frase **de qué depende la respuesta hoy**.
 | **02** | 21/08 | cómo se formula la instrucción — y de si el sistema solo responde o además actúa | **La Ficha del Agente** |
 | **04** | 28/08 | de dónde salen los datos — y de quién los cuida | **El Semáforo del Dato** |
 | **06** | 09/09 | a qué esté conectada — a la fuente viva, no a una copia | **El Enchufe** |
-| **08** | 16/09 | qué pueda proponer — no una respuesta, un abanico | **El Abanico** |
+| **08** | 16/09 | qué pueda leer del modelo — y en qué dirección | **La Ventanilla** |
 | **09** | 18/09 | qué pueda anticipar — y con cuánta incertidumbre | **La Banda** |
 
 En el cierre de la sesión 09 se muestran los cinco objetos juntos. Ese es el final de
@@ -62,8 +62,8 @@ viene de volver siempre al mismo corredor.
 | **02** | Alguien pregunta cuántos sumideros del Tramo 2 no tienen ficha de mantenimiento, y recibe una respuesta preciosa, segura y completamente inventada. |
 | **04** | Ya se sabe formular la pregunta, pero no hay datos: el pliego son 180 páginas en PDF, el export del modelo pierde el contexto, y alguien pegó el anexo técnico en un chat público. |
 | **06** | Los datos ya están ordenados, pero siguen en carpetas. Aquí el agente por fin se conecta a la fuente viva y funciona. |
-| **08** | El agente consulta. ¿Puede proponer? Reubicar 6 sumideros y ajustar el trazado de la ciclorruta con 4 restricciones en conflicto. |
-| **09** | El agente propone. ¿Puede anticipar? El Tramo 2 se parece a 40 corredores anteriores: cuánto va a costar de verdad y cuándo se va a atrasar. |
+| **08** | El agente lee el expediente, pero nunca ha visto el modelo. Seis sumideros caen dentro de la ciclorruta y ningún documento lo dice: está en la geometría. |
+| **09** | El agente ya lee el modelo. ¿Puede anticipar? El Tramo 2 se parece a 40 corredores anteriores: cuánto va a costar de verdad y cuándo se va a atrasar. |
 
 ---
 
@@ -140,7 +140,7 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 05 · Hugo | Una representación útil no es una evidencia técnica: la IA multimodal comunica, pero no certifica. | Cada vez hay que descargar, copiar y volver a subir. ¿Y si la IA pudiera consultar directamente la fuente viva? |
 | 06 · Stiven | Conectar la IA a la fuente es un problema de enchufe estándar, no de programar una aplicación. Y un agente conectado hereda los permisos de quien lo conectó. | La IA ya consulta el proyecto. ¿Puede además proponer algo que nadie escribió? |
 | 07 · Stiven | Automatizar no es escribir un script: es adoptar una regla, y toda regla adoptada necesita un dueño. Una automatización no envejece — envejece la regla que lleva adentro, y no avisa. | Todo lo automatizable supone que la respuesta ya está escrita en algún documento. ¿Y cuando no existe en ninguno? |
-| 08 · Stiven | El diseño generativo no entrega una respuesta: entrega un abanico y obliga a elegir. Y una restricción que no se escribe, no existe. | Se puede elegir entre alternativas de hoy. ¿Se puede anticipar lo que va a pasar mañana? |
+| 08 · Stiven | Al modelo se le pide por una ventanilla: devuelve lo que está escrito en la ficha, no lo que alguien pensó. Y tiene tres puertas — solo lectura, lectura y escritura, acceso anticipado —: cuál se abre es una decisión con dueño, porque la máquina no distingue "falta el dato" de "no se ha decidido". | La ventanilla entrega lo que el modelo sabe hoy. ¿Y lo que va a pasar mañana — el costo y el plazo de verdad? |
 | 09 · Stiven | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
 | 10 · Stiven | *(por completar)* | *(por completar)* |
 | 11 · Daniel | *(por completar)* | *(por completar)* |
@@ -158,8 +158,10 @@ lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos
 | Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Stiven, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
 | **Reglas de validación de modelo** — parámetros obligatorios, nomenclatura, clasificación, duplicados | **10 · Stiven** (hora 19), donde se diseña el agente de revisión de calidad y se arma el catálogo de reglas | 07 · Stiven, que llega antes y las trata como **insumo**: la regla es algo que hay que tener escrito para poder automatizar, no algo que la 07 enseñe a redactar |
 | **Integración con CDE, ERP y sistemas empresariales** — mapeo de datos, identificadores únicos, sincronización | **11 · Daniel** (hora 21) | 07 · Stiven, que solo nombra la categoría al elegir tecnología. Pese al título de la 07, la integración empresarial **no** se desarrolla ahí |
-| **Dynamo y el paramétrico** | **07 · Stiven**, como *tecnología de automatización* — una de las cuatro de la matriz de decisión | 08 · Stiven, que lo retoma como *herramienta de generación* en el panorama del diseño generativo |
-| **"La máquina hizo bien su trabajo; el error fue de formulación"** | **08 · Stiven** — es el giro del Abanico: una restricción que no se escribe, no existe | 07 · Stiven llega antes y **usa otro giro a propósito**: no la formulación inicial sino la **vigencia** — la regla estaba bien el día que se escribió y un acta la cambió tres meses después. Las dos sesiones son del mismo docente y con cinco días de diferencia; repetir la forma le habría quitado fuerza a la 08, que es sesión de arco |
+| **Dynamo y el paramétrico** | **07 · Stiven**, como *tecnología de automatización* — una de las cuatro de la matriz de decisión | 08 · Stiven, que solo lo nombra en la lámina de investigación, al distinguir paramétrico de generativo. **No se vuelve a desarrollar** |
+| **"La máquina hizo bien su trabajo; el error fue de formulación"** | **07 · Stiven**, en su versión de **vigencia**: la regla estaba bien el día que se escribió y un acta la cambió tres meses después | 08 · Stiven, con una vuelta distinta y más corta: no la regla que envejeció sino **el campo que estaba vacío a propósito**. La máquina no distingue "falta el dato" de "no se ha decidido" |
+| **Conectar la IA a una fuente: MCP, API y exportación** | **06 · Stiven** (el Enchufe), sobre el **expediente** — documentos, actas, el CDE. Ahí se explican las siglas, los permisos heredados y el estándar | 08 · Stiven, que **no las vuelve a explicar**: las aplica al **modelo**, que es otra cosa — pesa, tiene geometría, y su servidor oficial viene en tres versiones de alcance creciente. Al abrir se hereda en voz alta: *"las tres maneras ya las vimos; hoy se trata de qué pasa cuando del otro lado hay un modelo"* |
+| **Diseño generativo, optimización multiobjetivo y frentes de Pareto** | **08 · Stiven**, pero **solo como panorama** — dos láminas marcadas `Investigación`, sin algoritmos y sin matemática. El propósito es que sepan leer una ficha de producto, no que lo apliquen | Nadie. Si el tema crece, su lugar natural es un módulo aparte, no una sesión del arco |
 
 En la 04 esas dos láminas quedan marcadas `Extra`: se dictan solo si la 03 no alcanzó a
 cubrirlas. La sesión funciona en los dos escenarios.

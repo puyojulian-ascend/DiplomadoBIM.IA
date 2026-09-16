@@ -49,7 +49,7 @@ de bolsillo.
 | **02** | 🗂️ **La Ficha del Agente** | De **cómo se le pide** |
 | **04** | 🚦 **El Semáforo del Dato** | De **de dónde salen los datos** y quién los cuida |
 | **06** | 🔌 **El Enchufe** | De **a qué esté conectada** |
-| **08** | 🪭 **El Abanico** | De **qué pueda proponer** |
+| **08** | 🪟 **La Ventanilla** | De **qué pueda leer del modelo**, y en qué dirección |
 | **09** | 📊 **La Banda** | De **qué pueda anticipar**, y con cuánta incertidumbre |
 
 Si al día siguiente de una sesión usted recuerda una sola cosa, que sea el objeto. Todo lo demás

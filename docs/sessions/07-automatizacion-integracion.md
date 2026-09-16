@@ -246,7 +246,7 @@ Y lo más incómodo: la ayuda de la hoja **termina en la hoja**. El dato sigue t
 |---|---|---|---|
 | **No-code** | Cajas conectadas en un lienzo | Cualquiera, en una tarde | La tarea deja de ser siempre igual |
 | **Dynamo** | Un grafo dentro de Revit: nodos y cables | Un perfil BIM que le dedique tiempo | El grafo crece y nadie más lo entiende |
-| **Python** | Veinte renglones de texto | Alguien que programe — o la IA, y alguien que revise | Nadie lo documentó y su autor se fue |
+| **Python** | Veinte renglones de texto que hoy nadie escribe a mano | Se le encarga a un agente; una persona revisa **el resultado** | Nadie lo documentó y su autor se fue |
 | **Plugin / API** | Un botón nuevo en la barra de Revit | Un desarrollador, con contrato | Sale la versión siguiente de Revit |
 
 :::ok
@@ -290,7 +290,7 @@ La regla -> Los datos -> *La tecnologia -> Quien valida
 |---|---|---|
 | Mueve archivos, correos y avisos entre plataformas | **No-code** | No toca el modelo, y el flujo se dibuja entero de antemano |
 | Lee o modifica elementos dentro de Revit | **Dynamo** | Vive adentro: no hay que instalar nada ni pedir permisos |
-| Cruza tablas, calcula, limpia datos, arma reportes | **Python** | Trabaja fuera del modelo, y es lo que mejor escribe la IA |
+| Cruza tablas, calcula, limpia datos, arma reportes | **Python** | Trabaja fuera del modelo, y es lo que mejor escribe **y corre** un agente |
 | La va a usar todo el equipo, todos los días, durante años | **Plugin o aplicación** | Alguien tiene que mantenerla, y eso es un contrato |
 | Los pasos dependen de lo que se encuentre | **Agente con herramientas** | Es lo del miércoles: el flujo no se puede dibujar antes |
 
@@ -301,27 +301,37 @@ Y la respuesta correcta más veces —aunque sea la menos emocionante— es **no
 ---
 
 ^^ Sesión 07 / Bloque 3
-## Pedirle el código a la IA
+## Pedirle el código a la IA — o ni siquiera pedirlo
 
-> Hoy cualquiera pide un script y lo recibe en treinta segundos. Eso cambió **quién puede automatizar**. No cambió **quién responde** por el resultado.
+> Hoy cualquiera pide un script y lo recibe en treinta segundos. Y desde hace un tiempo ni siquiera hay que pedirlo: se encarga la tarea, y el agente escribe el Python **por debajo**, lo corre y devuelve la tabla. Eso cambió **quién puede automatizar**. No cambió **quién responde** por el resultado.
 
 :::split
-:::card [Lo que sí funciona] Tres usos honestos
+:::card [Lo que sí funciona] Cuatro usos honestos
+- **Encargar** la tarea y recibir el resultado, sin ver una línea de código.
 - **Escribir** el primer borrador de un script o de un grafo.
 - **Explicar** en español un script que dejó alguien más y que nadie entiende.
 - **Depurar**: pegarle el mensaje de error y pedirle que diga qué significa.
+:::chips
+Antigravity (Google, gratuito para uso individual), Claude Code, Copilot
 :::
-:::card [Antes de correr nada] !Las tres preguntas
-1. *"Explícame esto línea por línea, como si yo no programara."*
+:::
+:::card [Antes de aceptar nada] !Las tres preguntas
+1. *"Explícame qué hiciste, paso a paso, como si yo no programara."*
 2. *"¿Qué pasa si un dato viene vacío, repetido o mal escrito?"*
-3. *"¿Qué modifica en el modelo, exactamente?"*
+3. *"¿Qué modificaste, exactamente, y dónde?"*
 
-Si la respuesta a la tercera no se entiende, **no se corre**.
+Si la respuesta a la tercera no se entiende, **no se acepta el resultado**.
 :::
 :::
 
 :::warn
 **Nunca sobre el modelo bueno.** Se corre sobre una copia, se compara contra el original y recién ahí se aplica. Un script que modifica 63 elementos en cuatro segundos también los daña en cuatro segundos — y sin preguntar.
+:::
+
+:::note
+**Python dejó de ser un idioma que alguien tiene que saber: es el motor que la máquina usa por debajo.** Pero cuando nadie lee el código, la verificación se muda del código **al resultado** — el plan que el agente declara y la tabla que devuelve. Por eso estas herramientas muestran el plan y la evidencia, y no solo la respuesta.
+
+Y el Semáforo de la sesión 04 sigue puesto: ese agente corre en la máquina de alguien, con los datos de alguien.
 :::
 
 ---
@@ -433,11 +443,11 @@ Lo escaso no es quien sabe programar: es **quien responde por la regla**. Y esa 
 :::card [Lo que resolvimos] La tarea repetitiva
 Se identifica con cuatro preguntas, se le escribe la regla, se elige la tecnología y se le asigna una persona que valida.
 :::
-:::card [Lo que queda abierto] !La propuesta
-Interventoría observó que **seis sumideros chocan** con el trazado de la ciclorruta, entre K0+400 y K0+700. Reubicarlos toca la pendiente del pluvial, el arbolado y el ancho del andén.
+:::card [Lo que queda abierto] !El modelo
+Interventoría observó que **seis sumideros chocan** con el trazado de la ciclorruta, entre K0+400 y K0+700, y pide el listado con abscisa y cota de tapa para el comité.
 
-**Ningún documento tiene esa respuesta. ¿Puede la IA proponerla?**
+**Ningún documento lo dice: está en la geometría del modelo. ¿Y cómo llega la IA hasta ahí?**
 :::
 :::
 
-> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Miércoles 16/09.
+> **Sesión 08 — Integración de modelos BIM con IA.** Miércoles 16/09.
