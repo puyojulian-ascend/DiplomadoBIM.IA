@@ -347,4 +347,4 @@ Interventoría observó que **seis sumideros chocan** con el trazado de la ciclo
 :::
 :::
 
-> **Sesión 08 — Diseño generativo e integración de modelos BIM con IA.** Miércoles 16/09.
+> **Sesión 07 — Automatización BIM y tecnologías de integración.** Viernes 11/09.
