@@ -32,7 +32,7 @@ respondida completa.
 | **06** | mié 09/09 | Consulta conversacional, no-code, MCP y loops | Stiven Valencia |
 | **07** | vie 11/09 | Automatización BIM y tecnologías de integración | Stiven Valencia |
 | **08** | mié 16/09 | Diseño generativo e integración de modelos BIM con IA | Stiven Valencia |
-| **09** | vie 18/09 | Machine learning para costos, planificación y decisiones | Stiven Valencia |
+| **09** | vie 18/09 | IA para costos, planificación y decisiones | Stiven Valencia |
 | **10** | mié 23/09 | IA para coordinación, calidad y captura en obra | Stiven Valencia |
 | **11** | vie 25/09 | BIM, CDE y gemelos digitales | Daniel Saavedra |
 | **12** | mié 30/09 | Taller final y cierre académico | Los tres docentes |

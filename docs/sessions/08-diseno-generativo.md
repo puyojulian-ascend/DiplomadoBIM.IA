@@ -342,4 +342,4 @@ El IDU ya ejecutó **40 corredores parecidos**. Casi ninguno terminó en el pres
 :::
 :::
 
-> **Sesión 09 — Machine learning para costos, planificación y decisiones.** Viernes 18/09.
+> **Sesión 09 — IA para costos, planificación y decisiones.** Viernes 18/09.

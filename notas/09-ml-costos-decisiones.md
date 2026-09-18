@@ -1,4 +1,4 @@
-# Guion — Sesión 09 · Machine learning para costos, planificación y decisiones
+# Guion — Sesión 09 · IA para costos, planificación y decisiones
 
 **Viernes 18/09/2026 · 2 horas · Stiven Valencia**
 Documento del docente. No se proyecta. **Última sesión en solitario del arco.**
@@ -49,7 +49,146 @@ al abrir:
 
 ---
 
+## En palabras llanas — los siete conceptos de la sesión
+
+> **Esta sección se lee primero, antes que *Preparación*.** Ahí abajo los mismos temas están
+> tratados con el vocabulario técnico, para cuando alguien pregunte hondo. Acá están explicados
+> desde cero, y **cada analogía sirve igual para entenderlo y para dictarlo**: si se entiende por
+> la analogía, se enseña por la analogía.
+>
+> **Ninguna de las palabras técnicas hace falta decirla en voz alta.** La columna *"Cómo se dice
+> en clase"* es la versión que se usa.
+
+---
+
+### 1 · La fuga de información — *es el giro, es lo más importante del día*
+
+**Qué es.** Usar, para adivinar algo, un dato que **solo existe después** de que ese algo ya pasó.
+
+**La analogía.** Se puede predecir si llovió mirando si la gente lleva el paraguas mojado. Acierta
+siempre — y no sirve para nada, porque cuando se ve el paraguas mojado **ya llovió**.
+
+**En el archivo del curso.** `num_otrosi` es el paraguas mojado. Los otrosíes se firman cuando el
+contrato se complicó; contarlos "predice" el sobrecosto de maravilla. Pero el día que hace falta
+la predicción —cuando el Tramo 2 apenas empieza— **esa casilla está vacía**.
+
+**El matiz que no hay que perder.** La columna no es mala. Es perfectamente válida para mirar
+hacia atrás y entender qué pasó. Lo que no se puede es usarla para mirar hacia adelante. La fuga
+no es *"usar una variable mala"*: es *"usar una variable que todavía no existe"*.
+
+**Cómo se dice en clase:**
+> *"Este modelo no está prediciendo. Está recordando."*
+
+---
+
+### 2 · Correlación — *solo para saber qué significan los números de las láminas*
+
+**Qué es.** Un número entre 0 y 1 que dice **qué tan juntas se mueven dos cosas**.
+
+**La analogía, con ejemplos de obra.**
+
+| Número | Qué significa | Ejemplo |
+|---|---|---|
+| **0** | No tienen nada que ver | El número de cédula y la estatura |
+| **0,15** | Casi nada | La longitud del corredor y su sobrecosto |
+| **0,99** | Prácticamente el mismo dato escrito de dos maneras | Los metros de muro y los metros cuadrados de pintura |
+
+**Cómo se dice en clase.** Nunca hace falta la palabra:
+> 0,15 → *"la longitud no dice nada"*
+> 0,99 → *"esa columna va casi clavada con el sobrecosto"*
+
+---
+
+### 3 · Correlación no es causa
+
+**Qué es.** Que dos cosas vayan juntas no dice **cuál causa cuál**, ni si hay una tercera causando
+las dos.
+
+**La analogía.** Los meses en que más se accidenta la gente son los meses en que más se factura.
+Facturar no causa accidentes: en esos meses hay **más frente abierto**, y el volumen de trabajo
+causa las dos cosas.
+
+**Por qué importa hoy.** El titular de la sesión —redes húmedas, el doble de sobrecosto— tiene
+exactamente esa forma, y alguien lo va a señalar con razón. La respuesta armada está en
+*Preparación*, punto 3, y en corto es: **para predecir alcanza con que vayan juntas; para actuar
+hay que saber por qué.** Por eso la recomendación final no es "evitar las redes húmedas" —que
+sería absurdo— sino estudiar mejor lo que está enterrado.
+
+---
+
+### 4 · Mediana — *y por qué no promedio*
+
+**Qué es.** Se ordenan todos los valores de menor a mayor y se toma **el del medio**.
+
+**La analogía.** En una mesa hay diez maestros de obra. Entra un magnate y se sienta. El
+**promedio** de la mesa dice que ahí todos son millonarios. La **mediana** sigue diciendo la
+verdad. Por eso, cuando se habla de plata, casi siempre se usa mediana: **un solo caso disparado
+no la mueve**.
+
+**Cómo se dice en clase.** La definición dicha en llano *es* la frase que se usa, así que la
+palabra nunca hace falta:
+> *"La mitad se pasó por menos del 20 % y la otra mitad por más."*
+
+---
+
+### 5 · La banda — *el objeto de la sesión*
+
+**Qué es.** Se ordenan los 19 corredores comparables por sobrecosto, se recorta el 10 % de abajo y
+el 10 % de arriba, y **lo que queda en medio es la banda**.
+
+**La analogía.** Es lo mismo que hace cualquiera al estimar cuánto tarda en llegar al trabajo.
+Nadie dice *"34 minutos"*. Se dice *"entre 30 y 45, salvo que pase algo raro"*. Ese **"salvo que
+pase algo raro"** es justamente el 10 % de arriba y el 10 % de abajo que se recortó.
+
+**Por qué se hizo contando y no con un modelo.** Con 19 casos, **contar filas es más honesto que
+calcular**: cualquiera en la sala puede verificar el conteo sobre la tabla. Una fórmula hay que
+creerla. Si alguien insiste con el tema, la versión técnica está en *Preparación*, punto 2.
+
+**Cómo se dice en clase:**
+> *"8 de cada 10 corredores parecidos cayeron acá adentro."*
+
+---
+
+### 6 · Por qué 40 casos son pocos
+
+**Qué es.** Con pocos datos, **cualquier coincidencia parece una regla**.
+
+**La analogía.** Si se miran cuatro obras y en las tres que llovió hubo retraso, parece una ley de
+la naturaleza. Con cuatrocientas obras se ve que también hubo retraso en la mitad de las que **no**
+llovió.
+
+**Y el agravante.** Cuantas más columnas se le den, más fácil encuentra coincidencias que no
+significan nada — como buscarle forma a las nubes: mirando suficiente rato, siempre aparece una
+cara.
+
+**Cómo se dice en clase:**
+> *"Por eso esta sesión no promete acertar la cifra. Promete decir dónde está el riesgo."*
+
+---
+
+### 7 · ML no es lo mismo que un LLM — *y la demo de hoy no es ML*
+
+**La diferencia, en llano.** Un **LLM** —Antigravity, ChatGPT— aprendió de texto y contesta con
+texto: sabe de todo y no sabe nada del proyecto propio. Un **modelo de ML** de los de esta sesión
+aprende de una tabla y contesta con un número: solo sabe de esa tabla, y no sabe conversar.
+
+**La aclaración que protege la sesión, y que conviene hacer sin que la pregunten.** Lo que se hace
+hoy en pantalla con Antigravity **no es entrenar un modelo**: es pedirle que lea una tabla y
+cuente. Entrenar es otra cosa y hoy no se hace.
+
+> *"Lo que van a ver no es machine learning. Es un asistente leyendo un archivo y contando. Lo
+> hago así a propósito, porque esto sí lo pueden repetir el lunes con sus propios documentos."*
+
+Dicho así, la demo deja de ser una versión pobre de ML y pasa a ser **exactamente lo que el
+auditorio se puede llevar**.
+
+---
+
 ## Preparación — qué estudiar antes del viernes
+
+> **Esto es la capa técnica, para responder si alguien pregunta hondo.** Para dictar la sesión
+> alcanza con *En palabras llanas*, arriba. Si el tiempo es poco, se lee aquella y se vuelve a
+> esta solo por el punto 3, que es el que trae la objeción que sí o sí va a aparecer.
 
 Tiempo sugerido: **2 h**, en este orden.
 
@@ -107,10 +246,13 @@ vean fuertes, y cuantas más variables se usen, peor. Es la razón por la que la
 
 ### Lo que hay que hacer, no solo leer
 
-- **Correr el CSV una vez.** Las cifras verificadas están en *Parte C — Los números del archivo*,
-  más abajo. Si la herramienta del día da algo distinto, vale el guion.
+- **Correr el CSV una vez.** Las cifras verificadas están en *Las cifras del archivo*, más abajo.
+  Si la herramienta del día da algo distinto, vale el guion.
+- **Leer *Hablar de las cifras sin ser de presupuestos*.** Trae la traducción de cada número de las
+  láminas a lenguaje llano, y las tres salidas para las preguntas de costos que no se sepan.
 - **Correr la demo una vez.** Depende de que el asistente conteste `num_otrosi`, y eso es
-  probabilístico. La nota trae el plan B, pero conviene saber cómo responde antes.
+  probabilístico. La nota trae el plan B, pero conviene saber cómo responde antes. Los pasos
+  están abajo en *Montaje previo*, y dónde entra exactamente, en *Mapa de demos*.
 
 ---
 
@@ -147,7 +289,7 @@ pero el *Final de temporada* se dicta completo. Es el cierre de cinco sesiones.
 | 0:05 | **El caso** — Cuarenta corredores y una pregunta incómoda | 5 |
 | 0:10 | Diferencia clave — ML no es lo mismo que un LLM | 6 |
 | 0:16 | Planteamiento — Anatomía de un problema predictivo | 9 |
-| 0:25 | **El hallazgo** — Lo que dicen los 40 | 10 |
+| 0:25 | **El hallazgo** — Lo que dicen los 40 · **Demo 1** | 10 |
 | 0:35 | Aplicación 5D — Predicción de costos | 6 |
 | 0:41 | **El giro** — Correlación de 0,99 y completamente inútil | 10 |
 | 0:51 | Las trampas — Por qué un modelo puede mentir | 7 |
@@ -160,6 +302,11 @@ pero el *Final de temporada* se dicta completo. Es el cierre de cinco sesiones.
 | 1:44 | **La frase** | 2 |
 | 1:46 | **Final de temporada** | 6 |
 | 1:52 | *Holgura / preguntas* | *8* |
+
+> **Los 10 minutos de *El hallazgo* ya incluyen la demo**, y el reparto es ≈ 3 de lámina y ≈ 7 de
+> pantalla. Es el punto donde más fácil se desborda el minutado: si la demo se estira, lo que se
+> recorta es la lámina *Extra*, nunca el *Final de temporada*. El detalle está abajo, en
+> *Mapa de demos*.
 
 ---
 
@@ -253,40 +400,189 @@ Ninguna. **Esta lámina se dicta, no se conversa.** Cinco tarjetas, una frase fi
 
 ---
 
-## Demostración en vivo (~7 min, dentro de *El hallazgo*)
+## Montaje previo — 10 minutos antes de dictar
 
-No hace falta entrenar nada. Basta una hoja de cálculo o un asistente con el CSV adjunto.
+1. **El archivo.** `historico-costos-corredores.csv` en una carpeta nueva, fuera de cualquier ruta
+   de la entidad. Confirmar que abre: **40 registros, 37 `Terminado`, 3 `En ejecucion`**.
+2. **La herramienta.** Una hoja de cálculo alcanza. Si se usa un asistente, **Antigravity ya está
+   instalado desde la 07** y el auditorio lo vio — ver *Banco de ideas*, punto 1.
+3. **Correr las tres preguntas una vez** y anotar qué contestó **la tercera**. Es la que dispara el
+   giro y es la única probabilística: hay que saber de antemano si sale sola o si hay que
+   empujarla.
+4. **Tener *Las cifras del archivo* impresas o a mano.** Son contra las que se audita en voz alta lo
+   que aparezca en pantalla, y son el plan B si la herramienta no arranca.
 
-1. **(2 min)** Adjuntar `historico-costos-corredores.csv` y pedir: *"usando solo las filas con
-   estado Terminado, calcula el sobrecosto porcentual de cada proyecto y dame la mediana."*
-2. **(2 min)** Después: *"compara la mediana de sobrecosto entre los proyectos con redes húmedas
-   y los que no las tienen."*
-3. **(3 min)** Y el remate: *"¿qué variable del archivo predice mejor el sobrecosto?"*
-   **Casi siempre va a responder `num_otrosi`** — y ahí entra el giro solo, servido por la propia
-   herramienta.
+---
+
+## Mapa de demos
+
+La 09 tiene **una sola demo**, y no es decorativa: es la que sirve el giro.
+
+| Momento | Lámina | Demo | Min | ¿Obligatoria? |
+|---|---|---|---|---|
+| **0:28** | **El hallazgo** | **1 · La variable que delata la trampa** | 7 | **Sí** — sin ella el giro se cuenta en vez de ocurrir |
+
+**Y dónde no hay demo, a propósito** — porque la pregunta aparece sola al preparar:
+
+| Momento | Lámina | Por qué no |
+|---|---|---|
+| 0:41 | **El giro** | La trampa **ya salió en pantalla** en la Demo 1. Acá se nombra y se explica; repetirla en vivo la desinfla |
+| 1:04 | **El objeto — La Banda** | La banda se arma con las cifras ya verificadas, no en vivo. Pedirle percentiles a un asistente delante de todos es lento, frágil y obligaría a explicar cuantiles — justo lo que esta sesión no necesita |
+| 1:38 | **Resolución** | Es narración con cifras ya verificadas. Si algo se recalcula en vivo y da distinto, se cae el cierre del arco |
+
+> **Si la herramienta no arranca, la sesión se dicta completa sin demo.** Todas las cifras están
+> en las láminas *El hallazgo* y *El giro*, y verificadas abajo. Lo que se pierde es que la
+> trampa la encuentre la máquina; el hilo queda intacto.
+
+---
+
+## Demo 1 — Preguntarle al archivo (7 min)
+
+**Va dentro de la lámina *El hallazgo*, arrancando cerca del minuto 0:28**, después de haber
+mostrado las dos primeras cifras y **antes** de pasar a *Predicción de costos*.
+
+> **Lo que se demuestra no es estadística: es cómo se le pregunta a un archivo.** Las tres
+> preguntas de abajo sirven igual para un pliego, un acta o una tabla de cantidades — y eso es lo
+> que hay que decir al cerrar la demo, porque es lo único que el auditorio se puede llevar al
+> lunes. No hace falta entrenar nada ni saber de presupuestos.
+
+1. **(2 min)** *"Abre este archivo y dime qué tiene: cuántos registros, qué columnas y qué
+   significa cada una."*
+
+   Lo describe entero sin que nadie abra Excel. **Es la pregunta que el auditorio se va a llevar**,
+   porque funciona con cualquier documento que tengan encima. Señalar en voz alta: *"no le dije
+   qué era cada columna — lo dedujo del nombre"*.
+
+2. **(2 min)** *"De los proyectos que ya terminaron, ¿cuántos costaron más de lo presupuestado?
+   Dame la lista."*
+
+   Sale **37 de 37**. Es un **conteo**, no una estadística: el auditorio puede contar las filas en
+   pantalla y verificarlo. Acá **no se dice "mediana" ni "correlación"** — la cifra se lee sola.
+
+3. **(3 min)** *"¿Qué tienen en común los que más se pasaron?"*
+
+   Va a nombrar **redes húmedas** y, casi siempre, **`num_otrosi`**. Y ahí entra el giro solo,
+   servido por la propia herramienta:
+
+   > *"Esa columna la tenemos porque el proyecto ya terminó. El día que hace falta la predicción,
+   > está vacía."*
+
+   **Si no la nombra:** *"¿y el número de otrosíes?"* — y sale igual.
 
 > **Es la mejor demo de las cinco sesiones**, porque la trampa la encuentra la máquina delante de
 > todos y nadie puede decir que estaba preparada.
 
-> **Plan B:** todas las cifras están en las láminas *El hallazgo* y *El giro*.
+> **Plan B:** todas las cifras están en las láminas *El hallazgo* y *El giro*, verificadas abajo.
 
-> **Si no responde `num_otrosi`:** preguntarle directamente *"¿qué tan bien predice el número de
-> otrosíes?"* y seguir igual.
+---
+
+## Hablar de las cifras sin ser de presupuestos
+
+**Esta sesión no se dicta como experto en costos: se dicta como quien sabe interrogar un archivo.**
+Esa es la competencia que se está enseñando y es la que el docente sí tiene. Las cifras de las
+láminas son del archivo ficticio y no hay que defenderlas como si fueran propias.
+
+Para cada número que aparece en pantalla, qué decir y qué no abrir:
+
+| Lo que dice la lámina | Lo que se dice en voz alta | Lo que **no** hay que hacer |
+|---|---|---|
+| **20 %** de sobrecosto mediano | *"La mitad se pasó por menos del 20 % y la otra mitad por más."* | Explicar por qué mediana y no promedio |
+| Correlación de **0,15** con la longitud | *"La longitud no sirve para adivinar el sobrecosto: hay corredores largos baratos y cortos carísimos."* | Definir qué es una correlación |
+| Correlación de **0,99** con `num_otrosi` | *"Esa columna va casi clavada con el sobrecosto."* | Hablar de R², ajuste o regresión |
+| **24 %** con redes húmedas contra **12 %** sin ellas | *"Los que tocaron redes se pasaron el doble que los que no."* | Justificar si la diferencia es significativa |
+| **5 %** se salió de toda banda | *"Dos de los cuarenta se dispararon — y los dos tienen la causa escrita en el archivo."* | Justificar el ancho de la banda |
+
+### Si preguntan algo de presupuestos que no se sabe
+
+Pasa, y no es un problema: **la pregunta está fuera del tema de la sesión.** Tres salidas, en
+orden de preferencia:
+
+1. **Devolverla al auditorio.** *"¿Alguien acá trabaja en presupuestos? ¿Eso les cuadra?"* En una
+   sala de la entidad casi siempre hay alguien, y su respuesta vale más que la del docente. Además
+   convierte el hueco en participación.
+2. **Devolverla al método.** *"No tengo esos datos y no me corresponde opinar sobre ellos. Lo que
+   sí puedo mostrar es qué se le puede preguntar a un archivo así, y qué respuestas no hay que
+   creerle."*
+3. **Devolverla al archivo propio del que pregunta.** *"Esa la contesta mejor alguien de
+   presupuestos. Lo que a mí me interesa hoy es que ustedes le puedan hacer esa pregunta a su
+   propio archivo."*
+
+**Lo que no hay que hacer nunca:** improvisar una cifra del sector, comparar con proyectos reales
+del IDU, o defender una relación estadística que no se domina. La *Advertencia previa* de arriba
+protege la sesión entera; esto la complementa.
 
 ---
 
 ## Clave del taller
 
-### B.1 — La trampa del archivo
+**El taller se simplificó el 18/09 a una sola tarea, sobre el expediente del curso.** Antes pedía
+formular un caso predictivo completo — entradas, salida, cuántos casos históricos — y después
+pasó a pedir un documento propio. Las dos versiones fallaban por lo mismo: **supónían que cada
+asistente tiene a mano un archivo del que le piden datos**, y no todos trabajan con presupuestos
+ni con tablas.
+
+Ahora **el material lo pone el curso y es el mismo para todos**. Nadie trae nada, nadie instala
+nada, y el que no trabaja con costos no queda mirando al techo.
+
+| Paso | Min | Qué se busca |
+|---|---|---|
+| 1 · Elegir documento | 1 | Que elijan **el que se parezca a su trabajo**. Las columnas están impresas en la hoja: no hay que abrir nada |
+| 2 · Tres preguntas | 6 | Escritas en lenguaje de conversación. **Si suena a fórmula, está mal escrita** |
+| 3 · La columna que llega tarde | 5 | **Es el giro.** Acá es donde hay que estar encima |
+| 4 · Y si le piden una cifra | 3 | La banda, en la forma *"entre X y Y, salvo que pase algo raro"* |
+
+### El reparto que conviene provocar
+
+Al abrir, decirlo en voz alta para que no se amontonen todos en el mismo archivo:
+
+> *"El que coordina, váyase a interferencias. El que modela, a elementos. El que lleva contratos,
+> a las actas. Y el histórico de costos **solo si trabaja con presupuestos** — si no, ni lo mire."*
+
+### Paso 3 — la clave, documento por documento
+
+Es el único paso que cuesta. La ayuda es siempre la misma pregunta:
+
+> **"¿Esa columna ya está escrita el día que usted necesita la respuesta, o aparece después?"**
+
+Y como el material lo pone el curso, **las respuestas se pueden tener listas**:
+
+| Documento | Columnas que llegan tarde | Por qué |
+|---|---|---|
+| **Elementos del Tramo 2** | `fecha_instalacion`, `estado_revision` | No existen mientras se diseña: una es de obra, la otra de revisión |
+| **Interferencias** | `estado`, `fecha_deteccion`, `asignado_a` | Solo aparecen cuando **alguien ya revisó**. Antes de coordinar, el informe está vacío |
+| **Actas de comité** | El compromiso cumplido o incumplido | Se sabe en el comité **siguiente**, no en el que lo creó |
+| **Histórico de corredores** | `num_otrosi`, `costo_final`, `plazo_real` | Es la trampa de hoy, y ya salió en la demo |
+
+**Si alguien no encuentra ninguna:** casi siempre sus tres preguntas son descriptivas — *"¿cuántos
+hay?"*, *"¿cuáles faltan?"*— y no predictivas. Eso **también es hallazgo válido** y conviene decirlo
+así: esas se contestan hoy mismo con la ventanilla de ayer, sin ningún modelo.
+
+### Dos cosas para decir al abrir
+
+1. **Nadie necesita instalar nada ni traer nada.** Si no se dice, medio salón se queda esperando.
+   La hoja es opcional: se puede hacer en papel.
+2. **No hay que abrir los archivos.** Las columnas de cada uno están impresas en la hoja, que es
+   todo lo que hace falta para los cuatro pasos.
+
+### Una pregunta que rinde, si alguien eligió interferencias
+
+El archivo tiene **32 filas y 31 interferencias**: `INT-013` está repetido. Si alguien lo nota,
+vale la pena leerlo en voz alta — es el mismo detalle que `SUM-014` en el export de elementos, y
+es la lección de la 04 apareciendo sola: **contar filas no es contar cosas**.
+
+### B.1 — La trampa del archivo (referencia, ya no es una parte del taller)
 
 **`num_otrosi`.** Correlación 0,99 con el sobrecosto. Es inútil porque el número de otrosíes de
 un contrato solo se conoce cuando el contrato terminó — y para el Tramo 2, que empieza, la
 columna está vacía. En el archivo, los tres proyectos `En ejecucion` la tienen vacía justamente
 por eso.
 
-### Parte C — Los números del archivo
+### Las cifras del archivo — para auditar la demo
 
-Verificados sobre `historico-costos-corredores.csv` (40 registros, 37 terminados, 3 en ejecución):
+> **No son la clave de ninguna parte del taller** — el taller ya no pide calcular nada.
+> Sirven para contrastar en voz alta lo que aparezca en pantalla durante la Demo 1.
+
+Verificadas sobre `historico-costos-corredores.csv` (40 registros, 37 terminados, 3 en ejecución):
 
 | Pregunta | Respuesta |
 |---|---|
@@ -308,9 +604,14 @@ externa (n=19), percentiles 10 y 90.
 | Costo | $86.400 millones | **$101.700 – $110.200 millones** (mediana $106.200) |
 | Plazo | 22 meses | **25,5 – 28,3 meses** (mediana 26,4) |
 
-**Trampa frecuente en la Parte C:** varios van a incluir los tres proyectos `En ejecucion` en el
-cálculo y les van a salir cifras raras o errores de división. Es un buen momento para señalar
-que **decidir qué filas entran es parte del modelo**, no un paso previo sin importancia.
+**Cuidado en la Demo 1, pregunta 2.** Hay que pedir explícitamente *"de los proyectos que ya
+terminaron"*. Si no se acota, el asistente puede meter los tres `En ejecucion` — que no tienen
+costo final — y salen cifras raras o un error de división.
+
+Si pasa, **no es un accidente: es material**. Se dice en voz alta y se sigue:
+
+> *"Decidir qué filas entran es parte del trabajo, no un paso previo sin importancia. Y eso lo
+> decide quien conoce el proyecto, no la herramienta."*
 
 ---
 
