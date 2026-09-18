@@ -1,115 +1,112 @@
-# Taller — Sesión 09 · Machine learning para costos, planificación y decisiones
+# Taller — Sesión 09 · IA para costos, planificación y decisiones
 
-**Duración:** 15 minutos · **Trabajo:** individual o en parejas
-**Material:** `recursos/caso/historico-costos-corredores.csv`
-
----
-
-## Parte A — La ficha de un modelo (7 min)
-
-Formule un caso predictivo **real** de su trabajo. Algo que hoy se estime "por experiencia".
-
-```
-Lo que quiero predecir:
-
-
-
-¿Quién tomaría una decisión distinta si tuviera este número?
-
-
-
-```
-
-### A.1 · Las tres piezas
-
-| Pieza | Pregunta | Su respuesta |
-|---|---|---|
-| **Salida** | ¿Qué predice, y de qué tipo? | |
-| **Tipo de tarea** | ¿Regresión (un número), clasificación (una etiqueta) o anomalías? | |
-| **Datos históricos** | ¿Cuántos casos pasados hay? ¿Dónde están? | |
-
-### A.2 · Las entradas
-
-Liste las variables que usaría. Deje la última columna en blanco por ahora.
-
-| # | Variable de entrada | ¿Existe el día de la predicción? |
-|---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+**Duración:** 15 minutos · **Trabajo:** individual
+**No hace falta ninguna herramienta, ni traer nada.** Se trabaja sobre el expediente del curso,
+que es el mismo para todos. Se puede hacer en papel o en esta hoja.
 
 ---
 
-## Parte B — Cace la fuga (5 min)
+## Una sola tarea
 
-Ahora vuelva a la tabla de arriba y complete la última columna. Para cada variable, una sola
-pregunta:
+> **Un documento del expediente, tres preguntas, y el dato que llega tarde.**
 
-> **¿Esta variable existe el día en que necesito la predicción — o solo se conoce al final?**
+Nada de modelos, nada de fórmulas, nada de estadística.
 
-Tache las que no existan todavía.
+---
+
+## 1 · Elija un documento (1 min)
+
+Los cuatro están en el sitio del curso. **Elija el que más se parezca a su trabajo** — no hace
+falta abrirlo: abajo está lo que tiene adentro.
+
+- [ ] **Elementos del Tramo 2** · 63 filas — el export del modelo.
+      `categoria` · `tipo` · `abscisa` · `codigo_clasificacion` · `material` · `dimension_mm` ·
+      `fecha_instalacion` · `ficha_mantenimiento` · `estado_revision` · `responsable`
+
+- [ ] **Informe de interferencias** · 32 filas — el choque entre disciplinas.
+      `disciplina_a` · `disciplina_b` · `abscisa` · `tipo` · `tolerancia_mm` · `holgura_mm` ·
+      `severidad` · `estado` · `asignado_a` · `fecha_deteccion` · `version_modelo`
+
+- [ ] **Actas de comité 14, 15 y 16** — las decisiones que modificaron el anexo técnico.
+      Texto, no tabla: compromisos, responsables y fechas.
+
+- [ ] **Histórico de 40 corredores** — presupuesto y ejecución real de proyectos anteriores.
+      *Elija este solo si trabaja con costos.*
+
+---
+
+## 2 · Tres preguntas que le haría (6 min)
+
+Escríbalas **como se las diría a una persona**. Si suena a conversación, está bien escrita.
 
 ```
-Variables que tuve que tachar:
+1.
+
+
+2.
+
+
+3.
+
+
+```
+
+> Las tres de la demostración de hoy sirven de molde: *¿qué tiene este archivo?*, *¿cuántos
+> cumplen tal cosa?* y *¿qué tienen en común los que no?*
+
+---
+
+## 3 · El dato que llega tarde (5 min)
+
+Esta es la parte que importa, y es el giro de hoy.
+
+Mire las columnas del documento que eligió. Algunas están escritas **desde el principio**. Otras
+solo aparecen **cuando el trabajo ya avanzó o ya terminó**.
+
+```
+Una columna que solo se conoce al final:
+
+
+
+¿Cuándo aparece de verdad?
 
 
 
 ```
 
-- [ ] No tuve que tachar ninguna. *(Revise otra vez: casi siempre hay una.)*
-- [ ] Taché una o más. **Ese es el hallazgo del ejercicio.**
-
-> **Fuga de información:** entrenar con datos que en el momento real de la predicción todavía no
-> existen. El modelo queda espectacular en el histórico y es inservible en la práctica.
+> **El paraguas mojado.** Se puede predecir si llovió mirando si la gente lleva el paraguas
+> mojado: acierta siempre y no sirve de nada, porque cuando se ve el paraguas ya llovió.
+>
 > **Un modelo que usa información del futuro no predice: recuerda.**
 
-### B.1 · La trampa del archivo del curso
+---
 
-En `historico-costos-corredores.csv` hay una columna que predice el sobrecosto casi a la
-perfección y es completamente inútil para un proyecto que empieza.
+## 4 · Y si le piden una cifra (3 min)
 
-```
-¿Cuál es?  ______________________
-
-¿Por qué es inútil?
-
-
+Tome la pregunta que más le sirva de las tres. Si mañana tuviera que contestarla con un número,
+**no dé un número: dé una banda.**
 
 ```
+"Entre ______________ y ______________, salvo que pase algo raro."
+```
+
+> Es lo mismo que hace cualquiera al decir cuánto tarda en llegar al trabajo. Nadie dice "34
+> minutos": dice "entre 30 y 45, salvo que pase algo raro".
 
 ---
 
-## Parte C — Si sobra tiempo: mire los datos (3 min)
+## Para después de clase
 
-Abra `historico-costos-corredores.csv`. Use `estado = Terminado` únicamente.
-
-```
-1. ¿Cuántos corredores terminaron por encima del presupuesto?   ______ de ______
-
-2. Sobrecosto mediano:  ______ %
-
-3. Compare la mediana de sobrecosto:
-      con redes húmedas:  ______ %
-      sin redes húmedas:  ______ %
-
-4. ¿Qué le sorprende más de la relación entre longitud y sobrecosto?
-
-
-
-```
-
-> Antes de mirar: escriba cuál cree que es la variable que más influye en el sobrecosto.
-> Después compare. La distancia entre las dos respuestas es la razón por la que este ejercicio
-> existe.
+La misma tarea, sobre **un documento suyo**: uno que tenga en el computador y del que alguien le
+pide datos. Las tres preguntas que escriba ahí son las que se pueden intentar el lunes.
 
 ---
 
 ## Para llevar
 
-- La ficha de un modelo predictivo con sus entradas **verificadas contra la fuga**.
-- La costumbre de pedir una **banda**, no una cifra.
+- **Tres preguntas escritas** para un documento real, en lenguaje de conversación.
+- **Una columna que llega tarde** — la que ninguna predicción debería usar.
+- La costumbre de contestar con **una banda y no con una cifra**.
 
-> **Una predicción sin banda es una opinión con decimales.**
-> El ancho de la banda no es una debilidad del modelo: es la información más honesta que produce.
+> **La Banda.** Una predicción sin banda es una opinión con decimales.
+> El ancho no es una debilidad: es la información más honesta que produce.

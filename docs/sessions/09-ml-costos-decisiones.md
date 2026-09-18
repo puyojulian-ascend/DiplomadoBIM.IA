@@ -1,6 +1,6 @@
 ---
 sesion: 9
-titulo: Machine learning para **costos, planificación y decisiones**
+titulo: IA para **costos, planificación y decisiones**
 docente: Stiven Valencia
 fecha: 18/09/2026
 eyebrow: Curso BIM + IA
@@ -268,23 +268,23 @@ El modelo **recomienda**, no decide. La decisión — y la responsabilidad — s
 ^^ Sesión 09 / Taller
 ## Actividad práctica (15 min)
 
-:::split
-:::card [Parte A] Ficha de un modelo
-Formule un caso predictivo de su trabajo:
-- **Entradas** disponibles **el día de la predicción**
-- **Salida**: qué predice y de qué tipo
-- **Datos**: cuántos casos históricos hay y dónde están
-:::
-:::card [Parte B] Cace la fuga
-Revise sus entradas una por una y pregunte: **¿esta variable existe el día en que necesito la predicción, o solo se conoce al final?**
+> **Una sola tarea, en papel.** No hace falta ninguna herramienta, ni traer nada, ni saber estadística: se trabaja sobre el expediente del curso, que es el mismo para todos.
 
-Tache las que no existan todavía.
+:::split-3
+:::card [01] Un documento del expediente
+Elija el que más se parezca a su trabajo: **elementos del modelo**, **interferencias**, **actas de comité** o el **histórico de costos**.
+:::
+:::card [02] Tres preguntas
+Las que le haría, **escritas como se las diría a una persona**. Las tres de la demostración sirven de molde.
+:::
+:::card [03] !El dato que llega tarde
+De las columnas de ese documento, ¿cuál **solo se conoce cuando el trabajo ya avanzó**? Ese es el paraguas mojado.
 :::
 :::
 
 :::note
-**Material del taller** — se llena en pantalla y se descarga en PDF o `.md`:
-<a href="doc.html#d=talleres/taller-09" target="_blank" rel="noopener">Hoja de trabajo</a> ·
+**Hoja de trabajo** — opcional, para quien prefiera escribir en pantalla y descargar en PDF o `.md`:
+<a href="doc.html#d=talleres/taller-09" target="_blank" rel="noopener">Hoja del taller</a> ·
 <a href="recursos/caso/historico-costos-corredores.csv" download>Histórico de 40 corredores (CSV)</a>
 :::
 
@@ -315,7 +315,7 @@ El valor no fue el número. Fue saber **dónde mirar**.
 
 :::split
 :::card [Resultado] Lo que sale de esta sesión
-La **ficha de un modelo predictivo** con sus entradas verificadas contra la fuga, y una banda en vez de una cifra.
+**Tres preguntas escritas** para un documento real, en lenguaje de conversación — y la columna que llega tarde, que es la que ninguna predicción debería usar.
 :::
 :::card [Idea fuerza] !Una sola frase
 El ML no adivina el futuro: **cuantifica la incertidumbre** del pasado para decidir mejor hoy. Su valor no es tener razón siempre, sino equivocarse menos que la intuición.
