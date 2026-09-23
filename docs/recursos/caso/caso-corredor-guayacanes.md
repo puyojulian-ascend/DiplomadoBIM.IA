@@ -82,6 +82,7 @@ Aparecen en las actas y en los ejercicios. Son ficticias.
 | `actas-comite-fragmento.md` | Tres actas de comité de seguimiento (14, 15 y 16). Entre ellas y el anexo hay una contradicción. | 04, 06 |
 | `interferencias-tramo2.csv` | Export del informe de coordinación del modelo federado. 31 incidencias, con defectos deliberados. | 04, 06, 08 |
 | `historico-costos-corredores.csv` | 40 corredores anteriores con presupuesto y ejecución real. | 09 |
+| `catalogo-reglas-calidad.md` | Catálogo de reglas de calidad sobre el inventario y el informe de interferencias, con la regla de prioridad. Versión 1.0: **no trae la regla de cierre contra la versión vigente**, que se agrega en vivo en el giro de la sesión. | 10 |
 
 **Los defectos de los datos son el material didáctico.** El CSV no está sucio por descuido:
 está sucio porque así llegan los exports reales, y porque la mitad de lo que hay que enseñar
