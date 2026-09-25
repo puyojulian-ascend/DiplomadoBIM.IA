@@ -1,0 +1,23 @@
+id_contenedor,nombre_archivo,tipo_documento,disciplina,estado,revision,fecha_estado,cargado_por,concepto_interventoria,aprobado_publicacion
+GUA-T2-GEN-EIR-0001,GUA-T2-GEN-EIR-0001_Anexo-Tecnico-7-Requisitos-Informacion-BIM.pdf,Anexo tecnico,General,Publicado,2.0,2025-05-12,IDU,,IDU
+GUA-T2-GEN-PEB-0001,GUA-T2-GEN-PEB-0001_Plan-Ejecucion-BIM.pdf,Plan de ejecucion BIM,General,Publicado,1.1,2025-05-30,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-GEN-MID-0001,GUA-T2-GEN-MID-0001_Plan-Entregas-Informacion.xlsx,Plan de entregas,General,Publicado,1.0,2025-05-30,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-GEN-ACT-0014,GUA-T2-GEN-ACT-0014_Acta-Comite-14.pdf,Acta de comite,General,Publicado,1.0,2025-06-20,IDU,,IDU
+GUA-T2-GEN-ACT-0015,GUA-T2-GEN-ACT-0015_Acta-Comite-15.pdf,Acta de comite,General,Publicado,1.0,2025-07-04,IDU,,IDU
+GUA-T2-GEN-ACT-0016,GUA-T2-GEN-ACT-0016_Acta-Comite-16.pdf,Acta de comite,General,Publicado,1.0,2025-07-18,IDU,,IDU
+GUA-T2-FED-MOD-0001,GUA-T2-FED-MOD-0001_Modelo-Federado.ifc,Modelo federado,Federado,Archivado,MOD-FED-v3,2025-06-27,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-FED-MOD-0001,GUA-T2-FED-MOD-0001_Modelo-Federado.ifc,Modelo federado,Federado,Publicado,MOD-FED-v4,2025-06-27,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-FED-MOD-0001,GUA-T2-FED-MOD-0001_Modelo-Federado.ifc,Modelo federado,Federado,Trabajo en curso,MOD-FED-v5,2025-07-28,Consorcio Via Norte,,
+GUA-T2-CIC-PLN-0004,GUA-T2-CIC-PLN-0004_Trazado-Ciclorruta-K0400-K0700.pdf,Plano,Ciclorruta,Publicado,P02,2025-06-27,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-ALU-PLN-0003,GUA-T2-ALU-PLN-0003_Planta-Alumbrado-K0000-K0800.pdf,Plano,Alumbrado,Publicado,P01,2025-06-30,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-COO-INF-0001,GUA-T2-COO-INF-0001_Informe-Interferencias.csv,Informe de interferencias,Coordinacion,Compartido,R01,2025-07-02,Consorcio Via Norte,Devuelto,
+GUA-T2-COO-INF-0001,GUA-T2-COO-INF-0001_Informe-Interferencias.csv,Informe de interferencias,Coordinacion,Compartido,R02,2025-07-10,Consorcio Via Norte,Pendiente,
+GUA-T2-DRE-PLN-0012,GUA-T2-DRE-PLN-0012_Perfil-Colector-K0400-K0700.pdf,Plano,Drenaje,Archivado,P01,2025-06-10,Consorcio Via Norte,Aprobado,IDU
+GUA-T2-DRE-EXP-0001,GUA-T2-DRE-EXP-0001_Export-Elementos-K0000-K0800.csv,Export de modelo,Drenaje,Compartido,R01,2025-07-14,Consorcio Via Norte,Devuelto,
+GUA-T2-GEN-ICM-0001,GUA-T2-GEN-ICM-0001_Informe-Calidad-Modelo-H2-Parcial.pdf,Informe de calidad,General,Compartido,R01,2025-07-14,Consorcio Via Norte,Devuelto,
+GUA-T2-SEN-PLN-0002,GUA-T2-SEN-PLN-0002_Senalizacion-Vertical-K0000-K0800.pdf,Plano,Senalizacion,Compartido,P01,2025-07-16,Consorcio Via Norte,Pendiente,
+GUA-T2-DRE-LST-0001,GUA-T2-DRE-LST-0001_Listado-Elementos-Sin-Ficha.xlsx,Listado,Drenaje,Trabajo en curso,R01,2025-07-22,Consorcio Via Norte,,
+,Plano final v3 (2).dwg,Plano,Drenaje,Compartido,,2025-07-24,Consorcio Via Norte,,
+GUA-T2-DRE-PLN-0012,GUA-T2-DRE-PLN-0012_Perfil-Colector-K0400-K0700.pdf,Plano,Drenaje,Publicado,P02,2025-07-25,Consorcio Via Norte,,
+GUA-T2-GEN-ICM-0002,GUA-T2-GEN-ICM-0002_Informe-Calidad-Automatico-Semana-31.pdf,Informe de calidad,General,Compartido,R01,2025-07-29,svc-integracion,,
+GUA-T2-GEN-PRO-0001,GUA-T2-GEN-PRO-0001_Procedimiento-Informacion-Terceros.pdf,Procedimiento,General,Compartido,R01,2025-07-30,Consorcio Via Norte,Pendiente,

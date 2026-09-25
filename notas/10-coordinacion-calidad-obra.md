@@ -448,7 +448,7 @@ cierre repite la frase de la sesión.
 
 ---
 
-## Traspaso a la sesión 11 — BIM, CDE y gemelos digitales (Daniel, 25/09)
+## Traspaso a la sesión 11 — BIM, CDE y gemelos digitales (Stiven, 25/09)
 
 Registrar en la tabla de §7 de [HILO-NARRATIVO.md](../docs/HILO-NARRATIVO.md) al cerrar la sesión.
 
@@ -458,7 +458,7 @@ Registrar en la tabla de §7 de [HILO-NARRATIVO.md](../docs/HILO-NARRATIVO.md) a
   el mismo lugar: *"queda en el CDE"*. ¿Cómo funciona ese lugar como sistema, y qué pasa cuando
   tiene que reflejar el corredor construido durante treinta años?
 
-**Lo que Daniel recibe servido:** el CDE ya apareció dos veces como escenario —en la 04 (estados,
+**Lo que la 11 recibe servida:** el CDE ya apareció dos veces como escenario —en la 04 (estados,
 permisos, auditoría) y hoy como destino de cada incidencia—. Los numerales 5.1.1 a 5.1.5 del anexo
 y el compromiso **15-1** del Acta 15 (permisos de las cuentas de servicios automatizados, que sigue
 abierto) le sirven de puente directo.

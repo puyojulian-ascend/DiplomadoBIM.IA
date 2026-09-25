@@ -14,7 +14,7 @@
     { "num": 8,  "slug": "08-diseno-generativo",           "titulo": "Integración de modelos BIM con IA",                            "docente": "Stiven Valencia",        "fecha": "16/09/2026", "dia": "Miércoles", "estado": "listo" },
     { "num": 9,  "slug": "09-ml-costos-decisiones",        "titulo": "IA para costos, planificación y decisiones",    "docente": "Stiven Valencia",        "fecha": "18/09/2026", "dia": "Viernes",   "estado": "listo" },
     { "num": 10, "slug": "10-coordinacion-calidad-obra",   "titulo": "IA para coordinación, calidad y captura en obra",              "docente": "Stiven Valencia",        "fecha": "23/09/2026", "dia": "Miércoles", "estado": "listo" },
-    { "num": 11, "slug": "11-cde-gemelos",                 "titulo": "BIM, CDE y gemelos digitales",                                "docente": "Daniel Saavedra",        "fecha": "25/09/2026", "dia": "Viernes",   "estado": "stub" },
+    { "num": 11, "slug": "11-cde-gemelos",                 "titulo": "BIM, CDE y gemelos digitales",                                "docente": "Stiven Valencia",        "fecha": "25/09/2026", "dia": "Viernes",   "estado": "listo" },
     { "num": 12, "slug": "12-taller-final",                "titulo": "Taller final y cierre académico",                             "docente": "Daniel · Hugo · Stiven", "fecha": "30/09/2026", "dia": "Miércoles", "estado": "stub" }
   ]
 }

@@ -34,7 +34,7 @@ respondida completa.
 | **08** | mié 16/09 | Diseño generativo e integración de modelos BIM con IA | Stiven Valencia |
 | **09** | vie 18/09 | IA para costos, planificación y decisiones | Stiven Valencia |
 | **10** | mié 23/09 | IA para coordinación, calidad y captura en obra | Stiven Valencia |
-| **11** | vie 25/09 | BIM, CDE y gemelos digitales | Daniel Saavedra |
+| **11** | vie 25/09 | BIM, CDE y gemelos digitales | Stiven Valencia |
 | **12** | mié 30/09 | Taller final y cierre académico | Los tres docentes |
 
 ---

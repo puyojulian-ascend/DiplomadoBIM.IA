@@ -143,7 +143,7 @@ Cada docente deja aquí, al cerrar su sesión, lo que el siguiente necesita para
 | 08 · Stiven | Al modelo se le pide por una ventanilla: devuelve lo que está escrito en la ficha, no lo que alguien pensó. Y tiene tres puertas — solo lectura, lectura y escritura, acceso anticipado —: cuál se abre es una decisión con dueño, porque la máquina no distingue "falta el dato" de "no se ha decidido". | La ventanilla entrega lo que el modelo sabe hoy. ¿Y lo que va a pasar mañana — el costo y el plazo de verdad? |
 | 09 · Stiven | Una predicción sin banda es una opinión con decimales. Y un modelo que usa información del futuro no predice: recuerda. | *(cierre del arco — se muestran los cinco objetos y se responde la pregunta de la 01)* |
 | 10 · Stiven | *(por completar)* | *(por completar)* |
-| 11 · Daniel | *(por completar)* | *(por completar)* |
+| 11 · Stiven | *(por completar)* | *(por completar)* |
 | 12 · Los tres | *(cierre)* | — |
 
 ### Acuerdos de reparto entre sesiones
@@ -154,10 +154,10 @@ lo hereda en voz alta. Repetirlo dos días después le resta autoridad a los dos
 | Tema | Lo desarrolla | Lo hereda |
 |---|---|---|
 | El modelo BIM como estructura de datos · los tres grados de estructura · IFC · nomenclaturas | **03 · Hugo** | 04 · Stiven, que abre reconociéndolo y arranca donde eso termina: el anexo, las actas y los correos **no** están estructurados |
-| El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 · Stiven y 11 · Daniel, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
+| El entorno común de datos: estados de la información, permisos por carpeta, rastro de auditoría | **04 · Stiven**, como *escenario* — es dónde viven los documentos que se extraen, y dónde se aplica el Semáforo | 10 · Stiven y 11 · Stiven, que lo desarrollan como *tema*: el CDE como sistema, y su evolución hacia el gemelo digital |
 | Coordinación y detección de interferencias | **04 · Stiven**, como *documento a extraer* — el informe de interferencias es una fuente más del expediente, igual que el pliego y las actas | 10 · Stiven, que lo desarrolla como *proceso*: reglas de validación, priorización de interferencias, clasificación de incidencias |
 | **Reglas de validación de modelo** — parámetros obligatorios, nomenclatura, clasificación, duplicados | **10 · Stiven** (hora 19), donde se diseña el agente de revisión de calidad y se arma el catálogo de reglas | 07 · Stiven, que llega antes y las trata como **insumo**: la regla es algo que hay que tener escrito para poder automatizar, no algo que la 07 enseñe a redactar |
-| **Integración con CDE, ERP y sistemas empresariales** — mapeo de datos, identificadores únicos, sincronización | **11 · Daniel** (hora 21) | 07 · Stiven, que solo nombra la categoría al elegir tecnología. Pese al título de la 07, la integración empresarial **no** se desarrolla ahí |
+| **Integración con CDE, ERP y sistemas empresariales** — mapeo de datos, identificadores únicos, sincronización | **11 · Stiven** (hora 21) | 07 · Stiven, que solo nombra la categoría al elegir tecnología. Pese al título de la 07, la integración empresarial **no** se desarrolla ahí |
 | **Dynamo y el paramétrico** | **07 · Stiven**, como *tecnología de automatización* — una de las cuatro de la matriz de decisión | 08 · Stiven, que solo lo nombra en la lámina de investigación, al distinguir paramétrico de generativo. **No se vuelve a desarrollar** |
 | **"La máquina hizo bien su trabajo; el error fue de formulación"** | **07 · Stiven**, en su versión de **vigencia**: la regla estaba bien el día que se escribió y un acta la cambió tres meses después | 08 · Stiven, con una vuelta distinta y más corta: no la regla que envejeció sino **el campo que estaba vacío a propósito**. La máquina no distingue "falta el dato" de "no se ha decidido" |
 | **Conectar la IA a una fuente: MCP, API y exportación** | **06 · Stiven** (el Enchufe), sobre el **expediente** — documentos, actas, el CDE. Ahí se explican las siglas, los permisos heredados y el estándar | 08 · Stiven, que **no las vuelve a explicar**: las aplica al **modelo**, que es otra cosa — pesa, tiene geometría, y su servidor oficial viene en tres versiones de alcance creciente. Al abrir se hereda en voz alta: *"las tres maneras ya las vimos; hoy se trata de qué pasa cuando del otro lado hay un modelo"* |
@@ -180,8 +180,8 @@ consultar; no explican cómo se coordina un modelo ni cómo se configura un ento
 Ese desarrollo es de la 10 y la 11. Al abrirlas se hereda en voz alta: *"ya vieron dónde viven los
 documentos y ya vieron un informe de interferencias; hoy vamos a ver cómo se produce."*
 
-Con la 10 también a cargo de Stiven, el segundo cruce queda dentro del mismo docente; el que sigue
-siendo entre dos manos es el de la 11, con Daniel.
+Con la 10 y —desde el 24/09— también la 11 a cargo de Stiven, los dos cruces quedan dentro del
+mismo docente.
 
 Si aparecen más cruces, se anotan acá antes de que los decks se escriban.
 
