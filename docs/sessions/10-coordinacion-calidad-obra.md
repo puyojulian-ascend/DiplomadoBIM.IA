@@ -414,4 +414,4 @@ El entorno común de datos apareció en la sesión 04 como escenario: estados, p
 :::
 :::
 
-> **Sesión 11 — BIM, CDE y gemelos digitales.** Viernes 25/09, con Daniel Saavedra.
+> **Sesión 11 — BIM, CDE y gemelos digitales.** Viernes 25/09.

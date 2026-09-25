@@ -42,7 +42,8 @@
         { "archivo": "caso/actas-comite-fragmento.md",          "titulo": "Actas de comité 14, 15 y 16", "desc": "Las decisiones que modificaron el anexo.",             "sesion": 4, "tipo": "doc" },
         { "archivo": "caso/interferencias-tramo2.csv",          "titulo": "Informe de interferencias", "desc": "Export del informe de coordinación del modelo federado. 31 incidencias.", "sesion": 4, "tipo": "descarga" },
         { "archivo": "caso/historico-costos-corredores.csv",    "titulo": "Histórico de 40 corredores", "desc": "Presupuesto y ejecución real de proyectos anteriores.",  "sesion": 9, "tipo": "descarga" },
-        { "archivo": "caso/catalogo-reglas-calidad.md",        "titulo": "Catálogo de reglas de calidad", "desc": "Reglas de validación del Tramo 2 con fuente, alcance y severidad, y la regla de prioridad.", "sesion": 10, "tipo": "doc" }
+        { "archivo": "caso/catalogo-reglas-calidad.md",        "titulo": "Catálogo de reglas de calidad", "desc": "Reglas de validación del Tramo 2 con fuente, alcance y severidad, y la regla de prioridad.", "sesion": 10, "tipo": "doc" },
+        { "archivo": "caso/cde-listado-tramo2.csv",             "titulo": "Listado del CDE", "desc": "Export del contenido del CDE del Tramo 2 al 31/07/2025. 22 registros en los cuatro estados.", "sesion": 11, "tipo": "descarga" }
       ]
     }
   ]

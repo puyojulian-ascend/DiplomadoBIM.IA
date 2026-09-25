@@ -83,6 +83,7 @@ Aparecen en las actas y en los ejercicios. Son ficticias.
 | `interferencias-tramo2.csv` | Export del informe de coordinación del modelo federado. 31 incidencias, con defectos deliberados. | 04, 06, 08 |
 | `historico-costos-corredores.csv` | 40 corredores anteriores con presupuesto y ejecución real. | 09 |
 | `catalogo-reglas-calidad.md` | Catálogo de reglas de calidad sobre el inventario y el informe de interferencias, con la regla de prioridad. Versión 1.0: **no trae la regla de cierre contra la versión vigente**, que se agrega en vivo en el giro de la sesión. | 10 |
+| `cde-listado-tramo2.csv` | Export del contenido del entorno común de datos al 31 de julio de 2025: 22 registros —contenedores y sus revisiones— en los cuatro estados, con concepto de Interventoría y aprobación de publicación. Tiene defectos deliberados. | 11 |
 
 **Los defectos de los datos son el material didáctico.** El CSV no está sucio por descuido:
 está sucio porque así llegan los exports reales, y porque la mitad de lo que hay que enseñar
@@ -129,3 +130,20 @@ coordinación.
 > A diferencia de `elementos-tramo2.csv`, la columna `observacion` de este archivo **no delata**
 > los defectos. Ahí las observaciones dicen cosas como *"Registro repetido en el export"*, lo que
 > regala el ejercicio; acá no.
+
+### En `cde-listado-tramo2.csv`
+
+La propiedad que **no se puede romper**: la única revisión **publicada** del modelo federado es
+`MOD-FED-v4`. Existe una `MOD-FED-v5` más reciente en *Trabajo en curso*. La demo de la sesión 11
+depende de que "la más reciente" y "la vigente" sean distintas.
+
+| Defecto | Dónde | Para qué |
+|---|---|---|
+| Revisión más reciente del modelo en *Trabajo en curso* | `GUA-T2-FED-MOD-0001`, `MOD-FED-v5` | Un agente que toma "la última" responde con lo que nadie verificó |
+| Dos revisiones del informe de interferencias en *Compartido*, una devuelta y otra pendiente | `GUA-T2-COO-INF-0001`, `R01` y `R02` | Ninguna es utilizable como oficial; `R01` es el informe sin versión declarada del Acta 15 |
+| Plano publicado sin concepto ni aprobación | `GUA-T2-DRE-PLN-0012`, `P02` | La aprobación de pasillo: publicado sin firma |
+| Archivo sin identificador ni nomenclatura | `Plano final v3 (2).dwg` | El archivo que nadie encuentra |
+| Informe cargado por una cuenta de servicio, sin concepto | `GUA-T2-GEN-ICM-0002`, `svc-integracion` | El cuarto actor: el compromiso 15-1 sigue abierto |
+| El listado del compromiso 16-1 sigue en *Trabajo en curso* | `GUA-T2-DRE-LST-0001` | Su plazo era de cinco días hábiles desde el 16 de julio |
+| El plan de entregas publicado dice 30 de septiembre para H-2 | `GUA-T2-GEN-MID-0001`, versión 1.0 | El Acta 16 movió la fecha al 24 de octubre y el plan no se actualizó |
+| **Ausencia:** no hay ningún documento del compromiso 15-1 | — | Lo que un agente tiene que poder decir que **no está** |
