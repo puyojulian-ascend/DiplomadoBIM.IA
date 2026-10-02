@@ -351,6 +351,7 @@ La hoja descargada, por correo. **Solo la hoja**: sus datos, el nombre del Gem y
 - Las **cinco fichas de bolsillo**.
 - La **hoja de repaso** con la terminología de las once sesiones.
 - La **hoja del taller final**, con la plantilla del asistente y las ocho pruebas.
+- Para quien ya usó Antigravity: <a href="doc.html#d=extras/antigravity-asistente-revision" target="_blank" rel="noopener">el mismo asistente como skill</a>, leyendo el CDE en vivo.
 :::
 :::card [La pregunta] !Una sola
 De todo lo que revisa en una semana, **¿cuál es lo primero que tiene la regla escrita, llega siempre en el mismo formato y alguien está dispuesto a firmar?**

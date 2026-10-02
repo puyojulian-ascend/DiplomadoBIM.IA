@@ -252,7 +252,7 @@
             var inner =
               '<span class="rtop"><span class="rtitle">' + esc(it.titulo) + '</span><span class="rtags">' +
               (it.editable ? '<span class="rtag fill">✍️ rellenable</span>' : '') +
-              (it.tipo === 'descarga' ? '<span class="rtag dl">CSV</span>' : '<span class="rtag">S' + String(it.sesion).padStart(2, '0') + '</span>') +
+              (it.tipo === 'descarga' ? '<span class="rtag dl">' + esc((it.archivo.split('.').pop() || '').toUpperCase()) + '</span>' :'<span class="rtag">S' + String(it.sesion).padStart(2, '0') + '</span>') +
               '</span></span><span class="rdesc">' + esc(ok ? it.desc : 'Se habilita con la sesión ' + String(it.sesion).padStart(2, '0') + '.') + '</span>';
             if (!ok) { html += '<div class="ritem locked" aria-disabled="true">' + inner + '</div>'; return; }
             var href = it.tipo === 'descarga'

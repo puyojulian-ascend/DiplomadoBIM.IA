@@ -36,6 +36,14 @@
       ]
     },
     {
+      "nombre": "Extras",
+      "items": [
+        { "archivo": "extras/antigravity-asistente-revision.md", "titulo": "El asistente de revisión en Antigravity", "desc": "La versión del taller final como skill, leyendo el CDE en vivo con Desktop Connector. Material de consulta.", "sesion": 12, "tipo": "doc" },
+        { "archivo": "extras/antigravity/SKILL.md", "titulo": "Skill de ejemplo · revisar-entregable", "desc": "El procedimiento de revisión. Va en .agents/skills/revisar-entregable/ del workspace.", "sesion": 12, "tipo": "descarga" },
+        { "archivo": "extras/antigravity/AGENTS.md", "titulo": "AGENTS.md de ejemplo", "desc": "Las reglas de conducta del asistente: rutas, solo lectura y dónde escribe.", "sesion": 12, "tipo": "descarga" }
+      ]
+    },
+    {
       "nombre": "Expediente del caso · Corredor Av. Guayacanes",
       "items": [
         { "archivo": "caso/caso-corredor-guayacanes.md",        "titulo": "El caso",                 "desc": "Brief del corredor ficticio que atraviesa todo el curso.", "sesion": 2, "tipo": "doc" },
