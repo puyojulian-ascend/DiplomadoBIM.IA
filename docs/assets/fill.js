@@ -130,7 +130,11 @@
   function campos(root) {
     var sel = function (q) { return Array.prototype.slice.call(root.querySelectorAll(q)); };
     return {
-      pres: sel('pre > code').filter(function (c) { return !ART.test(c.textContent); }),
+      // Misma regla que scanSource: un bloque con lenguaje (```text) es material para
+      // copiar, no un campo. marked lo marca con la clase language-*.
+      pres: sel('pre > code').filter(function (c) {
+        return !/(^|\s)language-\S/.test(c.className) && !ART.test(c.textContent);
+      }),
       cells: sel('td').filter(function (td) { return !td.textContent.trim() && !td.children.length; }),
       checks: sel('input[type=checkbox]')
     };
