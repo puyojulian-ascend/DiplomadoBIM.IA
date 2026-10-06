@@ -282,7 +282,7 @@ Las ocho pruebas no se tiran: **son la prueba de aceptación** del asistente. Ca
 ^^ Sesión 12 / Taller final
 ## El taller final: asincrónico e individual
 
-> Se hace después de la sesión, a su ritmo. Toma alrededor de una hora y media. **Plazo: una semana, hasta el miércoles 7 de octubre.**
+> Se hace después de la sesión, a su ritmo. Toma alrededor de una hora y media. **Plazo: hasta el martes 13 de octubre.**
 
 :::split-3
 :::card [01] Armar

@@ -1,7 +1,8 @@
 # Taller final — Sesión 12 · Un asistente de revisión propio
 
 **Modalidad:** asincrónica, después de la sesión · **Trabajo:** individual · **Tiempo:** alrededor de
-una hora y media · **Plazo:** una semana, hasta el **miércoles 7 de octubre de 2026**
+una hora y media · **Plazo:** hasta el **martes 13 de octubre de 2026**
+
 **Se necesita:** la cuenta **institucional** de [Gemini](https://gemini.google.com) que habilitó la
 entidad, los documentos que definen las reglas de una tarea suya y un archivo real de esa tarea
 para revisar.
@@ -222,12 +223,13 @@ envejece la regla que lleva adentro.
 
 ## Entrega
 
-**Plazo:** una semana después de la sesión — hasta el **miércoles 7 de octubre de 2026**.
+**Plazo:** hasta el **martes 13 de octubre de 2026**.
 
-1. Descargue esta hoja con sus respuestas — botón **⬇ .md** o **⎙ PDF** en la parte superior.
-2. Envíela por correo a **hugo.gomez@ascend.net.co** y **stiven.valencia@ascend.net.co**, con el
+1. Revise que respondió todo: el contador de la parte superior dice cuántos campos lleva.
+2. Descargue esta hoja con sus respuestas — botón **⬇ .md** o **⎙ PDF** en la parte superior.
+3. Envíela por correo a **hugo.gomez@ascend.net.co** y **stiven.valencia@ascend.net.co**, con el
    asunto **Taller final · su nombre completo**.
-3. **Adjunte solo la hoja.** Lleva sus datos, el nombre del Gem y sus respuestas — nada más. No
+4. **Adjunte solo la hoja.** Lleva sus datos, el nombre del Gem y sus respuestas — nada más. No
    comparta el Gem ni los documentos con que lo armó.
 
 ---

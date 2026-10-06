@@ -21,7 +21,7 @@ sus archivos**, y si las reglas cambian y nadie lo actualiza, todos revisan con 
 | **La idea central** | **Dos cajones.** Las reglas van en el Conocimiento del Gem; lo que se revisa se adjunta en el chat. Es la sesión 10 hecha herramienta: la IA no revisa el archivo, aplica el catálogo |
 | **El taller final** | `taller-12` — asincrónico, individual, alrededor de hora y media. Una tarea propia o, si no hay documentos a mano, el expediente del curso |
 | **Herramienta** | Solo Gemini (app web, cuenta institucional): Gems y archivos adjuntos en el chat |
-| **Entrega** | La hoja descargada (`.md` o PDF): datos del estudiante, nombre del Gem y respuestas del paso 4 (sin el asistente, las ocho pruebas y la corrección de la instrucción). Por correo a hugo.gomez@ascend.net.co y stiven.valencia@ascend.net.co, asunto *Taller final · nombre completo*. **Plazo: una semana, hasta el miércoles 7 de octubre de 2026** |
+| **Entrega** | La hoja descargada (`.md` o PDF): datos del estudiante, nombre del Gem y respuestas del paso 4 (sin el asistente, las ocho pruebas y la corrección de la instrucción). Por correo a hugo.gomez@ascend.net.co y stiven.valencia@ascend.net.co, asunto *Taller final · nombre completo*. **Plazo: hasta el martes 13 de octubre de 2026** |
 | **La frase** | La IA no reemplazó ninguna pieza del trabajo: las volvió obligatorias. |
 | **Idea fuerza** | El trabajo nunca estuvo en la máquina. Estuvo en el planteamiento — y ese sigue siendo suyo. (Es la frase de cierre de la 09: se repite a propósito.) |
 | **El giro** | Compartir un Gem es compartir sus archivos — y un Gem con reglas viejas hace revisar a todo el equipo con la regla vieja. |
@@ -66,7 +66,7 @@ hoy no se pierde, y el nombre nuevo coincide con el *Skill* de la sesión 03.
       **Anotar cuáles salieron No**: son el mejor material de la demostración.
 - [ ] Verificar que en un chat con el Gem se puede **adjuntar un archivo** y que el Gem lo trata
       como insumo y no como regla. Las funciones de Gemini cambian cada mes.
-- [ ] **Recordar el plazo de entrega:** una semana, hasta el miércoles 7 de octubre de 2026.
+- [ ] **Recordar el plazo de entrega:** hasta el martes 13 de octubre de 2026.
 
 ---
 
@@ -117,7 +117,7 @@ del taller final tampoco**: es lo único que van a hacer después.
    si las reglas cambian, todo el equipo revisa con la vieja — la 07.
 10. **Resolución.** La fila que importa es *quién las actualiza*. Sin dueño, el asistente envejece en
     silencio.
-11. **El taller final.** Leer en voz alta qué se entrega —**solo la hoja**—, a qué correos y el plazo: **una semana, hasta el miércoles 7 de octubre**.
+11. **El taller final.** Leer en voz alta qué se entrega —**solo la hoja**—, a qué correos y el plazo: **hasta el martes 13 de octubre**.
 12. **La respuesta completa.** Leer solo la columna del medio, de arriba abajo. Es la respuesta a
     la pregunta con que Daniel abrió la 01.
 
